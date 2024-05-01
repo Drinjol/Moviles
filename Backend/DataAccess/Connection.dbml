@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="direccion" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_CrearUsuario" Method="sp_CrearUsuario">
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="direccion" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_EliminarUsuario" Method="sp_EliminarUsuario">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_IngresarCalificacion" Method="sp_IngresarCalificacion">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="calificacion" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_obtener_usuario_por_id" Method="sp_obtener_usuario_por_id">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_obtener_usuario_por_idResult">
+      <Column Name="tb_usuario_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="tb_usuario_nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_apellidos" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_email" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_password" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_direccion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_telefono" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_calificacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tb_usuario_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
