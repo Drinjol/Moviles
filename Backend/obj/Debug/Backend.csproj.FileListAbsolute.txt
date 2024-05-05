@@ -11,3 +11,16 @@ C:\Users\dg986\OneDrive\Documentos\2024\1 cliclo 2024\Moviles\Proyecto Moviles\M
 C:\Users\dg986\OneDrive\Documentos\2024\1 cliclo 2024\Moviles\Proyecto Moviles\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
 C:\Users\dg986\OneDrive\Documentos\2024\1 cliclo 2024\Moviles\Proyecto Moviles\Moviles\Backend\obj\Debug\Backend.dll
 C:\Users\dg986\OneDrive\Documentos\2024\1 cliclo 2024\Moviles\Proyecto Moviles\Moviles\Backend\obj\Debug\Backend.pdb
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Backend.dll.config
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Backend.dll
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Backend.pdb
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\WebGrease.dll
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.csproj.AssemblyReference.cache
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.dll
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.pdb
