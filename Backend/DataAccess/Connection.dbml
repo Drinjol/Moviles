@@ -1,4 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_aa7784_bdemprende" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SQL5113.site4now.net;Initial Catalog=db_aa7784_bdemprende;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;Connect Timeout=35;Trust Server Certificate=True" SettingsObjectName="Backend.Properties.Settings" SettingsPropertyName="db_aa7784_bdemprendeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tb_imagen_binario" Member="tb_imagen_binario">
+    <Type Name="tb_imagen_binario">
+      <Column Name="tb_imagen_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tb_publicacion_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="tb_imagen_binario" Member="tb_imagen_binario1" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="tb_imagen_extension" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
     <Parameter Name="id" Type="System.Int32" DbType="Int" />
     <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
@@ -42,5 +51,24 @@
       <Column Name="tb_usuario_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
       <Column Name="tb_usuario_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ELIMINAR_PUBLICACION" Method="SP_ELIMINAR_PUBLICACION">
+    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Parameter Name="FILASACTUALIZADAS" Parameter="fILASACTUALIZADAS" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_INGRESAR_PUBLICACION" Method="SP_INGRESAR_PUBLICACION">
+    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PRECIO" Parameter="pRECIO" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="CATEGORIA" Parameter="cATEGORIA" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="EXTENSIONIMAGEN" Parameter="eXTENSIONIMAGEN" Type="System.String" DbType="Char(4)" />
+    <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

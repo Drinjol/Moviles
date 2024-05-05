@@ -10,5 +10,29 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=SQL5113.site4now.net;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;TrustServerCertificate=True</Value>
     </Setting>
+    <Setting Name="DataSourceConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=SQL5113.site4now.net;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;Password=una123456;TrustServerCertificate=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SQL5113.site4now.net;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;Password=una123456;TrustServerCertificate=True</Value>
+    </Setting>
+    <Setting Name="SarapiquiEmprendeConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=DESKTOP-GS5ITPH\FERNANDO;Initial Catalog=SarapiquiEmprende;Integrated Security=True;TrustServerCertificate=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=DESKTOP-GS5ITPH\FERNANDO;Initial Catalog=SarapiquiEmprende;Integrated Security=True;TrustServerCertificate=True</Value>
+    </Setting>
+    <Setting Name="db_aa7784_bdemprendeConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=SQL5113.site4now.net;Initial Catalog=db_aa7784_bdemprende;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;Password=una123456;Connect Timeout=35;TrustServerCertificate=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SQL5113.site4now.net;Initial Catalog=db_aa7784_bdemprende;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;Password=una123456;Connect Timeout=35;TrustServerCertificate=True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

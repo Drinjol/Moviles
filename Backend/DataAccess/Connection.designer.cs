@@ -22,7 +22,7 @@ namespace Backend.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DataSource")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="db_aa7784_bdemprende")]
 	public partial class ConnectionDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -30,7 +30,16 @@ namespace Backend.DataAccess
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
+    partial void Inserttb_imagen_binario(tb_imagen_binario instance);
+    partial void Updatetb_imagen_binario(tb_imagen_binario instance);
+    partial void Deletetb_imagen_binario(tb_imagen_binario instance);
     #endregion
+		
+		public ConnectionDataContext() : 
+				base(global::Backend.Properties.Settings.Default.db_aa7784_bdemprendeConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
 		
 		public ConnectionDataContext(string connection) : 
 				base(connection, mappingSource)
@@ -54,6 +63,14 @@ namespace Backend.DataAccess
 				base(connection, mappingSource)
 		{
 			OnCreated();
+		}
+		
+		public System.Data.Linq.Table<tb_imagen_binario> tb_imagen_binario
+		{
+			get
+			{
+				return this.GetTable<tb_imagen_binario>();
+			}
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ActualizarUsuario")]
@@ -89,6 +106,161 @@ namespace Backend.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
 			return ((ISingleResult<sp_obtener_usuario_por_idResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION")]
+		public int SP_ELIMINAR_PUBLICACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDRETURN", DbType="Int")] ref System.Nullable<int> iDRETURN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORID", DbType="Int")] ref System.Nullable<int> eRRORID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORDESCRIPCION", DbType="NVarChar(MAX)")] ref string eRRORDESCRIPCION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FILASACTUALIZADAS", DbType="Int")] ref System.Nullable<int> fILASACTUALIZADAS)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_PUBLICACION, iDRETURN, eRRORID, eRRORDESCRIPCION, fILASACTUALIZADAS);
+			iDRETURN = ((System.Nullable<int>)(result.GetParameterValue(1)));
+			eRRORID = ((System.Nullable<int>)(result.GetParameterValue(2)));
+			eRRORDESCRIPCION = ((string)(result.GetParameterValue(3)));
+			fILASACTUALIZADAS = ((System.Nullable<int>)(result.GetParameterValue(4)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_INGRESAR_PUBLICACION")]
+		public int SP_INGRESAR_PUBLICACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="BigInt")] System.Nullable<long> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DESCRIPCION", DbType="VarChar(MAX)")] string dESCRIPCION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PRECIO", DbType="Decimal(18,0)")] System.Nullable<decimal> pRECIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CATEGORIA", DbType="VarChar(MAX)")] string cATEGORIA, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="EXTENSIONIMAGEN", DbType="Char(4)")] string eXTENSIONIMAGEN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDRETURN", DbType="Int")] ref System.Nullable<int> iDRETURN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORID", DbType="Int")] ref System.Nullable<int> eRRORID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORDESCRIPCION", DbType="NVarChar(MAX)")] ref string eRRORDESCRIPCION)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, dESCRIPCION, pRECIO, cATEGORIA, eXTENSIONIMAGEN, iDRETURN, eRRORID, eRRORDESCRIPCION);
+			iDRETURN = ((System.Nullable<int>)(result.GetParameterValue(5)));
+			eRRORID = ((System.Nullable<int>)(result.GetParameterValue(6)));
+			eRRORDESCRIPCION = ((string)(result.GetParameterValue(7)));
+			return ((int)(result.ReturnValue));
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tb_imagen_binario")]
+	public partial class tb_imagen_binario : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _tb_imagen_id;
+		
+		private System.Nullable<long> _tb_publicacion_id;
+		
+		private System.Data.Linq.Binary _tb_imagen_binario1;
+		
+		private string _tb_imagen_extension;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void Ontb_imagen_idChanging(int value);
+    partial void Ontb_imagen_idChanged();
+    partial void Ontb_publicacion_idChanging(System.Nullable<long> value);
+    partial void Ontb_publicacion_idChanged();
+    partial void Ontb_imagen_binario1Changing(System.Data.Linq.Binary value);
+    partial void Ontb_imagen_binario1Changed();
+    partial void Ontb_imagen_extensionChanging(string value);
+    partial void Ontb_imagen_extensionChanged();
+    #endregion
+		
+		public tb_imagen_binario()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_imagen_id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int tb_imagen_id
+		{
+			get
+			{
+				return this._tb_imagen_id;
+			}
+			set
+			{
+				if ((this._tb_imagen_id != value))
+				{
+					this.Ontb_imagen_idChanging(value);
+					this.SendPropertyChanging();
+					this._tb_imagen_id = value;
+					this.SendPropertyChanged("tb_imagen_id");
+					this.Ontb_imagen_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_id", DbType="BigInt")]
+		public System.Nullable<long> tb_publicacion_id
+		{
+			get
+			{
+				return this._tb_publicacion_id;
+			}
+			set
+			{
+				if ((this._tb_publicacion_id != value))
+				{
+					this.Ontb_publicacion_idChanging(value);
+					this.SendPropertyChanging();
+					this._tb_publicacion_id = value;
+					this.SendPropertyChanged("tb_publicacion_id");
+					this.Ontb_publicacion_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
+		public System.Data.Linq.Binary tb_imagen_binario1
+		{
+			get
+			{
+				return this._tb_imagen_binario1;
+			}
+			set
+			{
+				if ((this._tb_imagen_binario1 != value))
+				{
+					this.Ontb_imagen_binario1Changing(value);
+					this.SendPropertyChanging();
+					this._tb_imagen_binario1 = value;
+					this.SendPropertyChanged("tb_imagen_binario1");
+					this.Ontb_imagen_binario1Changed();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_imagen_extension", DbType="Char(4)")]
+		public string tb_imagen_extension
+		{
+			get
+			{
+				return this._tb_imagen_extension;
+			}
+			set
+			{
+				if ((this._tb_imagen_extension != value))
+				{
+					this.Ontb_imagen_extensionChanging(value);
+					this.SendPropertyChanging();
+					this._tb_imagen_extension = value;
+					this.SendPropertyChanged("tb_imagen_extension");
+					this.Ontb_imagen_extensionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	
