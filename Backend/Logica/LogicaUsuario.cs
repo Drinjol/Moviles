@@ -71,9 +71,8 @@ namespace Backend.Logica
             {
                 //validar el registro a ingresar
                 if (String.IsNullOrEmpty(req.usuario.nombre) || String.IsNullOrEmpty(req.usuario.apellidos) ||
-                     String.IsNullOrEmpty(req.usuario.email) || String.IsNullOrEmpty(req.usuario.password) ||
-                    String.IsNullOrEmpty(req.usuario.email) || String.IsNullOrEmpty(req.usuario.password) ||
-                    String.IsNullOrEmpty(req.usuario.direccion) || String.IsNullOrEmpty(req.usuario.telefono)
+                     String.IsNullOrEmpty(req.usuario.email) || String.IsNullOrEmpty(req.usuario.direccion) ||
+                    String.IsNullOrEmpty(req.usuario.telefono) || String.IsNullOrEmpty(req.usuario.descripcion) 
                     )
                 {
                     res.listaDeErrores.Add("Datos Inconsistentes");
