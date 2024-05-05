@@ -6,7 +6,53 @@
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogicaSesionValida.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogicaSesionValida.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaSesionValida.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogicaSesionValida.cs",
+              "RelativeToolTip": "Logica\\LogicaSesionValida.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAgwDUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:23:57.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ResBase.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Response\\ResBase.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResBase.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Response\\ResBase.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:23:41.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogicaUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeToolTip": "Logica\\LogicaUsuario.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwGYAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T19:05:46.828Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
