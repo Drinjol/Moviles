@@ -6,7 +6,7 @@ namespace Backend.Entidades
     {
 
         public int id { get; set; }
-        public Usuario usuario { get; set; }
+        public int idUsuario { get; set; }
         public string sesion { get; set; }
         public DateTime fechaInicio { get; set; }
         public DateTime fechaFin {  get; set; }
