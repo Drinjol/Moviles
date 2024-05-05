@@ -62,12 +62,16 @@
     <Compile Include="Entidades\Entidad\Publicacion.cs" />
     <Compile Include="Entidades\Entidad\Sesion.cs" />
     <Compile Include="Entidades\Entidad\Usuario.cs" />
+    <Compile Include="Entidades\Request\ReqAgregarUsuario.cs" />
     <Compile Include="Entidades\Request\ReqBase.cs" />
     <Compile Include="Entidades\Request\ReqIngresarImagen.cs" />
     <Compile Include="Entidades\Request\ReqIngresarPublicacion.cs" />
+    <Compile Include="Entidades\Response\ResAgregarUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
     <Compile Include="Entidades\Response\ResIngresarImagen.cs" />
     <Compile Include="Entidades\Response\ResIngresarPublicacion.cs" />
+    <Compile Include="Logica\LogicaSesionValida.cs" />
+    <Compile Include="Logica\LogicaUsuario.cs" />
     <Compile Include="Logica\LogPublicacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
