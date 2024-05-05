@@ -22,7 +22,6 @@ namespace Backend.Logica
 
                 try
                 {
-
                     if (req == null)
                     {
                         res.listaDeErrores.Add("Request null");
