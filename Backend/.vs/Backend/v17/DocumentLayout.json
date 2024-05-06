@@ -1,43 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\dg986\\onedrive\\documentos\\2024\\1 cliclo 2024\\moviles\\proyecto moviles\\moviles\\communystoreapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\entidades\\request\\reqactualizarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqactualizarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\entidades\\response\\resactualizarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resactualizarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\backend\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystoreapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\dg986\\onedrive\\documentos\\2024\\1 cliclo 2024\\moviles\\proyecto moviles\\moviles\\communystoreapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\entidades\\entidad\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\entidades\\response\\resingresarimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\backend\\entidades\\response\\resingresarimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resingresarimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,130 +21,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReqActualizarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Request\\ReqActualizarUsuario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Request\\ReqActualizarUsuario.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Request\\ReqActualizarUsuario.cs",
-              "RelativeToolTip": "Entidades\\Request\\ReqActualizarUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:09:12.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Entidad\\Usuario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Entidad\\Usuario.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Entidad\\Usuario.cs",
-              "RelativeToolTip": "Entidades\\Entidad\\Usuario.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAwBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:09:00.117Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABcAAAAjAAAA",
+              "Title": "LogicaUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",
+              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeToolTip": "Logica\\LogicaUsuario.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T22:30:22.746Z",
+              "WhenOpened": "2024-05-05T21:47:58.586Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LogPublicacion.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
-              "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
-              "RelativeToolTip": "Logica\\LogPublicacion.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAQwF4AAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:20:40.463Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ResActualizarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Response\\ResActualizarUsuario.cs",
-              "RelativeDocumentMoniker": "Entidades\\Response\\ResActualizarUsuario.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Response\\ResActualizarUsuario.cs",
-              "RelativeToolTip": "Entidades\\Response\\ResActualizarUsuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Title": "ResIngresarImagen.cs",
+              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Entidades\\Response\\ResIngresarImagen.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResIngresarImagen.cs",
+              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Entidades\\Response\\ResIngresarImagen.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResIngresarImagen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:33:23.559Z",
+              "WhenOpened": "2024-05-05T21:46:36.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LogicaUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
-              "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
-              "RelativeToolTip": "Logica\\LogicaUsuario.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAgwG0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:47:58.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Sesion.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Entidad\\Sesion.cs",
-              "RelativeDocumentMoniker": "Entidades\\Entidad\\Sesion.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Entidad\\Sesion.cs",
-              "RelativeToolTip": "Entidades\\Entidad\\Sesion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T23:18:06.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\CommunyStoreApi\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\CommunyStoreApi\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T22:30:19.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ResIngresarImagen.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Response\\ResIngresarImagen.cs",
-              "RelativeDocumentMoniker": "Entidades\\Response\\ResIngresarImagen.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\2024\\1 cliclo 2024\\Moviles\\Proyecto Moviles\\Moviles\\Backend\\Entidades\\Response\\ResIngresarImagen.cs",
-              "RelativeToolTip": "Entidades\\Response\\ResIngresarImagen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:46:36.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAcwBAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T21:39:13.647Z"
+              "WhenOpened": "2024-05-05T21:39:13.647Z",
+              "EditorCaption": ""
             }
           ]
         }

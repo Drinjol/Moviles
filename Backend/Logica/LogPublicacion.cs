@@ -92,7 +92,7 @@ namespace Backend.Logica
                             int? idError = 0;
                             string errorBd = "";
 
-                        linq.SP_INGRESAR_PUBLICACION(req.sesion.idUsuario, req.publicacion.descripcionPublicacion, req.publicacion.precioPublicacion, req.publicacion.categoriaPublicacion, reqImage.imagen.extension, ref idReturn, ref idError, ref errorBd);
+                        linq.SP_INGRESAR_PUBLICACION(req.sesion.usuario.Id, req.publicacion.descripcionPublicacion, req.publicacion.precioPublicacion, req.publicacion.categoriaPublicacion, reqImage.imagen.extension, ref idReturn, ref idError, ref errorBd);
                            // linq.SP_INGRESAR_PUBLICACION(req.publicacion.idTema, (int)req.sesion.usuario.id, req.publicacion.titulo, req.publicacion.mensaje, ref idReturn, ref idError, ref errorBd);
                             if (idError == null || idError == 0)
                             {
