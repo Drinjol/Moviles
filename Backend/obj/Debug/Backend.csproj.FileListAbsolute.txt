@@ -24,3 +24,16 @@ C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backen
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.dll
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\Backend\obj\Debug\Backend.pdb
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\obj\Debug\Backend.csproj.AssemblyReference.cache
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\obj\Debug\Backend.dll
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\obj\Debug\Backend.pdb
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Backend.dll.config
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Backend.dll
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Backend.pdb
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Antlr3.Runtime.dll
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Newtonsoft.Json.dll
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\WebGrease.dll
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\bin\Debug\Newtonsoft.Json.xml
+C:\Users\PC\OneDrive - Universidad Nacional de Costa Rica\Escritorio\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
