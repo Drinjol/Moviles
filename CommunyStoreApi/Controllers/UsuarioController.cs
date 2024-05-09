@@ -13,7 +13,9 @@ namespace CommunyStoreApi.Controllers
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("CommunyStoreApi/usuario/agregarUsuario")]
         public ResAgregarUsuario agregarUsuario(ReqAgregarUsuario req)
-        {
+        { 
+
+
             return new LogicaUsuario().agregarUsuario(req);
         }
     }

@@ -1,0 +1,62 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunyStoreFrontEnd.RegisterPage">
+
+    <ScrollView>
+        <StackLayout Padding="30,0" Spacing="25" BackgroundColor="White">
+
+            <!-- Logo de la aplicación -->
+            <Image Source="log_session.png" HorizontalOptions="Center" HeightRequest="200" />
+
+            <!-- Formulario de registro de usuario -->
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="txtname" Placeholder="Nombre" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Entry x:Name="txtapellidos" Placeholder="Apellidos" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Entry x:Name="txtcorreo" Placeholder="Correo Electrónico" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="passwordEntry" Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="True" FontSize="16" TextColor="Black" Grid.Column="0" />
+                    <Button Text="Ver" Clicked="TogglePasswordVisibility" FontSize="16" BackgroundColor="Transparent" TextColor="Green" CornerRadius="0" Grid.Column="1" />
+                </Grid>
+            </Frame>
+
+
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Entry x:Name="txtdireccion" Placeholder="Dirección" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Entry x:Name="txttelefono" Placeholder="Numero de telefono" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Entry x:Name="txtdesc" Placeholder="Descripción" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+
+            <Button x:Name="btn_Register" Text="Registrarse" Clicked="btn_Register_Clicked" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" />
+
+            <!-- Enlace para iniciar sesión -->
+            <Label Text="¿Ya tienes una cuenta? Inicia sesión aquí" TextColor="DodgerBlue" FontSize="16" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLoginTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

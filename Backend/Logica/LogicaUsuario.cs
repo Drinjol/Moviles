@@ -14,6 +14,7 @@ namespace Backend.Logica
 
             ResAgregarUsuario res = new ResAgregarUsuario();
             //validar el registro a ingresar
+            Console.WriteLine("variable" + req.usuario.nombre);
             if (String.IsNullOrEmpty(req.usuario.nombre)|| String.IsNullOrEmpty(req.usuario.apellidos)||
                 String.IsNullOrEmpty(req.usuario.email)|| String.IsNullOrEmpty(req.usuario.password)||
                 String.IsNullOrEmpty(req.usuario.direccion)|| String.IsNullOrEmpty(req.usuario.telefono)

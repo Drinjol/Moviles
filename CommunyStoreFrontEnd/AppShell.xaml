@@ -8,8 +8,8 @@
     Title="CommunyStoreFrontEnd">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        
+        ContentTemplate="{DataTemplate local:SesionPage}"
+        Route="SesionPage" />
 
 </Shell>
