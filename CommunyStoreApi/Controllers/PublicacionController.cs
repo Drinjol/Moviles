@@ -28,7 +28,7 @@ namespace CommunyStoreApi.Controllers
             //ResObtenerPublicaciones res = new ResObtenerPublicaciones();
             // req.sesion = "12345";
             //string categoria = "";
-            return new LogPublicacion().obtenerPublicaciones("req");
+            return new LogPublicacion().obtenerPublicaciones(req);
 
         }
     }

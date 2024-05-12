@@ -16,7 +16,7 @@ namespace Backend.Logica
     {
 
 
-        public ResObtenerPublicaciones obtenerPublicaciones(string categoria)
+        public ResObtenerPublicaciones obtenerPublicaciones(ReqObtenerPublicaciones categoria)
         {
             Int16 tipoDeTransaccion = 0;
             string descripcionError = "";
@@ -30,7 +30,7 @@ namespace Backend.Logica
 
                 ConnectionDataContext linq = new ConnectionDataContext();
                 List<SP_OBTENER_PUBLICACIONESResult> listaDeLinq = new List<SP_OBTENER_PUBLICACIONESResult>();
-                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(categoria).ToList();
+                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(categoria.categoria).ToList();
                 res.publicaciones = this.crearListaDePublicaciones(listaDeLinq);
                 res.resultado = true;
 
