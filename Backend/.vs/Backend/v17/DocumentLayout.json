@@ -3,16 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\sesionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\communystorefrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,53 +18,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PublicacionesView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
-              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T21:55:08.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PublicacionesView.xaml",
-              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "Title": "CommunyStoreFrontEnd",
+              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-12T21:55:06.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SesionPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-12T21:54:49.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-12T21:54:41.672Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-12T22:36:09.332Z",
               "EditorCaption": ""
             }
           ]
