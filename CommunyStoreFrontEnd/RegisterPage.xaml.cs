@@ -46,8 +46,7 @@ public partial class RegisterPage : ContentPage
 
             using (var httpClient = new HttpClient())
             {
-                var jsonContent = new StringContent(jsonUsuario, Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync(apiLink + "CommunyStoreApi/usuario/agregarUsuario", jsonContent);
+                var response = await httpClient.PostAsync(apiLink + "CommunyStoreApi/usuario/agregarUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {

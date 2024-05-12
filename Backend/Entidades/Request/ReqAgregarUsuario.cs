@@ -1,7 +1,7 @@
 ﻿
 namespace Backend.Entidades
 {
-    public class ReqAgregarUsuario: ReqBase
+    public class ReqAgregarUsuario
     {
         public Usuario usuario { get; set; }
     };
