@@ -5,7 +5,7 @@ namespace Backend.Entidades
     public class Sesion
     {
 
-        public int id { get; set; }
+        public static int id { get; set; }
         public Usuario usuario { get; set; }
         public string sesion { get; set; }
         public DateTime fechaInicio { get; set; }

@@ -12,7 +12,7 @@ namespace Backend.Entidades
         public int estadoPublicacion { get; set; }
 
       //  public List<string> nombresArchivos {  get; set; }
-      public string nombresArchivos { get; set; }
-        public Usuario usuario { get; set; }
+        public string nombresArchivos { get; set; }
+        //public Usuario usuario { get; set; }
     }
 }

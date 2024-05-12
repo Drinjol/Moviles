@@ -1,0 +1,103 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="CommunyStoreFrontEnd.PublicacionesView"
+             Title="PublicacionesView"  >
+
+    <TabBar>
+        <ContentPage Title="Todo">
+        
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+
+
+                <CollectionView x:Name="collectionView"
+                                    SelectionMode="None"
+                                    ItemsSource="{Binding listaDePublicaciones}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <!-- Definición de cada elemento del CollectionView -->
+                            <Frame Margin="20"
+                                       BorderColor="Azure"
+                                       CornerRadius="5"
+                                       HasShadow="True">
+                                <Frame.Background>
+                                    <LinearGradientBrush EndPoint="1,0">
+                                        <GradientStop  Color="White"/>
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <StackLayout Padding="10">
+                                    <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
+                                               FontSize="16"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="Center"/>
+                                    <Label TextColor="Black" Text="{Binding fechaPublicacion, StringFormat='Fecha: {0:d}'}"
+                                               FontSize="14"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="Center"/>
+                                    <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
+                                               FontSize="14"
+                                               HorizontalOptions="CenterAndExpand"
+                                               VerticalOptions="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Hogar">
+        <StackLayout>
+
+            <Label x:Name="lblHogar"/>
+            <Stepper
+                x:Name="stepperHogar"
+                Minimum="0"
+                Maximum="10"
+                Increment="2"
+               />
+            <Label x:Name="lblHog"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Mascotas">
+        <StackLayout>
+
+            <Label x:Name="lblMascotas"/>
+            <Stepper
+            x:Name="stepperMascotas"
+            Minimum="0"
+            Maximum="10"
+            Increment="2"
+           />
+            <Label x:Name="lblMasc"/>
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Tecnologia">
+        <StackLayout>
+
+            <Label x:Name="lblTecnologia"/>
+            <Stepper
+            x:Name="stepperTec"
+            Minimum="0"
+            Maximum="10"
+            Increment="2"
+           />
+            <Label x:Name="lblTec"/>
+        </StackLayout>
+       
+    </ContentPage>
+
+
+    
+    </TabBar>
+
+    
+
+</Shell>
+
+

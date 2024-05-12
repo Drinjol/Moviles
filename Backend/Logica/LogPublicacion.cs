@@ -93,7 +93,7 @@ namespace Backend.Logica
         }
 
 
-        public ResIngresarPublicacion ingresarPublicacion(ReqIngresarPublicacion req)
+   /*     public ResIngresarPublicacion ingresarPublicacion(ReqIngresarPublicacion req)
             {
                 short tipoRegistro = 0; //1 Exitoso - 2 Error en Logica - 3 Error No Controlado
                 ResIngresarPublicacion res = new ResIngresarPublicacion();
@@ -151,7 +151,7 @@ namespace Backend.Logica
                             tipoRegistro = 2;
                         }
 
-                        if(String.IsNullOrEmpty(req.publicacion.nombresArchivos)/*.Count == 0*/)
+                        if(String.IsNullOrEmpty(req.publicacion.nombresArchivos))
                     {
                         res.listaDeErrores.Add("imagenes faltante");
                         res.resultado = false;
@@ -203,6 +203,6 @@ namespace Backend.Logica
                 return res;
 
             
-        }
+        }*/
     }
 }
