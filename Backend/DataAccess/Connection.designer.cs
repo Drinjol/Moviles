@@ -22,7 +22,7 @@ namespace Backend.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="db_aa7784_bdemprende")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DataSource")]
 	public partial class ConnectionDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -135,6 +135,13 @@ namespace Backend.DataAccess
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), categoria);
 			return ((ISingleResult<SP_OBTENER_PUBLICACIONESResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_validar_inicio_sesion")]
+		public ISingleResult<sp_validar_inicio_sesionResult> sp_validar_inicio_sesion([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string correo)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), correo);
+			return ((ISingleResult<sp_validar_inicio_sesionResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tb_imagen_binario")]
@@ -210,7 +217,7 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary tb_imagen_binario1
 		{
 			get
@@ -642,6 +649,194 @@ namespace Backend.DataAccess
 				if ((this._IMAGEN_BINARIO != value))
 				{
 					this._IMAGEN_BINARIO = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_validar_inicio_sesionResult
+	{
+		
+		private long _tb_usuario_id;
+		
+		private string _tb_usuario_nombre;
+		
+		private string _tb_usuario_apellidos;
+		
+		private string _tb_usuario_email;
+		
+		private string _tb_usuario_password;
+		
+		private string _tb_usuario_direccion;
+		
+		private string _tb_usuario_telefono;
+		
+		private System.Nullable<int> _tb_usuario_calificacion;
+		
+		private string _tb_usuario_descripcion;
+		
+		private System.Nullable<byte> _tb_usuario_estado;
+		
+		public sp_validar_inicio_sesionResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_id", DbType="BigInt NOT NULL")]
+		public long tb_usuario_id
+		{
+			get
+			{
+				return this._tb_usuario_id;
+			}
+			set
+			{
+				if ((this._tb_usuario_id != value))
+				{
+					this._tb_usuario_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_nombre", DbType="VarChar(255)")]
+		public string tb_usuario_nombre
+		{
+			get
+			{
+				return this._tb_usuario_nombre;
+			}
+			set
+			{
+				if ((this._tb_usuario_nombre != value))
+				{
+					this._tb_usuario_nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_apellidos", DbType="VarChar(255)")]
+		public string tb_usuario_apellidos
+		{
+			get
+			{
+				return this._tb_usuario_apellidos;
+			}
+			set
+			{
+				if ((this._tb_usuario_apellidos != value))
+				{
+					this._tb_usuario_apellidos = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_email", DbType="VarChar(255)")]
+		public string tb_usuario_email
+		{
+			get
+			{
+				return this._tb_usuario_email;
+			}
+			set
+			{
+				if ((this._tb_usuario_email != value))
+				{
+					this._tb_usuario_email = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_password", DbType="VarChar(255)")]
+		public string tb_usuario_password
+		{
+			get
+			{
+				return this._tb_usuario_password;
+			}
+			set
+			{
+				if ((this._tb_usuario_password != value))
+				{
+					this._tb_usuario_password = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_direccion", DbType="VarChar(255)")]
+		public string tb_usuario_direccion
+		{
+			get
+			{
+				return this._tb_usuario_direccion;
+			}
+			set
+			{
+				if ((this._tb_usuario_direccion != value))
+				{
+					this._tb_usuario_direccion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_telefono", DbType="VarChar(255)")]
+		public string tb_usuario_telefono
+		{
+			get
+			{
+				return this._tb_usuario_telefono;
+			}
+			set
+			{
+				if ((this._tb_usuario_telefono != value))
+				{
+					this._tb_usuario_telefono = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_calificacion", DbType="Int")]
+		public System.Nullable<int> tb_usuario_calificacion
+		{
+			get
+			{
+				return this._tb_usuario_calificacion;
+			}
+			set
+			{
+				if ((this._tb_usuario_calificacion != value))
+				{
+					this._tb_usuario_calificacion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_descripcion", DbType="VarChar(255)")]
+		public string tb_usuario_descripcion
+		{
+			get
+			{
+				return this._tb_usuario_descripcion;
+			}
+			set
+			{
+				if ((this._tb_usuario_descripcion != value))
+				{
+					this._tb_usuario_descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_estado", DbType="TinyInt")]
+		public System.Nullable<byte> tb_usuario_estado
+		{
+			get
+			{
+				return this._tb_usuario_estado;
+			}
+			set
+			{
+				if ((this._tb_usuario_estado != value))
+				{
+					this._tb_usuario_estado = value;
 				}
 			}
 		}

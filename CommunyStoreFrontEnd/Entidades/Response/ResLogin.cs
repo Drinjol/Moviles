@@ -11,5 +11,6 @@ namespace CommunyStoreFrontEnd.Entidades
     public  class ResLogin:ResBase
     {
         public Usuario usuario { get; set; }
+        
     }
 }

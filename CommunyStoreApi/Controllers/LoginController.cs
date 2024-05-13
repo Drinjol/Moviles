@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
-
+﻿using System.Web.Http;
+using Backend.Entidades;
+using Backend.Logica;
 namespace CommunyStoreApi.Controllers
 {
-    public class LoginController : Controller
+    public class LoginController : ApiController
     {
-        // GET: Login
-        public ActionResult Index()
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/Login/iniciarSesion")]
+        public ResIniciarSesion iniciarSesion(ReqIniciarSesion req)
         {
-            return View();
+            return new LogicaIniciarSesion().iniciarSesion(req);
         }
     }
 }

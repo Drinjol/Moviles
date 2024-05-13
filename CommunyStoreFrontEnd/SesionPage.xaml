@@ -10,7 +10,7 @@
 
             <!-- Formulario de inicio de sesión -->
             <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
-                <Entry Placeholder="Ingrese su correo electronico" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+                <Entry x:Name="emailTxt"  Placeholder="Ingrese su correo electronico" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
             </Frame>
             <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
                 <Grid>

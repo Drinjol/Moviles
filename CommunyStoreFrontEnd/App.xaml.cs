@@ -5,8 +5,8 @@
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new PublicacionesView());
+            MainPage = new NavigationPage(new SesionPage());
+            
         }
     }
 }
