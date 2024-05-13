@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\backend\\logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\entidades\\request\\reqlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogicaIniciarSesion.cs",
+              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaIniciarSesion.cs",
+              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
+              "RelativeToolTip": "Logica\\LogicaIniciarSesion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:27:13.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReqLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
+              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
+              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
+              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T02:05:02.091Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

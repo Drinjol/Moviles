@@ -1,0 +1,41 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunyStoreFrontEnd.SesionPage">
+
+    <ScrollView>
+        <StackLayout Padding="30,0" Spacing="25" BackgroundColor="White">
+
+            <!-- Logo de la aplicación -->
+            <Image Source="log_session.png" HorizontalOptions="Center" HeightRequest="200" />
+
+            <!-- Formulario de inicio de sesión -->
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="emailTxt"  Placeholder="Ingrese su correo electronico" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+            </Frame>
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="passwordEntry" Placeholder="Contraseña" PlaceholderColor="Gray" IsPassword="True" FontSize="16" TextColor="Black" Grid.Column="0" />
+                    <Button Text="Ver" Clicked="TogglePasswordVisibility" FontSize="16" BackgroundColor="Transparent" TextColor="Green" CornerRadius="0" Grid.Column="1" />
+                </Grid>
+            </Frame>
+
+
+
+            <Button x:Name="btn_StartSession" Text="Ingresar" Clicked="btn_StartSession_Clicked" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" />
+
+            <!-- Enlace para registrarse -->
+            <Label Text="¿No tienes una cuenta? Regístrate aquí" TextColor="DodgerBlue" FontSize="16" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
