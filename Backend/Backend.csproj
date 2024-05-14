@@ -72,6 +72,7 @@
     <Compile Include="Entidades\Response\ResBase.cs" />
     <Compile Include="Entidades\Response\ResIngresarPublicacion.cs" />
     <Compile Include="Entidades\Response\ResIniciarSesion.cs" />
+    <Compile Include="Entidades\Response\ResLogin.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicaciones.cs" />
     <Compile Include="Logica\LogicaIniciarSesion.cs" />
     <Compile Include="Logica\LogicaSesionValida.cs" />

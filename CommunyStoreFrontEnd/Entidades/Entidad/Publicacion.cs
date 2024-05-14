@@ -16,7 +16,7 @@ namespace CommunyStoreFrontEnd.Entidades
          public string categoriaPublicacion { get; set; }
          public int estadoPublicacion { get; set; }
          public string nombresArchivos { get; set; }
-        // public Usuario usuario { get; set; }
+         public Usuario usuario { get; set; }
        
     }
 }

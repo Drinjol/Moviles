@@ -13,12 +13,12 @@ namespace CommunyStoreApi.Controllers
     public class PublicacionController : ApiController
     {
         // GET: Publicacion
-        // [System.Web.Http.HttpPost]
-        // [System.Web.Http.Route("CommunyStoreApi/publicacion/ingresarPublicacion")]
-        // public ResIngresarPublicacion ingresar(ReqIngresarPublicacion req/*, ReqIngresarImagen reqImage*/)
-        // {
-        //    return new LogPublicacion().ingresarPublicacion(req/*, reqImage*/);
-        //  }*/
+         [System.Web.Http.HttpPost]
+         [System.Web.Http.Route("CommunyStoreApi/publicacion/ingresarPublicacion")]
+        public ResIngresarPublicacion ingresar(ReqIngresarPublicacion req/*, ReqIngresarImagen reqImage*/)
+         {
+            return new LogPublicacion().ingresarPublicacion(req/*, reqImage*/);
+          }
 
 
         [System.Web.Http.HttpPost]

@@ -16,21 +16,21 @@ namespace Backend.Logica
     {
 
 
-        public ResObtenerPublicaciones obtenerPublicaciones(ReqObtenerPublicaciones categoria)
+        public ResObtenerPublicaciones obtenerPublicaciones(ReqObtenerPublicaciones req)
         {
             Int16 tipoDeTransaccion = 0;
             string descripcionError = "";
             int? errorId = 0;
             ResObtenerPublicaciones res = new ResObtenerPublicaciones();
             res.listaDeErrores = new List<string>();
-            ReqIngresarPublicacion req = new ReqIngresarPublicacion();
+          //  ReqIngresarPublicacion req = new ReqIngresarPublicacion();
 
             try
             {
 
                 ConnectionDataContext linq = new ConnectionDataContext();
                 List<SP_OBTENER_PUBLICACIONESResult> listaDeLinq = new List<SP_OBTENER_PUBLICACIONESResult>();
-                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(categoria.categoria).ToList();
+                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(req.categoria).ToList();
                 res.publicaciones = this.crearListaDePublicaciones(listaDeLinq);
                 res.resultado = true;
 
@@ -61,12 +61,12 @@ namespace Backend.Logica
         private Publicacion crearPublicacion(SP_OBTENER_PUBLICACIONESResult unTipoComplejo)
         {
             Publicacion pub = new Publicacion();
-            Usuario usuario = new Usuario();
+            pub.usuario = new Usuario();
 
             pub.idPublicacion = (int)unTipoComplejo.ID_PUBLICACION;
-            usuario.Id = (int)unTipoComplejo.ID_USUARIO;
-            usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
-            usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
+            pub.usuario.Id= (int)unTipoComplejo.ID_USUARIO;
+            pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
+            pub.usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
             //pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
             //pub.usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
             pub.fechaPublicacion = (DateTime)unTipoComplejo.FECHA_PUBLICACION;
@@ -75,6 +75,7 @@ namespace Backend.Logica
             pub.categoriaPublicacion = unTipoComplejo.CATEGORIA;
             pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
             pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
+
            /* string imagenes = unTipoComplejo.IMAGEN_BINARIO;
             string[] objetosArray = imagenes.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (string imagen in objetosArray)
@@ -93,7 +94,7 @@ namespace Backend.Logica
         }
 
 
-   /*     public ResIngresarPublicacion ingresarPublicacion(ReqIngresarPublicacion req)
+        public ResIngresarPublicacion ingresarPublicacion(ReqIngresarPublicacion req)
             {
                 short tipoRegistro = 0; //1 Exitoso - 2 Error en Logica - 3 Error No Controlado
                 ResIngresarPublicacion res = new ResIngresarPublicacion();
@@ -107,10 +108,10 @@ namespace Backend.Logica
                         res.resultado = false;
                         tipoRegistro = 2;
                     }
-                    else
+                   else
                     {
 
-                        if (req.sesion == null)
+                       /* if (req.sesion == null)
                         {
 
                             res.listaDeErrores.Add("Sesion null");
@@ -120,7 +121,7 @@ namespace Backend.Logica
                         else
                         {
 
-                            if (String.IsNullOrEmpty(req.sesion.sesion))
+                            if (req.sesion == null)
                             {
 
                                 res.listaDeErrores.Add("Sesion vacia");
@@ -135,7 +136,7 @@ namespace Backend.Logica
                                 res.resultado = false;
                                 tipoRegistro = 2;
                             }
-                        }
+                        }*/
 
 
                         if (String.IsNullOrEmpty(req.publicacion.descripcionPublicacion))
@@ -171,7 +172,7 @@ namespace Backend.Logica
 
                         string imagen = string.Join(";", req.publicacion.nombresArchivos);
 
-                        linq.SP_INGRESAR_PUBLICACION(req.sesion.usuario.Id, req.publicacion.descripcionPublicacion, req.publicacion.precioPublicacion, req.publicacion.categoriaPublicacion, imagen, ref idReturn, ref idError, ref errorBd);
+                        linq.SP_INGRESAR_PUBLICACION(req.publicacion.usuario.Id, req.publicacion.descripcionPublicacion, req.publicacion.precioPublicacion, req.publicacion.categoriaPublicacion, imagen, ref idReturn, ref idError, ref errorBd);
                            // linq.SP_INGRESAR_PUBLICACION(req.publicacion.idTema, (int)req.sesion.usuario.id, req.publicacion.titulo, req.publicacion.mensaje, ref idReturn, ref idError, ref errorBd);
                             if (idError == null || idError == 0)
                             {
@@ -203,6 +204,6 @@ namespace Backend.Logica
                 return res;
 
             
-        }*/
+        }
     }
 }

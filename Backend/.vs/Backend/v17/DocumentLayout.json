@@ -1,13 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\",
+  "WorkspaceRootPath": "C:\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\backend\\logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystorefrontend\\entidades\\request\\reqlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\logica\\logicasesionvalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicasesionvalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\entidad\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\moviles\\communystoreapi\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\response\\resobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,32 +49,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LogicaIniciarSesion.cs",
-              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
-              "RelativeDocumentMoniker": "Logica\\LogicaIniciarSesion.cs",
-              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
-              "RelativeToolTip": "Logica\\LogicaIniciarSesion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAfAAAA",
+              "DocumentIndex": 3,
+              "Title": "LogicaUsuario.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeToolTip": "Logica\\LogicaUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T02:27:13.326Z",
+              "WhenOpened": "2024-05-14T05:02:12.386Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ReqLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
-              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Title": "LogicaIniciarSesion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaIniciarSesion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
+              "RelativeToolTip": "Logica\\LogicaIniciarSesion.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T02:05:02.091Z",
+              "WhenOpened": "2024-05-14T04:55:58.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogicaSesionValida.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogicaSesionValida.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaSesionValida.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogicaSesionValida.cs",
+              "RelativeToolTip": "Logica\\LogicaSesionValida.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwCYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:48:06.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Entidad\\Sesion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Entidad\\Sesion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Entidad\\Sesion.cs",
+              "RelativeToolTip": "Entidades\\Entidad\\Sesion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:47:30.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogPublicacion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
+              "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
+              "RelativeToolTip": "Logica\\LogPublicacion.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAQwG8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:19:08.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReqIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:34:20.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Response\\ResIngresarPublicacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResIngresarPublicacion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Response\\ResIngresarPublicacion.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResIngresarPublicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:35:48.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResObtenerPublicaciones.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:16:16.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReqObtenerPublicaciones.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:15:13.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PublicacionController.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAASwCAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:06:51.05Z",
               "EditorCaption": ""
             }
           ]

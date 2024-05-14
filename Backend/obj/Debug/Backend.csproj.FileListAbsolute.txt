@@ -50,3 +50,16 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\Backend\obj\Debug\Backend.csproj.C
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\Backend\obj\Debug\Backend.dll
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\Backend\obj\Debug\Backend.pdb
+C:\Moviles\Backend\obj\Debug\Backend.csproj.AssemblyReference.cache
+C:\Moviles\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
+C:\Moviles\Backend\obj\Debug\Backend.dll
+C:\Moviles\Backend\obj\Debug\Backend.pdb
+C:\Moviles\Backend\bin\Debug\Backend.dll.config
+C:\Moviles\Backend\bin\Debug\Backend.dll
+C:\Moviles\Backend\bin\Debug\Backend.pdb
+C:\Moviles\Backend\bin\Debug\Antlr3.Runtime.dll
+C:\Moviles\Backend\bin\Debug\Newtonsoft.Json.dll
+C:\Moviles\Backend\bin\Debug\WebGrease.dll
+C:\Moviles\Backend\bin\Debug\Antlr3.Runtime.pdb
+C:\Moviles\Backend\bin\Debug\Newtonsoft.Json.xml
+C:\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date

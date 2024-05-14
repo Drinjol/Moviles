@@ -4,100 +4,148 @@
              x:Class="CommunyStoreFrontEnd.PublicacionesView"
              Title="PublicacionesView"  >
 
+
+
+                
+
+
     <TabBar>
+     
         <ContentPage Title="Todo">
-        
-        <ScrollView Orientation="Vertical">
-            <StackLayout>
+
+            <ScrollView Orientation="Vertical">
+                <StackLayout>
 
 
-                <CollectionView x:Name="collectionView"
+                    <CollectionView x:Name="collectionView"
                                     SelectionMode="None"
                                     ItemsSource="{Binding listaDePublicaciones}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <!-- Definición de cada elemento del CollectionView -->
-                            <Frame Margin="20"
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <!-- Definición de cada elemento del CollectionView -->
+                                <Frame Margin="20"
                                        BorderColor="Azure"
                                        CornerRadius="5"
                                        HasShadow="True">
-                                <Frame.Background>
-                                    <LinearGradientBrush EndPoint="1,0">
-                                        <GradientStop  Color="White"/>
-                                    </LinearGradientBrush>
-                                </Frame.Background>
-                                <StackLayout Padding="10">
-                                    <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
+                                    <Frame.Background>
+                                        <LinearGradientBrush EndPoint="1,0">
+                                            <GradientStop  Color="White"/>
+                                        </LinearGradientBrush>
+                                    </Frame.Background>
+                                    <StackLayout Padding="10">
+                                        <Label TextColor="Black" Text="{Binding usuario.nombre}"
+                                          FontSize="16"
+                                        HorizontalOptions="CenterAndExpand"
+                                         VerticalOptions="Center"/>
+                                        <Label TextColor="Black" Text="{Binding usuario.apellidos}"
+                                         FontSize="16"
+                                          HorizontalOptions="CenterAndExpand"
+                                          VerticalOptions="Center"/>
+                                        <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
                                                FontSize="16"
                                                HorizontalOptions="CenterAndExpand"
                                                VerticalOptions="Center"/>
-                                    <Label TextColor="Black" Text="{Binding fechaPublicacion, StringFormat='Fecha: {0:d}'}"
+                                        <Label TextColor="Black" Text="{Binding fechaPublicacion, StringFormat='Fecha: {0:d}'}"
                                                FontSize="14"
                                                HorizontalOptions="CenterAndExpand"
                                                VerticalOptions="Center"/>
-                                    <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
+                                        <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
                                                FontSize="14"
                                                HorizontalOptions="CenterAndExpand"
                                                VerticalOptions="Center"/>
-                                </StackLayout>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                                    </StackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
 
 
-            </StackLayout>
-        </ScrollView>
-    </ContentPage>
-    <ContentPage Title="Hogar">
-        <StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+        <ContentPage Title="Hogar">
+            <StackLayout>
 
-            <Label x:Name="lblHogar"/>
-            <Stepper
+                <Label x:Name="lblHogar"/>
+                <Stepper
                 x:Name="stepperHogar"
                 Minimum="0"
                 Maximum="10"
                 Increment="2"
                />
-            <Label x:Name="lblHog"/>
-        </StackLayout>
-    </ContentPage>
+                <Label x:Name="lblHog"/>
+            </StackLayout>
+        </ContentPage>
 
-    <ContentPage Title="Mascotas">
-        <StackLayout>
+        <ContentPage Title="Mascotas">
+            <StackLayout>
 
-            <Label x:Name="lblMascotas"/>
-            <Stepper
+                <Label x:Name="lblMascotas"/>
+                <Stepper
             x:Name="stepperMascotas"
             Minimum="0"
             Maximum="10"
             Increment="2"
            />
-            <Label x:Name="lblMasc"/>
-        </StackLayout>
-    </ContentPage>
+                <Label x:Name="lblMasc"/>
+            </StackLayout>
+        </ContentPage>
 
-    <ContentPage Title="Tecnologia">
-        <StackLayout>
+        <ContentPage Title="Tecnologia">
+            <StackLayout>
 
-            <Label x:Name="lblTecnologia"/>
-            <Stepper
+                <Label x:Name="lblTecnologia"/>
+                <Stepper
             x:Name="stepperTec"
             Minimum="0"
             Maximum="10"
             Increment="2"
            />
-            <Label x:Name="lblTec"/>
-        </StackLayout>
-       
-    </ContentPage>
+                <Label x:Name="lblTec"/>
+            </StackLayout>
+
+        </ContentPage>
+  
+        <ContentPage Title="Añadir Publicacion" BackgroundColor="White" Padding="20">
+            <ScrollView>
+            <StackLayout Margin="20">
+
+                <Label Text="Descripción:" FontSize="16" TextColor="Black" />
+                <Entry x:Name="entryDescripcion" Placeholder="Ingrese la descripción" 
+               FontSize="16" PlaceholderColor="Gray" 
+               BackgroundColor="LightGray" Margin="0,5,0,10" />
+
+                <Label Text="Precio:" FontSize="16" TextColor="Black" />
+                <Entry x:Name="entryPrecio" Placeholder="Ingrese el precio" Keyboard="Numeric" 
+               FontSize="16" PlaceholderColor="Gray" 
+               BackgroundColor="LightGray" Margin="0,5,0,10" />
+
+                <Label Text="Categoría:" FontSize="16" TextColor="Black" />
+                <Entry x:Name="entryCategoria" Placeholder="Ingrese la categoría" 
+               FontSize="16" PlaceholderColor="Gray" 
+               BackgroundColor="LightGray" Margin="0,5,0,10" />
+
+                <Label Text="Imágenes:" FontSize="16" TextColor="Black" />
+                <StackLayout Orientation="Horizontal">
+                    <Image x:Name="image1" WidthRequest="100" HeightRequest="100" />
+                    <Image x:Name="image2" WidthRequest="100" HeightRequest="100" />
+                    <Image x:Name="image3" WidthRequest="100" HeightRequest="100" />
+                </StackLayout>
+
+                <Button x:Name="btnRegistrarPublicacion" Text="Registrar Publicacion" FontSize="16" 
+                BackgroundColor="#007bff" TextColor="White" 
+                Margin="0,10,0,0" CornerRadius="5"  Clicked="btnRegistrarPublicacion_Clicked" />
+
+            </StackLayout>
+            </ScrollView>
+        </ContentPage>
 
 
-    
+
+
+
     </TabBar>
 
-    
+
 
 </Shell>
-
-

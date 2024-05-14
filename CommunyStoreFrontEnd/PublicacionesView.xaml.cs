@@ -5,11 +5,18 @@ using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Utilitarios;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Plugin.FilePicker.Abstractions;
+using Plugin.FilePicker;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
 
 namespace CommunyStoreFrontEnd;
 
@@ -29,6 +36,8 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
         }
     }
 
+   
+
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected virtual void OnPropertyChanged(string propertyName)
@@ -41,53 +50,9 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
         InitializeComponent();
         CargarPublicaciones();
 
-        // Generar botones para las pestañas
-        // GenerarBotonesPestanas();
-
-        // Mostrar el contenido inicial (primera pestaña)
-        // MostrarContenidoPestana(3);
-
-
     }
 
-    /* private List<StackLayout> contenidosPestanas = new List<StackLayout>();
-
-     private void Button_Clicked(object sender, EventArgs e)
-     {
-         var button = (Button)sender;
-         int numeroPestana = Convert.ToInt32(button.Text.Split(' ')[1]);
-         MostrarContenidoPestana(numeroPestana);
-     }
-
-     private void MostrarContenidoPestana(int numeroPestana)
-     {
-         // Ocultar todos los contenidos de las pestañas
-         foreach (var contenidoPestana in contenidosPestanas)
-         {
-             contenidoPestana.IsVisible = false;
-         }
-
-         // Mostrar el contenido de la pestaña seleccionada
-         contenidosPestanas[numeroPestana - 1].IsVisible = true;
-     }
-
-     // Método para generar dinámicamente los botones de las pestañas
-     private void GenerarBotonesPestanas()
-     {
-         for (int i = 0; i < cantidad; i++)
-         {
-             Button button = new Button { Text = $"Pestaña {i + 1}" };
-             button.Clicked += Button_Clicked;
-           //  botonesContainer.Children.Add(button);
-
-             // Crear un StackLayout para el contenido de cada pestaña
-             StackLayout contenidoPestana = new StackLayout();
-             contenidosPestanas.Add(contenidoPestana);
-
-             // Agregar el contenido de la pestaña al contenedor
-             //collectionViewContainer.Children.Add(contenidoPestana);
-         }
-     }*/
+   
 
 
 
@@ -131,6 +96,7 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
                         if (res.resultado)
                         {
 
+
                             retornarPublicacionApi = res.publicaciones;
 
                         }
@@ -160,6 +126,123 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
 
         return retornarPublicacionApi;
     }
+
+    private void ToolbarItem_Clicked(object sender, EventArgs e)
+    {
+         DisplayAlert("Menú", "Implementa tu lógica de menú aquí", "Aceptar");
+    }
+
+
+    private async void Mensajes_Clicked(object sender, EventArgs e)
+    {
+        // Implementa lo que quieras que haga el botón de Mensajes
+    }
+
+    private async void NuevaPublicacion_Clicked(object sender, EventArgs e)
+    {
+        // Implementa lo que quieras que haga el botón de Nueva Publicación
+    }
+
+    private async void Perfil_Clicked(object sender, EventArgs e)
+    {
+        // Implementa lo que quieras que haga el botón de Perfil
+    }
+
+    private async void CerrarSesion_Clicked(object sender, EventArgs e)
+    {
+        // Implementa lo que quieras que haga el botón de Cerrar Sesión
+    }
+
+   
+
+    private async void btnRegistrarPublicacion_Clicked(object sender, EventArgs e)
+    {
+        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/ingresarPublicacion";
+        try
+        {
+            if (string.IsNullOrWhiteSpace(entryDescripcion.Text) ||
+                string.IsNullOrWhiteSpace(entryPrecio.Text) ||
+                string.IsNullOrWhiteSpace(entryCategoria.Text))
+            {
+                await DisplayAlert("Campos vacíos", "Por favor, complete todos los campos.", "Aceptar");
+                return; // Detener la ejecución del método si hay campos vacíos
+            }
+
+          ReqIngresarPublicacion req = new ReqIngresarPublicacion();
+           
+           
+            req.publicacion = new Publicacion();
+            req.publicacion.descripcionPublicacion = entryDescripcion.Text;
+            req.publicacion.precioPublicacion = decimal.Parse(entryPrecio.Text);
+            req.publicacion.categoriaPublicacion = entryCategoria.Text;
+            req.publicacion.nombresArchivos = image1.ToString();
+            req.publicacion.usuario = SesionFrontEnd.usuarioSesion;
+            
+            //  req.publicacion.nombresArchivos = entryIam
+
+
+            var jsonPublicacion = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
+
+
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(laURL, jsonPublicacion);
+               
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Convertir la respuesta a un objeto dinámico
+                    dynamic jsonResponse = JObject.Parse(responseContent);
+
+                    ResIngresarPublicacion res = new ResIngresarPublicacion();
+                    res.resultado = jsonResponse.resultado;
+                    res.tipoRegistro = jsonResponse.tipoRegistro;
+                     //JArray listaDeErrores = jsonResponse.listaDeErrores;
+
+                    if (res.tipoRegistro == 1 && res.resultado)
+                    {
+                        await DisplayAlert("Registro exitoso!", "Tu publicación ha sido registrada exitosamente!", "Aceptar");
+
+                       await Navigation.PushAsync(new PublicacionesView()); // Agrega una nueva instancia de PublicacionesView
+                    }
+                    else if (res.tipoRegistro == 2)
+                    {
+
+                        await DisplayAlert("Registro fallido!", "Error de logica!", "Aceptar");
+                    }
+                    else if (res.tipoRegistro == 3)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error de datos", "Aceptar");
+
+                    }
+                    else if (res.tipoRegistro == 4)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error no controlado!", "Aceptar");
+
+                    }
+
+                  
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+            // Continuar con el proceso de subir las imágenes
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+
+    }
+
+
+
+  
 
 }
 
