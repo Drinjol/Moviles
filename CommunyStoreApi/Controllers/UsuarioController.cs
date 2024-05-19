@@ -7,6 +7,7 @@ using System.Web.Helpers;
 using System.Web.Http;
 using System.Web.Mvc;
 using Backend.Entidades;
+using Backend.Entidades.Request;
 using Backend.Logica;
 using Newtonsoft.Json.Linq;
 namespace CommunyStoreApi.Controllers
@@ -22,6 +23,15 @@ namespace CommunyStoreApi.Controllers
             req.usuario = usuario;
             return new LogicaUsuario().agregarUsuario(req);
         }
+
+     /*   [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/usuario/actualizarUsuario")]
+        public ResAgregarUsuario actualizarUsuario(ReqActualizarUsuario req)
+        {
+          
+           
+            return new LogicaUsuario().ActualizarUsuario(req);
+        }*/
 
     }
 }

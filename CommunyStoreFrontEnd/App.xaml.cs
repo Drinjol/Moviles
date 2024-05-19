@@ -8,5 +8,9 @@
             MainPage = new NavigationPage(new SesionPage());
             
         }
+        public void NavigateToAppShell()
+        {
+            MainPage = new AppShell();
+        }
     }
 }
