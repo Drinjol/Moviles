@@ -4576,3 +4576,6 @@ kotlinx.coroutines.channels.ReceiveChannel;kotlinx.coroutines.channels.ReceiveCh
 Xamarin.KotlinX.Coroutines.Channels.ISendChannel, Xamarin.KotlinX.Coroutines.Core.Jvm;kotlinx.coroutines.channels.SendChannel
 Xamarin.KotlinX.Coroutines.Channels.ISendChannel;kotlinx.coroutines.channels.SendChannel
 kotlinx.coroutines.channels.SendChannel;kotlinx.coroutines.channels.SendChannel
+Plugin.FilePicker.FilePickerActivity, Plugin.FilePicker;crc64424a8adc5a1fbe28.FilePickerActivity
+Plugin.FilePicker.FilePickerActivity;crc64424a8adc5a1fbe28.FilePickerActivity
+plugin.filepicker.FilePickerActivity;crc64424a8adc5a1fbe28.FilePickerActivity

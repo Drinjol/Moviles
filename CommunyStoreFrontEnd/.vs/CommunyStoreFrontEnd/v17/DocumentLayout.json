@@ -1,61 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Moviles\\CommunyStoreFrontEnd\\",
+  "WorkspaceRootPath": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\sesionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\sesionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:sesionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\request\\reqiniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\request\\reqiniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\request\\reqiniciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\request\\reqlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\request\\reqlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\request\\reqlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\response\\resbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\response\\resbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\response\\reslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\response\\reslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\reslogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -72,11 +72,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "PublicacionesView.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
               "RelativeDocumentMoniker": "PublicacionesView.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
               "RelativeToolTip": "PublicacionesView.xaml.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAD4v7cAAAAMAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAD4v1wAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-14T03:28:14.662Z",
               "EditorCaption": ""
@@ -85,9 +85,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ResIngresarPublicacion.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResIngresarPublicacion.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResIngresarPublicacion.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResIngresarPublicacion.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResIngresarPublicacion.cs",
               "RelativeToolTip": "Entidades\\Response\\ResIngresarPublicacion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,9 +97,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ReqIniciarSesion.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIniciarSesion.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIniciarSesion.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqIniciarSesion.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIniciarSesion.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIniciarSesion.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqIniciarSesion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,9 +109,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ReqLogin.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqLogin.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqLogin.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqLogin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,22 +121,21 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PublicacionesView.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeDocumentMoniker": "PublicacionesView.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeToolTip": "PublicacionesView.xaml",
               "ViewState": "AQIAAHsAAAAAAAAAAAAAAIYAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-14T03:28:17.128Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T03:28:17.128Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "SesionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml.cs",
               "RelativeDocumentMoniker": "SesionPage.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml.cs",
               "RelativeToolTip": "SesionPage.xaml.cs",
               "ViewState": "AQIAACwAAAAAAAAAAAAwwDUAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -146,9 +145,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "RegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml.cs",
               "RelativeDocumentMoniker": "RegisterPage.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml.cs",
               "RelativeToolTip": "RegisterPage.xaml.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAowBwAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -158,9 +157,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ReqIngresarPublicacion.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIngresarPublicacion.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqIngresarPublicacion.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqIngresarPublicacion.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqIngresarPublicacion.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -170,9 +169,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "ResBase.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBase.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBase.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResBase.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBase.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBase.cs",
               "RelativeToolTip": "Entidades\\Response\\ResBase.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -182,9 +181,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "ResLogin.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResLogin.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResLogin.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResLogin.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResLogin.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResLogin.cs",
               "RelativeToolTip": "Entidades\\Response\\ResLogin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -194,9 +193,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Entidad\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Entidad\\Usuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Entidad\\Usuario.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Entidad\\Usuario.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Entidad\\Usuario.cs",
               "RelativeToolTip": "Entidades\\Entidad\\Usuario.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -206,9 +205,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -218,9 +217,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Platforms\\Android\\AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeDocumentMoniker": "Platforms\\Android\\AndroidManifest.xml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\Platforms\\Android\\AndroidManifest.xml",
               "RelativeToolTip": "Platforms\\Android\\AndroidManifest.xml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
               "WhenOpened": "2024-05-14T04:26:25.304Z"
@@ -229,9 +228,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
               "RelativeDocumentMoniker": "RegisterPage.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
               "RelativeToolTip": "RegisterPage.xaml",
               "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",

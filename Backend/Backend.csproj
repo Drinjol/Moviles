@@ -67,6 +67,7 @@
     <Compile Include="Entidades\Request\ReqIngresarPublicacion.cs" />
     <Compile Include="Entidades\Request\ReqIniciarSesion.cs" />
     <Compile Include="Entidades\Request\ReqObtenerPublicaciones.cs" />
+    <Compile Include="Entidades\Request\ReqObtenerPublicacionPorIdUsuario.cs" />
     <Compile Include="Entidades\Response\ResActualizarUsuario.cs" />
     <Compile Include="Entidades\Response\ResAgregarUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Entidades\Response\ResIniciarSesion.cs" />
     <Compile Include="Entidades\Response\ResLogin.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicaciones.cs" />
+    <Compile Include="Entidades\Response\ResObtenerPublicacionIdUsuario.cs" />
     <Compile Include="Logica\LogicaIniciarSesion.cs" />
     <Compile Include="Logica\LogicaSesionValida.cs" />
     <Compile Include="Logica\LogicaUsuario.cs" />

@@ -101,4 +101,16 @@
       <Column Name="tb_usuario_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_obtener_publicacion_por_id_usuario" Method="sp_obtener_publicacion_por_id_usuario">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_obtener_publicacion_por_id_usuarioResult">
+      <Column Name="publicacion_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="usuario_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="publicacion_fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="publicacion_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="publicacion_precio" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="publicacion_categoria" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="publicacion_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>
