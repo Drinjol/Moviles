@@ -65,7 +65,7 @@ namespace Backend.Logica
             pub.usuario = new Usuario();
 
             pub.idPublicacion = (int)unTipoComplejo.ID_PUBLICACION;
-            pub.usuario.Id= (int)unTipoComplejo.ID_USUARIO;
+            pub.usuario.Id = (int)unTipoComplejo.ID_USUARIO;
             pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
             pub.usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
             //pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
@@ -75,17 +75,31 @@ namespace Backend.Logica
             pub.precioPublicacion = (decimal)unTipoComplejo.PRECIO;
             pub.categoriaPublicacion = unTipoComplejo.CATEGORIA;
             pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
-            pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
 
-           /* string imagenes = unTipoComplejo.IMAGEN_BINARIO;
+
+             pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
+
+            /*string imagenes = unTipoComplejo.IMAGEN_BINARIO;
             string[] objetosArray = imagenes.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (string imagen in objetosArray)
+            string cadena = string.Join("", objetosArray);
+            pub.nombresArchivos = cadena;*/
+
+           /* string cadenaHexadecimal = unTipoComplejo.IMAGEN_BINARIO;
+
+            // Convertir la cadena hexadecimal a un array de bytes
+            byte[] bytes = StringToByteArray(cadenaHexadecimal);
+
+            // Decodificar los bytes a una cadena de texto
+            string cadenaTexto = Encoding.Default.GetString(bytes);
+
+            pub.nombresArchivos = cadenaTexto;*/
+
+            /*foreach (string imagenBase64 in objetosArray)
             {
-               // byte[] imagenBinaria = Convert.FromBase64String(objetoBase64);
-                // Asegúrate de que pub.nombresArchivos sea una lista de tipo byte[]
-                // por ejemplo: List<byte[]> pub.nombresArchivos = new List<byte[]>();
-                pub.nombresArchivos.Add(imagen);
+                byte[] imagenBytes = Convert.FromBase64String(imagenBase64);
+                pub.nombresArchivos =  imagenBytes.ToString();
             }*/
+
 
 
 
@@ -94,6 +108,17 @@ namespace Backend.Logica
             return pub;
         }
 
+
+        static byte[] StringToByteArray(string hex)
+        {
+            int numBytes = hex.Length / 2;
+            byte[] bytes = new byte[numBytes];
+            for (int i = 0; i < numBytes; i++)
+            {
+                bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+            }
+            return bytes;
+        }
 
         public ResIngresarPublicacion ingresarPublicacion(ReqIngresarPublicacion req)
             {
