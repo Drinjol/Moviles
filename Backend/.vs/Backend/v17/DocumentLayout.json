@@ -1,24 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\Backend\\",
+  "WorkspaceRootPath": "C:\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicainiciarsesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\logica\\logicasesionvalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicasesionvalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\registerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\entidad\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF1A3A-3686-4AED-B9E2-0145EC827531}|..\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\proyecto moviles\\moviles\\communystorefrontend\\sesionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\moviles\\communystoreapi\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\response\\resobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,86 +48,129 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 204,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\App.xaml.cs",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\App.xaml.cs",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T21:17:28.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PublicacionesView.xaml",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAAJIAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T21:13:52.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\RegisterPage.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\RegisterPage.xaml",
+              "Title": "LogicaUsuario.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeToolTip": "Logica\\LogicaUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T21:13:49.909Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T05:02:12.386Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\AppShell.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\AppShell.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\AppShell.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T21:13:34.18Z",
-              "EditorCaption": ""
+              "Title": "LogicaIniciarSesion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaIniciarSesion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogicaIniciarSesion.cs",
+              "RelativeToolTip": "Logica\\LogicaIniciarSesion.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:55:58.523Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\App.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\App.xaml",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\App.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T21:13:31.671Z",
+              "Title": "LogicaSesionValida.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogicaSesionValida.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaSesionValida.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogicaSesionValida.cs",
+              "RelativeToolTip": "Logica\\LogicaSesionValida.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAgwCYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:48:06.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Entidad\\Sesion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Entidad\\Sesion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Entidad\\Sesion.cs",
+              "RelativeToolTip": "Entidades\\Entidad\\Sesion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T04:47:30.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogPublicacion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
+              "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
+              "RelativeToolTip": "Logica\\LogPublicacion.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAQwG8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:19:08.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SesionPage.xaml",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "RelativeDocumentMoniker": "..\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\proyecto moviles\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "RelativeToolTip": "..\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-19T21:10:19.108Z",
-              "EditorCaption": ""
+              "Title": "ReqIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:34:20.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Response\\ResIngresarPublicacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResIngresarPublicacion.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Response\\ResIngresarPublicacion.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResIngresarPublicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:35:48.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResObtenerPublicaciones.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:16:16.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ReqObtenerPublicaciones.cs",
+              "DocumentMoniker": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "ToolTip": "C:\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:15:13.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PublicacionController.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAASwCAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T01:06:51.05Z"
             }
           ]
         }
