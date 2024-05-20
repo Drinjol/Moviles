@@ -629,3 +629,4 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\iossimulator-x64\CommunySto
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\iossimulator-x64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\iossimulator-x64\ref\CommunyStoreFrontEnd.dll
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\iossimulator-x64\Plugin.FilePicker.dll

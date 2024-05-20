@@ -12,6 +12,9 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="AgregarPublicacionView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="PublicacionesView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

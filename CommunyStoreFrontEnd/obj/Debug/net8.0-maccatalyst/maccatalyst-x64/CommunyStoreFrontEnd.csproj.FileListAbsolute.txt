@@ -604,3 +604,4 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.pdb
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\CommunyStoreFrontEnd.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Plugin.FilePicker.dll

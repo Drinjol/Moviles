@@ -8,6 +8,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.companyname.communystorefrontend" android:versionName="1.0">
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:allowBackup="true" android:icon="@mipmap/iconp" android:supportsRtl="true" android:label="Emprendimiento" android:theme="@android:style/Theme.DeviceDefault" android:name="crc642969af812c63ab4c.MainApplication" android:debuggable="true" android:extractNativeLibs="true">
     <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/Maui.SplashTheme" android:name="crc642969af812c63ab4c.MainActivity" android:exported="true">
       <intent-filter>
@@ -24,6 +26,7 @@
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc640a8d9a12ddbf2cf2.BatteryBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc640a8d9a12ddbf2cf2.EnergySaverBroadcastReceiver" />
     <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
+    <activity android:configChanges="orientation|screenSize" android:name="crc64424a8adc5a1fbe28.FilePickerActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.communystorefrontend.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
   <!--suppress UsesMinSdkAttributes-->
