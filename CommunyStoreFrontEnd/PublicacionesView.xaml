@@ -79,6 +79,14 @@
                         FontSize="14"
                         HorizontalOptions="CenterAndExpand"
                         VerticalOptions="Center"/>
+
+                                    <Image Source="{Binding nombresArchivos}" 
+                                    Aspect="AspectFit" 
+                                      HeightRequest="200"
+                                          HorizontalOptions="CenterAndExpand" 
+                              VerticalOptions="CenterAndExpand" />
+                                    
+                                    
                                     <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
                         FontSize="14"
                         HorizontalOptions="CenterAndExpand"

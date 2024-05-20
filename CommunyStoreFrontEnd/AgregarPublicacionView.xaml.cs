@@ -8,7 +8,12 @@ namespace CommunyStoreFrontEnd;
 
 public partial class AgregarPublicacionView : ContentPage
 {
-	public AgregarPublicacionView()
+
+    private FileResult _selectedFile;
+
+
+
+    public AgregarPublicacionView()
 	{
 		InitializeComponent();
 	}
@@ -33,8 +38,17 @@ public partial class AgregarPublicacionView : ContentPage
             req.publicacion.descripcionPublicacion = entryDescripcion.Text;
             req.publicacion.precioPublicacion = decimal.Parse(entryPrecio.Text);
             req.publicacion.categoriaPublicacion = entryCategoria.Text;
-            req.publicacion.nombresArchivos = image1.ToString();
+           
             req.publicacion.usuario = SesionFrontEnd.usuarioSesion;
+
+            if (_selectedFile != null)
+            {
+                req.publicacion.nombresArchivos = _selectedFile.FullPath;
+            }
+            else
+            {
+                req.publicacion.nombresArchivos = string.Empty;
+            }
 
             //  req.publicacion.nombresArchivos = entryIam
 
@@ -109,4 +123,34 @@ public partial class AgregarPublicacionView : ContentPage
     {
         Navigation.PushAsync(new PublicacionesView());
     }
+
+    private async void OnUploadImageClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            var result = await FilePicker.Default.PickAsync(new PickOptions
+            {
+                PickerTitle = "Please select an image file",
+                FileTypes = FilePickerFileType.Images
+            });
+
+            if (result != null)
+            {
+                _selectedFile = result; // Almacenar el archivo seleccionado
+
+                var stream = await result.OpenReadAsync();
+                var image = ImageSource.FromStream(() => stream);
+                UploadedImage.Source = image;
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exception, e.g., user canceled the picker
+            Console.WriteLine(ex.Message);
+        }
+    }
+
+  
+
+
 }
