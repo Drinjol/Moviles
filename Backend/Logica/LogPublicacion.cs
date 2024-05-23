@@ -67,8 +67,6 @@ namespace Backend.Logica
             pub.usuario.Id = (int)unTipoComplejo.ID_USUARIO;
             pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
             pub.usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
-            //pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
-            //pub.usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
             pub.fechaPublicacion = (DateTime)unTipoComplejo.FECHA_PUBLICACION;
             pub.descripcionPublicacion = unTipoComplejo.DESCRIPCION;
             pub.precioPublicacion = (decimal)unTipoComplejo.PRECIO;
@@ -76,48 +74,32 @@ namespace Backend.Logica
             pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
 
 
-             pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
+            // pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
 
-            /*string imagenes = unTipoComplejo.IMAGEN_BINARIO;
-            string[] objetosArray = imagenes.Split(new char[] { ';' }, StringSplitOptions.RemoveEmptyEntries);
-            string cadena = string.Join("", objetosArray);
-            pub.nombresArchivos = cadena;*/
-
-           /* string cadenaHexadecimal = unTipoComplejo.IMAGEN_BINARIO;
-
-            // Convertir la cadena hexadecimal a un array de bytes
-            byte[] bytes = StringToByteArray(cadenaHexadecimal);
-
-            // Decodificar los bytes a una cadena de texto
-            string cadenaTexto = Encoding.Default.GetString(bytes);
-
-            pub.nombresArchivos = cadenaTexto;*/
-
-            /*foreach (string imagenBase64 in objetosArray)
-            {
-                byte[] imagenBytes = Convert.FromBase64String(imagenBase64);
-                pub.nombresArchivos =  imagenBytes.ToString();
-            }*/
-
-
-
-
-
+            // Convertir la cadena hexadecimal a una representación legible
+            pub.nombresArchivos = HexStringToString(unTipoComplejo.IMAGEN_BINARIO);
 
             return pub;
         }
 
-
-        static byte[] StringToByteArray(string hex)
+        private static string HexStringToString(string hex)
         {
-            int numBytes = hex.Length / 2;
-            byte[] bytes = new byte[numBytes];
-            for (int i = 0; i < numBytes; i++)
+            if (hex.StartsWith("0x"))
             {
-                bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+                hex = hex.Substring(2);
             }
-            return bytes;
+
+            byte[] bytes = new byte[hex.Length / 2];
+            for (int i = 0; i < hex.Length; i += 2)
+            {
+                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
+            }
+
+            return Encoding.ASCII.GetString(bytes);
         }
+
+
+
 
         public ResIngresarPublicacion ingresarPublicacion(ReqIngresarPublicacion req)
             {
