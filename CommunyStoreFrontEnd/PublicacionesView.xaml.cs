@@ -136,6 +136,12 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     {
         Navigation.PushAsync(new PublicacionesView());
     }
+
+    private void Button_Clicked_view_lista_deseos(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ListaDeseos());
+    }
+
 }
 
 

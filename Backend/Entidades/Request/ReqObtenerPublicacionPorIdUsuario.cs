@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Backend.Entidades
 {
-    public class ReqObtenerPublicacionPorIdUsuario//:ReqBase
+    public class ReqObtenerPublicacionPorIdUsuario
     {
         public int Id {  get; set; }
     }
