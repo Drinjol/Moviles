@@ -2591,7 +2591,6 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\zh-Hans\
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\zh-Hant\Microsoft.Maui.Controls.resources.dll
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\zh-HK\Microsoft.Maui.Controls.resources.dll
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\_Microsoft.Android.Resource.Designer.dll
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\AndroidManifest.xml
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\AndroidManifest.xml
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\mono\MonoRuntimeProvider.java
@@ -2601,7 +2600,6 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\bin\mono.androi
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\static.flag
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\__environment__.txt
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\buildid.txt
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.x86_64.ll
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\androidx\activity\ktx\R.java
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\androidx\activity\R.java
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\androidx\annotation\experimental\R.java
@@ -3096,13 +3094,6 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\mono\com\go
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\mono\MonoPackageManager_Resources.java
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\bin\packaged_resources
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\com\companyname\communystorefrontend\R.java
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.x86_64.o
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.x86_64.o
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
-C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\bin\classes.dex
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\bin\classes2.dex
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\stamp\_CleanIntermediateIfNeeded.stamp
@@ -3130,3 +3121,12 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\lp\158\jl\files.cache
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Plugin.FilePicker.dll
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\crc64424a8adc5a1fbe28\FilePickerActivity.java
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.arm64-v8a.ll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.arm64-v8a.ll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.arm64-v8a.ll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.arm64-v8a.o
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.arm64-v8a.o
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.arm64-v8a.o
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\marshal_methods.arm64-v8a.o
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\jni_remap.arm64-v8a.o
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so

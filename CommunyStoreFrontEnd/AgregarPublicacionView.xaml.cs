@@ -44,6 +44,7 @@ public partial class AgregarPublicacionView : ContentPage
             if (_selectedFile != null)
             {
                 req.publicacion.nombresArchivos = _selectedFile.FullPath;
+                await DisplayAlert("prueba imagen", _selectedFile.FullPath, "aceptar");
             }
             else
             {
@@ -141,7 +142,9 @@ public partial class AgregarPublicacionView : ContentPage
                 var stream = await result.OpenReadAsync();
                 var image = ImageSource.FromStream(() => stream);
                 UploadedImage.Source = image;
-            }
+
+
+           }
         }
         catch (Exception ex)
         {
@@ -150,7 +153,16 @@ public partial class AgregarPublicacionView : ContentPage
         }
     }
 
+
   
+
+
+
+
+
+
+
+
 
 
 }

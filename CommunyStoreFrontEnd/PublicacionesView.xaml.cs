@@ -50,6 +50,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         InitializeComponent();
         CargarPublicaciones();
 
+
+
     }
 
    
@@ -64,68 +66,72 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     {
         listaDePublicaciones = await publicacionesDelApi();
         BindingContext = this;
+
+        
     }
 
-    private async Task<List<Publicacion>> publicacionesDelApi()
-    {
-        List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
-        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/obtenerPublicacion";
-
-        try
-        {
-            ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
-            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
-            req.categoria = null;
-            var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
-
-            using (HttpClient httpClient = new HttpClient())
-            {
-                var response = await httpClient.PostAsync(laURL, jsonContent);
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    // Imprimir el contenido de la respuesta para verificar
-                    Console.WriteLine(responseContent);
-
-                    // Intenta deserializar el JSON
-                    try
-                    {
-
-                        ResObtenerListaPublicaciones res = JsonConvert.DeserializeObject<ResObtenerListaPublicaciones>(responseContent);
-                        if (res.resultado)
-                        {
 
 
-                            retornarPublicacionApi = res.publicaciones;
+     private async Task<List<Publicacion>> publicacionesDelApi()
+     {
+         List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
+         String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/obtenerPublicacion";
 
-                        }
-                        else
-                        {
-                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        // Manejar excepciones al deserializar el JSON
-                        Console.WriteLine("Error al deserializar JSON: " + ex.Message);
-                    }
-                }
-                else
-                {
-                    // Manejar código de estado de respuesta incorrecto
-                    Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
-                }
-            }
-        }
-        catch (Exception ex)
-        {
-            await DisplayAlert("Error interno", "ERROR CON BACKEND", "ACEPTAR");
-        }
+         try
+         {
+             ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
+             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+             req.categoria = null;
+             var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
+
+             using (HttpClient httpClient = new HttpClient())
+             {
+                 var response = await httpClient.PostAsync(laURL, jsonContent);
+
+                 if (response.IsSuccessStatusCode)
+                 {
+                     var responseContent = await response.Content.ReadAsStringAsync();
+                     // Imprimir el contenido de la respuesta para verificar
+                     Console.WriteLine(responseContent);
+
+                     // Intenta deserializar el JSON
+                     try
+                     {
+
+                         ResObtenerListaPublicaciones res = JsonConvert.DeserializeObject<ResObtenerListaPublicaciones>(responseContent);
+                         if (res.resultado)
+                         {
 
 
-        return retornarPublicacionApi;
-    }
+                             retornarPublicacionApi = res.publicaciones;
+
+                         }
+                         else
+                         {
+                             DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                         }
+                     }
+                     catch (Exception ex)
+                     {
+                         // Manejar excepciones al deserializar el JSON
+                         Console.WriteLine("Error al deserializar JSON: " + ex.Message);
+                     }
+                 }
+                 else
+                 {
+                     // Manejar código de estado de respuesta incorrecto
+                     Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
+                 }
+             }
+         }
+         catch (Exception ex)
+         {
+             await DisplayAlert("Error interno", "ERROR CON BACKEND", "ACEPTAR");
+         }
+
+
+         return retornarPublicacionApi;
+     }
 
     private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
     {
@@ -136,6 +142,10 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     {
         Navigation.PushAsync(new PublicacionesView());
     }
+
+
+
+
 }
 
 
