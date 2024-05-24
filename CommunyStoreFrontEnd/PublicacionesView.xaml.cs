@@ -18,6 +18,8 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 using Plugin.FilePicker;
 using Plugin.FilePicker.Abstractions;
 
+using System.Xml.Linq;
+
 namespace CommunyStoreFrontEnd;
 
 public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
@@ -137,10 +139,93 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         Navigation.PushAsync(new PublicacionesView());
     }
 
-    private void Button_Clicked_view_lista_deseos(object sender, EventArgs e)
+    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ListaDeseos());
     }
+
+    
+
+
+    private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
+    {
+
+        Button button = (Button)sender; // Cast the sender to Button
+        Publicacion publication = (Publicacion)button.CommandParameter; // Get the publication data item
+
+        try
+        {
+
+            ReqAgregarPublicacionGuardada req = new ReqAgregarPublicacionGuardada();
+            req.idPublicacion = publication.idPublicacion;
+            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+
+            var jsonreq = JsonSerializer.Serialize(req);
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/agregarPublicacionGuardado", new StringContent(jsonreq, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Convertir la respuesta a un objeto dinámico
+                    dynamic jsonResponse = JObject.Parse(responseContent);
+
+                    bool resultado = jsonResponse.resultado;
+                    int tipoRegistro = jsonResponse.tipoRegistro;
+                    // JArray listaDeErrores = jsonResponse.listaDeErrores;
+
+                    if (tipoRegistro == 1)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 2)
+                    {
+
+                        await DisplayAlert("Registro fallido!", "Error de logica!", "Aceptar");
+                    }
+                    else if (tipoRegistro == 3)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error de datos", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 4)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error no controlado!", "Aceptar");
+
+                    }
+
+                    if (resultado)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+
+                    }
+                    else
+                    {
+                        // Manejar errores
+                        //  string errores = string.Join(", ", listaDeErrores);
+                        await DisplayAlert("Error", "Hubo un problema con el registro, por favor volver a intentar", "Aceptar");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+
+    }
+
+    
+
 
 }
 

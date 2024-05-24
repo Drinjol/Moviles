@@ -1,6 +1,5 @@
 ﻿using Backend.DataAccess;
 using Backend.Entidades;
-using Backend.Entidades.Request;
 using Backend.Entidades.Response;
 using System;
 namespace Backend.Logica

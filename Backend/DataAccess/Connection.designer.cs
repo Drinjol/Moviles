@@ -35,6 +35,12 @@ namespace Backend.DataAccess
     partial void Deletetb_imagen_binario(tb_imagen_binario instance);
     #endregion
 		
+		public ConnectionDataContext() : 
+				base(global::Backend.Properties.Settings.Default.db_aa7784_bdemprendeConnectionString2, mappingSource)
+		{
+			OnCreated();
+		}
+		
 		public ConnectionDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
@@ -232,7 +238,7 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary tb_imagen_binario1
 		{
 			get
@@ -994,36 +1000,58 @@ namespace Backend.DataAccess
 	public partial class SP_MOSTRAR_PUBLICACIONES_GUARDADASResult
 	{
 		
-		private long _tb_publicacion_id;
+		private long _tb_lista_deseos_id;
+		
+		private string _tb_usuario_nombre;
 		
 		private System.Nullable<long> _tb_usuario_id;
 		
-		private System.Nullable<System.DateTime> _tb_publicacion_fecha;
+		private long _tb_publicacion_id;
 		
 		private string _tb_publicacion_descripcion;
 		
+		private System.Nullable<byte> _tb_publicacion_estado;
+		
+		private System.Nullable<System.DateTime> _tb_publicacion_fecha;
+		
 		private System.Nullable<decimal> _tb_publicacion_precio;
 		
-		private string _tb_publicacion_categoria;
+		private System.Nullable<System.DateTime> _tb_lista_deseos_creacion;
 		
-		private System.Nullable<byte> _tb_publicacion_estado;
+		private System.Nullable<byte> _tb_lista_deseos_estado;
 		
 		public SP_MOSTRAR_PUBLICACIONES_GUARDADASResult()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_id", DbType="BigInt NOT NULL")]
-		public long tb_publicacion_id
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_lista_deseos_id", DbType="BigInt NOT NULL")]
+		public long tb_lista_deseos_id
 		{
 			get
 			{
-				return this._tb_publicacion_id;
+				return this._tb_lista_deseos_id;
 			}
 			set
 			{
-				if ((this._tb_publicacion_id != value))
+				if ((this._tb_lista_deseos_id != value))
 				{
-					this._tb_publicacion_id = value;
+					this._tb_lista_deseos_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_nombre", DbType="VarChar(255)")]
+		public string tb_usuario_nombre
+		{
+			get
+			{
+				return this._tb_usuario_nombre;
+			}
+			set
+			{
+				if ((this._tb_usuario_nombre != value))
+				{
+					this._tb_usuario_nombre = value;
 				}
 			}
 		}
@@ -1044,18 +1072,18 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_fecha", DbType="DateTime")]
-		public System.Nullable<System.DateTime> tb_publicacion_fecha
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_id", DbType="BigInt NOT NULL")]
+		public long tb_publicacion_id
 		{
 			get
 			{
-				return this._tb_publicacion_fecha;
+				return this._tb_publicacion_id;
 			}
 			set
 			{
-				if ((this._tb_publicacion_fecha != value))
+				if ((this._tb_publicacion_id != value))
 				{
-					this._tb_publicacion_fecha = value;
+					this._tb_publicacion_id = value;
 				}
 			}
 		}
@@ -1076,6 +1104,38 @@ namespace Backend.DataAccess
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_estado", DbType="TinyInt")]
+		public System.Nullable<byte> tb_publicacion_estado
+		{
+			get
+			{
+				return this._tb_publicacion_estado;
+			}
+			set
+			{
+				if ((this._tb_publicacion_estado != value))
+				{
+					this._tb_publicacion_estado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_fecha", DbType="DateTime")]
+		public System.Nullable<System.DateTime> tb_publicacion_fecha
+		{
+			get
+			{
+				return this._tb_publicacion_fecha;
+			}
+			set
+			{
+				if ((this._tb_publicacion_fecha != value))
+				{
+					this._tb_publicacion_fecha = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_precio", DbType="Decimal(8,2)")]
 		public System.Nullable<decimal> tb_publicacion_precio
 		{
@@ -1092,34 +1152,34 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_categoria", DbType="VarChar(255)")]
-		public string tb_publicacion_categoria
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_lista_deseos_creacion", DbType="DateTime")]
+		public System.Nullable<System.DateTime> tb_lista_deseos_creacion
 		{
 			get
 			{
-				return this._tb_publicacion_categoria;
+				return this._tb_lista_deseos_creacion;
 			}
 			set
 			{
-				if ((this._tb_publicacion_categoria != value))
+				if ((this._tb_lista_deseos_creacion != value))
 				{
-					this._tb_publicacion_categoria = value;
+					this._tb_lista_deseos_creacion = value;
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_estado", DbType="TinyInt")]
-		public System.Nullable<byte> tb_publicacion_estado
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_lista_deseos_estado", DbType="TinyInt")]
+		public System.Nullable<byte> tb_lista_deseos_estado
 		{
 			get
 			{
-				return this._tb_publicacion_estado;
+				return this._tb_lista_deseos_estado;
 			}
 			set
 			{
-				if ((this._tb_publicacion_estado != value))
+				if ((this._tb_lista_deseos_estado != value))
 				{
-					this._tb_publicacion_estado = value;
+					this._tb_lista_deseos_estado = value;
 				}
 			}
 		}
