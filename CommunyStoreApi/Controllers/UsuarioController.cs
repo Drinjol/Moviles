@@ -7,7 +7,6 @@ using System.Web.Helpers;
 using System.Web.Http;
 using System.Web.Mvc;
 using Backend.Entidades;
-using Backend.Entidades.Request;
 using Backend.Logica;
 using Newtonsoft.Json.Linq;
 namespace CommunyStoreApi.Controllers

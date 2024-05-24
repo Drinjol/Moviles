@@ -40,5 +40,26 @@ namespace CommunyStoreApi.Controllers
             return new LogPublicacion().obteneListaDePublicacionesPorIdUsuario(req);
 
         }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/obtenerPublicacionGuardadas")]
+        public ResObtenerPublicacionesGuardadas ObtenerPublicacionesGuardadas(ReqObtenerPublicacionesGuardadas req)
+        {
+            
+            return new LogicaPublicacionesGuardadas().obtenerpublicacionesGuardadas(req);
+
+        }
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/agregarPublicacionGuardado")]
+        public ResAgregarPublicacionGuardada agregarPublicacionGuardado(ReqAgregarPublicacionGuardada req)
+        {
+
+            return new LogicaPublicacionesGuardadas().agregarPublicacionGuardada(req);
+
+        }
+
+
+
     }
 }
