@@ -309,3 +309,9 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\refint\CommunySto
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.pdb
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\ref\CommunyStoreFrontEnd.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\Google.Apis.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\Google.Apis.Auth.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\Google.Apis.Core.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\Google.Apis.Drive.v3.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\System.CodeDom.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\System.Management.dll
