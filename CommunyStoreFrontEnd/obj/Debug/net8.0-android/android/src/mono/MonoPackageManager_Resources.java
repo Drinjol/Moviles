@@ -3,6 +3,10 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "CommunyStoreFrontEnd.dll" comes first in this list. */
 		"CommunyStoreFrontEnd.dll",
+		"Google.Apis.dll",
+		"Google.Apis.Auth.dll",
+		"Google.Apis.Core.dll",
+		"Google.Apis.Drive.v3.dll",
 		"GoogleGson.dll",
 		"Microsoft.Extensions.Configuration.dll",
 		"Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -20,6 +24,8 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.Essentials.dll",
 		"Microsoft.Maui.Graphics.dll",
 		"Newtonsoft.Json.dll",
+		"System.CodeDom.dll",
+		"System.Management.dll",
 		"Xamarin.Android.Glide.dll",
 		"Xamarin.Android.Glide.Annotations.dll",
 		"Xamarin.Android.Glide.DiskLruCache.dll",
