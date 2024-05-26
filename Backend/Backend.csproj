@@ -66,6 +66,7 @@
     <Compile Include="Entidades\Request\ReqAgregarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Request\ReqAgregarUsuario.cs" />
     <Compile Include="Entidades\Request\ReqBase.cs" />
+    <Compile Include="Entidades\Request\ReqEliminarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Request\ReqIngresarPublicacion.cs" />
     <Compile Include="Entidades\Request\ReqIniciarSesion.cs" />
     <Compile Include="Entidades\Request\ReqObtenerPublicaciones.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Entidades\Response\ResAgregarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Response\ResAgregarUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
+    <Compile Include="Entidades\Response\ResEliminarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Response\ResIngresarPublicacion.cs" />
     <Compile Include="Entidades\Response\ResIniciarSesion.cs" />
     <Compile Include="Entidades\Response\ResLogin.cs" />

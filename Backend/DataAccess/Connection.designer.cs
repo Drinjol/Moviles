@@ -163,6 +163,13 @@ namespace Backend.DataAccess
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO);
 			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION_LISTA_DESEO")]
+		public int SP_ELIMINAR_PUBLICACION_LISTA_DESEO([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tb_imagen_binario")]

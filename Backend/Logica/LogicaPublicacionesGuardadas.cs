@@ -99,6 +99,34 @@ namespace Backend.Logica
         }
 
 
+        public ResEliminarPublicacionGuardada eliminarPublicacionGuardada(ReqEliminarPublicacionGuardada req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            ResEliminarPublicacionGuardada res = new ResEliminarPublicacionGuardada();
+            res.listaDeErrores = new List<string>();
+
+            try
+            {
+                using (ConnectionDataContext linq = new ConnectionDataContext())
+                {
+                    linq.SP_ELIMINAR_PUBLICACION_LISTA_DESEO(req.usuarioid, req.publicacionGuardadaId);
+                    res.resultado = true;
+                    //res.mensaje = "Publicación agregada a la lista de deseos correctamente.";
+                }
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("error bd");
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+            return res;
+
+        }
 
 
     }

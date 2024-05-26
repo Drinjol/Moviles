@@ -3,15 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\request\\reqagregarpublicacionguardada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqagregarpublicacionguardada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystoreapi\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\logica\\logicapublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicapublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqingresarpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\request\\reqagregarpublicacionguardada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqagregarpublicacionguardada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\entidades\\response\\resagregarpublicacionguardada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -52,23 +56,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResAgregarPublicacionGuardada.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
-              "RelativeDocumentMoniker": "Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
-              "RelativeToolTip": "Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA4AAAA",
+              "DocumentIndex": 1,
+              "Title": "LogicaPublicacionesGuardadas.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaPublicacionesGuardadas.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaPublicacionesGuardadas.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaPublicacionesGuardadas.cs",
+              "RelativeToolTip": "Logica\\LogicaPublicacionesGuardadas.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAqwHAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T00:01:22.201Z"
+              "WhenOpened": "2024-05-23T22:34:32.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "ReqIngresarPublicacion.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqIngresarPublicacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T01:27:13.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ReqAgregarUsuario.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqAgregarUsuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqAgregarUsuario.cs",
@@ -80,44 +98,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ReqAgregarPublicacionGuardada.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqAgregarPublicacionGuardada.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqAgregarPublicacionGuardada.cs",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqAgregarPublicacionGuardada.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqAgregarPublicacionGuardada.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T00:00:32.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LogicaPublicacionesGuardadas.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaPublicacionesGuardadas.cs",
-              "RelativeDocumentMoniker": "Logica\\LogicaPublicacionesGuardadas.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaPublicacionesGuardadas.cs",
-              "RelativeToolTip": "Logica\\LogicaPublicacionesGuardadas.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAADwv0gAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T22:34:32.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PublicacionController.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAADwvzkAAABWAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAywEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T22:51:59.663Z"
+              "WhenOpened": "2024-05-23T22:51:59.663Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "ResAgregarPublicacionGuardada.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResAgregarPublicacionGuardada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T00:01:22.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LogPublicacion.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
               "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
@@ -129,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ResObtenerPublicacionesGuardadas.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicacionesGuardadas.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicacionesGuardadas.cs",
@@ -141,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ResObtenerPublicacionIdUsuario.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicacionIdUsuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicacionIdUsuario.cs",
@@ -153,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PublicacionGuardada.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Entidad\\PublicacionGuardada.cs",
               "RelativeDocumentMoniker": "Entidades\\Entidad\\PublicacionGuardada.cs",
@@ -165,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
@@ -177,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LogicaUsuario.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
               "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",

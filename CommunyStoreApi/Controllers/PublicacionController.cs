@@ -59,6 +59,15 @@ namespace CommunyStoreApi.Controllers
 
         }
 
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/eliminarPublicacionGuardada")]
+        public ResEliminarPublicacionGuardada eliminarPublicacionGuardada(ReqEliminarPublicacionGuardada req)
+        {
+
+            return new LogicaPublicacionesGuardadas().eliminarPublicacionGuardada(req);
+
+        }
+
 
 
     }
