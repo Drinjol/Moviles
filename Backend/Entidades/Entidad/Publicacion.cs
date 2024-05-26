@@ -13,6 +13,6 @@ namespace Backend.Entidades
 
       //  public List<string> nombresArchivos {  get; set; }
         public string nombresArchivos { get; set; }
-        //public Usuario usuario { get; set; }
+        public Usuario usuario { get; set; }
     }
 }

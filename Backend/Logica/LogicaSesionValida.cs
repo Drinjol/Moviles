@@ -29,7 +29,7 @@ namespace Backend.Logica
                         resBase.tipoRegistro = 2; //error en logica
                         resBase.resultado = false;
                     }
-                    else if (String.IsNullOrEmpty(req.sesion.sesion))
+                    else/* if (req.sesion.Id == null)
                     {//sino es nula pero el string viene vacio
                         resBase.listaDeErrores.Add("sesion no iniciada"); 
                         resBase.resultado = false;
@@ -41,7 +41,7 @@ namespace Backend.Logica
                         resBase.resultado = false;
                         resBase.tipoRegistro = 2;
                     }
-                    else
+                    else*/
                     {
                         //la sesión es válida!!!!
                         resBase.tipoRegistro = 1;

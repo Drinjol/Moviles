@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Backend.Entidades.Request
+namespace Backend.Entidades
 {
     //enpdpoitn donde se conecta la api
     public class ReqActualizarUsuario: ReqBase

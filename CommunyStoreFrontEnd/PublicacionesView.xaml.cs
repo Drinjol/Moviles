@@ -5,15 +5,24 @@ using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Utilitarios;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Plugin.FilePicker.Abstractions;
+using Plugin.FilePicker;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
+
+using System.Xml.Linq;
 
 namespace CommunyStoreFrontEnd;
 
-public partial class PublicacionesView : Shell, INotifyPropertyChanged
+public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
     private int cantidad = 3; // Variable que determina la cantidad de pestañas
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
@@ -29,6 +38,8 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
         }
     }
 
+   
+
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected virtual void OnPropertyChanged(string propertyName)
@@ -41,53 +52,9 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
         InitializeComponent();
         CargarPublicaciones();
 
-        // Generar botones para las pestañas
-        // GenerarBotonesPestanas();
-
-        // Mostrar el contenido inicial (primera pestaña)
-        // MostrarContenidoPestana(3);
-
-
     }
 
-    /* private List<StackLayout> contenidosPestanas = new List<StackLayout>();
-
-     private void Button_Clicked(object sender, EventArgs e)
-     {
-         var button = (Button)sender;
-         int numeroPestana = Convert.ToInt32(button.Text.Split(' ')[1]);
-         MostrarContenidoPestana(numeroPestana);
-     }
-
-     private void MostrarContenidoPestana(int numeroPestana)
-     {
-         // Ocultar todos los contenidos de las pestañas
-         foreach (var contenidoPestana in contenidosPestanas)
-         {
-             contenidoPestana.IsVisible = false;
-         }
-
-         // Mostrar el contenido de la pestaña seleccionada
-         contenidosPestanas[numeroPestana - 1].IsVisible = true;
-     }
-
-     // Método para generar dinámicamente los botones de las pestañas
-     private void GenerarBotonesPestanas()
-     {
-         for (int i = 0; i < cantidad; i++)
-         {
-             Button button = new Button { Text = $"Pestaña {i + 1}" };
-             button.Clicked += Button_Clicked;
-           //  botonesContainer.Children.Add(button);
-
-             // Crear un StackLayout para el contenido de cada pestaña
-             StackLayout contenidoPestana = new StackLayout();
-             contenidosPestanas.Add(contenidoPestana);
-
-             // Agregar el contenido de la pestaña al contenedor
-             //collectionViewContainer.Children.Add(contenidoPestana);
-         }
-     }*/
+   
 
 
 
@@ -95,7 +62,7 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
 
 
 
-    private async void CargarPublicaciones()
+    public async void CargarPublicaciones()
     {
         listaDePublicaciones = await publicacionesDelApi();
         BindingContext = this;
@@ -131,6 +98,7 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
                         if (res.resultado)
                         {
 
+
                             retornarPublicacionApi = res.publicaciones;
 
                         }
@@ -160,6 +128,104 @@ public partial class PublicacionesView : Shell, INotifyPropertyChanged
 
         return retornarPublicacionApi;
     }
+
+    private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new AgregarPublicacionView());
+    }
+
+    private void Button_Clicked_view_home(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new PublicacionesView());
+    }
+
+    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ListaDeseos());
+    }
+
+    
+
+
+    private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
+    {
+
+        Button button = (Button)sender; // Cast the sender to Button
+        Publicacion publication = (Publicacion)button.CommandParameter; // Get the publication data item
+
+        try
+        {
+
+            ReqAgregarPublicacionGuardada req = new ReqAgregarPublicacionGuardada();
+            req.idPublicacion = publication.idPublicacion;
+            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+
+            var jsonreq = JsonSerializer.Serialize(req);
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/agregarPublicacionGuardado", new StringContent(jsonreq, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Convertir la respuesta a un objeto dinámico
+                    dynamic jsonResponse = JObject.Parse(responseContent);
+
+                    bool resultado = jsonResponse.resultado;
+                    int tipoRegistro = jsonResponse.tipoRegistro;
+                    // JArray listaDeErrores = jsonResponse.listaDeErrores;
+
+                    if (tipoRegistro == 1)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 2)
+                    {
+
+                        await DisplayAlert("Registro fallido!", "Error de logica!", "Aceptar");
+                    }
+                    else if (tipoRegistro == 3)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error de datos", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 4)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error no controlado!", "Aceptar");
+
+                    }
+
+                    if (resultado)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+
+                    }
+                    else
+                    {
+                        // Manejar errores
+                        //  string errores = string.Join(", ", listaDeErrores);
+                        await DisplayAlert("Error", "Hubo un problema con el registro, por favor volver a intentar", "Aceptar");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+
+    }
+
+    
+
 
 }
 

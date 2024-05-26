@@ -7,9 +7,11 @@
     Shell.FlyoutBehavior="Disabled"
     Title="CommunyStoreFrontEnd">
 
-    <ShellContent
-        
-        ContentTemplate="{DataTemplate local:SesionPage}"
-        Route="SesionPage" />
+    
+
+    <TabBar>
+        <ShellContent Title="Home" Icon="home_icon.png" ContentTemplate="{DataTemplate local:SesionPage}" Route="SesionPage" />
+       
+    </TabBar>
 
 </Shell>
