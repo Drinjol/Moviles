@@ -33,7 +33,7 @@
             <Entry Placeholder="Buscar" Margin="10" Grid.Column="1"/>
 
             <!-- Botón de carrito -->
-            <Button Text="Carrito" HeightRequest="60" WidthRequest="80" Margin="10" HorizontalOptions="End" Grid.Column="2"/>
+            <Button Text="Carrito" Clicked="Button_Clicked_view_lista_guardados" HeightRequest="60" WidthRequest="80" Margin="10" HorizontalOptions="End" Grid.Column="2"/>
         </Grid>
 
         <!-- Botones de navegación -->
@@ -82,15 +82,23 @@
 
                                     <Image Source="{Binding nombresArchivos}" 
                                     Aspect="AspectFit" 
-                                      HeightRequest="200"
-                                          HorizontalOptions="CenterAndExpand" 
-                              VerticalOptions="CenterAndExpand" />
+                                    HeightRequest="200"
+                                    HorizontalOptions="CenterAndExpand" 
+                                    VerticalOptions="CenterAndExpand" />
                                     
                                     
                                     <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
-                        FontSize="14"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="Center"/>
+                                        FontSize="14"
+                                        HorizontalOptions="CenterAndExpand"
+                                        VerticalOptions="Center"/>
+
+                                    <Button Text="Agregar a la lista de deseos"
+                                        Clicked="Button_Clicked_add_lista_deseos"
+                                        CommandParameter="{Binding .}"
+                                        HorizontalOptions="FillAndExpand"
+                                        Style="{StaticResource WishlistButtonStyle}" />
+
+
                                 </StackLayout>
                             </Frame>
                         </DataTemplate>

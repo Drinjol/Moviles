@@ -18,16 +18,15 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 using Plugin.FilePicker;
 using Plugin.FilePicker.Abstractions;
 
+using System.Xml.Linq;
+
 namespace CommunyStoreFrontEnd;
 
 public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
     private int cantidad = 3; // Variable que determina la cantidad de pestañas
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
-    private  string categoriaSeleccionada = "";
 
-    ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
-    
 
     public List<Publicacion> listaDePublicaciones
     {
@@ -51,10 +50,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     public PublicacionesView()
     {
         InitializeComponent();
-        categoriaSeleccionada = null;
         CargarPublicaciones();
-
-
 
     }
 
@@ -68,80 +64,70 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     public async void CargarPublicaciones()
     {
-      
         listaDePublicaciones = await publicacionesDelApi();
         BindingContext = this;
-
-        
     }
 
+    private async Task<List<Publicacion>> publicacionesDelApi()
+    {
+        List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
+        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/obtenerPublicacion";
 
-
-     private async Task<List<Publicacion>> publicacionesDelApi()
-     {
-         List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
-         String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/obtenerPublicacion";
-
-         try
-         {
-             
-             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
-
-            
-                req.categoria = categoriaSeleccionada;
-            
-            
-          
+        try
+        {
+            ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
+            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+            req.categoria = null;
             var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
 
-             using (HttpClient httpClient = new HttpClient())
-             {
-                 var response = await httpClient.PostAsync(laURL, jsonContent);
+            using (HttpClient httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(laURL, jsonContent);
 
-                 if (response.IsSuccessStatusCode)
-                 {
-                     var responseContent = await response.Content.ReadAsStringAsync();
-                     // Imprimir el contenido de la respuesta para verificar
-                     Console.WriteLine(responseContent);
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    // Imprimir el contenido de la respuesta para verificar
+                    Console.WriteLine(responseContent);
 
-                     // Intenta deserializar el JSON
-                     try
-                     {
+                    // Intenta deserializar el JSON
+                    try
+                    {
 
-                         ResObtenerListaPublicaciones res = JsonConvert.DeserializeObject<ResObtenerListaPublicaciones>(responseContent);
-                         if (res.resultado)
-                         {
-
-
-                             retornarPublicacionApi = res.publicaciones;
-
-                         }
-                         else
-                         {
-                             DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
-                         }
-                     }
-                     catch (Exception ex)
-                     {
-                         // Manejar excepciones al deserializar el JSON
-                         Console.WriteLine("Error al deserializar JSON: " + ex.Message);
-                     }
-                 }
-                 else
-                 {
-                     // Manejar código de estado de respuesta incorrecto
-                     Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
-                 }
-             }
-         }
-         catch (Exception ex)
-         {
-             await DisplayAlert("Error interno", "ERROR CON BACKEND", "ACEPTAR");
-         }
+                        ResObtenerListaPublicaciones res = JsonConvert.DeserializeObject<ResObtenerListaPublicaciones>(responseContent);
+                        if (res.resultado)
+                        {
 
 
-         return retornarPublicacionApi;
-     }
+                            retornarPublicacionApi = res.publicaciones;
+
+                        }
+                        else
+                        {
+                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Manejar excepciones al deserializar el JSON
+                        Console.WriteLine("Error al deserializar JSON: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    // Manejar código de estado de respuesta incorrecto
+                    Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "ERROR CON BACKEND", "ACEPTAR");
+        }
+
+
+        return retornarPublicacionApi;
+    }
 
     private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
     {
@@ -153,35 +139,94 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         Navigation.PushAsync(new PublicacionesView());
     }
 
-    private void Button_Clicked_todo(object sender, EventArgs e)
+    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
     {
-        categoriaSeleccionada = null;
-        CargarPublicaciones();
+        Navigation.PushAsync(new ListaDeseos());
     }
 
-    private void Button_Clicked_tecnologia(object sender, EventArgs e)
-    {
-        
-        categoriaSeleccionada = "Tecnologia";
-       //  DisplayAlert("Prueba categoria", categoriaSeleccionada, "aceptar");
-        CargarPublicaciones();
-    }
+    
 
-    private void Button_Clicked_hogar(object sender, EventArgs e)
+
+    private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {
 
-       
-        categoriaSeleccionada = "Hogar";
-        CargarPublicaciones();
+        Button button = (Button)sender; // Cast the sender to Button
+        Publicacion publication = (Publicacion)button.CommandParameter; // Get the publication data item
+
+        try
+        {
+
+            ReqAgregarPublicacionGuardada req = new ReqAgregarPublicacionGuardada();
+            req.idPublicacion = publication.idPublicacion;
+            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+
+            var jsonreq = JsonSerializer.Serialize(req);
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/agregarPublicacionGuardado", new StringContent(jsonreq, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Convertir la respuesta a un objeto dinámico
+                    dynamic jsonResponse = JObject.Parse(responseContent);
+
+                    bool resultado = jsonResponse.resultado;
+                    int tipoRegistro = jsonResponse.tipoRegistro;
+                    // JArray listaDeErrores = jsonResponse.listaDeErrores;
+
+                    if (tipoRegistro == 1)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 2)
+                    {
+
+                        await DisplayAlert("Registro fallido!", "Error de logica!", "Aceptar");
+                    }
+                    else if (tipoRegistro == 3)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error de datos", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 4)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error no controlado!", "Aceptar");
+
+                    }
+
+                    if (resultado)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+
+                    }
+                    else
+                    {
+                        // Manejar errores
+                        //  string errores = string.Join(", ", listaDeErrores);
+                        await DisplayAlert("Error", "Hubo un problema con el registro, por favor volver a intentar", "Aceptar");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+
     }
 
-    private void Button_Clicked_mascotas(object sender, EventArgs e)
-    {
+    
 
-       
-        categoriaSeleccionada = "Mascotas";
-        CargarPublicaciones();
-    }
+
 }
 
 

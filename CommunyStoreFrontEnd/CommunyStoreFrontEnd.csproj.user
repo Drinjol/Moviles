@@ -19,6 +19,9 @@
     <MauiXaml Update="AgregarPublicacionView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="ListaDeseos.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="PublicacionesView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

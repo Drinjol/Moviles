@@ -63,3 +63,29 @@ C:\Moviles\Backend\bin\Debug\WebGrease.dll
 C:\Moviles\Backend\bin\Debug\Antlr3.Runtime.pdb
 C:\Moviles\Backend\bin\Debug\Newtonsoft.Json.xml
 C:\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Backend.dll.config
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Backend.dll
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Backend.pdb
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Antlr3.Runtime.dll
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\WebGrease.dll
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\obj\Debug\Backend.csproj.AssemblyReference.cache
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\obj\Debug\Backend.dll
+C:\Users\dg986\OneDrive\Documentos\proyecto moviles\Moviles\Backend\obj\Debug\Backend.pdb
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Backend.dll.config
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Backend.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Backend.pdb
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Antlr3.Runtime.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Newtonsoft.Json.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\WebGrease.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Debug\Newtonsoft.Json.xml
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Debug\Backend.csproj.AssemblyReference.cache
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Debug\Backend.csproj.CoreCompileInputs.cache
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Debug\Backend.csproj.Up2Date
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Debug\Backend.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Debug\Backend.pdb
