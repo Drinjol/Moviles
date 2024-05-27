@@ -36,7 +36,7 @@ public partial class AgregarPublicacionView : ContentPage
         {
             if (string.IsNullOrWhiteSpace(entryDescripcion.Text) ||
                 string.IsNullOrWhiteSpace(entryPrecio.Text) ||
-                string.IsNullOrWhiteSpace(entryCategoria.Text))
+                string.IsNullOrWhiteSpace(entryCategoria.ToString()))
             {
                 await DisplayAlert("Campos vacíos", "Por favor, complete todos los campos.", "Aceptar");
                 return; // Detener la ejecución del método si hay campos vacíos
@@ -48,7 +48,7 @@ public partial class AgregarPublicacionView : ContentPage
             req.publicacion = new Publicacion();
             req.publicacion.descripcionPublicacion = entryDescripcion.Text;
             req.publicacion.precioPublicacion = decimal.Parse(entryPrecio.Text);
-            req.publicacion.categoriaPublicacion = entryCategoria.Text;
+            req.publicacion.categoriaPublicacion = entryCategoria.ToString();
 
             req.publicacion.usuario = SesionFrontEnd.usuarioSesion;
 

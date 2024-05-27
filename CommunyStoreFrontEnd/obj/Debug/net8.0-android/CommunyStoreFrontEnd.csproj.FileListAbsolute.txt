@@ -4230,3 +4230,13 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\jni_remap.x86.o
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\x86\libxamarin-app.so
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.Auth.dll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.Auth.pdb
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.Core.dll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.Core.pdb
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.dll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.Drive.v3.dll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.Drive.v3.pdb
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Google.Apis.pdb
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\System.CodeDom.dll
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\System.Management.dll

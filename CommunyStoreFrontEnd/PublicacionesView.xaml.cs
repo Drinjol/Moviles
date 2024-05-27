@@ -26,6 +26,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
     private int cantidad = 3; // Variable que determina la cantidad de pestañas
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
+    private string categoriaSeleccionada = "";
+    ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
 
 
     public List<Publicacion> listaDePublicaciones
@@ -50,6 +52,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     public PublicacionesView()
     {
         InitializeComponent();
+        categoriaSeleccionada = null;
         CargarPublicaciones();
 
     }
@@ -75,9 +78,9 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
         try
         {
-            ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
+           
             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
-            req.categoria = null;
+            req.categoria = categoriaSeleccionada;
             var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
 
             using (HttpClient httpClient = new HttpClient())
@@ -224,9 +227,29 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     }
 
-    
+    private void btn_todo_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = null;
+        CargarPublicaciones();
+    }
 
+    private void btn_tecnologia_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = "Tecnologia";
+        CargarPublicaciones();
+    }
 
+    private void btn_hogar_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = "Hogar";
+        CargarPublicaciones();
+    }
+
+    private void btn_mascotas_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = "Mascotas";
+        CargarPublicaciones();
+    }
 }
 
 
