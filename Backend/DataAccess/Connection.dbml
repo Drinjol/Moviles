@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_aa7784_bdemprende" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=SQL5113.site4now.net;Initial Catalog=db_aa7784_bdemprende;Persist Security Info=True;User ID=db_aa7784_bdemprende_admin;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="Backend.Properties.Settings" SettingsPropertyName="db_aa7784_bdemprendeConnectionString2" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Table Name="dbo.tb_imagen_binario" Member="tb_imagen_binario">
     <Type Name="tb_imagen_binario">
       <Column Name="tb_imagen_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -136,6 +135,12 @@
   <Function Name="dbo.SP_ELIMINAR_PUBLICACION_LISTA_DESEO" Method="SP_ELIMINAR_PUBLICACION_LISTA_DESEO">
     <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
     <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_agregar_interaccion_usuario" Method="sp_agregar_interaccion_usuario">
+    <Parameter Name="id_usuario" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="id_publicacion" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="fecha_busqueda" Type="System.DateTime" DbType="Date" />
     <Return Type="System.Int32" />
   </Function>
 </Database>
