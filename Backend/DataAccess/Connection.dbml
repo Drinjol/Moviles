@@ -113,11 +113,6 @@
       <Column Name="publicacion_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.SP_GUARDAR_PUBLICACION_DESEO" Method="SP_GUARDAR_PUBLICACION_DESEO">
-    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.SP_MOSTRAR_PUBLICACIONES_GUARDADAS" Method="SP_MOSTRAR_PUBLICACIONES_GUARDADAS">
     <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
     <ElementType Name="SP_MOSTRAR_PUBLICACIONES_GUARDADASResult">
@@ -137,5 +132,15 @@
     <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
     <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_GUARDAR_PUBLICACION_DESEO" Method="SP_GUARDAR_PUBLICACION_DESEO">
+    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="MENSAJE_SALIDA" Parameter="mENSAJE_SALIDA" Type="System.String" DbType="NVarChar(300)" Direction="InOut" />
+    <ElementType Name="SP_GUARDAR_PUBLICACION_DESEOResult">
+      <Column Name="MENSAJE" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="RESULTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

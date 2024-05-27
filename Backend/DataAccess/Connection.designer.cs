@@ -150,13 +150,6 @@ namespace Backend.DataAccess
 			return ((ISingleResult<sp_obtener_publicacion_por_id_usuarioResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_GUARDAR_PUBLICACION_DESEO")]
-		public int SP_GUARDAR_PUBLICACION_DESEO([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MOSTRAR_PUBLICACIONES_GUARDADAS")]
 		public ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult> SP_MOSTRAR_PUBLICACIONES_GUARDADAS([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO)
 		{
@@ -169,6 +162,15 @@ namespace Backend.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_GUARDAR_PUBLICACION_DESEO")]
+		public ISingleResult<SP_GUARDAR_PUBLICACION_DESEOResult> SP_GUARDAR_PUBLICACION_DESEO([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RESULTADO", DbType="Int")] ref System.Nullable<int> rESULTADO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="MENSAJE_SALIDA", DbType="NVarChar(300)")] ref string mENSAJE_SALIDA)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION, rESULTADO, mENSAJE_SALIDA);
+			rESULTADO = ((System.Nullable<int>)(result.GetParameterValue(2)));
+			mENSAJE_SALIDA = ((string)(result.GetParameterValue(3)));
+			return ((ISingleResult<SP_GUARDAR_PUBLICACION_DESEOResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1187,6 +1189,50 @@ namespace Backend.DataAccess
 				if ((this._tb_lista_deseos_estado != value))
 				{
 					this._tb_lista_deseos_estado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_GUARDAR_PUBLICACION_DESEOResult
+	{
+		
+		private string _MENSAJE;
+		
+		private System.Nullable<int> _RESULTADO;
+		
+		public SP_GUARDAR_PUBLICACION_DESEOResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MENSAJE", DbType="NVarChar(300)")]
+		public string MENSAJE
+		{
+			get
+			{
+				return this._MENSAJE;
+			}
+			set
+			{
+				if ((this._MENSAJE != value))
+				{
+					this._MENSAJE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESULTADO", DbType="Int")]
+		public System.Nullable<int> RESULTADO
+		{
+			get
+			{
+				return this._RESULTADO;
+			}
+			set
+			{
+				if ((this._RESULTADO != value))
+				{
+					this._RESULTADO = value;
 				}
 			}
 		}

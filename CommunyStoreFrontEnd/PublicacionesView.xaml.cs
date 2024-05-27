@@ -175,11 +175,11 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
                     bool resultado = jsonResponse.resultado;
                     int tipoRegistro = jsonResponse.tipoRegistro;
-                    // JArray listaDeErrores = jsonResponse.listaDeErrores;
+                    string mensaje = jsonResponse.descripcion;
 
                     if (tipoRegistro == 1)
                     {
-                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+                        await DisplayAlert("¡Publicación agregada!", $"{mensaje}", "Aceptar");
 
                     }
                     else if (tipoRegistro == 2)
@@ -208,7 +208,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                     {
                         // Manejar errores
                         //  string errores = string.Join(", ", listaDeErrores);
-                        await DisplayAlert("Error", "Hubo un problema con el registro, por favor volver a intentar", "Aceptar");
+                        await DisplayAlert("Error", $"{mensaje}", "Aceptar");
+
                     }
                 }
                 else

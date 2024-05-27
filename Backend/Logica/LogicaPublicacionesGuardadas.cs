@@ -80,16 +80,35 @@ namespace Backend.Logica
             {
                 using (ConnectionDataContext linq = new ConnectionDataContext())
                 {
-                    linq.SP_GUARDAR_PUBLICACION_DESEO(req.idUsuario, req.idPublicacion);
-                    res.resultado = true;
-                    //res.mensaje = "Publicación agregada a la lista de deseos correctamente.";
+                    int? RESULTADO = 0;
+                    String MENSAJE = "";
+                    linq.SP_GUARDAR_PUBLICACION_DESEO(req.idUsuario, req.idPublicacion, ref RESULTADO, ref MENSAJE);
+                    
+                    if(RESULTADO == 1)
+                    {
+                        res.resultado = true;
+                        res.descripcion = MENSAJE;
+
+                    }
+                    else if(RESULTADO == 2)
+                    {
+                        res.resultado = false;
+                        res.descripcion = MENSAJE;
+                        res.listaDeErrores.Add(MENSAJE);
+                    }
+                    else if (RESULTADO == 3)
+                    {
+                        res.resultado = false;
+                        res.descripcion = MENSAJE;
+                        res.listaDeErrores.Add(MENSAJE);
+                    }                                        
                 }
             }
             catch (Exception ex)
             {
                 res.resultado = false;
                 tipoDeTransaccion = 2;
-                res.listaDeErrores.Add("error bd");
+                res.listaDeErrores.Add("Error bd");
             }
             finally
             {
@@ -111,7 +130,7 @@ namespace Backend.Logica
                 {
                     linq.SP_ELIMINAR_PUBLICACION_LISTA_DESEO(req.usuarioid, req.publicacionGuardadaId);
                     res.resultado = true;
-                    //res.mensaje = "Publicación agregada a la lista de deseos correctamente.";
+                    
                 }
             }
             catch (Exception ex)
