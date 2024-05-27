@@ -24,7 +24,10 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
     private int cantidad = 3; // Variable que determina la cantidad de pestañas
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
+    private  string categoriaSeleccionada = "";
 
+    ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
+    
 
     public List<Publicacion> listaDePublicaciones
     {
@@ -48,6 +51,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     public PublicacionesView()
     {
         InitializeComponent();
+        categoriaSeleccionada = null;
         CargarPublicaciones();
 
 
@@ -64,6 +68,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     public async void CargarPublicaciones()
     {
+      
         listaDePublicaciones = await publicacionesDelApi();
         BindingContext = this;
 
@@ -79,10 +84,15 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
          try
          {
-             ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
+             
              req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
-             req.categoria = null;
-             var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
+
+            
+                req.categoria = categoriaSeleccionada;
+            
+            
+          
+            var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
 
              using (HttpClient httpClient = new HttpClient())
              {
@@ -143,9 +153,35 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         Navigation.PushAsync(new PublicacionesView());
     }
 
+    private void Button_Clicked_todo(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = null;
+        CargarPublicaciones();
+    }
 
+    private void Button_Clicked_tecnologia(object sender, EventArgs e)
+    {
+        
+        categoriaSeleccionada = "Tecnologia";
+       //  DisplayAlert("Prueba categoria", categoriaSeleccionada, "aceptar");
+        CargarPublicaciones();
+    }
 
+    private void Button_Clicked_hogar(object sender, EventArgs e)
+    {
 
+       
+        categoriaSeleccionada = "Hogar";
+        CargarPublicaciones();
+    }
+
+    private void Button_Clicked_mascotas(object sender, EventArgs e)
+    {
+
+       
+        categoriaSeleccionada = "Mascotas";
+        CargarPublicaciones();
+    }
 }
 
 
