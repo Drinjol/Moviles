@@ -97,6 +97,11 @@
                                         CommandParameter="{Binding .}"
                                         HorizontalOptions="FillAndExpand"
                                         Style="{StaticResource WishlistButtonStyle}" />
+                                    <Button Text="Ver detalles"
+                                        Clicked="Button_Clicked_add_lista_deseos"
+                                        CommandParameter="{Binding .}"
+                                        HorizontalOptions="FillAndExpand"
+                                        Style="{StaticResource WishlistButtonStyle}" />
 
 
                                 </StackLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CommunyStoreFrontEnd.Prueba"
+             Title="Prueba">
+
+
+    <StackLayout Spacing="20">
+
+        <SearchBar 
+            Placeholder="Encuentra tu próximo hogar..."
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Start"
+            BackgroundColor="White"/>
+
+        <StackLayout 
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Start"
+            Orientation="Horizontal"
+            Spacing="10">
+
+            <Button 
+                Text="Vehículos"
+                Command="{Binding FilterCommand}"
+                CommandParameter="Vehicles"/>
+
+            <Button 
+                Text="Bienes Raíces"
+                Command="{Binding FilterCommand}"
+                CommandParameter="RealEstate"/>
+
+            <Button 
+                Text="Empleos y Servicios"
+                Command="{Binding FilterCommand}"
+                CommandParameter="JobsAndServices"/>
+
+            <Button 
+                Text="Proyectos"
+                Command="{Binding FilterCommand}"
+                CommandParameter="Projects"/>
+
+            <Button 
+                Text="Mar"
+                Command="{Binding FilterCommand}"
+                CommandParameter="Marine"/>
+        </StackLayout>
+
+        <ScrollView 
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+
+            <StackLayout 
+                x:Name="ListingsStackLayout">
+            </StackLayout>
+        </ScrollView>
+
+       
+
+        <StackLayout Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Text="$110,000,000" FontSize="24" />
+            <Label Text="Venta de casa en" VerticalAlignment="Center" />
+        </StackLayout>
+
+        <Label Text="Concepción de Tres Ríos" FontSize="18" />
+
+        <StackLayout Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Text="3 Rec." VerticalAlignment="Center" />
+            <Label Text="|" VerticalAlignment="Center" Padding="5,0" />
+            <Label Text="Tres Ríos" VerticalAlignment="Center" />
+        </StackLayout>
+
+        <Button Text="Ver más" />
+
+    </StackLayout>
+
+  
+
+
+
+</ContentPage>
