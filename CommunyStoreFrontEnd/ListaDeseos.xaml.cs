@@ -177,6 +177,21 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
 
     }
 
+    private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new AgregarPublicacionView());
+    }
+
+    private void Button_Clicked_view_home(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new PublicacionesView());
+    }
+
+    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ListaDeseos());
+    }
+
 
 
 }

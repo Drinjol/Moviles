@@ -32,9 +32,7 @@
             <!-- Barra de búsqueda -->
             <Entry Placeholder="Buscar" Margin="10" Grid.Column="1"/>
 
-            <!-- Botón de carrito -->
-            <Button Text="Carrito" Clicked="Button_Clicked_view_lista_guardados" HeightRequest="60" WidthRequest="80" Margin="10" HorizontalOptions="End" Grid.Column="2"/>
-        </Grid>
+            </Grid>
 
         <!-- Botones de navegación -->
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
@@ -92,13 +90,13 @@
                                         HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="Center"/>
 
-                                    <Button Text="Agregar a la lista de deseos"
+                                    <Button Text="Guardar favoritos"
                                         Clicked="Button_Clicked_add_lista_deseos"
                                         CommandParameter="{Binding .}"
                                         HorizontalOptions="FillAndExpand"
                                         Style="{StaticResource WishlistButtonStyle}" />
                                     <Button Text="Ver detalles"
-                                        Clicked="Button_Clicked_add_lista_deseos"
+                                        Clicked="Button_Clicked_detalles"
                                         CommandParameter="{Binding .}"
                                         HorizontalOptions="FillAndExpand"
                                         Style="{StaticResource WishlistButtonStyle}" />
@@ -115,10 +113,11 @@
 
         <!-- Barra de pestañas -->
         <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Button Text="Home" Clicked="Button_Clicked_view_home"  HorizontalOptions="FillAndExpand"/>
-            <Button  Text="New Publicacion"  Clicked="Button_Clicked_view_new_publicacion" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Anuncios" Clicked="Button_Clicked_view_home"  HorizontalOptions="FillAndExpand"/>
+            <Button Text="Favoritos" Clicked="Button_Clicked_view_lista_guardados"  HorizontalOptions="FillAndExpand"/>
+            <Button  Text="Nueva Publicación"  Clicked="Button_Clicked_view_new_publicacion" HorizontalOptions="FillAndExpand"/>
             <Button Text="Mensajes" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Profile" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Perfil" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
     </Grid>
 

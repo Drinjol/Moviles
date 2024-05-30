@@ -93,7 +93,7 @@
 	  <MauiXaml Update="ListaDeseos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Prueba.xaml">
+	  <MauiXaml Update="prueba1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PublicacionesView.xaml">

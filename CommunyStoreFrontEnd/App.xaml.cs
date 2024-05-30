@@ -5,7 +5,7 @@
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new Prueba());
+            MainPage = new NavigationPage(new prueba1());
             
         }
         public void NavigateToAppShell()
