@@ -36,10 +36,10 @@
 
         <!-- Botones de navegación -->
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-            <Button Text="Todo"  HorizontalOptions="FillAndExpand"/>
-            <Button Text="Tecnologia" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Hogar" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mascotas" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btn_todo" Text="Todo" Clicked="btn_todo_Clicked"  HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btn_tecnologia" Text="Tecnologia" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btn_hogar" Text="Hogar" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand"/>
+            <Button x:Name="btn_mascotas" Text="Mascotas" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand"/>
         </StackLayout>
 
         <!-- Contenido de las pestañas -->

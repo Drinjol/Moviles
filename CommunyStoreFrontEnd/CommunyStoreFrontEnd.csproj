@@ -63,6 +63,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\white.svg" />
+	  <None Remove="Resources\Raw\credentials.json" />
 	  <None Remove="Resources\Splash\iconp.jpg" />
 	</ItemGroup>
 

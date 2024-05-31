@@ -26,6 +26,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
     private int cantidad = 3; // Variable que determina la cantidad de pestañas
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
+    private string categoriaSeleccionada = "";
+    ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
 
 
     public List<Publicacion> listaDePublicaciones
@@ -50,6 +52,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     public PublicacionesView()
     {
         InitializeComponent();
+        categoriaSeleccionada = null;
         CargarPublicaciones();
 
     }
@@ -75,9 +78,9 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
         try
         {
-            ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
+           
             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
-            req.categoria = null;
+            req.categoria = categoriaSeleccionada;
             var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
 
             using (HttpClient httpClient = new HttpClient())
@@ -100,7 +103,6 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
 
                             retornarPublicacionApi = res.publicaciones;
-
 
                         }
                         else
@@ -145,20 +147,14 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         Navigation.PushAsync(new ListaDeseos());
     }
 
-    private void Button_Clicked_detalles(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new ListaDeseos());
-    }
+    
 
 
     private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {
 
-        var button = sender as ImageButton;
-        var publication = button?.BindingContext as Publicacion;
-
-        // Alternar el estado de IsFavorito
-        publication.IsFavorito = !publication.IsFavorito;
+        Button button = (Button)sender; // Cast the sender to Button
+        Publicacion publication = (Publicacion)button.CommandParameter; // Get the publication data item
 
         try
         {
@@ -167,15 +163,11 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
             req.idPublicacion = publication.idPublicacion;
             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
 
-            string apiEndpoint = publication.IsFavorito
-               ? "CommunyStoreApi/publicacion/agregarPublicacionGuardado"
-               : "CommunyStoreApi/publicacion/eliminarPublicacionGuardada";
-
             var jsonreq = JsonSerializer.Serialize(req);
 
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(API_LINK.link + apiEndpoint, new StringContent(jsonreq, Encoding.UTF8, "application/json"));
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/agregarPublicacionGuardado", new StringContent(jsonreq, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -186,18 +178,40 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
                     bool resultado = jsonResponse.resultado;
                     int tipoRegistro = jsonResponse.tipoRegistro;
-                    string mensaje = jsonResponse.descripcion;
+                    // JArray listaDeErrores = jsonResponse.listaDeErrores;
+
+                    if (tipoRegistro == 1)
+                    {
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 2)
+                    {
+
+                        await DisplayAlert("Registro fallido!", "Error de logica!", "Aceptar");
+                    }
+                    else if (tipoRegistro == 3)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error de datos", "Aceptar");
+
+                    }
+                    else if (tipoRegistro == 4)
+                    {
+                        await DisplayAlert("Registro fallido!", "Error no controlado!", "Aceptar");
+
+                    }
 
                     if (resultado)
                     {
-                        string successMessage = publication.IsFavorito
-                            ? $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos."
-                            : $"La publicación con ID {req.idPublicacion} se ha eliminado de su lista de deseos.";
-                        await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
+                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
+
+
                     }
                     else
                     {
-                        await DisplayAlert("Error", $"{mensaje}", "Aceptar");
+                        // Manejar errores
+                        //  string errores = string.Join(", ", listaDeErrores);
+                        await DisplayAlert("Error", "Hubo un problema con el registro, por favor volver a intentar", "Aceptar");
                     }
                 }
                 else
@@ -213,9 +227,29 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     }
 
+    private void btn_todo_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = null;
+        CargarPublicaciones();
+    }
 
+    private void btn_tecnologia_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = "Tecnologia";
+        CargarPublicaciones();
+    }
 
+    private void btn_hogar_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = "Hogar";
+        CargarPublicaciones();
+    }
 
+    private void btn_mascotas_Clicked(object sender, EventArgs e)
+    {
+        categoriaSeleccionada = "Mascotas";
+        CargarPublicaciones();
+    }
 }
 
 
