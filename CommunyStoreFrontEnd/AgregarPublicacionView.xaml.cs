@@ -36,7 +36,7 @@ public partial class AgregarPublicacionView : ContentPage
         {
             if (string.IsNullOrWhiteSpace(entryDescripcion.Text) ||
                 string.IsNullOrWhiteSpace(entryPrecio.Text) ||
-                string.IsNullOrWhiteSpace(entryCategoria.ToString()))
+                string.IsNullOrWhiteSpace((string)entryCategoria.SelectedItem))
             {
                 await DisplayAlert("Campos vacíos", "Por favor, complete todos los campos.", "Aceptar");
                 return; // Detener la ejecución del método si hay campos vacíos
@@ -48,7 +48,8 @@ public partial class AgregarPublicacionView : ContentPage
             req.publicacion = new Publicacion();
             req.publicacion.descripcionPublicacion = entryDescripcion.Text;
             req.publicacion.precioPublicacion = decimal.Parse(entryPrecio.Text);
-            req.publicacion.categoriaPublicacion = entryCategoria.ToString();
+            req.publicacion.categoriaPublicacion = (string)entryCategoria.SelectedItem;
+
 
             req.publicacion.usuario = SesionFrontEnd.usuarioSesion;
 
@@ -139,6 +140,9 @@ public partial class AgregarPublicacionView : ContentPage
 
     private async void OnUploadImageClicked(object sender, EventArgs e)
     {
+        activityIndicator.IsRunning = true;
+        activityIndicator.IsVisible = true;
+
         try
         {
             var result = await FilePicker.Default.PickAsync(new PickOptions
@@ -149,25 +153,19 @@ public partial class AgregarPublicacionView : ContentPage
 
             if (result != null)
             {
-                // _selectedFile = result; // Almacenar el archivo seleccionado
-
                 var service = await GetDriveService();
                 if (service != null)
                 {
-                    // Subir el archivo seleccionado a la carpeta "ImagenesSarapiquiEmprende"
                     var fileId = await UploadFile(service, result.FileName, result.FullPath, FolderId);
-
                     if (fileId != null)
                     {
-                        // Obtener la URL de descarga del archivo
                         var fileUrl = await GetFileUrl(service, fileId);
                         if (!string.IsNullOrEmpty(fileUrl))
                         {
                             var stream = await result.OpenReadAsync();
                             var image = ImageSource.FromStream(() => stream);
                             UploadedImage.Source = image;
-                            _selectedFile = fileUrl; // Almacenar la URL del archivo en _selectedFile
-                                                     // await DisplayAlert("Resultado", $"El archivo se ha subido correctamente. URL: {fileUrl}", "OK");
+                            _selectedFile = fileUrl;
                         }
                         else
                         {
@@ -187,8 +185,12 @@ public partial class AgregarPublicacionView : ContentPage
         }
         catch (Exception ex)
         {
-            // Handle exception, e.g., user canceled the picker
             Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            activityIndicator.IsRunning = false;
+            activityIndicator.IsVisible = false;
         }
     }
 
