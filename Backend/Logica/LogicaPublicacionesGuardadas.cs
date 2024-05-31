@@ -40,6 +40,7 @@ namespace Backend.Logica
                     publicacionGuardada.fechaGuardado = (DateTime)resultado.tb_lista_deseos_creacion;
                     publicacionGuardada.estadoGuardado = (int)resultado.tb_lista_deseos_estado;
                     
+                    
                     publicacionGuardada.publicacion.descripcionPublicacion = resultado.tb_publicacion_descripcion;
                     publicacionGuardada.publicacion.fechaPublicacion = (DateTime)resultado.tb_publicacion_fecha;
                     publicacionGuardada.publicacion.precioPublicacion = (decimal)resultado.tb_publicacion_precio;

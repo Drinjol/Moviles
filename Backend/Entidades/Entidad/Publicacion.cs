@@ -17,7 +17,7 @@ namespace Backend.Entidades
         public Usuario usuario { get; set; }
 
 
-        private bool _isFavorito;
+        public bool _isFavorito;
         public bool IsFavorito
         {
             get => _isFavorito;

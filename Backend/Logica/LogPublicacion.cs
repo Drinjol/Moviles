@@ -73,9 +73,7 @@ namespace Backend.Logica
             pub.precioPublicacion = (decimal)unTipoComplejo.PRECIO;
             pub.categoriaPublicacion = unTipoComplejo.CATEGORIA;
             pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
-
-
-            // pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
+            //pub._isFavorito = (bool)unTipoComplejo.IsFavorito;
 
             // Convertir la cadena hexadecimal a una representación legible
             pub.nombresArchivos = HexStringToString(unTipoComplejo.IMAGEN_BINARIO);
