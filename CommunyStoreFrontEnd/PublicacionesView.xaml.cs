@@ -101,6 +101,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
                             retornarPublicacionApi = res.publicaciones;
 
+
                         }
                         else
                         {
@@ -153,8 +154,11 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {
 
-        Button button = (Button)sender; // Cast the sender to Button
-        Publicacion publication = (Publicacion)button.CommandParameter; // Get the publication data item
+        var button = sender as ImageButton;
+        var publication = button?.BindingContext as Publicacion;
+
+        // Alternar el estado de IsFavorito
+        publication.IsFavorito = !publication.IsFavorito;
 
         try
         {
@@ -163,11 +167,15 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
             req.idPublicacion = publication.idPublicacion;
             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
 
+            string apiEndpoint = publication.IsFavorito
+               ? "CommunyStoreApi/publicacion/agregarPublicacionGuardado"
+               : "CommunyStoreApi/publicacion/eliminarPublicacionGuardada";
+
             var jsonreq = JsonSerializer.Serialize(req);
 
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/agregarPublicacionGuardado", new StringContent(jsonreq, Encoding.UTF8, "application/json"));
+                var response = await httpClient.PostAsync(API_LINK.link + apiEndpoint, new StringContent(jsonreq, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -180,39 +188,16 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                     int tipoRegistro = jsonResponse.tipoRegistro;
                     string mensaje = jsonResponse.descripcion;
 
-                    if (tipoRegistro == 1)
-                    {
-                        await DisplayAlert("¡Publicación agregada!", $"{mensaje}", "Aceptar");
-
-                    }
-                    else if (tipoRegistro == 2)
-                    {
-
-                        await DisplayAlert("Registro fallido!", "Error de logica!", "Aceptar");
-                    }
-                    else if (tipoRegistro == 3)
-                    {
-                        await DisplayAlert("Registro fallido!", "Error de datos", "Aceptar");
-
-                    }
-                    else if (tipoRegistro == 4)
-                    {
-                        await DisplayAlert("Registro fallido!", "Error no controlado!", "Aceptar");
-
-                    }
-
                     if (resultado)
                     {
-                        await DisplayAlert("¡Publicación agregada!", $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos.", "Aceptar");
-
-
+                        string successMessage = publication.IsFavorito
+                            ? $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos."
+                            : $"La publicación con ID {req.idPublicacion} se ha eliminado de su lista de deseos.";
+                        await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
                     }
                     else
                     {
-                        // Manejar errores
-                        //  string errores = string.Join(", ", listaDeErrores);
                         await DisplayAlert("Error", $"{mensaje}", "Aceptar");
-
                     }
                 }
                 else
@@ -228,7 +213,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     }
 
-    
+
 
 
 }

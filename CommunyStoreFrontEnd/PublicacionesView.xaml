@@ -44,71 +44,65 @@
 
         <!-- Contenido de las pestañas -->
         <ScrollView Grid.Row="2">
-            <Frame x:Name="ContentFrame" VerticalOptions="FillAndExpand">
-                <CollectionView x:Name="collectionView"
-             SelectionMode="None"
-             ItemsSource="{Binding listaDePublicaciones}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <!-- Definición de cada elemento del CollectionView -->
-                            <Frame Margin="20"
-                BorderColor="Azure"
-                CornerRadius="5"
-                HasShadow="True">
-                                <Frame.Background>
-                                    <LinearGradientBrush EndPoint="1,0">
-                                        <GradientStop  Color="White"/>
-                                    </LinearGradientBrush>
-                                </Frame.Background>
-                                <StackLayout Padding="10">
-                                    <Label TextColor="Black" Text="{Binding usuario.nombre}"
-                   FontSize="16"
-                 HorizontalOptions="CenterAndExpand"
-                  VerticalOptions="Center"/>
-                                    <Label TextColor="Black" Text="{Binding usuario.apellidos}"
-                  FontSize="16"
-                   HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Center"/>
-                                    <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
-                        FontSize="16"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="Center"/>
-                                    <Label TextColor="Black" Text="{Binding fechaPublicacion, StringFormat='Fecha: {0:d}'}"
-                        FontSize="14"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="Center"/>
+            <CollectionView ItemsSource="{Binding listaDePublicaciones}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" />
+                </CollectionView.ItemsLayout>
 
-                                    <Image Source="{Binding nombresArchivos}" 
-                                    Aspect="AspectFit" 
-                                    HeightRequest="200"
-                                    HorizontalOptions="CenterAndExpand" 
-                                    VerticalOptions="CenterAndExpand" />
-                                    
-                                    
-                                    <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
-                                        FontSize="14"
-                                        HorizontalOptions="CenterAndExpand"
-                                        VerticalOptions="Center"/>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="LightGray" CornerRadius="5" Padding="15" Margin="10">
+                            <StackLayout Spacing="15">
 
-                                    <Button Text="Guardar favoritos"
-                                        Clicked="Button_Clicked_add_lista_deseos"
-                                        CommandParameter="{Binding .}"
-                                        HorizontalOptions="FillAndExpand"
-                                        Style="{StaticResource WishlistButtonStyle}" />
+
+                                <Image Source="{Binding nombresArchivos}"
+                           Aspect="AspectFit"
+                           HeightRequest="200"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
+                                <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
+                           FontSize="16"
+                           FontAttributes="Italic"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Start"/>
+                                <Label TextColor="White" Text="{Binding descripcionPublicacion}"
+                            FontSize="16"
+                            HorizontalOptions="Fill"
+                            VerticalOptions="Center"/>
+
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <ImageButton Clicked="Button_Clicked_add_lista_deseos"
+                                     CommandParameter="{Binding .}"
+                                     HorizontalOptions="FillAndExpand"
+                                     HeightRequest="40"
+                                     WidthRequest="40">
+                                        <ImageButton.Triggers>
+                                            <DataTrigger TargetType="ImageButton"
+                                             Binding="{Binding IsFavorito}"
+                                             Value="True">
+                                                <Setter Property="Source" Value="corazon_fondo.png" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="ImageButton"
+                                             Binding="{Binding IsFavorito}"
+                                             Value="False">
+                                                <Setter Property="Source" Value="corazon_sin_fondo.jpg" />
+                                            </DataTrigger>
+                                        </ImageButton.Triggers>
+                                    </ImageButton>
+
+
                                     <Button Text="Ver detalles"
-                                        Clicked="Button_Clicked_detalles"
-                                        CommandParameter="{Binding .}"
-                                        HorizontalOptions="FillAndExpand"
-                                        Style="{StaticResource WishlistButtonStyle}" />
-
-
-                                </StackLayout>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-                <!-- El contenido de las pestañas se cargará dinámicamente aquí -->
-            </Frame>
+                                Clicked="Button_Clicked_detalles"
+                                CommandParameter="{Binding .}"
+                                HorizontalOptions="FillAndExpand"
+                                Style="{StaticResource WishlistButtonStyle}" />
+                                </HorizontalStackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </ScrollView>
 
         <!-- Barra de pestañas -->
