@@ -73,19 +73,19 @@
 
                                 <HorizontalStackLayout Spacing="10">
                                     <ImageButton Clicked="Button_Clicked_add_lista_deseos"
-                                     CommandParameter="{Binding .}"
-                                     HorizontalOptions="FillAndExpand"
-                                     HeightRequest="40"
-                                     WidthRequest="40">
+                                         CommandParameter="{Binding .}"
+                                         HorizontalOptions="FillAndExpand"
+                                         HeightRequest="40"
+                                         WidthRequest="40">
                                         <ImageButton.Triggers>
                                             <DataTrigger TargetType="ImageButton"
-                                             Binding="{Binding IsFavorito}"
-                                             Value="True">
+                                                 Binding="{Binding favorito}"
+                                                 Value="True">
                                                 <Setter Property="Source" Value="corazon_fondo.png" />
                                             </DataTrigger>
                                             <DataTrigger TargetType="ImageButton"
-                                             Binding="{Binding IsFavorito}"
-                                             Value="False">
+                                                 Binding="{Binding favorito}"
+                                                 Value="False">
                                                 <Setter Property="Source" Value="corazon_sin_fondo.jpg" />
                                             </DataTrigger>
                                         </ImageButton.Triggers>

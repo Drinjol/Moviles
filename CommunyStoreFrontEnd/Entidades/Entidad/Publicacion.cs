@@ -10,17 +10,18 @@ namespace CommunyStoreFrontEnd.Entidades
 {
     public class Publicacion : INotifyPropertyChanged
     {
-         public int idPublicacion { get; set; }
-         public DateTime fechaPublicacion { get; set; }
+        public int idPublicacion { get; set; }
+        public DateTime fechaPublicacion { get; set; }
          public decimal precioPublicacion { get; set; }
-         public string descripcionPublicacion { get; set; }
-         public string categoriaPublicacion { get; set; }
-         public int estadoPublicacion { get; set; }
-         public string nombresArchivos { get; set; }
+        public string descripcionPublicacion { get; set; }
+        public string categoriaPublicacion { get; set; }
+        public int estadoPublicacion { get; set; }
+        public string nombresArchivos { get; set; }
 
         public ImageSource imagen {  get; set; }
 
-         public Usuario usuario { get; set; }
+        public Usuario usuario { get; set; }
+        public bool favorito { get; set; }
 
 
         private bool _isFavorito;

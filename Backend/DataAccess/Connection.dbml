@@ -113,21 +113,6 @@
       <Column Name="tb_lista_deseos_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.SP_ELIMINAR_PUBLICACION_LISTA_DESEO" Method="SP_ELIMINAR_PUBLICACION_LISTA_DESEO">
-    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.SP_GUARDAR_PUBLICACION_DESEO" Method="SP_GUARDAR_PUBLICACION_DESEO">
-    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
-    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="MENSAJE_SALIDA" Parameter="mENSAJE_SALIDA" Type="System.String" DbType="NVarChar(300)" Direction="InOut" />
-    <ElementType Name="SP_GUARDAR_PUBLICACION_DESEOResult">
-      <Column Name="MENSAJE" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
-      <Column Name="RESULTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.SP_OBTENER_PUBLICACIONES" Method="SP_OBTENER_PUBLICACIONES">
     <Parameter Name="Categoria" Parameter="categoria" Type="System.String" DbType="VarChar(MAX)" />
     <ElementType Name="SP_OBTENER_PUBLICACIONESResult">
@@ -143,5 +128,20 @@
       <Column Name="APELLIDOS_USUARIO" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
       <Column Name="IMAGEN_BINARIO" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_GUARDAR_PUBLICACION_DESEO" Method="SP_GUARDAR_PUBLICACION_DESEO">
+    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="MENSAJE_SALIDA" Parameter="mENSAJE_SALIDA" Type="System.String" DbType="NVarChar(300)" Direction="InOut" />
+    <ElementType Name="SP_GUARDAR_PUBLICACION_DESEOResult">
+      <Column Name="MENSAJE" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="RESULTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ELIMINAR_PUBLICACION_LISTA_DESEO" Method="SP_ELIMINAR_PUBLICACION_LISTA_DESEO">
+    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

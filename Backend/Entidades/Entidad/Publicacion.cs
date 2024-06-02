@@ -15,9 +15,9 @@ namespace Backend.Entidades
       //  public List<string> nombresArchivos {  get; set; }
         public string nombresArchivos { get; set; }
         public Usuario usuario { get; set; }
+        public bool favorito {  get; set; }
 
-
-        public bool _isFavorito;
+        private bool _isFavorito;
         public bool IsFavorito
         {
             get => _isFavorito;

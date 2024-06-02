@@ -154,7 +154,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         var publication = button?.BindingContext as Publicacion;
 
         // Alternar el estado de IsFavorito
-        publication.IsFavorito = !publication.IsFavorito;
+        publication.favorito = !publication.favorito;
 
         try
         {
@@ -163,7 +163,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
             req.idPublicacion = publication.idPublicacion;
             req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
 
-            string apiEndpoint = publication.IsFavorito
+            string apiEndpoint = publication.favorito
                ? "CommunyStoreApi/publicacion/agregarPublicacionGuardado"
                : "CommunyStoreApi/publicacion/eliminarPublicacionGuardada";
 
@@ -186,7 +186,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
                     if (resultado)
                     {
-                        string successMessage = publication.IsFavorito
+                        CargarPublicaciones();
+                        string successMessage = publication.favorito
                             ? $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos."
                             : $"La publicación con ID {req.idPublicacion} se ha eliminado de su lista de deseos.";
                         await DisplayAlert("Operación exitosa", successMessage, "Aceptar");

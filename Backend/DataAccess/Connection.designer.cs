@@ -150,11 +150,11 @@ namespace Backend.DataAccess
 			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION_LISTA_DESEO")]
-		public int SP_ELIMINAR_PUBLICACION_LISTA_DESEO([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_OBTENER_PUBLICACIONES")]
+		public ISingleResult<SP_OBTENER_PUBLICACIONESResult> SP_OBTENER_PUBLICACIONES([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Categoria", DbType="VarChar(MAX)")] string categoria)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION);
-			return ((int)(result.ReturnValue));
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), categoria);
+			return ((ISingleResult<SP_OBTENER_PUBLICACIONESResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_GUARDAR_PUBLICACION_DESEO")]
@@ -166,11 +166,11 @@ namespace Backend.DataAccess
 			return ((ISingleResult<SP_GUARDAR_PUBLICACION_DESEOResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_OBTENER_PUBLICACIONES")]
-		public ISingleResult<SP_OBTENER_PUBLICACIONESResult> SP_OBTENER_PUBLICACIONES([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Categoria", DbType="VarChar(MAX)")] string categoria)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION_LISTA_DESEO")]
+		public int SP_ELIMINAR_PUBLICACION_LISTA_DESEO([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), categoria);
-			return ((ISingleResult<SP_OBTENER_PUBLICACIONESResult>)(result.ReturnValue));
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -1006,50 +1006,6 @@ namespace Backend.DataAccess
 		}
 	}
 	
-	public partial class SP_GUARDAR_PUBLICACION_DESEOResult
-	{
-		
-		private string _MENSAJE;
-		
-		private System.Nullable<int> _RESULTADO;
-		
-		public SP_GUARDAR_PUBLICACION_DESEOResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MENSAJE", DbType="NVarChar(300)")]
-		public string MENSAJE
-		{
-			get
-			{
-				return this._MENSAJE;
-			}
-			set
-			{
-				if ((this._MENSAJE != value))
-				{
-					this._MENSAJE = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESULTADO", DbType="Int")]
-		public System.Nullable<int> RESULTADO
-		{
-			get
-			{
-				return this._RESULTADO;
-			}
-			set
-			{
-				if ((this._RESULTADO != value))
-				{
-					this._RESULTADO = value;
-				}
-			}
-		}
-	}
-	
 	public partial class SP_OBTENER_PUBLICACIONESResult
 	{
 		
@@ -1251,6 +1207,50 @@ namespace Backend.DataAccess
 				if ((this._IMAGEN_BINARIO != value))
 				{
 					this._IMAGEN_BINARIO = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_GUARDAR_PUBLICACION_DESEOResult
+	{
+		
+		private string _MENSAJE;
+		
+		private System.Nullable<int> _RESULTADO;
+		
+		public SP_GUARDAR_PUBLICACION_DESEOResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MENSAJE", DbType="NVarChar(300)")]
+		public string MENSAJE
+		{
+			get
+			{
+				return this._MENSAJE;
+			}
+			set
+			{
+				if ((this._MENSAJE != value))
+				{
+					this._MENSAJE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RESULTADO", DbType="Int")]
+		public System.Nullable<int> RESULTADO
+		{
+			get
+			{
+				return this._RESULTADO;
+			}
+			set
+			{
+				if ((this._RESULTADO != value))
+				{
+					this._RESULTADO = value;
 				}
 			}
 		}
