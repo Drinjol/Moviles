@@ -396,6 +396,7 @@ C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Release.Net.dll
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ar\Microsoft.Maui.Controls.resources.dll
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ca\Microsoft.Maui.Controls.resources.dll
@@ -454,6 +455,8 @@ C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-400.jpg
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\white.svg
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
@@ -1075,11 +1078,11 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-wi
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Auth.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Core.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Drive.v3.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Management.Deployment.Projection.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.CodeDom.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Management.dll
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Plugin.FilePicker.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Auth.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Core.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Drive.v3.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.CodeDom.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Management.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\corazon_fondo.scale-100.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\corazon_sin_fondo.scale-100.jpg

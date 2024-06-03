@@ -908,3 +908,9 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ma
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.pdb
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\CommunyStoreFrontEnd.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.Auth.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.Core.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.Drive.v3.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.CodeDom.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.Management.dll

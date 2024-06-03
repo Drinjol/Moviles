@@ -17,15 +17,25 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <!-- Encabezado con la barra de búsqueda, logo y botón de carrito -->
+        <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Logo -->
+            <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
+
+            <!-- Barra de búsqueda -->
+            <Entry Placeholder="Buscar" Margin="10" Grid.Column="1"/>
+
+        </Grid>
 
 
-        <!-- Botones de navegación -->
-        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-            <Button Text="Todo"  HorizontalOptions="FillAndExpand"/>
-            <Button Text="Tecnologia" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Hogar" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mascotas" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+
+
 
         <!-- Contenido de las pestañas -->
         <ScrollView Grid.Row="2">
@@ -48,13 +58,8 @@
                                 </Frame.Background>
                                 <StackLayout Padding="10">
 
-                                    <Label TextColor="Black" Text="{Binding idPublicacionGuardada}"
-                                        FontSize="16"
-                                        HorizontalOptions="CenterAndExpand"
-                                        VerticalOptions="Center"/>
-
-                                    <Label TextColor="Black" Text="{Binding usuario.Id}"
-                                        FontSize="16"
+                                    <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
+                                        FontSize="14"
                                         HorizontalOptions="CenterAndExpand"
                                         VerticalOptions="Center"/>
 
@@ -80,7 +85,15 @@
                 <!-- El contenido de las pestañas se cargará dinámicamente aquí -->
             </Frame>
         </ScrollView>
-
+        
+        <!-- Barra de pestañas -->
+        <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="Anuncios" Clicked="Button_Clicked_view_home"  HorizontalOptions="FillAndExpand"/>
+            <Button Text="Favoritos" Clicked="Button_Clicked_view_lista_guardados"  HorizontalOptions="FillAndExpand"/>
+            <Button  Text="Nueva Publicación"  Clicked="Button_Clicked_view_new_publicacion" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Mensajes" HorizontalOptions="FillAndExpand"/>
+            <Button Text="Perfil" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
 
     </Grid>
 
