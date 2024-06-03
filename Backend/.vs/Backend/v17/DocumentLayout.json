@@ -3,23 +3,43 @@
   "WorkspaceRootPath": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\logica\\logicapublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicapublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\entidades\\entidad\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\logica\\logicapublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicapublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystoreapi\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\response\\resobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\response\\resobtenerpublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resobtenerpublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\response\\resobtenerpublicacionidusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resobtenerpublicacionidusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\backend\\entidades\\request\\reqobtenerpublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqobtenerpublicacionesguardadas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\entidades\\entidad\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\publicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,57 +49,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "ResObtenerPublicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:05:50.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LogicaPublicacionesGuardadas.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaPublicacionesGuardadas.cs",
               "RelativeDocumentMoniker": "Logica\\LogicaPublicacionesGuardadas.cs",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogicaPublicacionesGuardadas.cs",
               "RelativeToolTip": "Logica\\LogicaPublicacionesGuardadas.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAQwC8AAAAUAAAA",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAYwJYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T06:20:32.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ReqObtenerPublicaciones.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
-              "RelativeDocumentMoniker": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
-              "RelativeToolTip": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T05:23:37.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Publicacion.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Entidad\\Publicacion.cs",
-              "RelativeDocumentMoniker": "Entidades\\Entidad\\Publicacion.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Entidad\\Publicacion.cs",
-              "RelativeToolTip": "Entidades\\Entidad\\Publicacion.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBEAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T03:53:44.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LogPublicacion.cs",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
               "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
               "RelativeToolTip": "Logica\\LogPublicacion.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAgwE0AAAAlAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAowMUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T03:35:22.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReqObtenerPublicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T05:23:37.387Z",
               "EditorCaption": ""
             },
             {
@@ -90,9 +111,74 @@
               "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBkAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T06:39:45.902Z"
+              "WhenOpened": "2024-05-31T06:39:45.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Connection.dbml",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\DataAccess\\Connection.dbml",
+              "RelativeDocumentMoniker": "DataAccess\\Connection.dbml",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\DataAccess\\Connection.dbml",
+              "RelativeToolTip": "DataAccess\\Connection.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2024-06-03T21:19:02.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResObtenerPublicacionesGuardadas.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicacionesGuardadas.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicacionesGuardadas.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicacionesGuardadas.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicacionesGuardadas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:05:44.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResObtenerPublicacionIdUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicacionIdUsuario.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicacionIdUsuario.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Response\\ResObtenerPublicacionIdUsuario.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicacionIdUsuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:05:42.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReqObtenerPublicacionesGuardadas.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicacionesGuardadas.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqObtenerPublicacionesGuardadas.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Request\\ReqObtenerPublicacionesGuardadas.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqObtenerPublicacionesGuardadas.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T20:05:38.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Publicacion.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Entidad\\Publicacion.cs",
+              "RelativeDocumentMoniker": "Entidades\\Entidad\\Publicacion.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\Backend\\Entidades\\Entidad\\Publicacion.cs",
+              "RelativeToolTip": "Entidades\\Entidad\\Publicacion.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T03:53:44.178Z",
+              "EditorCaption": ""
             }
           ]
         }

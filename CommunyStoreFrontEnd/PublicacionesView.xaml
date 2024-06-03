@@ -74,9 +74,11 @@
                                 <HorizontalStackLayout Spacing="10">
                                     <ImageButton Clicked="Button_Clicked_add_lista_deseos"
                                          CommandParameter="{Binding .}"
+                                         
                                          HorizontalOptions="FillAndExpand"
                                          HeightRequest="40"
                                          WidthRequest="40">
+                                        
                                         <ImageButton.Triggers>
                                             <DataTrigger TargetType="ImageButton"
                                                  Binding="{Binding favorito}"
@@ -97,6 +99,9 @@
                                 CommandParameter="{Binding .}"
                                 HorizontalOptions="FillAndExpand"
                                 Style="{StaticResource WishlistButtonStyle}" />
+
+                                    
+
                                 </HorizontalStackLayout>
                             </StackLayout>
                         </Frame>
