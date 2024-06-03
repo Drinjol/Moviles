@@ -1,1 +1,32 @@
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Binarios, Objetos y Librerías
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Configuración y Credenciales
+*.config
 credentials.json
+
+# Archivos compilados de Java
+*.class
+
+# Otros
+*.vsidx
+.v2
+*.a
+*.flat
+*.xml

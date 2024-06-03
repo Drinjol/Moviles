@@ -9,7 +9,7 @@ namespace Backend.Logica
         public ResAgregarInteraccionUsuario agregarInteraccionUsuario(ReqAgregarInteraccionUsuario req)
         {
             ResAgregarInteraccionUsuario result = new ResAgregarInteraccionUsuario();
-            if (req.id_usuario == 0 || req.id_publicacion == 0 || req.fecha_busqueda == null) 
+            if (req.id_usuario == 0 || req.id_publicacion == 0) 
             {
                 result.listaDeErrores.Add("datos invalidos");
                 result.tipoRegistro = 2;
@@ -20,8 +20,11 @@ namespace Backend.Logica
                 // si llega hasta acá es porque todo salió bien hasta el momento
                 try
                 {
+                    // Obtiene la fecha y hora actual
+                    DateTime fechaActual = DateTime.Now;
+
                     ConnectionDataContext linq = new ConnectionDataContext();
-                    //linq.sp_agregar_interaccion_usuario(req.id_publicacion, req.id_usuario, req.fecha_busqueda);
+                    linq.sp_agregar_interaccion_usuario(req.id_publicacion, req.id_usuario, fechaActual);
 
                     result.resultado = true;
                     result.listaDeErrores.Add("success");
@@ -29,13 +32,13 @@ namespace Backend.Logica
                 }
                 catch (Exception e)
                 {
-                    result.listaDeErrores.Add("Error de BD");
+                    result.listaDeErrores.Add("Error de BD"+ e.ToString());
                     result.tipoRegistro = 4;
                     result.resultado = false;
                 }
             }
 
-            return null;
+            return result;
         }
     }
 }

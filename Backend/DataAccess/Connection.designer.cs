@@ -33,9 +33,15 @@ namespace Backend.DataAccess
     partial void Inserttb_imagen_binario(tb_imagen_binario instance);
     partial void Updatetb_imagen_binario(tb_imagen_binario instance);
     partial void Deletetb_imagen_binario(tb_imagen_binario instance);
-    #endregion
-		
-		public ConnectionDataContext(string connection) : 
+        #endregion
+
+        public ConnectionDataContext() :
+        base(global::Backend.Properties.Settings.Default.db_aa7784_bdemprendeConnectionString, mappingSource)
+        {
+            OnCreated();
+        }
+
+        public ConnectionDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

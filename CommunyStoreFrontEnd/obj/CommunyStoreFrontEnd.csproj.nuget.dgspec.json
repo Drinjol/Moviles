@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj": {}
+    "C:\\Users\\Dilan GC\\Desktop\\Móviles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj": {
+    "C:\\Users\\Dilan GC\\Desktop\\Móviles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Dilan GC\\Desktop\\Móviles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
         "projectName": "CommunyStoreFrontEnd",
-        "projectPath": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
-        "packagesPath": "C:\\Users\\eliez\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\obj\\",
+        "projectPath": "C:\\Users\\Dilan GC\\Desktop\\Móviles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+        "packagesPath": "C:\\Users\\Dilan GC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dilan GC\\Desktop\\Móviles\\CommunyStore\\Moviles\\CommunyStoreFrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eliez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dilan GC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

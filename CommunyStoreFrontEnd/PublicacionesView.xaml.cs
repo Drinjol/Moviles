@@ -143,9 +143,42 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     private void Button_Clicked_detalles(object sender, EventArgs e)
     {
+        // guardar la interaccion del usuario con la publicacion
+        agregarInteraccionUsuario(1);
+
+
         Navigation.PushAsync(new ListaDeseos());
     }
 
+    private async void agregarInteraccionUsuario(int id_publicacion)
+    {
+        try
+        {
+            ReqAgregarInteraccionUsuario req = new ReqAgregarInteraccionUsuario();
+            req.id_publicacion = id_publicacion;
+            req.id_usuario = SesionFrontEnd.usuarioSesion.Id;
+            
+            var jsonUsuario = JsonSerializer.Serialize(req);
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync("https://localhost:44308/CommunyStoreApi/usuario/agregarInteraccionUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
+            
+                if (response.IsSuccessStatusCode)
+                {
+                    //mostrar el modal con la info de la pub
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+    }
 
     private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {

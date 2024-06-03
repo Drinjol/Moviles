@@ -6,6 +6,7 @@ namespace Backend.Logica
 {
     public class LogicaUsuario
     {
+
         public LogicaSesionValida logicaSesionValida = new LogicaSesionValida();
         // Registro de nuevo usuario 
         public ResAgregarUsuario agregarUsuario(ReqAgregarUsuario req)
