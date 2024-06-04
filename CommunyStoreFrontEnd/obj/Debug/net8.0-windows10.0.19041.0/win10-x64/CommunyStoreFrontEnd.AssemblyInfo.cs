@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CommunyStoreFrontEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a3d01160458c9e18f7610c78d6d4b5238525f1b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b4f1012d7400b9401052932f041bb334bd020db8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CommunyStoreFrontEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CommunyStoreFrontEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -95,21 +95,29 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="LightGray" CornerRadius="5" Padding="15" Margin="10" BackgroundColor="White">
+                        <Frame BorderColor="LightGray" CornerRadius="20" Padding="15" Margin="60,10,20,20" BackgroundColor="White">
                             <StackLayout Spacing="15">
 
 
+                                <Button Text="{Binding usuario.nombre}" TextColor="Blue" BackgroundColor="Transparent"  WidthRequest="100" HeightRequest="30" />
+                                
+
+
+
+
                                 <Image Source="{Binding nombresArchivos}"
+                           
                            Aspect="AspectFit"
                            HeightRequest="200"
                            HorizontalOptions="CenterAndExpand"
                            VerticalOptions="CenterAndExpand"/>
+                                
                                 <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
                            FontSize="16"
                            FontAttributes="Italic"
                            HorizontalOptions="Fill"
                            VerticalOptions="Start"/>
-                                <Label TextColor="White" Text="{Binding descripcionPublicacion}"
+                                <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
                             FontSize="16"
                             HorizontalOptions="Fill"
                             VerticalOptions="Center"/>

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Moviles\\CommunyStoreFrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\sesionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:sesionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\sesionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:sesionpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SesionPage.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml.cs",
+              "RelativeDocumentMoniker": "SesionPage.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml.cs",
+              "RelativeToolTip": "SesionPage.xaml.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T04:23:52.477Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "PublicacionesView.xaml",
               "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeToolTip": "PublicacionesView.xaml",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAUwFEAAAAAAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAwGEAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-03T19:12:28.298Z",
               "EditorCaption": ""
@@ -58,7 +75,7 @@
               "RelativeDocumentMoniker": "SesionPage.xaml",
               "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
               "RelativeToolTip": "SesionPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-03T19:20:08.915Z",
               "EditorCaption": ""
