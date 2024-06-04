@@ -1,1 +1,1 @@
-C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\CommunyStoreFrontEnd.csproj;x64
+C:\Moviles\CommunyStoreFrontEnd\CommunyStoreFrontEnd.csproj;x64

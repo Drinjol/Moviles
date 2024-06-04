@@ -1,0 +1,2 @@
+2024-06-03 14:21:00.034 -06:00 [INF] [AuthenticationHeaderHandler] Invalid user token for request GET:https://admin.grialkit.com/secure/grial/api/v1/packing/version-check/0.96
+2024-06-03 14:21:00.064 -06:00 [INF] Solution closed

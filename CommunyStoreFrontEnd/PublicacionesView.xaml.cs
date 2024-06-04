@@ -4,6 +4,8 @@ using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Utilitarios;
 using Microsoft.Maui.Controls;
+
+
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Plugin.FilePicker.Abstractions;
@@ -26,7 +28,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
     private int cantidad = 3; // Variable que determina la cantidad de pestañas
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
-    private string categoriaSeleccionada = "";
+    public string categoriaSeleccionada = "";
     ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
 
 
@@ -54,6 +56,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         InitializeComponent();
         categoriaSeleccionada = null;
         CargarPublicaciones();
+       
 
     }
 
@@ -131,6 +134,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     private void Button_Clicked_view_home(object sender, EventArgs e)
     {
+
         Navigation.PushAsync(new PublicacionesView());
     }
 
