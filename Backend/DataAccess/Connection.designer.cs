@@ -247,7 +247,7 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary tb_imagen_binario1
 		{
 			get
