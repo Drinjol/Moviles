@@ -85,15 +85,23 @@
                 <!-- El contenido de las pestañas se cargará dinámicamente aquí -->
             </Frame>
         </ScrollView>
-        
+
         <!-- Barra de pestañas -->
-        <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Button Text="Anuncios" Clicked="Button_Clicked_view_home"  HorizontalOptions="FillAndExpand"/>
-            <Button Text="Favoritos" Clicked="Button_Clicked_view_lista_guardados"  HorizontalOptions="FillAndExpand"/>
-            <Button  Text="Nueva Publicación"  Clicked="Button_Clicked_view_new_publicacion" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mensajes" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Perfil" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+        <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnFavoritos" Clicked="Button_Clicked_view_lista_guardados" VerticalOptions="Center" HorizontalOptions="Center" Source="favorite_icon.png" Grid.Column="1" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnMensajes" VerticalOptions="Center" HorizontalOptions="Center" Source="message_icon2.png" Grid.Column="3" WidthRequest="0" HeightRequest="0" />
+            <ImageButton x:Name="btnPerfil" VerticalOptions="Center" HorizontalOptions="Center" Source="user_icon2.png" Grid.Column="4" WidthRequest="2" HeightRequest="2" />
+        </Grid>
 
     </Grid>
 

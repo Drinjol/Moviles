@@ -38,8 +38,8 @@
 
 
 
-           
 
+         
 
 
         </Grid>
@@ -48,54 +48,45 @@
 
         <!-- Botones de navegación -->
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
-                <!-- Imagen -->
+            <StackLayout x:Name="btn_todo_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <ImageButton x:Name="btn_todo" Source="market_icon.png" Clicked="btn_todo_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
-
-                <!-- Texto -->
-                <Label Text="Recomendaciones" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+                <Label x:Name="lbl_todo" Text="Recomendaciones" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
 
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <!-- Imagen -->
-                <ImageButton x:Name="btn_tecnologia"  Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
-
-                <!-- Texto -->
-                <Label Text="Tecnología" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+            <StackLayout x:Name="btn_tecnologia_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <ImageButton x:Name="btn_tecnologia" Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+                <Label x:Name="lbl_tecnologia" Text="Tecnología" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
 
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <!-- Imagen -->
-                <ImageButton x:Name="btn_hogar"  Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
-
-                <!-- Texto -->
-                <Label Text="Hogar" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+            <StackLayout x:Name="btn_hogar_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <ImageButton x:Name="btn_hogar" Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+                <Label x:Name="lbl_hogar" Text="Hogar" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
 
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <!-- Imagen -->
+            <StackLayout x:Name="btn_mascotas_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <ImageButton x:Name="btn_mascotas" Source="mascota_icon.png" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
-
-                <!-- Texto -->
-                <Label Text="Mascotas" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+                <Label x:Name="lbl_mascotas" Text="Mascotas" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
-
-            
-
         </StackLayout>
 
-        <BoxView  Color="Red" HeightRequest="2" HorizontalOptions="EndAndExpand"/>
+
+
 
         <!-- Contenido de las pestañas -->
         <ScrollView Grid.Row="2">
+           
             <CollectionView ItemsSource="{Binding listaDePublicaciones}">
+               
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="2" />
+                    
+                    <GridItemsLayout VerticalItemSpacing="8" HorizontalItemSpacing="10" Orientation="Vertical" Span="2"  />
                 </CollectionView.ItemsLayout>
 
                 <CollectionView.ItemTemplate>
+                    
                     <DataTemplate>
-                        <Frame BorderColor="LightGray" CornerRadius="20" Padding="15" Margin="60,10,20,20" BackgroundColor="White">
+                        <Frame  BorderColor="LightGray" CornerRadius="20" Padding="15" Margin="60,10,20,20" BackgroundColor="White">
+                          
                             <StackLayout Spacing="15">
 
 

@@ -26,20 +26,10 @@
             <!-- Logo -->
             <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
 
-            <!-- Barra de búsqueda -->
-            <Entry Placeholder="Buscar" Margin="10" Grid.Column="1"/>
-
-            <!-- Botón de carrito -->
-            <Button Text="Carrito" HeightRequest="60" WidthRequest="80" Margin="10" HorizontalOptions="End" Grid.Column="2"/>
+           
         </Grid>
 
-        <!-- Botones de navegación -->
-        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-            <Button Text="Todo" Clicked="btnRegistrarPublicacion_Clicked" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Tecnologia" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Hogar" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mascotas" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+        
 
         <!-- Contenido de las pestañas -->
         <ScrollView Grid.Row="2">

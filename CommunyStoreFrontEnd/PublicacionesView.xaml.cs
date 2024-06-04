@@ -31,6 +31,9 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     public string categoriaSeleccionada = "";
     ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
 
+    private StackLayout _lastSelectedStack;
+    private ImageButton _lastSelectedButton;
+
 
     public List<Publicacion> listaDePublicaciones
     {
@@ -130,23 +133,71 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
     {
         Navigation.PushAsync(new AgregarPublicacionView());
+       
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
     }
 
     private void Button_Clicked_view_home(object sender, EventArgs e)
     {
 
         Navigation.PushAsync(new PublicacionesView());
+
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
     }
 
     private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ListaDeseos());
+
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
     }
 
 
     private void Button_Clicked_detalles(object sender, EventArgs e)
     {
         Navigation.PushAsync(new ListaDeseos());
+
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
     }
 
 
@@ -216,26 +267,185 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     private void btn_todo_Clicked(object sender, EventArgs e)
     {
+        
+
         categoriaSeleccionada = null;
         CargarPublicaciones();
+
+
+
+        if (_lastSelectedStack != null)
+        {
+            // Reset background color of the previous selected button and label
+            foreach (var child in _lastSelectedStack.Children)
+            {
+                if (child is ImageButton prevButton)
+                {
+                    prevButton.BackgroundColor = Colors.Transparent;
+                }
+                else if (child is Label prevLabel)
+                {
+                    prevLabel.TextColor = Colors.Black;
+                }
+            }
+        }
+
+        // Set background color of the newly selected button and label
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            var parentStack = button.Parent as StackLayout;
+            if (parentStack != null)
+            {
+                foreach (var child in parentStack.Children)
+                {
+                    if (child is ImageButton selectedButton)
+                    {
+                        selectedButton.BackgroundColor = Colors.LightBlue;
+                    }
+                    else if (child is Label selectedLabel)
+                    {
+                        selectedLabel.TextColor = Colors.SeaGreen;
+                    }
+                }
+                _lastSelectedStack = parentStack;
+            }
+
+        }
     }
 
     private void btn_tecnologia_Clicked(object sender, EventArgs e)
     {
         categoriaSeleccionada = "Tecnologia";
         CargarPublicaciones();
+    if (_lastSelectedStack != null)
+    {
+        // Reset background color of the previous selected button and label
+        foreach (var child in _lastSelectedStack.Children)
+        {
+            if (child is ImageButton prevButton)
+            {
+                prevButton.BackgroundColor = Colors.Transparent;
+            }
+            else if (child is Label prevLabel)
+            {
+                prevLabel.TextColor = Colors.Black;
+            }
+        }
+    }
+
+    // Set background color of the newly selected button and label
+    var button = sender as ImageButton;
+    if (button != null)
+    {
+        var parentStack = button.Parent as StackLayout;
+        if (parentStack != null)
+        {
+            foreach (var child in parentStack.Children)
+            {
+                if (child is ImageButton selectedButton)
+                {
+                    selectedButton.BackgroundColor = Colors.LightBlue;
+                }
+                else if (child is Label selectedLabel)
+                {
+                    selectedLabel.TextColor = Colors.SeaGreen;
+                }
+            }
+            _lastSelectedStack = parentStack;
+        }
+    
+}
     }
 
     private void btn_hogar_Clicked(object sender, EventArgs e)
     {
         categoriaSeleccionada = "Hogar";
         CargarPublicaciones();
+
+        if (_lastSelectedStack != null)
+        {
+            // Reset background color of the previous selected button and label
+            foreach (var child in _lastSelectedStack.Children)
+            {
+                if (child is ImageButton prevButton)
+                {
+                    prevButton.BackgroundColor = Colors.Transparent;
+                }
+                else if (child is Label prevLabel)
+                {
+                    prevLabel.TextColor = Colors.Black;
+                }
+            }
+        }
+
+        // Set background color of the newly selected button and label
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            var parentStack = button.Parent as StackLayout;
+            if (parentStack != null)
+            {
+                foreach (var child in parentStack.Children)
+                {
+                    if (child is ImageButton selectedButton)
+                    {
+                        selectedButton.BackgroundColor = Colors.LightBlue;
+                    }
+                    else if (child is Label selectedLabel)
+                    {
+                        selectedLabel.TextColor = Colors.SeaGreen;
+                    }
+                }
+                _lastSelectedStack = parentStack;
+            }
+
+        }
     }
 
     private void btn_mascotas_Clicked(object sender, EventArgs e)
     {
         categoriaSeleccionada = "Mascotas";
         CargarPublicaciones();
+
+        if (_lastSelectedStack != null)
+        {
+            // Reset background color of the previous selected button and label
+            foreach (var child in _lastSelectedStack.Children)
+            {
+                if (child is ImageButton prevButton)
+                {
+                    prevButton.BackgroundColor = Colors.Transparent;
+                }
+                else if (child is Label prevLabel)
+                {
+                    prevLabel.TextColor = Colors.Black;
+                }
+            }
+        }
+
+        // Set background color of the newly selected button and label
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            var parentStack = button.Parent as StackLayout;
+            if (parentStack != null)
+            {
+                foreach (var child in parentStack.Children)
+                {
+                    if (child is ImageButton selectedButton)
+                    {
+                        selectedButton.BackgroundColor = Colors.LightBlue;
+                    }
+                    else if (child is Label selectedLabel)
+                    {
+                        selectedLabel.TextColor = Colors.Blue;
+                    }
+                }
+                _lastSelectedStack = parentStack;
+            }
+
+        }
     }
 }
 
