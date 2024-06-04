@@ -9,5 +9,7 @@ namespace Backend.Entidades
     public class ReqObtenerPublicaciones:ReqBase
     {
         public string categoria { get; set; }
+        public int usuarioID { get; set; }
+
     }
 }

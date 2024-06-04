@@ -31,7 +31,7 @@ namespace Backend.Logica
 
                 ConnectionDataContext linq = new ConnectionDataContext();
                 List<SP_OBTENER_PUBLICACIONESResult> listaDeLinq = new List<SP_OBTENER_PUBLICACIONESResult>();
-                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(req.categoria).ToList();
+                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(req.categoria, req.usuarioID).ToList();
                 res.publicaciones = this.crearListaDePublicaciones(listaDeLinq);
                 res.resultado = true;
 
@@ -61,6 +61,9 @@ namespace Backend.Logica
 
         private Publicacion crearPublicacion(SP_OBTENER_PUBLICACIONESResult unTipoComplejo)
         {
+
+            ConnectionDataContext linq = new ConnectionDataContext();
+            ReqObtenerPublicaciones req = new ReqObtenerPublicaciones();
             Publicacion pub = new Publicacion();
             pub.usuario = new Usuario();
 
@@ -73,7 +76,7 @@ namespace Backend.Logica
             pub.precioPublicacion = (decimal)unTipoComplejo.PRECIO;
             pub.categoriaPublicacion = unTipoComplejo.CATEGORIA;
             pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
-            pub.favorito = unTipoComplejo.IsFavorito != null && (bool)unTipoComplejo.IsFavorito;
+            pub.favorito = (bool)unTipoComplejo.IsFavorito;
 
             // Convertir la cadena hexadecimal a una representación legible
             pub.nombresArchivos = HexStringToString(unTipoComplejo.IMAGEN_BINARIO);

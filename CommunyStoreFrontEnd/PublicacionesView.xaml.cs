@@ -75,7 +75,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         try
         {
            
-            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+            req.usuarioID = SesionFrontEnd.usuarioSesion.Id;
             req.categoria = categoriaSeleccionada;
             var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
 
@@ -96,7 +96,6 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                         ResObtenerListaPublicaciones res = JsonConvert.DeserializeObject<ResObtenerListaPublicaciones>(responseContent);
                         if (res.resultado)
                         {
-
 
                             retornarPublicacionApi = res.publicaciones;
 
