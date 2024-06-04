@@ -9,6 +9,6 @@ namespace Backend.Entidades.Response
     public class ResObtenerPublicaciones: ResBase
     {
         public List<Publicacion> publicaciones;
-        public Publicacion publicacion;
+       // public Publicacion publicacion;
     }
 }

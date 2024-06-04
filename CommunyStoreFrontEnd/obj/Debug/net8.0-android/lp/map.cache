@@ -1,4 +1,10 @@
+FFImageLoading.Compat.dll
+FFImageLoading.Compat.Maui.dll
+FFImageLoading.Compat.Svg.dll
+FFImageLoading.Compat.Svg.Maui.dll
+FFImageLoading.Compat.Transformations.dll
 GoogleGson.dll
+HarfBuzzSharp.dll
 Jsr305Binding.dll
 Microsoft.Maui.Controls.Compatibility.dll
 Microsoft.Maui.Controls.dll
@@ -7,6 +13,7 @@ Microsoft.Maui.dll
 Microsoft.Maui.Essentials.dll
 Microsoft.Maui.Graphics.dll
 Plugin.FilePicker.dll
+SkiaSharp.dll
 Xamarin.Android.Glide.Annotations.dll
 Xamarin.Android.Glide.DiskLruCache.dll
 Xamarin.Android.Glide.dll
@@ -150,6 +157,11 @@ androidx.exifinterface.exifinterface.aar
 androidx.browser.browser.aar
 gifdecoder.aar
 glide.aar
+FFImageLoading.Compat.aar
+FFImageLoading.Compat.Maui.aar
+FFImageLoading.Compat.Svg.aar
+FFImageLoading.Compat.Svg.Maui.aar
+FFImageLoading.Compat.Transformations.aar
 GoogleGson.aar
 Jsr305Binding.aar
 Microsoft.Maui.Controls.Compatibility.aar

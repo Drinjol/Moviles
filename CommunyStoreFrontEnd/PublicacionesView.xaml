@@ -1,12 +1,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             
+              
              x:Class="CommunyStoreFrontEnd.PublicacionesView"
              Title="PublicacionesView"  >
 
 
 
-    <Grid>
+    <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
             <!-- Definir la fila para el encabezado con la barra de búsqueda -->
             <RowDefinition Height="Auto" />
@@ -29,18 +29,62 @@
             <!-- Logo -->
             <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
 
-            <!-- Barra de búsqueda -->
-            <Entry Placeholder="Buscar" Margin="10" Grid.Column="1"/>
+             
+            <Frame Grid.Column="1" Padding="5" CornerRadius="15" BorderColor="#DDDDDD" BackgroundColor="White" HasShadow="true" >
+                <!-- Barra de búsqueda -->
+                
+                <Entry Placeholder="Buscar" PlaceholderColor="Gray" FontSize="14" TextColor="Black"/>
+            </Frame>
 
-            </Grid>
+
+
+           
+
+
+
+        </Grid>
+
+      
 
         <!-- Botones de navegación -->
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-            <Button x:Name="btn_todo" Text="Todo" Clicked="btn_todo_Clicked"  HorizontalOptions="FillAndExpand"/>
-            <Button x:Name="btn_tecnologia" Text="Tecnologia" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand"/>
-            <Button x:Name="btn_hogar" Text="Hogar" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand"/>
-            <Button x:Name="btn_mascotas" Text="Mascotas" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand"/>
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                <!-- Imagen -->
+                <ImageButton x:Name="btn_todo" Source="market_icon.png" Clicked="btn_todo_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+
+                <!-- Texto -->
+                <Label Text="Recomendaciones" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <!-- Imagen -->
+                <ImageButton x:Name="btn_tecnologia"  Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+
+                <!-- Texto -->
+                <Label Text="Tecnología" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <!-- Imagen -->
+                <ImageButton x:Name="btn_hogar"  Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+
+                <!-- Texto -->
+                <Label Text="Hogar" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <!-- Imagen -->
+                <ImageButton x:Name="btn_mascotas" Source="mascota_icon.png" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+
+                <!-- Texto -->
+                <Label Text="Mascotas" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+            </StackLayout>
+
+            
+
         </StackLayout>
+
+        <BoxView  Color="Red" HeightRequest="2" HorizontalOptions="EndAndExpand"/>
 
         <!-- Contenido de las pestañas -->
         <ScrollView Grid.Row="2">
@@ -51,7 +95,7 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Frame BorderColor="LightGray" CornerRadius="5" Padding="15" Margin="10">
+                        <Frame BorderColor="LightGray" CornerRadius="5" Padding="15" Margin="10" BackgroundColor="White">
                             <StackLayout Spacing="15">
 
 
@@ -105,17 +149,31 @@
             </CollectionView>
         </ScrollView>
 
-        <!-- Barra de pestañas -->
-        <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Button Text="Anuncios" Clicked="Button_Clicked_view_home"  HorizontalOptions="FillAndExpand"/>
-            <Button Text="Favoritos" Clicked="Button_Clicked_view_lista_guardados"  HorizontalOptions="FillAndExpand"/>
-            <Button  Text="Nueva Publicación"  Clicked="Button_Clicked_view_new_publicacion" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mensajes" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Perfil" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+
+            <!-- Barra de pestañas -->
+            <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
+                <ImageButton x:Name="btnFavoritos" Clicked="Button_Clicked_view_lista_guardados" VerticalOptions="Center" HorizontalOptions="Center" Source="favorite_icon.png" Grid.Column="1" WidthRequest="50" HeightRequest="50" />
+                <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
+                <ImageButton x:Name="btnMensajes" VerticalOptions="Center" HorizontalOptions="Center" Source="message_icon2.png" Grid.Column="3" WidthRequest="0" HeightRequest="0" />
+                <ImageButton x:Name="btnPerfil" VerticalOptions="Center" HorizontalOptions="Center" Source="user_icon2.png" Grid.Column="4" WidthRequest="2" HeightRequest="2" />
+            </Grid>
+
+      
+
     </Grid>
 
 
+
+ 
 
 
 </ContentPage>
