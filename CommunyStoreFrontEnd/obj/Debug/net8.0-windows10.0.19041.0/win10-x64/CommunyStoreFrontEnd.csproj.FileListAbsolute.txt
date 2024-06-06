@@ -904,8 +904,6 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-wi
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Google.Apis.Drive.v3.dll
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.CodeDom.dll
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Management.dll
-C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\corazon_fondo.scale-100.png
-C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\corazon_sin_fondo.scale-100.jpg
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.csproj.AssemblyReference.cache
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
@@ -1226,3 +1224,13 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-wi
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-150.png
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-200.png
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-400.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-100.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-125.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-150.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-200.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-400.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-100.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-125.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-150.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-200.png
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-400.png

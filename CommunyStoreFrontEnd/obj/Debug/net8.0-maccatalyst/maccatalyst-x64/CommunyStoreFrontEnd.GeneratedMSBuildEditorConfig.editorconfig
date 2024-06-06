@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.Lista
 build_metadata.AdditionalFiles.TargetPath = ListaDeseos.xaml
 build_metadata.AdditionalFiles.RelativePath = ListaDeseos.xaml
 
+[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/PublicacionDetalles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.PublicacionDetalles.xaml
+build_metadata.AdditionalFiles.TargetPath = PublicacionDetalles.xaml
+build_metadata.AdditionalFiles.RelativePath = PublicacionDetalles.xaml
+
 [C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/PublicacionesView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.PublicacionesView.xaml

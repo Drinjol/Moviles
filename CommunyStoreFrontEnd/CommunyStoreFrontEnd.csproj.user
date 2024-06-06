@@ -22,6 +22,9 @@
     <MauiXaml Update="ListaDeseos.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="PublicacionDetalles.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="PublicacionesView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

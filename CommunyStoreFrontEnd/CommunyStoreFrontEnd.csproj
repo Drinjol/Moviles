@@ -64,6 +64,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\white.svg" />
 	  <None Remove="Resources\Images\favorite_icon.svg" />
+	  <None Remove="Resources\Images\heart_regular.svg" />
+	  <None Remove="Resources\Images\heart_solid.svg" />
 	  <None Remove="Resources\Images\home_icon.svg" />
 	  <None Remove="Resources\Images\market_icon.svg" />
 	  <None Remove="Resources\Images\mascota_icon.svg" />
@@ -103,6 +105,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ListaDeseos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PublicacionDetalles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PublicacionesView.xaml">

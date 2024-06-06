@@ -1,6 +1,4 @@
 white.svg
-corazon_fondo.scale-100.png
-corazon_sin_fondo.scale-100.jpg
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
@@ -11,6 +9,16 @@ favorite_icon.scale-125.png
 favorite_icon.scale-150.png
 favorite_icon.scale-200.png
 favorite_icon.scale-400.png
+heart_regular.scale-100.png
+heart_regular.scale-125.png
+heart_regular.scale-150.png
+heart_regular.scale-200.png
+heart_regular.scale-400.png
+heart_solid.scale-100.png
+heart_solid.scale-125.png
+heart_solid.scale-150.png
+heart_solid.scale-200.png
+heart_solid.scale-400.png
 home_icon.scale-100.png
 home_icon.scale-125.png
 home_icon.scale-150.png

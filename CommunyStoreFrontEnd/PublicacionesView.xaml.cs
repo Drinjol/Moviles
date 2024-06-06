@@ -204,7 +204,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {
 
-        var button = sender as ImageButton;
+        var button = sender as Button;
         var publication = button?.BindingContext as Publicacion;
 
         // Alternar el estado de IsFavorito
@@ -465,6 +465,20 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
         }
     }
+
+    private async void OnFrameTapped(object sender, EventArgs e)
+    {
+        var frame = sender as Frame;
+        var publicacion = frame.BindingContext as Publicacion; // Reemplaza con tu modelo de publicación
+        if (publicacion != null)
+        {
+            // Navega a la página de detalles, pasando la publicación como parámetro
+            await Navigation.PushAsync(new PublicacionDetalles(publicacion)); // Asegúrate de tener una página de detalles
+        }
+    }
+
+
+
 }
 
 

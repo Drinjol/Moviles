@@ -1,6 +1,5 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:models="clr-namespace:CommunyStoreFrontEnd.Models"
              x:Class="CommunyStoreFrontEnd.PublicacionesView"
              Title="PublicacionesView"  >
 
@@ -90,16 +89,13 @@
                     
                     <DataTemplate>
                         <Frame  BorderColor="LightGray" CornerRadius="20" Padding="15" Margin="60,10,20,20" BackgroundColor="White">
-                          
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
                             <StackLayout Spacing="15">
-
 
                                 <Button Text="{Binding usuario.nombre}" TextColor="Blue" BackgroundColor="Transparent"  WidthRequest="100" HeightRequest="30" />
                                 
-
-
-
-
                                 <Image Source="{Binding nombresArchivos}"
                            
                            Aspect="AspectFit"
@@ -107,60 +103,48 @@
                            HorizontalOptions="CenterAndExpand"
                            VerticalOptions="CenterAndExpand"/>
                                 
-                                <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
-                           FontSize="16"
-                           FontAttributes="Italic"
-                           HorizontalOptions="Fill"
-                           VerticalOptions="Start"/>
+
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
+                                        FontSize="16"
+                                        FontAttributes="Italic"
+                                        HorizontalOptions="Fill"
+                                        VerticalOptions="Start"/>
+                                    
+                                    <Button Clicked="Button_Clicked_add_lista_deseos"
+                                        CommandParameter="{Binding .}"
+                                        HorizontalOptions="EndAndExpand"
+                                        HeightRequest="50"
+                                        WidthRequest="50"
+                                        Padding="0"
+                                        BackgroundColor="Transparent">
+
+                                        <Button.Triggers>
+                                            <DataTrigger TargetType="Button" 
+                                                Binding="{Binding favorito}"
+                                                Value="True">
+                                                <Setter Property="ImageSource" Value="heart_solid.png" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Button" 
+                                                 Binding="{Binding favorito}"
+                                                 Value="False">
+                                                <Setter Property="ImageSource" Value="heart_regular.png" />
+                                            </DataTrigger>
+                                        </Button.Triggers>
+                                    </Button>
+
+                                </HorizontalStackLayout>
+
+
+
+
                                 <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
                             FontSize="16"
                             HorizontalOptions="Fill"
                             VerticalOptions="Center"/>
 
 
-                                <HorizontalStackLayout Spacing="10">
-                                    <Button Clicked="Button_Clicked_add_lista_deseos"
-                                        CommandParameter="{Binding .}"
-                                        HorizontalOptions="FillAndExpand"
-                                        HeightRequest="40"
-                                        WidthRequest="40"
-                                        FontFamily="FontAwesone">
-                                        
-                                        <Button.Triggers>
-                                            <DataTrigger TargetType="Button" 
-                                                Binding="{Binding favorito}"
-                                                Value="True">
-                                                <Setter Property="Text"  Value="{x:Static models:IconsBrands.Tiktok}" />
-                                                <Setter Property="TextColor" Value="Red" />
-                                            </DataTrigger>
-                                            <DataTrigger TargetType="Button" 
-                                                 Binding="{Binding favorito}"
-                                                 Value="False">
-                                                <Setter Property="Text" Value="&#xf004;" />
-                                                <Setter Property="TextColor" Value="Black" />
-                                            </DataTrigger>
-                                        </Button.Triggers>
-                                    </Button>
-
-                                    
-
-                                    <Button Text="Ver detalles"
-                                Clicked="Button_Clicked_detalles"
-                                CommandParameter="{Binding .}"
-                                HorizontalOptions="FillAndExpand"
-                                Style="{StaticResource WishlistButtonStyle}" />
-                                    
-                                    <Button Text="&#xf004; Click Me"
-                                        FontFamily="FontAwesone"
-                                        FontSize="24"
-                                        TextColor="Black"
-                                        BackgroundColor="White"/>
-
-                                    <Label FontFamily="FontAwesone" Text="{x:Static models:IconsBrands.Tiktok}" TextColor="blue"></Label>
-
-                                    
-
-                                </HorizontalStackLayout>
+                                
                             </StackLayout>
                         </Frame>
                     </DataTemplate>
