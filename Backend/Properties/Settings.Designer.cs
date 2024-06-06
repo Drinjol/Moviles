@@ -101,5 +101,17 @@ namespace Backend.Properties {
                 return ((string)(this["db_aa7784_bdemprendeConnectionString2"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Initial Catalog=db_aa995b_emprende;Persist Secur" +
+            "ity Info=True;User ID=db_aa995b_emprende_admin;Password=una123456;TrustServerCer" +
+            "tificate=True")]
+        public string db_aa995b_emprendeConnectionString {
+            get {
+                return ((string)(this["db_aa995b_emprendeConnectionString"]));
+            }
+        }
     }
 }

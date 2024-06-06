@@ -18,13 +18,14 @@ namespace Backend.Logica
             Int16 tipoDeTransaccion = 0;
             ResObtenerPublicacionesGuardadas res = new ResObtenerPublicacionesGuardadas();
             res.listaDeErrores = new List<string>();
+            String RESULTADO = "";
             List<PublicacionGuardada> publicacionesGuardadas = new List<PublicacionGuardada>();
 
             try
             {
                 ConnectionDataContext linq = new ConnectionDataContext();
                 List<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult> listalinq = new List<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>();
-                listalinq = linq.SP_MOSTRAR_PUBLICACIONES_GUARDADAS(req.usuarioid).ToList();
+                listalinq = linq.SP_MOSTRAR_PUBLICACIONES_GUARDADAS(req.usuarioid, ref RESULTADO).ToList();
 
                 foreach (SP_MOSTRAR_PUBLICACIONES_GUARDADASResult resultado in listalinq)
                 {
@@ -52,6 +53,7 @@ namespace Backend.Logica
 
                 res.listaPublicacionGuardada = publicacionesGuardadas;
                 res.resultado = true;
+                res.descripcion = RESULTADO;
 
 
             }

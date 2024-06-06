@@ -1,9 +1,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              
+             xmlns:models="clr-namespace:CommunyStoreFrontEnd.Models"
              x:Class="CommunyStoreFrontEnd.PublicacionesView"
              Title="PublicacionesView"  >
 
+    <ContentPage.Resources>
+        <x:String x:Key="corazon_sin_fondo">&#xf004;</x:String>
+        <x:String x:Key="corazon_con_fondo">&#xf004;</x:String>
+    </ContentPage.Resources>
 
 
     <Grid BackgroundColor="White">
@@ -115,33 +119,44 @@
 
 
                                 <HorizontalStackLayout Spacing="10">
-                                    <ImageButton Clicked="Button_Clicked_add_lista_deseos"
-                                         CommandParameter="{Binding .}"
-                                         
-                                         HorizontalOptions="FillAndExpand"
-                                         HeightRequest="40"
-                                         WidthRequest="40">
+                                    <Button Clicked="Button_Clicked_add_lista_deseos"
+                                        CommandParameter="{Binding .}"
+                                        HorizontalOptions="FillAndExpand"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        FontFamily="FontAwesone">
                                         
-                                        <ImageButton.Triggers>
-                                            <DataTrigger TargetType="ImageButton"
-                                                 Binding="{Binding favorito}"
-                                                 Value="True">
-                                                <Setter Property="Source" Value="corazon_fondo.png" />
+                                        <Button.Triggers>
+                                            <DataTrigger TargetType="Button" 
+                                                Binding="{Binding favorito}"
+                                                Value="True">
+                                                <Setter Property="Text"  Value="{x:Static models:IconsBrands.Tiktok}" />
+                                                <Setter Property="TextColor" Value="Red" />
                                             </DataTrigger>
-                                            <DataTrigger TargetType="ImageButton"
+                                            <DataTrigger TargetType="Button" 
                                                  Binding="{Binding favorito}"
                                                  Value="False">
-                                                <Setter Property="Source" Value="corazon_sin_fondo.jpg" />
+                                                <Setter Property="Text" Value="&#xf004;" />
+                                                <Setter Property="TextColor" Value="Black" />
                                             </DataTrigger>
-                                        </ImageButton.Triggers>
-                                    </ImageButton>
+                                        </Button.Triggers>
+                                    </Button>
 
+                                    
 
                                     <Button Text="Ver detalles"
                                 Clicked="Button_Clicked_detalles"
                                 CommandParameter="{Binding .}"
                                 HorizontalOptions="FillAndExpand"
                                 Style="{StaticResource WishlistButtonStyle}" />
+                                    
+                                    <Button Text="&#xf004; Click Me"
+                                        FontFamily="FontAwesone"
+                                        FontSize="24"
+                                        TextColor="Black"
+                                        BackgroundColor="White"/>
+
+                                    <Label FontFamily="FontAwesone" Text="{x:Static models:IconsBrands.Tiktok}" TextColor="blue"></Label>
 
                                     
 

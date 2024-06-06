@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CommunyStoreFrontEnd.Entidades
 {
-    public class Publicacion : INotifyPropertyChanged
+    public class Publicacion
     {
         public int idPublicacion { get; set; }
         public DateTime fechaPublicacion { get; set; }
@@ -23,26 +23,6 @@ namespace CommunyStoreFrontEnd.Entidades
         public Usuario usuario { get; set; }
         public bool favorito { get; set; }
 
-
-        private bool _isFavorito;
-        public bool IsFavorito
-        {
-            get => _isFavorito;
-            set
-            {
-                if (_isFavorito != value)
-                {
-                    _isFavorito = value;
-                    OnPropertyChanged(nameof(IsFavorito));
-                }
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
 
     }
 }

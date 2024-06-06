@@ -213,9 +213,27 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         try
         {
 
-            ReqAgregarPublicacionGuardada req = new ReqAgregarPublicacionGuardada();
-            req.idPublicacion = publication.idPublicacion;
-            req.idUsuario = SesionFrontEnd.usuarioSesion.Id;
+            object req;
+
+            if (publication.favorito)
+            {
+                var reqAgregar = new ReqAgregarPublicacionGuardada
+                {
+                    idPublicacion = publication.idPublicacion,
+                    idUsuario = SesionFrontEnd.usuarioSesion.Id
+                };
+                req = reqAgregar;
+            }
+            else
+            {
+                var reqEliminar = new ReqEliminarPublicacionGuardada
+                {
+                    publicacionGuardadaId = publication.idPublicacion,
+                    usuarioId = SesionFrontEnd.usuarioSesion.Id
+                };
+                req = reqEliminar;
+            }
+
 
             string apiEndpoint = publication.favorito
                ? "CommunyStoreApi/publicacion/agregarPublicacionGuardado"
@@ -242,8 +260,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                     {
                         CargarPublicaciones();
                         string successMessage = publication.favorito
-                            ? $"La publicación con ID {req.idPublicacion} se ha agregado a su lista de deseos."
-                            : $"La publicación con ID {req.idPublicacion} se ha eliminado de su lista de deseos.";
+                            ? $"La publicación se ha agregado a su lista de deseos."
+                            : $"La publicación se ha eliminado de su lista de deseos.";
                         await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
                     }
                     else

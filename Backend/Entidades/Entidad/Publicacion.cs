@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 namespace Backend.Entidades
 {
-    public class Publicacion : INotifyPropertyChanged
+    public class Publicacion
     {
         public int idPublicacion { get; set; }
         public DateTime fechaPublicacion { get; set; }
@@ -17,27 +17,7 @@ namespace Backend.Entidades
         public Usuario usuario { get; set; }
         public bool favorito {  get; set; }
 
-        private bool _isFavorito;
-        public bool IsFavorito
-        {
-            get => _isFavorito;
-            set
-            {
-                if (_isFavorito != value)
-                {
-                    _isFavorito = value;
-                    OnPropertyChanged(nameof(IsFavorito));
-                }
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-
+        
 
     }
 }
