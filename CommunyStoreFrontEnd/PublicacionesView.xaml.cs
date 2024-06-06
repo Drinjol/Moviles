@@ -154,7 +154,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
         if (_lastSelectedButton != null)
         {
-            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            _lastSelectedButton.BackgroundColor = Colors.LightBlue;
         }
 
         var button = sender as ImageButton;
@@ -171,7 +171,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
         if (_lastSelectedButton != null)
         {
-            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            _lastSelectedButton.BackgroundColor = Colors.LightBlue;
         }
 
         var button = sender as ImageButton;
@@ -189,7 +189,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
         if (_lastSelectedButton != null)
         {
-            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            _lastSelectedButton.BackgroundColor = Colors.LightBlue;
         }
 
         var button = sender as ImageButton;
@@ -204,7 +204,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {
 
-        var button = sender as Button;
+        var button = sender as ImageButton;
         var publication = button?.BindingContext as Publicacion;
 
         // Alternar el estado de IsFavorito
@@ -477,8 +477,10 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         }
     }
 
+    private void btnViewPerfil(object sender, TappedEventArgs e)
+    {
 
-
+    }
 }
 
 

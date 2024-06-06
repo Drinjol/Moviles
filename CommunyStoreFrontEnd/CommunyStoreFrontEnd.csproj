@@ -64,6 +64,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\white.svg" />
 	  <None Remove="Resources\Images\favorite_icon.svg" />
+	  <None Remove="Resources\Images\heart_icon.svg" />
 	  <None Remove="Resources\Images\heart_regular.svg" />
 	  <None Remove="Resources\Images\heart_solid.svg" />
 	  <None Remove="Resources\Images\home_icon.svg" />
@@ -73,6 +74,7 @@
 	  <None Remove="Resources\Images\message_icon2.svg" />
 	  <None Remove="Resources\Images\new_icon.svg" />
 	  <None Remove="Resources\Images\tecnologia_icon.svg" />
+	  <None Remove="Resources\Images\up_icon.svg" />
 	  <None Remove="Resources\Images\user_icon.svg" />
 	  <None Remove="Resources\Images\user_icon2.svg" />
 	  <None Remove="Resources\Raw\credentials.json" />

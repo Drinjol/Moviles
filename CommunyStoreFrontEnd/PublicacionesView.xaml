@@ -1,182 +1,185 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunyStoreFrontEnd.PublicacionesView"
-             Title="PublicacionesView"  >
+             Title="PublicacionesView">
 
     <ContentPage.Resources>
         <x:String x:Key="corazon_sin_fondo">&#xf004;</x:String>
         <x:String x:Key="corazon_con_fondo">&#xf004;</x:String>
     </ContentPage.Resources>
 
-
     <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
-            <!-- Definir la fila para el encabezado con la barra de búsqueda -->
             <RowDefinition Height="Auto" />
-            <!-- Definir la fila para los botones de navegación -->
             <RowDefinition Height="Auto" />
-            <!-- Definir la fila para el contenido, que puede ocupar todo el espacio disponible -->
             <RowDefinition Height="*" />
-            <!-- Definir la fila para la barra de pestañas, que tiene una altura fija -->
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Encabezado con la barra de búsqueda, logo y botón de carrito -->
+        <!-- Encabezado -->
         <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
-
-            <!-- Logo -->
             <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
-
-             
-            <Frame Grid.Column="1" Padding="5" CornerRadius="15" BorderColor="#DDDDDD" BackgroundColor="White" HasShadow="true" >
-                <!-- Barra de búsqueda -->
-                
+            <Frame Grid.Column="1" Padding="5" CornerRadius="15" BorderColor="#DDDDDD" BackgroundColor="White" HasShadow="true">
                 <Entry Placeholder="Buscar" PlaceholderColor="Gray" FontSize="14" TextColor="Black"/>
             </Frame>
-
-
-
-
-         
-
-
         </Grid>
 
-      
-
-        <!-- Botones de navegación -->
+        <!-- Botones de categorías -->
         <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
+            <!-- Botón y etiqueta de recomendaciones -->
             <StackLayout x:Name="btn_todo_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <ImageButton x:Name="btn_todo" Source="market_icon.png" Clicked="btn_todo_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton x:Name="btn_todo" Source="market_icon.png" Clicked="btn_todo_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
                 <Label x:Name="lbl_todo" Text="Recomendaciones" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
-
+            <!-- Botón y etiqueta de tecnología -->
             <StackLayout x:Name="btn_tecnologia_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <ImageButton x:Name="btn_tecnologia" Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton x:Name="btn_tecnologia" Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
                 <Label x:Name="lbl_tecnologia" Text="Tecnología" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
-
+            <!-- Botón y etiqueta de hogar -->
             <StackLayout x:Name="btn_hogar_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <ImageButton x:Name="btn_hogar" Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton x:Name="btn_hogar" Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
                 <Label x:Name="lbl_hogar" Text="Hogar" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
-
+            <!-- Botón y etiqueta de mascotas -->
             <StackLayout x:Name="btn_mascotas_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <ImageButton x:Name="btn_mascotas" Source="mascota_icon.png" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand" WidthRequest="50" HeightRequest="50"/>
+                <ImageButton x:Name="btn_mascotas" Source="mascota_icon.png" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
                 <Label x:Name="lbl_mascotas" Text="Mascotas" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
             </StackLayout>
         </StackLayout>
 
+        <!-- Lista de publicaciones -->
 
-
-
-        <!-- Contenido de las pestañas -->
-        <ScrollView Grid.Row="2">
-           
-            <CollectionView ItemsSource="{Binding listaDePublicaciones}">
-               
-                <CollectionView.ItemsLayout>
-                    
-                    <GridItemsLayout VerticalItemSpacing="8" HorizontalItemSpacing="10" Orientation="Vertical" Span="2"  />
-                </CollectionView.ItemsLayout>
-
-                <CollectionView.ItemTemplate>
+        <CollectionView Grid.Row="2" ItemsSource="{Binding listaDePublicaciones}" HorizontalOptions="Fill">
+            <CollectionView.ItemsLayout >
+                <GridItemsLayout VerticalItemSpacing="15" HorizontalItemSpacing="15" Orientation="Vertical" Span="2"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
                     
                     <DataTemplate>
-                        <Frame  BorderColor="LightGray" CornerRadius="20" Padding="15" Margin="60,10,20,20" BackgroundColor="White">
+                        <Frame BorderColor="LightGray" CornerRadius="10" Padding="15" Margin="30" BackgroundColor="White" HasShadow="True" >
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="{Binding .}" />
                             </Frame.GestureRecognizers>
                             <StackLayout Spacing="15">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                      <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
 
-                                <Button Text="{Binding usuario.nombre}" TextColor="Blue" BackgroundColor="Transparent"  WidthRequest="100" HeightRequest="30" />
-                                
+                                    <!-- Nombre completo del usuario -->
+                                    <Label Text="{Binding usuario.NombreCompleto}"
+                                TextColor="Blue"
+                                FontSize="14"
+                                HorizontalOptions="Start"
+                                HeightRequest="20"
+                                Grid.Column="0">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="btnViewPerfil" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+
+                                    <!-- StackLayout para la fecha -->
+                                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                                        <!-- Fecha de publicación -->
+                                        <Label Text="{Binding fechaPublicacion, StringFormat='{0:d}'}" 
+                                             TextColor="Gray" 
+                                              FontSize="10" 
+                                         HorizontalOptions="Start"/>
+                                    </StackLayout>
+
+                                    <!-- Botón de agregar a lista de deseos -->
+                                    <ImageButton Clicked="Button_Clicked_add_lista_deseos"
+                                CommandParameter="{Binding .}"
+                                HeightRequest="20"
+                                WidthRequest="20"
+                                Padding="0"
+                                BackgroundColor="Transparent"
+                                BorderWidth="0"
+                                CornerRadius="10"
+                                Grid.Column="1"
+                                HorizontalOptions="End"
+                                VerticalOptions="Center">
+                                        <ImageButton.Triggers>
+                                            <DataTrigger TargetType="ImageButton"
+                                        Binding="{Binding favorito}"
+                                        Value="True">
+                                                <Setter Property="Source" Value="heart_icon.png" />
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="ImageButton"
+                                        Binding="{Binding favorito}"
+                                        Value="False">
+                                                <Setter Property="Source" Value="favorite_icon.png" />
+                                            </DataTrigger>
+                                        </ImageButton.Triggers>
+                                    </ImageButton>
+                                </Grid>
+
+                               
+                               
+
+                                <!-- Imagen de la publicación -->
                                 <Image Source="{Binding nombresArchivos}"
-                           
-                           Aspect="AspectFit"
-                           HeightRequest="200"
-                           HorizontalOptions="CenterAndExpand"
-                           VerticalOptions="CenterAndExpand"/>
-                                
+                            Aspect="AspectFit"
+                            HeightRequest="200"
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"/>
+                                <!-- Otros detalles de la publicación -->
 
-                                <HorizontalStackLayout Spacing="10">
-                                    <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
-                                        FontSize="16"
-                                        FontAttributes="Italic"
-                                        HorizontalOptions="Fill"
-                                        VerticalOptions="Start"/>
-                                    
-                                    <Button Clicked="Button_Clicked_add_lista_deseos"
-                                        CommandParameter="{Binding .}"
-                                        HorizontalOptions="EndAndExpand"
-                                        HeightRequest="50"
-                                        WidthRequest="50"
-                                        Padding="0"
-                                        BackgroundColor="Transparent">
+                            <StackLayout Spacing="2">
+                                <!-- Descripción de la publicación -->
+                                <Label TextColor="Black" FontFamily="Open Sans"  Text="{Binding descripcionPublicacion}"
+                                    FontSize="16"
+                                     HorizontalOptions="FillAndExpand"
+                                  VerticalOptions="Center"/>
 
-                                        <Button.Triggers>
-                                            <DataTrigger TargetType="Button" 
-                                                Binding="{Binding favorito}"
-                                                Value="True">
-                                                <Setter Property="ImageSource" Value="heart_solid.png" />
-                                            </DataTrigger>
-                                            <DataTrigger TargetType="Button" 
-                                                 Binding="{Binding favorito}"
-                                                 Value="False">
-                                                <Setter Property="ImageSource" Value="heart_regular.png" />
-                                            </DataTrigger>
-                                        </Button.Triggers>
-                                    </Button>
-
-                                </HorizontalStackLayout>
-
-
-
-
-                                <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
-                            FontSize="16"
-                            HorizontalOptions="Fill"
-                            VerticalOptions="Center"/>
-
-
-                                
+                                <!-- Categoría de la publicación -->
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                                    <Label TextColor="Gray" Text="{Binding categoriaPublicacion}"
+                                    FontSize="14"
+                                     HorizontalOptions="Start"
+                                     VerticalOptions="Center"/>
+                                </StackLayout>
                             </StackLayout>
+
+
+                            <HorizontalStackLayout Spacing="10">
+                                <Label TextColor="DarkRed" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
+                                  FontSize="16"
+                                    FontAttributes="Italic"
+                                   HorizontalOptions="Fill"
+                              VerticalOptions="Start"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-        </ScrollView>
+     
 
 
-            <!-- Barra de pestañas -->
-            <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
-                <ImageButton x:Name="btnFavoritos" Clicked="Button_Clicked_view_lista_guardados" VerticalOptions="Center" HorizontalOptions="Center" Source="favorite_icon.png" Grid.Column="1" WidthRequest="50" HeightRequest="50" />
-                <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
-                <ImageButton x:Name="btnMensajes" VerticalOptions="Center" HorizontalOptions="Center" Source="message_icon2.png" Grid.Column="3" WidthRequest="0" HeightRequest="0" />
-                <ImageButton x:Name="btnPerfil" VerticalOptions="Center" HorizontalOptions="Center" Source="user_icon2.png" Grid.Column="4" WidthRequest="2" HeightRequest="2" />
-            </Grid>
-
-      
-
+        <!-- Barra de navegación inferior -->
+        <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnFavoritos" Clicked="Button_Clicked_view_lista_guardados" VerticalOptions="Center" HorizontalOptions="Center" Source="favorite_icon.png" Grid.Column="1" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnMensajes" VerticalOptions="Center" HorizontalOptions="Center" Source="message_icon2.png" Grid.Column="3" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnPerfil" VerticalOptions="Center" HorizontalOptions="Center" Source="user_icon2.png" Grid.Column="4" WidthRequest="50" HeightRequest="50" />
+        </Grid>
     </Grid>
-
-
-
- 
-
-
 </ContentPage>
+

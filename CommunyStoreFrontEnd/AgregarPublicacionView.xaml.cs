@@ -22,7 +22,8 @@ public partial class AgregarPublicacionView : ContentPage
 
     // ID de la carpeta "ImagenesSarapiquiEmprende"
     static string FolderId = "1r7A7hITGX4WjarcooONMt4qPHKjxRhLU";
-
+    private StackLayout _lastSelectedStack;
+    private ImageButton _lastSelectedButton;
 
     public AgregarPublicacionView()
     {
@@ -127,15 +128,7 @@ public partial class AgregarPublicacionView : ContentPage
 
     }
 
-    private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new AgregarPublicacionView());
-    }
-
-    private void Button_Clicked_view_home(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new PublicacionesView());
-    }
+   
 
 
     private async void OnUploadImageClicked(object sender, EventArgs e)
@@ -308,7 +301,57 @@ public partial class AgregarPublicacionView : ContentPage
 
 
 
+    private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new AgregarPublicacionView());
 
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
+    }
+
+    private void Button_Clicked_view_home(object sender, EventArgs e)
+    {
+
+        Navigation.PushAsync(new PublicacionesView());
+
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.LightBlue;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
+    }
+
+    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ListaDeseos());
+
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.LightBlue;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
+    }
 
 
 
