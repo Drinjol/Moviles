@@ -32,5 +32,12 @@ namespace CommunyStoreApi.Controllers
             return new LogicaUsuario().ActualizarUsuario(req);
         }*/
 
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/usuario/agregarInteraccionUsuario")]
+        public ResAgregarInteraccionUsuario agregarInteraccionUsuario(ReqAgregarInteraccionUsuario req)
+        {
+            return new LogicaAgregarInteraccionUsuario().agregarInteraccionUsuario(req);
+        }
+
     }
 }

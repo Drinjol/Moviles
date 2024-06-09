@@ -22,7 +22,7 @@ namespace Backend.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="db_aa995b_emprende")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DataSource")]
 	public partial class ConnectionDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -33,15 +33,13 @@ namespace Backend.DataAccess
     partial void Inserttb_imagen_binario(tb_imagen_binario instance);
     partial void Updatetb_imagen_binario(tb_imagen_binario instance);
     partial void Deletetb_imagen_binario(tb_imagen_binario instance);
-    #endregion
-		
-		public ConnectionDataContext() : 
-				base(global::Backend.Properties.Settings.Default.db_aa995b_emprendeConnectionString, mappingSource)
-		{
-			OnCreated();
-		}
-		
-		public ConnectionDataContext(string connection) : 
+        #endregion
+        public ConnectionDataContext() :
+        base(global::Backend.Properties.Settings.Default.db_aa995b_emprendeConnectionString, mappingSource)
+        {
+            OnCreated();
+        }
+        public ConnectionDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -172,6 +170,13 @@ namespace Backend.DataAccess
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, rESULTADO);
 			rESULTADO = ((string)(result.GetParameterValue(1)));
 			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_agregar_interaccion_usuario")]
+		public int sp_agregar_interaccion_usuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id_usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id_publicacion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Date")] System.Nullable<System.DateTime> fecha_busqueda)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_usuario, id_publicacion, fecha_busqueda);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	

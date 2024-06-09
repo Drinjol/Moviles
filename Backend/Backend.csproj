@@ -63,6 +63,7 @@
     <Compile Include="Entidades\Entidad\Sesion.cs" />
     <Compile Include="Entidades\Entidad\Usuario.cs" />
     <Compile Include="Entidades\Request\ReqActualizarUsuario.cs" />
+    <Compile Include="Entidades\Request\ReqAgregarInteraccionUsuario.cs" />
     <Compile Include="Entidades\Request\ReqAgregarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Request\ReqAgregarUsuario.cs" />
     <Compile Include="Entidades\Request\ReqBase.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Entidades\Request\ReqObtenerPublicacionesGuardadas.cs" />
     <Compile Include="Entidades\Request\ReqObtenerPublicacionPorIdUsuario.cs" />
     <Compile Include="Entidades\Response\ResActualizarUsuario.cs" />
+    <Compile Include="Entidades\Response\ResAgregarInteraccionUsuario.cs" />
     <Compile Include="Entidades\Response\ResAgregarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Response\ResAgregarUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Entidades\Response\ResObtenerPublicaciones.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicacionesGuardadas.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicacionIdUsuario.cs" />
+    <Compile Include="Logica\LogicaAgregarInteraccionUsuario.cs" />
     <Compile Include="Logica\LogicaIniciarSesion.cs" />
     <Compile Include="Logica\LogicaPublicacionesGuardadas.cs" />
     <Compile Include="Logica\LogicaSesionValida.cs" />
