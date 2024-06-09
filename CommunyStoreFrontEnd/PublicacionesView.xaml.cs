@@ -1,24 +1,10 @@
-
-
-using CommunyStoreFrontEnd.Entidades;
-using CommunyStoreFrontEnd.Entidades;
+ï»¿using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Utilitarios;
-using Microsoft.Maui.Controls;
-
-
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Plugin.FilePicker.Abstractions;
-using Plugin.FilePicker;
-using System;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Net.Http.Json;
 using System.Text;
-using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
-using Plugin.FilePicker;
-using Plugin.FilePicker.Abstractions;
 
 using System.Xml.Linq;
 
@@ -26,7 +12,7 @@ namespace CommunyStoreFrontEnd;
 
 public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 {
-    private int cantidad = 3; // Variable que determina la cantidad de pestañas
+    private int cantidad = 3; // Variable que determina la cantidad de pestaÃ±as
     private List<Publicacion> _listaDePublicaciones = new List<Publicacion>();
     public string categoriaSeleccionada = "";
     ReqObtenerListaPublicaciones req = new ReqObtenerListaPublicaciones();
@@ -105,7 +91,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                         }
                         else
                         {
-                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                            DisplayAlert("No se encontrÃ³ el backend", "Error con la API", "ACEPTAR");
                         }
                     }
                     catch (Exception ex)
@@ -116,8 +102,8 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                 }
                 else
                 {
-                    // Manejar código de estado de respuesta incorrecto
-                    Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
+                    // Manejar cÃ³digo de estado de respuesta incorrecto
+                    Console.WriteLine("CÃ³digo de estado de respuesta incorrecto: " + response.StatusCode);
                 }
             }
         }
@@ -249,7 +235,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                 {
                     var responseContent = await response.Content.ReadAsStringAsync();
 
-                    // Convertir la respuesta a un objeto dinámico
+                    // Convertir la respuesta a un objeto dinÃ¡mico
                     dynamic jsonResponse = JObject.Parse(responseContent);
 
                     bool resultado = jsonResponse.resultado;
@@ -260,9 +246,9 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                     {
                         CargarPublicaciones();
                         string successMessage = publication.favorito
-                            ? $"La publicación se ha agregado a su lista de deseos."
-                            : $"La publicación se ha eliminado de su lista de deseos.";
-                        await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
+                            ? $"La publicaciÃ³n se ha agregado a su lista de deseos."
+                            : $"La publicaciÃ³n se ha eliminado de su lista de deseos.";
+                        await DisplayAlert("OperaciÃ³n exitosa", successMessage, "Aceptar");
                     }
                     else
                     {
@@ -277,7 +263,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
+            await DisplayAlert("Error interno", "Error en la aplicaciÃ³n: " + ex.StackTrace.ToString(), "Aceptar");
         }
 
     }
@@ -469,14 +455,47 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     private async void OnFrameTapped(object sender, EventArgs e)
     {
         var frame = sender as Frame;
-        var publicacion = frame.BindingContext as Publicacion; // Reemplaza con tu modelo de publicación
+        var publicacion = frame.BindingContext as Publicacion; // Reemplaza con tu modelo de publicaciÃ³n
         if (publicacion != null)
         {
-            // Navega a la página de detalles, pasando la publicación como parámetro
-            await Navigation.PushAsync(new PublicacionDetalles(publicacion)); // Asegúrate de tener una página de detalles
+            int idPub = publicacion.idPublicacion;
+            //await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api "+publicacion.idPublicacion, "Aceptar");
+            //int idPub = publicacion.idPublicacion;
+            agregarInteraccionUsuario(idPub);
+            await Navigation.PushAsync(new PublicacionDetalles(publicacion));
         }
     }
 
+    private async void agregarInteraccionUsuario(int id_publicacion)
+    {
+        try
+        {
+            ReqAgregarInteraccionUsuario req = new ReqAgregarInteraccionUsuario();
+            req.id_publicacion = id_publicacion;
+            req.id_usuario = SesionFrontEnd.usuarioSesion.Id;
+
+            var jsonUsuario = JsonSerializer.Serialize(req);
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync("https://localhost:44308/CommunyStoreApi/usuario/agregarInteraccionUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    await DisplayAlert("Correcto", "Correcto", "Aceptar");
+
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicaciï¿½n: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+    }
     private void btnViewPerfil(object sender, TappedEventArgs e)
     {
 

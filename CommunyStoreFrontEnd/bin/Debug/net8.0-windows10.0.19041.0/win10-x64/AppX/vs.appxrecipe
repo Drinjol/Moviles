@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-09T03:23:57.424</Modified>
+      <Modified>2024-06-09T04:52:38.676</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-09T03:23:57.060</Modified>
+      <Modified>2024-06-09T04:16:25.083</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.runtimeconfig.json">
       <PackagePath>CommunyStoreFrontEnd.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-09T03:23:56.557</Modified>
+      <Modified>2024-06-09T04:19:03.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.dll">
       <PackagePath>CommunyStoreFrontEnd.dll</PackagePath>
-      <Modified>2024-06-09T03:23:54.289</Modified>
+      <Modified>2024-06-09T04:52:36.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CommunyStoreFrontEnd.exe</PackagePath>
-      <Modified>2024-06-09T03:23:54.445</Modified>
+      <Modified>2024-06-09T04:52:37.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -60,23 +60,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-100.jpg">
       <PackagePath>iconpSplashScreen.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:40.263</Modified>
+      <Modified>2024-06-09T04:16:15.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-125.jpg">
       <PackagePath>iconpSplashScreen.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:40.296</Modified>
+      <Modified>2024-06-09T04:16:15.905</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-150.jpg">
       <PackagePath>iconpSplashScreen.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:40.347</Modified>
+      <Modified>2024-06-09T04:16:15.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-200.jpg">
       <PackagePath>iconpSplashScreen.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:40.414</Modified>
+      <Modified>2024-06-09T04:16:15.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-400.jpg">
       <PackagePath>iconpSplashScreen.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:40.574</Modified>
+      <Modified>2024-06-09T04:16:16.128</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\white.svg">
       <PackagePath>white.svg</PackagePath>
@@ -84,307 +84,307 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:20:07.129</Modified>
+      <Modified>2024-06-09T04:16:17.370</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:20:07.149</Modified>
+      <Modified>2024-06-09T04:16:17.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:20:07.205</Modified>
+      <Modified>2024-06-09T04:16:17.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:20:07.254</Modified>
+      <Modified>2024-06-09T04:16:17.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:20:07.375</Modified>
+      <Modified>2024-06-09T04:16:17.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-100.png">
       <PackagePath>favorite_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.412</Modified>
+      <Modified>2024-06-09T04:16:17.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-125.png">
       <PackagePath>favorite_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.412</Modified>
+      <Modified>2024-06-09T04:16:17.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-150.png">
       <PackagePath>favorite_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.412</Modified>
+      <Modified>2024-06-09T04:16:17.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-200.png">
       <PackagePath>favorite_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.418</Modified>
+      <Modified>2024-06-09T04:16:17.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-400.png">
       <PackagePath>favorite_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.418</Modified>
+      <Modified>2024-06-09T04:16:17.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-100.png">
       <PackagePath>heart_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.419</Modified>
+      <Modified>2024-06-09T04:16:17.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-125.png">
       <PackagePath>heart_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.419</Modified>
+      <Modified>2024-06-09T04:16:17.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-150.png">
       <PackagePath>heart_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.419</Modified>
+      <Modified>2024-06-09T04:16:17.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-200.png">
       <PackagePath>heart_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.421</Modified>
+      <Modified>2024-06-09T04:16:17.611</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-400.png">
       <PackagePath>heart_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.421</Modified>
+      <Modified>2024-06-09T04:16:17.622</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-100.png">
       <PackagePath>heart_regular.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.422</Modified>
+      <Modified>2024-06-09T04:16:17.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-125.png">
       <PackagePath>heart_regular.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.423</Modified>
+      <Modified>2024-06-09T04:16:17.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-150.png">
       <PackagePath>heart_regular.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.423</Modified>
+      <Modified>2024-06-09T04:16:17.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-200.png">
       <PackagePath>heart_regular.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.425</Modified>
+      <Modified>2024-06-09T04:16:17.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-400.png">
       <PackagePath>heart_regular.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.427</Modified>
+      <Modified>2024-06-09T04:16:18.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-100.png">
       <PackagePath>heart_solid.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.429</Modified>
+      <Modified>2024-06-09T04:16:17.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-125.png">
       <PackagePath>heart_solid.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.429</Modified>
+      <Modified>2024-06-09T04:16:17.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-150.png">
       <PackagePath>heart_solid.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.431</Modified>
+      <Modified>2024-06-09T04:16:17.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-200.png">
       <PackagePath>heart_solid.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.431</Modified>
+      <Modified>2024-06-09T04:16:17.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-400.png">
       <PackagePath>heart_solid.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.432</Modified>
+      <Modified>2024-06-09T04:16:18.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-100.png">
       <PackagePath>home_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.433</Modified>
+      <Modified>2024-06-09T04:16:17.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-125.png">
       <PackagePath>home_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.433</Modified>
+      <Modified>2024-06-09T04:16:17.937</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-150.png">
       <PackagePath>home_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.433</Modified>
+      <Modified>2024-06-09T04:16:17.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-200.png">
       <PackagePath>home_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.433</Modified>
+      <Modified>2024-06-09T04:16:17.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-400.png">
       <PackagePath>home_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.436</Modified>
+      <Modified>2024-06-09T04:16:17.964</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconp.ico">
       <PackagePath>iconp.ico</PackagePath>
-      <Modified>2024-06-03T19:52:42.128</Modified>
+      <Modified>2024-06-09T04:16:18.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLargeTile.scale-100.jpg">
       <PackagePath>iconpLargeTile.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.764</Modified>
+      <Modified>2024-06-09T04:16:19.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLargeTile.scale-125.jpg">
       <PackagePath>iconpLargeTile.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.832</Modified>
+      <Modified>2024-06-09T04:16:19.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLargeTile.scale-150.jpg">
       <PackagePath>iconpLargeTile.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.921</Modified>
+      <Modified>2024-06-09T04:16:20.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLargeTile.scale-200.jpg">
       <PackagePath>iconpLargeTile.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:44.031</Modified>
+      <Modified>2024-06-09T04:16:20.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLargeTile.scale-400.jpg">
       <PackagePath>iconpLargeTile.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:44.271</Modified>
+      <Modified>2024-06-09T04:16:20.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-lightunplated_targetsize-16.jpg">
       <PackagePath>iconpLogo.altform-lightunplated_targetsize-16.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.451</Modified>
+      <Modified>2024-06-09T04:16:18.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-lightunplated_targetsize-24.jpg">
       <PackagePath>iconpLogo.altform-lightunplated_targetsize-24.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.465</Modified>
+      <Modified>2024-06-09T04:16:18.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-lightunplated_targetsize-256.jpg">
       <PackagePath>iconpLogo.altform-lightunplated_targetsize-256.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.543</Modified>
+      <Modified>2024-06-09T04:16:18.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-lightunplated_targetsize-32.jpg">
       <PackagePath>iconpLogo.altform-lightunplated_targetsize-32.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.479</Modified>
+      <Modified>2024-06-09T04:16:18.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-lightunplated_targetsize-48.jpg">
       <PackagePath>iconpLogo.altform-lightunplated_targetsize-48.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.492</Modified>
+      <Modified>2024-06-09T04:16:18.668</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-unplated_targetsize-16.jpg">
       <PackagePath>iconpLogo.altform-unplated_targetsize-16.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.345</Modified>
+      <Modified>2024-06-09T04:16:18.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-unplated_targetsize-24.jpg">
       <PackagePath>iconpLogo.altform-unplated_targetsize-24.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.354</Modified>
+      <Modified>2024-06-09T04:16:18.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-unplated_targetsize-256.jpg">
       <PackagePath>iconpLogo.altform-unplated_targetsize-256.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.438</Modified>
+      <Modified>2024-06-09T04:16:18.606</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-unplated_targetsize-32.jpg">
       <PackagePath>iconpLogo.altform-unplated_targetsize-32.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.367</Modified>
+      <Modified>2024-06-09T04:16:18.553</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.altform-unplated_targetsize-48.jpg">
       <PackagePath>iconpLogo.altform-unplated_targetsize-48.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.392</Modified>
+      <Modified>2024-06-09T04:16:18.566</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.scale-100.jpg">
       <PackagePath>iconpLogo.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.157</Modified>
+      <Modified>2024-06-09T04:16:18.344</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.scale-125.jpg">
       <PackagePath>iconpLogo.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.169</Modified>
+      <Modified>2024-06-09T04:16:18.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.scale-150.jpg">
       <PackagePath>iconpLogo.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.190</Modified>
+      <Modified>2024-06-09T04:16:18.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.scale-200.jpg">
       <PackagePath>iconpLogo.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.210</Modified>
+      <Modified>2024-06-09T04:16:18.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.scale-400.jpg">
       <PackagePath>iconpLogo.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.239</Modified>
+      <Modified>2024-06-09T04:16:18.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.targetsize-16.jpg">
       <PackagePath>iconpLogo.targetsize-16.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.252</Modified>
+      <Modified>2024-06-09T04:16:18.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.targetsize-24.jpg">
       <PackagePath>iconpLogo.targetsize-24.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.266</Modified>
+      <Modified>2024-06-09T04:16:18.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.targetsize-256.jpg">
       <PackagePath>iconpLogo.targetsize-256.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.333</Modified>
+      <Modified>2024-06-09T04:16:18.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.targetsize-32.jpg">
       <PackagePath>iconpLogo.targetsize-32.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.279</Modified>
+      <Modified>2024-06-09T04:16:18.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpLogo.targetsize-48.jpg">
       <PackagePath>iconpLogo.targetsize-48.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.294</Modified>
+      <Modified>2024-06-09T04:16:18.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpMediumTile.scale-100.jpg">
       <PackagePath>iconpMediumTile.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.010</Modified>
+      <Modified>2024-06-09T04:16:19.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpMediumTile.scale-125.jpg">
       <PackagePath>iconpMediumTile.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.061</Modified>
+      <Modified>2024-06-09T04:16:19.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpMediumTile.scale-150.jpg">
       <PackagePath>iconpMediumTile.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.123</Modified>
+      <Modified>2024-06-09T04:16:19.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpMediumTile.scale-200.jpg">
       <PackagePath>iconpMediumTile.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.209</Modified>
+      <Modified>2024-06-09T04:16:19.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpMediumTile.scale-400.jpg">
       <PackagePath>iconpMediumTile.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.381</Modified>
+      <Modified>2024-06-09T04:16:19.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpSmallTile.scale-100.jpg">
       <PackagePath>iconpSmallTile.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.678</Modified>
+      <Modified>2024-06-09T04:16:18.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpSmallTile.scale-125.jpg">
       <PackagePath>iconpSmallTile.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.730</Modified>
+      <Modified>2024-06-09T04:16:18.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpSmallTile.scale-150.jpg">
       <PackagePath>iconpSmallTile.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.761</Modified>
+      <Modified>2024-06-09T04:16:18.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpSmallTile.scale-200.jpg">
       <PackagePath>iconpSmallTile.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.842</Modified>
+      <Modified>2024-06-09T04:16:19.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpSmallTile.scale-400.jpg">
       <PackagePath>iconpSmallTile.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.963</Modified>
+      <Modified>2024-06-09T04:16:19.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpStoreLogo.scale-100.jpg">
       <PackagePath>iconpStoreLogo.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.560</Modified>
+      <Modified>2024-06-09T04:16:18.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpStoreLogo.scale-125.jpg">
       <PackagePath>iconpStoreLogo.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.581</Modified>
+      <Modified>2024-06-09T04:16:18.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpStoreLogo.scale-150.jpg">
       <PackagePath>iconpStoreLogo.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.602</Modified>
+      <Modified>2024-06-09T04:16:18.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpStoreLogo.scale-200.jpg">
       <PackagePath>iconpStoreLogo.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.624</Modified>
+      <Modified>2024-06-09T04:16:18.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpStoreLogo.scale-400.jpg">
       <PackagePath>iconpStoreLogo.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:42.660</Modified>
+      <Modified>2024-06-09T04:16:18.913</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpWideTile.scale-100.jpg">
       <PackagePath>iconpWideTile.scale-100.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.416</Modified>
+      <Modified>2024-06-09T04:16:19.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpWideTile.scale-125.jpg">
       <PackagePath>iconpWideTile.scale-125.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.457</Modified>
+      <Modified>2024-06-09T04:16:19.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpWideTile.scale-150.jpg">
       <PackagePath>iconpWideTile.scale-150.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.499</Modified>
+      <Modified>2024-06-09T04:16:19.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpWideTile.scale-200.jpg">
       <PackagePath>iconpWideTile.scale-200.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.555</Modified>
+      <Modified>2024-06-09T04:16:19.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconpWideTile.scale-400.jpg">
       <PackagePath>iconpWideTile.scale-400.jpg</PackagePath>
-      <Modified>2024-06-03T19:52:43.709</Modified>
+      <Modified>2024-06-09T04:16:19.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\log_session.scale-100.png">
       <PackagePath>log_session.scale-100.png</PackagePath>
@@ -392,187 +392,187 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-100.png">
       <PackagePath>market_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.436</Modified>
+      <Modified>2024-06-09T04:16:17.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-125.png">
       <PackagePath>market_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.437</Modified>
+      <Modified>2024-06-09T04:16:17.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-150.png">
       <PackagePath>market_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.438</Modified>
+      <Modified>2024-06-09T04:16:17.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-200.png">
       <PackagePath>market_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.438</Modified>
+      <Modified>2024-06-09T04:16:17.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-400.png">
       <PackagePath>market_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.439</Modified>
+      <Modified>2024-06-09T04:16:18.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-100.png">
       <PackagePath>mascota_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.440</Modified>
+      <Modified>2024-06-09T04:16:17.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-125.png">
       <PackagePath>mascota_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.440</Modified>
+      <Modified>2024-06-09T04:16:17.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-150.png">
       <PackagePath>mascota_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.442</Modified>
+      <Modified>2024-06-09T04:16:18.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-200.png">
       <PackagePath>mascota_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.443</Modified>
+      <Modified>2024-06-09T04:16:18.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-400.png">
       <PackagePath>mascota_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.445</Modified>
+      <Modified>2024-06-09T04:16:18.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-100.png">
       <PackagePath>message_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.445</Modified>
+      <Modified>2024-06-09T04:16:18.102</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-125.png">
       <PackagePath>message_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.446</Modified>
+      <Modified>2024-06-09T04:16:18.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-150.png">
       <PackagePath>message_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.448</Modified>
+      <Modified>2024-06-09T04:16:18.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-200.png">
       <PackagePath>message_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.448</Modified>
+      <Modified>2024-06-09T04:16:19.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-400.png">
       <PackagePath>message_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.451</Modified>
+      <Modified>2024-06-09T04:16:21.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-100.png">
       <PackagePath>message_icon2.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.451</Modified>
+      <Modified>2024-06-09T04:16:17.926</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-125.png">
       <PackagePath>message_icon2.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.451</Modified>
+      <Modified>2024-06-09T04:16:17.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-150.png">
       <PackagePath>message_icon2.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.451</Modified>
+      <Modified>2024-06-09T04:16:17.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-200.png">
       <PackagePath>message_icon2.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.454</Modified>
+      <Modified>2024-06-09T04:16:17.953</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-400.png">
       <PackagePath>message_icon2.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.454</Modified>
+      <Modified>2024-06-09T04:16:17.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-100.png">
       <PackagePath>new_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.454</Modified>
+      <Modified>2024-06-09T04:16:17.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-125.png">
       <PackagePath>new_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.454</Modified>
+      <Modified>2024-06-09T04:16:18.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-150.png">
       <PackagePath>new_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.458</Modified>
+      <Modified>2024-06-09T04:16:18.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-200.png">
       <PackagePath>new_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.459</Modified>
+      <Modified>2024-06-09T04:16:18.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-400.png">
       <PackagePath>new_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.460</Modified>
+      <Modified>2024-06-09T04:16:18.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-100.png">
       <PackagePath>tecnologia_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.461</Modified>
+      <Modified>2024-06-09T04:16:18.011</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-125.png">
       <PackagePath>tecnologia_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.461</Modified>
+      <Modified>2024-06-09T04:16:18.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-150.png">
       <PackagePath>tecnologia_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.462</Modified>
+      <Modified>2024-06-09T04:16:18.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-200.png">
       <PackagePath>tecnologia_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.462</Modified>
+      <Modified>2024-06-09T04:16:18.092</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-400.png">
       <PackagePath>tecnologia_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.462</Modified>
+      <Modified>2024-06-09T04:16:18.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-100.png">
       <PackagePath>up_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.462</Modified>
+      <Modified>2024-06-09T04:16:18.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-125.png">
       <PackagePath>up_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.465</Modified>
+      <Modified>2024-06-09T04:16:18.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-150.png">
       <PackagePath>up_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.465</Modified>
+      <Modified>2024-06-09T04:16:18.375</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-200.png">
       <PackagePath>up_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.465</Modified>
+      <Modified>2024-06-09T04:16:18.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-400.png">
       <PackagePath>up_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.468</Modified>
+      <Modified>2024-06-09T04:16:19.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-100.png">
       <PackagePath>user_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.468</Modified>
+      <Modified>2024-06-09T04:16:18.038</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-125.png">
       <PackagePath>user_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.468</Modified>
+      <Modified>2024-06-09T04:16:18.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-150.png">
       <PackagePath>user_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.468</Modified>
+      <Modified>2024-06-09T04:16:18.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-200.png">
       <PackagePath>user_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.468</Modified>
+      <Modified>2024-06-09T04:16:18.113</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-400.png">
       <PackagePath>user_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.472</Modified>
+      <Modified>2024-06-09T04:16:18.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-100.png">
       <PackagePath>user_icon2.scale-100.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.472</Modified>
+      <Modified>2024-06-09T04:16:18.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-125.png">
       <PackagePath>user_icon2.scale-125.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.472</Modified>
+      <Modified>2024-06-09T04:16:18.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-150.png">
       <PackagePath>user_icon2.scale-150.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.476</Modified>
+      <Modified>2024-06-09T04:16:18.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-200.png">
       <PackagePath>user_icon2.scale-200.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.477</Modified>
+      <Modified>2024-06-09T04:16:18.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-400.png">
       <PackagePath>user_icon2.scale-400.png</PackagePath>
-      <Modified>2024-06-09T03:16:34.478</Modified>
+      <Modified>2024-06-09T04:16:18.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.deps.json">
       <PackagePath>CommunyStoreFrontEnd.deps.json</PackagePath>
-      <Modified>2024-06-09T03:23:56.366</Modified>
+      <Modified>2024-06-09T04:19:03.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dilan GC\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

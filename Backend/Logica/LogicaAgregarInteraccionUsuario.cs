@@ -24,7 +24,7 @@ namespace Backend.Logica
                     DateTime fechaActual = DateTime.Now;
 
                     ConnectionDataContext linq = new ConnectionDataContext();
-                    linq.sp_agregar_interaccion_usuario(req.id_publicacion, req.id_usuario, fechaActual);
+                    linq.sp_agregar_interaccion_usuario(req.id_usuario, req.id_publicacion, fechaActual);
 
                     result.resultado = true;
                     result.listaDeErrores.Add("success");

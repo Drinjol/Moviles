@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\backend\\logica\\logicaagregarinteraccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicaagregarinteraccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\dilan gc\\desktop\\m\u00F3viles\\communystore\\moviles\\communystoreapi\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,14 +22,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LogicaAgregarInteraccionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaAgregarInteraccionUsuario.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaAgregarInteraccionUsuario.cs",
+              "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\Backend\\Logica\\LogicaAgregarInteraccionUsuario.cs",
+              "RelativeToolTip": "Logica\\LogicaAgregarInteraccionUsuario.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T04:48:47.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\Dilan GC\\Desktop\\M\u00F3viles\\CommunyStore\\Moviles\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACoAAAABAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T03:40:38.778Z",
+              "WhenOpened": "2024-06-09T04:13:54.446Z",
               "EditorCaption": ""
             }
           ]
