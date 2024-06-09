@@ -145,10 +145,25 @@
       <Column Name="tb_lista_deseos_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
   </Function>
+  <Function Name="dbo.sp_ingresar_mensajes" Method="sp_ingresar_mensajes">
+    <Parameter Name="CONTENIDO" Parameter="cONTENIDO" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="IDUSUARIO" Parameter="iDUSUARIO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDCHAT" Parameter="iDCHAT" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="IDCHAT2" Parameter="iDCHAT2" Type="System.Int64" DbType="BigInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_obtener_publicaciones_recomendadas" Method="sp_obtener_publicaciones_recomendadas">
+    <Parameter Name="id_usuario" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_obtener_publicaciones_recomendadasResult">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="id_usuario" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="id_publicacion" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_busqueda" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
   <Function Name="dbo.sp_agregar_interaccion_usuario" Method="sp_agregar_interaccion_usuario">
     <Parameter Name="id_usuario" Type="System.Int64" DbType="BigInt" />
     <Parameter Name="id_publicacion" Type="System.Int64" DbType="BigInt" />
-    <Parameter Name="fecha_busqueda" Type="System.DateTime" DbType="Date" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

@@ -124,5 +124,170 @@ namespace Backend.Properties {
                 return ((string)(this["DataSourceConnectionString3"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString4 {
+            get {
+                return ((string)(this["DataSourceConnectionString4"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString5 {
+            get {
+                return ((string)(this["DataSourceConnectionString5"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString6 {
+            get {
+                return ((string)(this["DataSourceConnectionString6"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Password=una123456;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString7 {
+            get {
+                return ((string)(this["DataSourceConnectionString7"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString8 {
+            get {
+                return ((string)(this["DataSourceConnectionString8"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString9 {
+            get {
+                return ((string)(this["DataSourceConnectionString9"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString10 {
+            get {
+                return ((string)(this["DataSourceConnectionString10"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString11 {
+            get {
+                return ((string)(this["DataSourceConnectionString11"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString12 {
+            get {
+                return ((string)(this["DataSourceConnectionString12"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString13 {
+            get {
+                return ((string)(this["DataSourceConnectionString13"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString14 {
+            get {
+                return ((string)(this["DataSourceConnectionString14"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString15 {
+            get {
+                return ((string)(this["DataSourceConnectionString15"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString16 {
+            get {
+                return ((string)(this["DataSourceConnectionString16"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString17 {
+            get {
+                return ((string)(this["DataSourceConnectionString17"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emp" +
+            "rende_admin;Encrypt=True;TrustServerCertificate=True")]
+        public string DataSourceConnectionString18 {
+            get {
+                return ((string)(this["DataSourceConnectionString18"]));
+            }
+        }
     }
 }

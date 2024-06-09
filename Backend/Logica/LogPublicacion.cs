@@ -26,6 +26,8 @@ namespace Backend.Logica
             res.listaDeErrores = new List<string>();
           //  ReqIngresarPublicacion req = new ReqIngresarPublicacion();
 
+            var categoria = req.categoria;
+
             try
             {
 

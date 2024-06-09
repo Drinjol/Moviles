@@ -45,8 +45,6 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         InitializeComponent();
         categoriaSeleccionada = null;
         CargarPublicaciones();
-       
-
     }
 
 

@@ -172,10 +172,24 @@ namespace Backend.DataAccess
 			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_agregar_interaccion_usuario")]
-		public int sp_agregar_interaccion_usuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id_usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id_publicacion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Date")] System.Nullable<System.DateTime> fecha_busqueda)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ingresar_mensajes")]
+		public int sp_ingresar_mensajes([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CONTENIDO", DbType="VarChar(MAX)")] string cONTENIDO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDUSUARIO", DbType="BigInt")] System.Nullable<long> iDUSUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCHAT", DbType="BigInt")] System.Nullable<long> iDCHAT, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCHAT2", DbType="BigInt")] System.Nullable<long> iDCHAT2)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_usuario, id_publicacion, fecha_busqueda);
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cONTENIDO, iDUSUARIO, iDCHAT, iDCHAT2);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_obtener_publicaciones_recomendadas")]
+		public ISingleResult<sp_obtener_publicaciones_recomendadasResult> sp_obtener_publicaciones_recomendadas([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id_usuario)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_usuario);
+			return ((ISingleResult<sp_obtener_publicaciones_recomendadasResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_agregar_interaccion_usuario")]
+		public int sp_agregar_interaccion_usuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id_usuario, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id_publicacion)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id_usuario, id_publicacion);
 			return ((int)(result.ReturnValue));
 		}
 	}
@@ -1257,6 +1271,86 @@ namespace Backend.DataAccess
 				if ((this._tb_lista_deseos_estado != value))
 				{
 					this._tb_lista_deseos_estado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_obtener_publicaciones_recomendadasResult
+	{
+		
+		private long _id;
+		
+		private long _id_usuario;
+		
+		private long _id_publicacion;
+		
+		private System.DateTime _fecha_busqueda;
+		
+		public sp_obtener_publicaciones_recomendadasResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="BigInt NOT NULL")]
+		public long id
+		{
+			get
+			{
+				return this._id;
+			}
+			set
+			{
+				if ((this._id != value))
+				{
+					this._id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_usuario", DbType="BigInt NOT NULL")]
+		public long id_usuario
+		{
+			get
+			{
+				return this._id_usuario;
+			}
+			set
+			{
+				if ((this._id_usuario != value))
+				{
+					this._id_usuario = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id_publicacion", DbType="BigInt NOT NULL")]
+		public long id_publicacion
+		{
+			get
+			{
+				return this._id_publicacion;
+			}
+			set
+			{
+				if ((this._id_publicacion != value))
+				{
+					this._id_publicacion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fecha_busqueda", DbType="DateTime NOT NULL")]
+		public System.DateTime fecha_busqueda
+		{
+			get
+			{
+				return this._fecha_busqueda;
+			}
+			set
+			{
+				if ((this._fecha_busqueda != value))
+				{
+					this._fecha_busqueda = value;
 				}
 			}
 		}

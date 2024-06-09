@@ -20,11 +20,9 @@ namespace Backend.Logica
                 // si llega hasta acá es porque todo salió bien hasta el momento
                 try
                 {
-                    // Obtiene la fecha y hora actual
-                    DateTime fechaActual = DateTime.Now;
 
                     ConnectionDataContext linq = new ConnectionDataContext();
-                    linq.sp_agregar_interaccion_usuario(req.id_usuario, req.id_publicacion, fechaActual);
+                    linq.sp_agregar_interaccion_usuario(req.id_usuario, req.id_publicacion);
 
                     result.resultado = true;
                     result.listaDeErrores.Add("success");
