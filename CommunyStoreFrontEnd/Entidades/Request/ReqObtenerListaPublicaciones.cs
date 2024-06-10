@@ -8,7 +8,7 @@ namespace CommunyStoreFrontEnd.Entidades
 {
     public class ReqObtenerListaPublicaciones
     {
-        public int idUsuario { get; set; }
+        public int usuarioID { get; set; }
         public string categoria { get; set; }
     }
 }

@@ -18,13 +18,14 @@ namespace Backend.Logica
             Int16 tipoDeTransaccion = 0;
             ResObtenerPublicacionesGuardadas res = new ResObtenerPublicacionesGuardadas();
             res.listaDeErrores = new List<string>();
+            String RESULTADO = "";
             List<PublicacionGuardada> publicacionesGuardadas = new List<PublicacionGuardada>();
 
             try
             {
                 ConnectionDataContext linq = new ConnectionDataContext();
                 List<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult> listalinq = new List<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>();
-                listalinq = linq.SP_MOSTRAR_PUBLICACIONES_GUARDADAS(req.usuarioid).ToList();
+                listalinq = linq.SP_MOSTRAR_PUBLICACIONES_GUARDADAS(req.usuarioid, ref RESULTADO).ToList();
 
                 foreach (SP_MOSTRAR_PUBLICACIONES_GUARDADASResult resultado in listalinq)
                 {
@@ -40,17 +41,19 @@ namespace Backend.Logica
                     publicacionGuardada.fechaGuardado = (DateTime)resultado.tb_lista_deseos_creacion;
                     publicacionGuardada.estadoGuardado = (int)resultado.tb_lista_deseos_estado;
                     
+                    
                     publicacionGuardada.publicacion.descripcionPublicacion = resultado.tb_publicacion_descripcion;
                     publicacionGuardada.publicacion.fechaPublicacion = (DateTime)resultado.tb_publicacion_fecha;
                     publicacionGuardada.publicacion.precioPublicacion = (decimal)resultado.tb_publicacion_precio;
                     publicacionGuardada.publicacion.estadoPublicacion = (int)resultado.tb_publicacion_estado;
-
+                    
 
                     publicacionesGuardadas.Add(publicacionGuardada);
                 }
 
                 res.listaPublicacionGuardada = publicacionesGuardadas;
                 res.resultado = true;
+                res.descripcion = RESULTADO;
 
 
             }
@@ -80,16 +83,35 @@ namespace Backend.Logica
             {
                 using (ConnectionDataContext linq = new ConnectionDataContext())
                 {
-                    linq.SP_GUARDAR_PUBLICACION_DESEO(req.idUsuario, req.idPublicacion);
-                    res.resultado = true;
-                    //res.mensaje = "Publicación agregada a la lista de deseos correctamente.";
+                    int? RESULTADO = 0;
+                    String MENSAJE = "";
+                    linq.SP_GUARDAR_PUBLICACION_DESEO(req.idUsuario, req.idPublicacion, ref RESULTADO, ref MENSAJE);
+                    
+                    if(RESULTADO == 1)
+                    {
+                        res.resultado = true;
+                        res.descripcion = MENSAJE;
+
+                    }
+                    else if(RESULTADO == 2)
+                    {
+                        res.resultado = false;
+                        res.descripcion = MENSAJE;
+                        res.listaDeErrores.Add(MENSAJE);
+                    }
+                    else if (RESULTADO == 3)
+                    {
+                        res.resultado = false;
+                        res.descripcion = MENSAJE;
+                        res.listaDeErrores.Add(MENSAJE);
+                    }                                        
                 }
             }
             catch (Exception ex)
             {
                 res.resultado = false;
                 tipoDeTransaccion = 2;
-                res.listaDeErrores.Add("error bd");
+                res.listaDeErrores.Add("Error bd");
             }
             finally
             {
@@ -111,7 +133,7 @@ namespace Backend.Logica
                 {
                     linq.SP_ELIMINAR_PUBLICACION_LISTA_DESEO(req.usuarioid, req.publicacionGuardadaId);
                     res.resultado = true;
-                    //res.mensaje = "Publicación agregada a la lista de deseos correctamente.";
+                    
                 }
             }
             catch (Exception ex)
@@ -127,6 +149,8 @@ namespace Backend.Logica
             return res;
 
         }
+
+        
 
 
     }

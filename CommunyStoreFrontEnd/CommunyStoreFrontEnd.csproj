@@ -63,6 +63,20 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\white.svg" />
+	  <None Remove="Resources\Images\favorite_icon.svg" />
+	  <None Remove="Resources\Images\heart_icon.svg" />
+	  <None Remove="Resources\Images\heart_regular.svg" />
+	  <None Remove="Resources\Images\heart_solid.svg" />
+	  <None Remove="Resources\Images\home_icon.svg" />
+	  <None Remove="Resources\Images\market_icon.svg" />
+	  <None Remove="Resources\Images\mascota_icon.svg" />
+	  <None Remove="Resources\Images\message_icon.svg" />
+	  <None Remove="Resources\Images\message_icon2.svg" />
+	  <None Remove="Resources\Images\new_icon.svg" />
+	  <None Remove="Resources\Images\tecnologia_icon.svg" />
+	  <None Remove="Resources\Images\up_icon.svg" />
+	  <None Remove="Resources\Images\user_icon.svg" />
+	  <None Remove="Resources\Images\user_icon2.svg" />
 	  <None Remove="Resources\Raw\credentials.json" />
 	  <None Remove="Resources\Splash\iconp.jpg" />
 	</ItemGroup>
@@ -72,6 +86,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="FFImageLoadingCompat.Svg.Maui" Version="0.1.1" />
 		<PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
 		<PackageReference Include="Google.Apis.Drive.v3" Version="1.68.0.3416" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.21" />
@@ -88,10 +103,28 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ActualizarPublicacionUsuarioPerfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="AgregarPublicacionView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ChatsList.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="EditarPerfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ListaDeseos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ListaMensajes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PerfilDeUsuario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PublicacionDetalles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PublicacionesView.xaml">

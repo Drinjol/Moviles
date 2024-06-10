@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CommunyStoreFrontEnd.Entidades
+{
+    public class Chats
+    {
+
+        public int idChat { get; set; }
+        public Usuario idUsuario1 { get; set; }
+        public Usuario idUsuario2 { get; set; }
+
+        public int estado { get; set; }
+
+
+
+    }
+}

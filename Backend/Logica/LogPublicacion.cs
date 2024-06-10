@@ -26,12 +26,14 @@ namespace Backend.Logica
             res.listaDeErrores = new List<string>();
           //  ReqIngresarPublicacion req = new ReqIngresarPublicacion();
 
+            var categoria = req.categoria;
+
             try
             {
 
                 ConnectionDataContext linq = new ConnectionDataContext();
                 List<SP_OBTENER_PUBLICACIONESResult> listaDeLinq = new List<SP_OBTENER_PUBLICACIONESResult>();
-                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(req.categoria).ToList();
+                listaDeLinq = linq.SP_OBTENER_PUBLICACIONES(req.categoria, req.usuarioID).ToList();
                 res.publicaciones = this.crearListaDePublicaciones(listaDeLinq);
                 res.resultado = true;
 
@@ -61,6 +63,9 @@ namespace Backend.Logica
 
         private Publicacion crearPublicacion(SP_OBTENER_PUBLICACIONESResult unTipoComplejo)
         {
+
+            ConnectionDataContext linq = new ConnectionDataContext();
+            ReqObtenerPublicaciones req = new ReqObtenerPublicaciones();
             Publicacion pub = new Publicacion();
             pub.usuario = new Usuario();
 
@@ -73,9 +78,7 @@ namespace Backend.Logica
             pub.precioPublicacion = (decimal)unTipoComplejo.PRECIO;
             pub.categoriaPublicacion = unTipoComplejo.CATEGORIA;
             pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
-
-
-            // pub.nombresArchivos = unTipoComplejo.IMAGEN_BINARIO;
+            pub.favorito = (bool)unTipoComplejo.IsFavorito;
 
             // Convertir la cadena hexadecimal a una representación legible
             pub.nombresArchivos = HexStringToString(unTipoComplejo.IMAGEN_BINARIO);
@@ -216,60 +219,51 @@ namespace Backend.Logica
 
         public ResObtenerPublicacionIdUsuario obteneListaDePublicacionesPorIdUsuario(ReqObtenerPublicacionPorIdUsuario req)
         {
-           
             ResObtenerPublicacionIdUsuario res = new ResObtenerPublicacionIdUsuario();
-          
             res.listaDeErrores = new List<string>();
-            //  ReqIngresarPublicacion req = new ReqIngresarPublicacion();
             ReqBase reqBase = new ReqBase();
-        //    reqBase.sesion = req.sesion;
-
             ResBase resBase = new ResBase();
             resBase = logicaSesionValida.validarSesion(reqBase);
 
-           // if (resBase.tipoRegistro != 1 || !resBase.resultado)
-           /* {
-                //algo salió mal en la sesión
-                res.listaDeErrores = resBase.listaDeErrores;
-                res.tipoRegistro = resBase.tipoRegistro;
-                res.resultado = resBase.resultado;
-            }*/
-          //  else
-          //  {
-                try
-                {
-
-                    ConnectionDataContext linq = new ConnectionDataContext();
-                    List<sp_obtener_publicacion_por_id_usuarioResult> listaDeLinq = new List<sp_obtener_publicacion_por_id_usuarioResult>();
-                    listaDeLinq = linq.sp_obtener_publicacion_por_id_usuario(req.Id).ToList();
-                    res.listaDepublicacionPorUsuario = listaDeLinq.Select(item => new Publicacion
+            try
+            {
+                ConnectionDataContext linq = new ConnectionDataContext();
+                List<sp_obtener_publicacion_por_id_usuarioResult> listaDeLinq = new List<sp_obtener_publicacion_por_id_usuarioResult>();
+                listaDeLinq = linq.sp_obtener_publicacion_por_id_usuario(req.Id).ToList();
+                res.listaDepublicacionPorUsuario = listaDeLinq
+                    .Select(item => new Publicacion
                     {
-                        idPublicacion = (int)item.publicacion_id, 
-                        usuario = new Usuario { Id = (int)item.usuario_id },
-                        fechaPublicacion = item.publicacion_fecha ?? DateTime.MinValue, 
+                        idPublicacion = (int)item.publicacion_id,
+                        usuario = new Usuario
+                        {
+                            Id = (int)item.usuario_id,
+                            nombre = item.nombre_usuario, // Map user data properties
+                            apellidos = item.apellidos_usuario
+                        },
+                        fechaPublicacion = item.publicacion_fecha ?? DateTime.MinValue,
                         descripcionPublicacion = item.publicacion_descripcion,
-                        precioPublicacion = item.publicacion_precio ?? 0m, 
+                        precioPublicacion = item.publicacion_precio ?? 0m,
                         categoriaPublicacion = item.publicacion_categoria,
-                        estadoPublicacion = (int)(item.publicacion_estado ?? 0) 
+                        nombresArchivos = HexStringToString(item.imagen_binario),
+                        estadoPublicacion = (int)(item.publicacion_estado ?? 0),
+
+                        favorito = item.IsFavorito ?? false // Assuming this is the correct field
                     }).ToList();
 
-                    res.resultado = true;
-                    res.listaDeErrores.Add("success");
-                    res.tipoRegistro = 1;
-                }
-                catch (Exception ex)
-                {
-                    res.listaDeErrores.Add("Error de BD");
-                    res.tipoRegistro = 4;
-                    res.resultado = false;
-                }
-                finally
-                {
-                    Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, res.tipoRegistro, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
-                }
-            //}
-            
-            
+                res.resultado = true;
+                res.listaDeErrores.Add("success");
+                res.tipoRegistro = 1;
+            }
+            catch (Exception ex)
+            {
+                res.listaDeErrores.Add("Error de BD");
+                res.tipoRegistro = 4;
+                res.resultado = false;
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, res.tipoRegistro, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
 
             return res;
         }

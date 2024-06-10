@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunyStoreFrontEnd.AgregarPublicacionView"
              Title="AgregarPublicacionView">
-    <Grid>
+    <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
             <!-- Definir la fila para el encabezado con la barra de búsqueda -->
             <RowDefinition Height="Auto" />
@@ -26,94 +25,71 @@
             <!-- Logo -->
             <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
 
-            <!-- Barra de búsqueda -->
-            <Entry Placeholder="Buscar" Margin="10" Grid.Column="1"/>
-
-            <!-- Botón de carrito -->
-            <Button Text="Carrito" HeightRequest="60" WidthRequest="80" Margin="10" HorizontalOptions="End" Grid.Column="2"/>
         </Grid>
-
-        <!-- Botones de navegación -->
-        <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-            <Button Text="Todo" Clicked="btnRegistrarPublicacion_Clicked" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Tecnologia" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Hogar" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mascotas" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
 
         <!-- Contenido de las pestañas -->
         <ScrollView Grid.Row="2">
-            <Frame x:Name="ContentFrame" VerticalOptions="FillAndExpand">
+            <Frame x:Name="ContentFrame" VerticalOptions="FillAndExpand" BackgroundColor="White">
 
-                
-                    <ScrollView>
-                        <StackLayout Margin="20">
+                <ScrollView BackgroundColor="#D3E3D3">
+                    <StackLayout Margin="20" Spacing="20">
+                        <!-- Agregado: Spacing="20" -->
 
-                        <Label Text="Descripción:" FontSize="16" TextColor="White" />
-                            <Entry x:Name="entryDescripcion" Placeholder="Ingrese la descripción" 
-               FontSize="16" PlaceholderColor="Gray" 
-               BackgroundColor="LightGray" Margin="0,5,0,10" />
+                        <Label Text="Descripción:" FontSize="16" TextColor="Black" />
+                        <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                            <Entry x:Name="entryDescripcion" Placeholder="Ingrese la descripción" FontSize="16" TextColor="Black"/>
+                        </Frame>
 
-                        <Label Text="Precio:" FontSize="16" TextColor="White" />
-                            <Entry x:Name="entryPrecio" Placeholder="Ingrese el precio" Keyboard="Numeric" 
-               FontSize="16" PlaceholderColor="Gray" 
-               BackgroundColor="LightGray" Margin="0,5,0,10" />
+                        <Label Text="Precio:" FontSize="16" TextColor="Black" />
+                        <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
+                            <Entry x:Name="entryPrecio" Placeholder="Ingrese el precio" Keyboard="Numeric" FontSize="16" TextColor="Black" />
+                        </Frame>
 
-                        <Label Text="Categoría:" FontSize="16" TextColor="White" />
-
-                        <Picker x:Name="entryCategoria" Title="Seleccione una categoría"
-                FontSize="16"
-                TextColor="Gray"
-                BackgroundColor="LightGray"
-                Margin="0,5,0,10">
-                            <!-- Lista de categorías quemadas (definidas directamente en el XAML) -->
-                            <Picker.Items >
+                        <Label Text="Seleccione una categoría:" FontSize="16" TextColor="Black" />
+                        <Picker x:Name="entryCategoria" FontSize="16" TextColor="Black" BackgroundColor="Gray">
+                            <Picker.Items>
                                 <x:String>Hogar</x:String>
-                                <x:String>Tecnologia</x:String>
+                                <x:String>Tecnología</x:String>
                                 <x:String>Mascotas</x:String>
-                                
                             </Picker.Items>
                         </Picker>
 
-                        <Image x:Name="UploadedImage" 
-                   Aspect="AspectFit" 
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center"
-                   HeightRequest="200" />
+                        <Frame Padding="10" BorderColor="Gray" CornerRadius="10" HasShadow="True" BackgroundColor="White">
+                            <StackLayout>
+                                <Image x:Name="UploadedImage" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="100" />
 
-                        <!-- Activity Indicator -->
-                        <ActivityIndicator x:Name="activityIndicator"
-                            IsRunning="False"
-                             IsVisible="False"
-                             Color="Gray"
-                          VerticalOptions="CenterAndExpand"
-                         HorizontalOptions="CenterAndExpand"/>
+                                <!-- Activity Indicator -->
+                                <ActivityIndicator x:Name="activityIndicator" IsRunning="False" IsVisible="False" Color="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
 
+                                <!-- Upload Button -->
+                                <ImageButton Source="up_icon.png" Clicked="OnUploadImageClicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" />
+                            </StackLayout>
+                        </Frame>
 
-                        <!-- Upload Button -->
-                        <Button Text="Upload Image" 
-                    Clicked="OnUploadImageClicked" />
+                        <Button x:Name="btnRegistrarPublicacion" Text="Registrar Publicacion" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" Clicked="btnRegistrarPublicacion_Clicked" />
 
-                        
-
-
-
-                        <Button x:Name="btnRegistrarPublicacion" Text="Registrar Publicacion" FontSize="16" 
-                BackgroundColor="#007bff" TextColor="White" 
-                Margin="0,10,0,0" CornerRadius="5"  Clicked="btnRegistrarPublicacion_Clicked" />
-
-                        </StackLayout>
-                    </ScrollView>
-                    <!-- El contenido de las pestañas se cargará dinámicamente aquí -->
+                    </StackLayout>
+                </ScrollView>
+                <!-- El contenido de las pestañas se cargará dinámicamente aquí -->
             </Frame>
+
         </ScrollView>
 
-        <!-- Barra de pestañas -->
-        <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-            <Button Text="Home" Clicked="Button_Clicked_view_home"  HorizontalOptions="FillAndExpand"/>
-            <Button  Text="New Publicacion" Clicked="Button_Clicked_view_new_publicacion"  HorizontalOptions="FillAndExpand"/>
-            <Button Text="Mensajes" HorizontalOptions="FillAndExpand"/>
-            <Button Text="Profile" HorizontalOptions="FillAndExpand"/>
-        </StackLayout>
+
+        <!-- Barra de navegación inferior -->
+        <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnFavoritos" Clicked="Button_Clicked_view_lista_guardados" VerticalOptions="Center" HorizontalOptions="Center" Source="favorite_icon.png" Grid.Column="1" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnMensajes" Clicked="btnMensajes_Clicked" VerticalOptions="Center" HorizontalOptions="Center" Source="message_icon2.png" Grid.Column="3" WidthRequest="50" HeightRequest="50" />
+            <ImageButton x:Name="btnPerfil" VerticalOptions="Center" HorizontalOptions="Center" Source="user_icon2.png" Grid.Column="4" WidthRequest="50" HeightRequest="50" />
+        </Grid>
     </Grid>
 </ContentPage>

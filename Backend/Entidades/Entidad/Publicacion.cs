@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 namespace Backend.Entidades
 {
     public class Publicacion
@@ -14,5 +15,9 @@ namespace Backend.Entidades
       //  public List<string> nombresArchivos {  get; set; }
         public string nombresArchivos { get; set; }
         public Usuario usuario { get; set; }
+        public bool favorito {  get; set; }
+
+        
+
     }
 }

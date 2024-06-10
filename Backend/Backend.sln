@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunyStoreApi", "..\CommunyStoreApi\CommunyStoreApi.csproj", "{5A318B49-0EBF-4FEA-BF90-904D8748A277}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommunyStoreFrontEnd", "..\CommunyStoreFrontEnd\CommunyStoreFrontEnd.csproj", "{D4DF1A3A-3686-4AED-B9E2-0145EC827531}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +21,6 @@ Global
 		{5A318B49-0EBF-4FEA-BF90-904D8748A277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A318B49-0EBF-4FEA-BF90-904D8748A277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A318B49-0EBF-4FEA-BF90-904D8748A277}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4DF1A3A-3686-4AED-B9E2-0145EC827531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4DF1A3A-3686-4AED-B9E2-0145EC827531}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4DF1A3A-3686-4AED-B9E2-0145EC827531}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{D4DF1A3A-3686-4AED-B9E2-0145EC827531}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4DF1A3A-3686-4AED-B9E2-0145EC827531}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4DF1A3A-3686-4AED-B9E2-0145EC827531}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
