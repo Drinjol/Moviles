@@ -16,16 +16,25 @@
     <PlatformTarget>arm64</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="ActualizarPublicacionUsuarioPerfil.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="AgregarPublicacionView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="ChatsList.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="EditarPerfil.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="ListaDeseos.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="ListaMensajes.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="PerfilDeUsuario.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="PublicacionDetalles.xaml">

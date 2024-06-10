@@ -517,7 +517,22 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         }
     }
 
+    private void Button_Clicked_view_Perfil_Usuario(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new PerfilDeUsuario());
 
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.LightBlue;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
+    }
 
 
 

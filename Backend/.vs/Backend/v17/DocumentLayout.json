@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\jordan mora\\documents\\github\\moviles\\backend\\entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\logica\\logicaagregarinteraccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\backend\\entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\entidad\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\logica\\logicaagregarinteraccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicaagregarinteraccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,30 +22,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\Entidades\\Entidad\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Entidades\\Entidad\\Usuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Entidad\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\Entidades\\Entidad\\Usuario.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Entidades\\Entidad\\Usuario.cs",
               "RelativeToolTip": "Entidades\\Entidad\\Usuario.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAA3wBUAAAAPAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAYwBUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-10T02:51:09.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Connection.designer.cs",
-              "DocumentMoniker": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\DataAccess\\Connection.designer.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.designer.cs",
               "RelativeDocumentMoniker": "DataAccess\\Connection.designer.cs",
-              "ToolTip": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\DataAccess\\Connection.designer.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.designer.cs",
               "RelativeToolTip": "DataAccess\\Connection.designer.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAswCUAAAAQAAAA",
+              "ViewState": "AQIAABUDAAAAAAAAAAAUwC8DAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T20:19:08.865Z",
               "EditorCaption": ""
@@ -54,14 +54,13 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LogicaAgregarInteraccionUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\Logica\\LogicaAgregarInteraccionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogicaAgregarInteraccionUsuario.cs",
               "RelativeDocumentMoniker": "Logica\\LogicaAgregarInteraccionUsuario.cs",
-              "ToolTip": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\Logica\\LogicaAgregarInteraccionUsuario.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogicaAgregarInteraccionUsuario.cs",
               "RelativeToolTip": "Logica\\LogicaAgregarInteraccionUsuario.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAlwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:18:57.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T20:18:57.226Z"
             }
           ]
         }
