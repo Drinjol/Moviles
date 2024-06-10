@@ -1,9 +1,11 @@
 white.svg
+address.scale-100.png
 dotnet_bot.scale-100.png
 dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+email.scale-100.png
 favorite_icon.scale-100.png
 favorite_icon.scale-125.png
 favorite_icon.scale-150.png
@@ -101,6 +103,7 @@ new_icon.scale-125.png
 new_icon.scale-150.png
 new_icon.scale-200.png
 new_icon.scale-400.png
+phone.scale-100.png
 tecnologia_icon.scale-100.png
 tecnologia_icon.scale-125.png
 tecnologia_icon.scale-150.png
@@ -127,4 +130,3 @@ iconpSplashScreen.scale-150.jpg
 iconpSplashScreen.scale-200.jpg
 iconpSplashScreen.scale-400.jpg
 AboutAssets.txt
-credentials.json

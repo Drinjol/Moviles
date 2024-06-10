@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Moviles\\CommunyStoreFrontEnd\\",
+  "WorkspaceRootPath": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\communystorefrontend\\actualizarpublicacionusuarioperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:actualizarpublicacionusuarioperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\communystorefrontend\\actualizarpublicacionusuarioperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:actualizarpublicacionusuarioperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\agregarpublicacionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:agregarpublicacionview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\communystorefrontend\\editarperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:editarperfil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\sesionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:sesionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\communystorefrontend\\editarperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:editarperfil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\communystorefrontend\\perfildeusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:perfildeusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PublicacionesView.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "RelativeDocumentMoniker": "PublicacionesView.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
-              "RelativeToolTip": "PublicacionesView.xaml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAD0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T21:25:11.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgregarPublicacionView.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
-              "RelativeDocumentMoniker": "AgregarPublicacionView.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
-              "RelativeToolTip": "AgregarPublicacionView.xaml.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "EditarPerfil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\EditarPerfil.xaml.cs",
+              "RelativeDocumentMoniker": "EditarPerfil.xaml.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\EditarPerfil.xaml.cs",
+              "RelativeToolTip": "EditarPerfil.xaml.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAmwGkAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T20:37:02.135Z",
+              "WhenOpened": "2024-06-10T16:59:27.046Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SesionPage.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "RelativeDocumentMoniker": "SesionPage.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\SesionPage.xaml",
-              "RelativeToolTip": "SesionPage.xaml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAACqAAAA",
+              "Title": "EditarPerfil.xaml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\EditarPerfil.xaml",
+              "RelativeDocumentMoniker": "EditarPerfil.xaml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\EditarPerfil.xaml",
+              "RelativeToolTip": "EditarPerfil.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T20:34:50.415Z",
+              "WhenOpened": "2024-06-10T16:55:05.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgregarPublicacionView.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml",
-              "RelativeDocumentMoniker": "AgregarPublicacionView.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml",
-              "RelativeToolTip": "AgregarPublicacionView.xaml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACwAAACKAAAA",
+              "DocumentIndex": 1,
+              "Title": "ActualizarPublicacionUsuarioPerfil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\ActualizarPublicacionUsuarioPerfil.xaml.cs",
+              "RelativeDocumentMoniker": "ActualizarPublicacionUsuarioPerfil.xaml.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\ActualizarPublicacionUsuarioPerfil.xaml.cs",
+              "RelativeToolTip": "ActualizarPublicacionUsuarioPerfil.xaml.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAwwHkAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T16:38:26.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ActualizarPublicacionUsuarioPerfil.xaml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\ActualizarPublicacionUsuarioPerfil.xaml",
+              "RelativeDocumentMoniker": "ActualizarPublicacionUsuarioPerfil.xaml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\ActualizarPublicacionUsuarioPerfil.xaml",
+              "RelativeToolTip": "ActualizarPublicacionUsuarioPerfil.xaml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-06T20:34:44.321Z",
+              "WhenOpened": "2024-06-10T16:37:39.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PerfilDeUsuario.xaml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml",
+              "RelativeDocumentMoniker": "PerfilDeUsuario.xaml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml",
+              "RelativeToolTip": "PerfilDeUsuario.xaml",
+              "ViewState": "AQIAALoAAAAAAAAAAAAQwMQAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-09T17:27:31.674Z",
               "EditorCaption": ""
             }
           ]
