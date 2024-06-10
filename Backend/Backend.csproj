@@ -58,6 +58,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Connection.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Entidades\Entidad\Chats.cs" />
+    <Compile Include="Entidades\Entidad\Mensaje.cs" />
     <Compile Include="Entidades\Entidad\Publicacion.cs" />
     <Compile Include="Entidades\Entidad\PublicacionGuardada.cs" />
     <Compile Include="Entidades\Entidad\Sesion.cs" />
@@ -68,8 +70,11 @@
     <Compile Include="Entidades\Request\ReqAgregarUsuario.cs" />
     <Compile Include="Entidades\Request\ReqBase.cs" />
     <Compile Include="Entidades\Request\ReqEliminarPublicacionGuardada.cs" />
+    <Compile Include="Entidades\Request\ReqIngresarMensaje.cs" />
     <Compile Include="Entidades\Request\ReqIngresarPublicacion.cs" />
     <Compile Include="Entidades\Request\ReqIniciarSesion.cs" />
+    <Compile Include="Entidades\Request\ReqObtenerChats.cs" />
+    <Compile Include="Entidades\Request\ReqObtenerMensajes.cs" />
     <Compile Include="Entidades\Request\ReqObtenerPublicaciones.cs" />
     <Compile Include="Entidades\Request\ReqObtenerPublicacionesGuardadas.cs" />
     <Compile Include="Entidades\Request\ReqObtenerPublicacionPorIdUsuario.cs" />
@@ -79,12 +84,16 @@
     <Compile Include="Entidades\Response\ResAgregarUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
     <Compile Include="Entidades\Response\ResEliminarPublicacionGuardada.cs" />
+    <Compile Include="Entidades\Response\ResIngresarMensaje.cs" />
     <Compile Include="Entidades\Response\ResIngresarPublicacion.cs" />
     <Compile Include="Entidades\Response\ResIniciarSesion.cs" />
     <Compile Include="Entidades\Response\ResLogin.cs" />
+    <Compile Include="Entidades\Response\ResObtenerChats.cs" />
+    <Compile Include="Entidades\Response\ResObtenerMensajes.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicaciones.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicacionesGuardadas.cs" />
     <Compile Include="Entidades\Response\ResObtenerPublicacionIdUsuario.cs" />
+    <Compile Include="Logica\LogChats.cs" />
     <Compile Include="Logica\LogicaAgregarInteraccionUsuario.cs" />
     <Compile Include="Logica\LogicaIniciarSesion.cs" />
     <Compile Include="Logica\LogicaPublicacionesGuardadas.cs" />

@@ -354,6 +354,23 @@ public partial class AgregarPublicacionView : ContentPage
     }
 
 
+    private void btnMensajes_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new ChatsList());
+
+        if (_lastSelectedButton != null)
+        {
+            _lastSelectedButton.BackgroundColor = Colors.Transparent;
+        }
+
+        var button = sender as ImageButton;
+        if (button != null)
+        {
+            button.BackgroundColor = Colors.LightBlue;
+            _lastSelectedButton = button;
+        }
+    }
+
 
 
 

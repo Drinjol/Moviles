@@ -14,5 +14,16 @@ namespace Backend.Entidades
         public int calificacion { get; set; }
         public string descripcion { get; set; }
         public int estado { get; set; }
+
+
+
+        public string NombreCompleto
+        {
+            get
+            {
+                return $"{nombre} {apellidos}";
+            }
+        }
+
     }
 }

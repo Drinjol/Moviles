@@ -1,1 +1,1 @@
-C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\CommunyStoreFrontEnd.csproj;x64
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\CommunyStoreFrontEnd.csproj;x64

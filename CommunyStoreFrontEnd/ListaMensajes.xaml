@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:selectors="clr-namespace:CommunyStoreFrontEnd.Selectors"
+             x:Class="CommunyStoreFrontEnd.ListaMensajes"
+             Title="ListaMensajes"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- DataTemplate para mensajes del emisor -->
+            <DataTemplate x:Key="SenderTemplate">
+                <Grid Padding="10">
+                    <Frame Margin="5"
+                           Padding="10"
+                           CornerRadius="20"
+                           HasShadow="False"
+                           BackgroundColor="LightBlue"
+                           HorizontalOptions="End"
+                           VerticalOptions="Start"
+                           MinimumWidthRequest="100"
+                           MaximumWidthRequest="250">
+                        <Label TextColor="Black"
+                               Text="{Binding contenido}"
+                               FontSize="16"
+                               LineBreakMode="WordWrap"/>
+                    </Frame>
+                </Grid>
+            </DataTemplate>
+
+            <!-- DataTemplate para mensajes del receptor -->
+            <DataTemplate x:Key="ReceiverTemplate">
+                <Grid Padding="10">
+                    <Frame Margin="5"
+                           Padding="10"
+                           CornerRadius="20"
+                           HasShadow="False"
+                           BackgroundColor="LightGreen"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"
+                           MinimumWidthRequest="100"
+                           MaximumWidthRequest="250">
+                        <Label TextColor="Black"
+                               Text="{Binding contenido}"
+                               FontSize="16"
+                               LineBreakMode="WordWrap"/>
+                    </Frame>
+                </Grid>
+            </DataTemplate>
+
+            <!-- Agrega el MessageTemplateSelector a los recursos -->
+            <selectors:MessageTemplateSelector x:Key="MessageTemplateSelector"
+                                               SenderTemplate="{StaticResource SenderTemplate}"
+                                               ReceiverTemplate="{StaticResource ReceiverTemplate}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Lista de mensajes -->
+        <ScrollView Grid.Row="0">
+            <CollectionView x:Name="collectionView"
+                            SelectionMode="None"
+                            ItemsSource="{Binding listaDeMensajes}"
+                            ItemTemplate="{StaticResource MessageTemplateSelector}"
+                            VerticalScrollBarVisibility="Always"/>
+        </ScrollView>
+
+        <!-- Campo de texto y botón de enviar -->
+        <Grid Grid.Row="1" Padding="10" BackgroundColor="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Entry TextColor="Black" x:Name="entryMensaje"  Placeholder="Escribe un mensaje..." VerticalOptions="Center"/>
+            <Button Text="Enviar" Grid.Column="1" Clicked="OnEnviarMensajeClicked" VerticalOptions="Center"/>
+        </Grid>
+    </Grid>
+</ContentPage>

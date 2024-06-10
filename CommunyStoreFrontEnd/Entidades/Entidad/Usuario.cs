@@ -19,5 +19,8 @@ namespace CommunyStoreFrontEnd.Entidades
         public int calificacion { get; set; }
         public string descripcion { get; set; }
         public int estado { get; set; }
+
+
+
     }
 }
