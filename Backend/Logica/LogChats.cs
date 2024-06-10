@@ -227,6 +227,47 @@ namespace Backend.Logica
 
 
 
+        public ResCrearChat crearChatNuevo(ReqCrearChat req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            string descripcionError = "";
+            int? errorId = 0;
+            ResCrearChat res = new ResCrearChat();
+            res.listaDeErrores = new List<string>();
+
+            try
+            {
+                using (ConnectionDataContext linq = new ConnectionDataContext())
+                {
+                    var resultado = linq.sp_crear_chat_nuevo(req.idUsuario1, req.idUsuario2).SingleOrDefault();
+
+                    if (resultado != null)
+                    {
+                        res.idChat = (int)resultado.tb_chat_id;
+                        res.tipoRegistro = (int)resultado.tipoDeRegistro;
+                        res.resultado = true;
+                    }
+                    else
+                    {
+                        res.resultado = false;
+                        res.listaDeErrores.Add("No se pudo crear el chat.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("Error en la base de datos: " + ex.Message);
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+
+            return res;
+        }
+
 
 
     }

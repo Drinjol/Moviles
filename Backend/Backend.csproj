@@ -69,6 +69,7 @@
     <Compile Include="Entidades\Request\ReqAgregarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Request\ReqAgregarUsuario.cs" />
     <Compile Include="Entidades\Request\ReqBase.cs" />
+    <Compile Include="Entidades\Request\ReqCrearChat.cs" />
     <Compile Include="Entidades\Request\ReqEliminarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Request\ReqIngresarMensaje.cs" />
     <Compile Include="Entidades\Request\ReqIngresarPublicacion.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Entidades\Response\ResAgregarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Response\ResAgregarUsuario.cs" />
     <Compile Include="Entidades\Response\ResBase.cs" />
+    <Compile Include="Entidades\Response\ResCrearChat.cs" />
     <Compile Include="Entidades\Response\ResEliminarPublicacionGuardada.cs" />
     <Compile Include="Entidades\Response\ResIngresarMensaje.cs" />
     <Compile Include="Entidades\Response\ResIngresarPublicacion.cs" />

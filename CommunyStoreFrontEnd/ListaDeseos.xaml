@@ -70,7 +70,7 @@
 
                                     <Button Text="Eliminar publicación"
                                         Clicked="Button_Clicked_delete_publicacion_guardadaAsync"
-                                        CommandParameter="{Binding .}"  HorizontalOptions="FillAndExpand"
+                                        CommandParameter="{Binding publicacion}"  HorizontalOptions="FillAndExpand"
                                         Style="{StaticResource WishlistButtonStyle}" />
                                     <Button Text="Contactar al usuario"
                                         Clicked="Button_Clicked_contactar_usuario"

@@ -45,6 +45,13 @@ namespace CommunyStoreApi.Controllers
         }
 
 
+        // GET: CrearChatNuevo
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/chats/crearChat")]
+        public ResCrearChat crearChat(ReqCrearChat req)
+        {
+            return new LogChats().crearChatNuevo(req);
+        }
 
     }
 
