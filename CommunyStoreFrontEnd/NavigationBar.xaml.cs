@@ -17,32 +17,88 @@ namespace CommunyStoreFrontEnd
         private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
         {
             _mainPage.NavigateTo(new AgregarPublicacionView());
-            HighlightButton(sender as ImageButton);
+            //   HighlightButton(sender as ImageButton);
+            if (_lastSelectedButton != null)
+            {
+                _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            }
+
+            var button = sender as ImageButton;
+            if (button != null)
+            {
+                button.BackgroundColor = Colors.LightBlue;
+                _lastSelectedButton = button;
+            }
         }
 
         private void Button_Clicked_view_home(object sender, EventArgs e)
         {
             _mainPage.NavigateTo(new PublicacionesView());
-            HighlightButton(sender as ImageButton);
+            //  HighlightButton(sender as ImageButton);
+            if (_lastSelectedButton != null)
+            {
+                _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            }
+
+            var button = sender as ImageButton;
+            if (button != null)
+            {
+                button.BackgroundColor = Colors.LightBlue;
+                _lastSelectedButton = button;
+            }
         }
 
         private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
         {
             _mainPage.NavigateTo(new ListaDeseos());
-            HighlightButton(sender as ImageButton);
+            //  HighlightButton(sender as ImageButton);
+            if (_lastSelectedButton != null)
+            {
+                _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            }
+
+            var button = sender as ImageButton;
+            if (button != null)
+            {
+                button.BackgroundColor = Colors.LightBlue;
+                _lastSelectedButton = button;
+            }
         }
 
         private void btnMensajes_Clicked(object sender, EventArgs e)
         {
 
             _mainPage.NavigateTo(new ChatsList());
-            HighlightButton(sender as ImageButton);
+            // HighlightButton(sender as ImageButton);
+            if (_lastSelectedButton != null)
+            {
+                _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            }
+
+            var button = sender as ImageButton;
+            if (button != null)
+            {
+                button.BackgroundColor = Colors.LightBlue;
+                _lastSelectedButton = button;
+            }
         }
 
         private void Button_Clicked_view_Perfil_Usuario(object sender, EventArgs e)
         {
             _mainPage.NavigateTo(new PerfilDeUsuario());
-            HighlightButton(sender as ImageButton);
+          //  HighlightButton(sender as ImageButton);
+
+            if (_lastSelectedButton != null)
+            {
+                _lastSelectedButton.BackgroundColor = Colors.Transparent;
+            }
+
+            var button = sender as ImageButton;
+            if (button != null)
+            {
+                button.BackgroundColor = Colors.LightBlue;
+                _lastSelectedButton = button;
+            }
         }
 
         private void HighlightButton(ImageButton button)
