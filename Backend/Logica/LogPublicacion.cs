@@ -86,6 +86,75 @@ namespace Backend.Logica
             return pub;
         }
 
+        public ResBuscarPublicaciones buscarPublicaciones(ReqBuscarPublicaciones req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            string descripcionError = "";
+            int? errorId = 0;
+            ResBuscarPublicaciones res = new ResBuscarPublicaciones();
+            res.listaDeErrores = new List<string>();
+          
+
+          
+
+            try
+            {
+
+                ConnectionDataContext linq = new ConnectionDataContext();
+                List<SP_BUSCAR_PUBLICACIONESResult> listaDeLinq = new List<SP_BUSCAR_PUBLICACIONESResult>();
+                listaDeLinq = linq.SP_BUSCAR_PUBLICACIONES(req.Palabra).ToList();
+                res.publicaciones = this.crearListaDePublicacionesBuscadas(listaDeLinq);
+                res.resultado = true;
+
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("error bd");
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+            return res;
+        }
+
+        private List<Publicacion> crearListaDePublicacionesBuscadas(List<SP_BUSCAR_PUBLICACIONESResult> listaDeLinq)
+        {
+            List<Publicacion> listaArmada = new List<Publicacion>();
+            foreach (SP_BUSCAR_PUBLICACIONESResult tipoComplejo in listaDeLinq)
+            {
+                listaArmada.Add(this.crearPublicacionBuscadas(tipoComplejo));
+            }
+            return listaArmada;
+        }
+
+        private Publicacion crearPublicacionBuscadas(SP_BUSCAR_PUBLICACIONESResult unTipoComplejo)
+        {
+
+            ConnectionDataContext linq = new ConnectionDataContext();
+           
+            Publicacion pub = new Publicacion();
+            pub.usuario = new Usuario();
+
+            pub.idPublicacion = (int)unTipoComplejo.ID_PUBLICACION;
+            pub.usuario.Id = (int)unTipoComplejo.ID_USUARIO;
+            pub.usuario.nombre = unTipoComplejo.NOMBRE_USUARIO;
+            pub.usuario.apellidos = unTipoComplejo.APELLIDOS_USUARIO;
+            pub.fechaPublicacion = (DateTime)unTipoComplejo.FECHA_PUBLICACION;
+            pub.descripcionPublicacion = unTipoComplejo.DESCRIPCION;
+            pub.precioPublicacion = (decimal)unTipoComplejo.PRECIO;
+            pub.categoriaPublicacion = unTipoComplejo.CATEGORIA;
+            pub.estadoPublicacion = (int)unTipoComplejo.ESTADO;
+            pub.favorito = (bool)unTipoComplejo.IsFavorito;
+
+            // Convertir la cadena hexadecimal a una representación legible
+            pub.nombresArchivos = HexStringToString(unTipoComplejo.IMAGEN_BINARIO);
+
+            return pub;
+        }
+
         private static string HexStringToString(string hex)
         {
             if (hex.StartsWith("0x"))

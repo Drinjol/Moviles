@@ -535,6 +535,75 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     }
 
 
+    private async void entryBuscar_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        listaDePublicaciones = await PublicacionesBuscadas();
+        BindingContext = this;
+    }
+
+    private async Task<List<Publicacion>> PublicacionesBuscadas()
+    {
+        List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
+        ReqBuscarPublicaciones req = new ReqBuscarPublicaciones();
+        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/buscarPublicaciones";
+
+        try
+        {
+
+            // req.usuarioID = SesionFrontEnd.usuarioSesion.Id;
+            req.Palabra = entryBuscar.Text;
+
+
+            var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
+
+            using (HttpClient httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(laURL, jsonContent);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    // Imprimir el contenido de la respuesta para verificar
+                    Console.WriteLine(responseContent);
+
+                    // Intenta deserializar el JSON
+                    try
+                    {
+
+                        ResBuscarPublicaciones res = JsonConvert.DeserializeObject<ResBuscarPublicaciones>(responseContent);
+                        if (res.resultado)
+                        {
+
+                            retornarPublicacionApi = res.publicaciones;
+
+                        }
+                        else
+                        {
+                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Manejar excepciones al deserializar el JSON
+                        Console.WriteLine("Error al deserializar JSON: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    // Manejar código de estado de respuesta incorrecto
+                    Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "ERROR CON BACKEND", "ACEPTAR");
+        }
+
+
+        return retornarPublicacionApi;
+    }
+
 
 
 }

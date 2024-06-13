@@ -21,7 +21,7 @@
             </Grid.ColumnDefinitions>
             <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
             <Frame Grid.Column="1" Padding="5" CornerRadius="15" BorderColor="#DDDDDD" BackgroundColor="White" HasShadow="true">
-                <Entry Placeholder="Buscar" PlaceholderColor="Gray" FontSize="14" TextColor="Black"/>
+                <Entry x:Name="entryBuscar" TextChanged="entryBuscar_TextChanged" Placeholder="Buscar" PlaceholderColor="Gray" FontSize="14" TextColor="Black"/>
             </Frame>
         </Grid>
 

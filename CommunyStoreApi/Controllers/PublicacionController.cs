@@ -15,9 +15,9 @@ namespace CommunyStoreApi.Controllers
         // GET: Publicacion
          [System.Web.Http.HttpPost]
          [System.Web.Http.Route("CommunyStoreApi/publicacion/ingresarPublicacion")]
-        public ResIngresarPublicacion ingresar(ReqIngresarPublicacion req/*, ReqIngresarImagen reqImage*/)
+        public ResIngresarPublicacion ingresar(ReqIngresarPublicacion req)
          {
-            return new LogPublicacion().ingresarPublicacion(req/*, reqImage*/);
+            return new LogPublicacion().ingresarPublicacion(req);
           }
 
 
@@ -25,9 +25,7 @@ namespace CommunyStoreApi.Controllers
         [System.Web.Http.Route("CommunyStoreApi/publicacion/obtenerPublicacion")]
         public ResObtenerPublicaciones ObtenerPublicaciones(ReqObtenerPublicaciones req)
         {
-            //ResObtenerPublicaciones res = new ResObtenerPublicaciones();
-            // req.sesion = "12345";
-            //string categoria = "";
+          
             return new LogPublicacion().obtenerPublicaciones(req);
 
         }
@@ -68,7 +66,16 @@ namespace CommunyStoreApi.Controllers
 
         }
 
-       
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/buscarPublicaciones")]
+        public ResBuscarPublicaciones ObtenerPublicacionesBuscadas(ReqBuscarPublicaciones req)
+        {
+
+            return new LogPublicacion().buscarPublicaciones(req);
+
+        }
+
 
 
 
