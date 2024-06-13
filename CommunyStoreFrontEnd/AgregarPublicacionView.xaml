@@ -76,20 +76,5 @@
         </ScrollView>
 
 
-        <!-- Barra de navegación inferior -->
-        <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
-            <ImageButton x:Name="btnFavoritos" Clicked="Button_Clicked_view_lista_guardados" VerticalOptions="Center" HorizontalOptions="Center" Source="favorite_icon.png" Grid.Column="1" WidthRequest="50" HeightRequest="50" />
-            <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
-            <ImageButton x:Name="btnMensajes" Clicked="btnMensajes_Clicked" VerticalOptions="Center" HorizontalOptions="Center" Source="message_icon2.png" Grid.Column="3" WidthRequest="50" HeightRequest="50" />
-            <ImageButton x:Name="btnPerfil" VerticalOptions="Center" HorizontalOptions="Center" Source="user_icon2.png" Grid.Column="4" WidthRequest="50" HeightRequest="50" />
-        </Grid>
     </Grid>
 </ContentPage>
