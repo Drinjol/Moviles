@@ -46,7 +46,7 @@ namespace Backend.Logica
                     publicacionGuardada.publicacion.fechaPublicacion = (DateTime)resultado.tb_publicacion_fecha;
                     publicacionGuardada.publicacion.precioPublicacion = (decimal)resultado.tb_publicacion_precio;
                     publicacionGuardada.publicacion.estadoPublicacion = (int)resultado.tb_publicacion_estado;
-                    
+                    publicacionGuardada.publicacion.favorito = (bool)resultado.IsFavorito;
 
                     publicacionesGuardadas.Add(publicacionGuardada);
                 }
