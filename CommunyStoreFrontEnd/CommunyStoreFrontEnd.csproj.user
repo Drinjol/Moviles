@@ -34,6 +34,12 @@
     <MauiXaml Update="ListaMensajes.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="NavigationBar.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="PerfilDeUsuario.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

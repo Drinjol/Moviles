@@ -107,7 +107,7 @@ public partial class ChatsList : ContentPage
 
     private void Button_Clicked_Mensajes(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ChatsList());
+      //  Navigation.PushAsync(new ChatsList());
     }
     private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
     {

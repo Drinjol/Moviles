@@ -356,7 +356,7 @@ public partial class AgregarPublicacionView : ContentPage
 
     private void btnMensajes_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ChatsList());
+       // Navigation.PushAsync(new ChatsList());
 
         if (_lastSelectedButton != null)
         {

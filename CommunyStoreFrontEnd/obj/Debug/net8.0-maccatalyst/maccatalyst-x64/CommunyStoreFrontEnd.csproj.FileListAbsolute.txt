@@ -275,10 +275,7 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp20x20@2x.jpg
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\iconp.appiconset\Contents.json
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.stamp
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
@@ -300,7 +297,6 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.pdb
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\CommunyStoreFrontEnd.dll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\white.svg
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Newtonsoft.Json.dll
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.runtimeconfig.json
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.dll
@@ -1496,3 +1492,31 @@ C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\De
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.pdb
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\CommunyStoreFrontEnd.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\ExCSS.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\FFImageLoading.Compat.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\FFImageLoading.Compat.Maui.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\FFImageLoading.Compat.Svg.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\FFImageLoading.Compat.Svg.Maui.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\FFImageLoading.Compat.Transformations.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Fizzler.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.Auth.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.Core.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Google.Apis.Drive.v3.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\HarfBuzzSharp.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\ShimSkiaSharp.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SkiaSharp.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\SkiaSharp.HarfBuzz.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Svg.Custom.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Svg.Model.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Svg.Skia.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.CodeDom.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\System.Management.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Plugin.FilePicker.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libHarfBuzzSharp.framework.zip
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\libSkiaSharp.framework.zip
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\email.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\address.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\phone.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\white.svg

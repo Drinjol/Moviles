@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\Resources\Raw\credentials.json">
+      <PackagePath>credentials.json</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-100.jpg">
       <PackagePath>iconpSplashScreen.scale-100.jpg</PackagePath>
     </AppxPackagedFile>

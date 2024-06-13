@@ -153,7 +153,7 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
                             4 => "Error no controlado!",
                             _ => "Error desconocido"
                         };
-                       // await DisplayAlert("Envio fallido!", errorMessage, "Aceptar");
+                        // await DisplayAlert("Envio fallido!", errorMessage, "Aceptar");
                     }
                 }
                 else

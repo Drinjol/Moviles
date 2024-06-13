@@ -1,0 +1,28 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CommunyStoreFrontEnd"
+             x:Class="CommunyStoreFrontEnd.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Navigation Page for managing content -->
+        <NavigationPage x:Name="NavigationPageContainer" Grid.Row="0">
+            <x:Arguments>
+                <ContentPage>
+                    <ContentPage.Content>
+                        <StackLayout>
+                            <Label Text="Initial Content" />
+                        </StackLayout>
+                    </ContentPage.Content>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+
+        <!-- Navigation Bar -->
+        <local:NavigationBar x:Name="NavigationBar" Grid.Row="1" />
+    </Grid>
+</ContentPage>
