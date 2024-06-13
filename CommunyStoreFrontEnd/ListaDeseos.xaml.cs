@@ -114,27 +114,25 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
     {
 
         var button = sender as ImageButton;
-        var publication = button?.BindingContext as Publicacion;
+        var publication = button?.BindingContext as PublicacionGuardada;
 
-       // publication = new Publicacion();
-
-        // Animación de escala
+       
         await button.ScaleTo(2, 100);
         button.Scale = 1;
 
         // Alternar el estado de IsFavorito
-        publication.favorito = !publication.favorito;
+        publication.publicacion.favorito = !publication.publicacion.favorito;
 
         try
         {
 
             object req;
 
-            if (publication.favorito)
+            if (publication.publicacion.favorito)
             {
                 var reqAgregar = new ReqAgregarPublicacionGuardada
                 {
-                    idPublicacion = publication.idPublicacion,
+                    idPublicacion = publication.publicacion.idPublicacion,
                     idUsuario = SesionFrontEnd.usuarioSesion.Id
                 };
                 req = reqAgregar;
@@ -143,14 +141,14 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
             {
                 var reqEliminar = new ReqEliminarPublicacionGuardada
                 {
-                    publicacionGuardadaId = publication.idPublicacion,
+                    publicacionGuardadaId = publication.publicacion.idPublicacion,
                     usuarioId = SesionFrontEnd.usuarioSesion.Id
                 };
                 req = reqEliminar;
             }
 
 
-            string apiEndpoint = publication.favorito
+            string apiEndpoint = publication.publicacion.favorito
                ? "CommunyStoreApi/publicacion/agregarPublicacionGuardado"
                : "CommunyStoreApi/publicacion/eliminarPublicacionGuardada";
 

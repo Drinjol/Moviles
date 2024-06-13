@@ -57,7 +57,7 @@
 
                                 <!-- Botón de agregar a lista de deseos -->
                                 <ImageButton Clicked="Button_Clicked_add_lista_deseos"
-                                CommandParameter="{Binding publicacion}"
+                                CommandParameter="{Binding .}"
                                 HeightRequest="10"
                                 WidthRequest="10"
                                 Padding="0"

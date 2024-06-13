@@ -3,10 +3,6 @@
              x:Class="CommunyStoreFrontEnd.PublicacionesView"
              Title="PublicacionesView">
 
-    <ContentPage.Resources>
-        <x:String x:Key="corazon_sin_fondo">&#xf004;</x:String>
-        <x:String x:Key="corazon_con_fondo">&#xf004;</x:String>
-    </ContentPage.Resources>
 
     <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
@@ -97,16 +93,16 @@
 
                                     <!-- Botón de agregar a lista de deseos -->
                                     <ImageButton Clicked="Button_Clicked_add_lista_deseos"
-                                CommandParameter="{Binding .}"
-                                HeightRequest="20"
-                                WidthRequest="20"
-                                Padding="0"
-                                BackgroundColor="Transparent"
-                                BorderWidth="0"
-                                CornerRadius="10"
-                                Grid.Column="1"
-                                HorizontalOptions="End"
-                                VerticalOptions="Center">
+                                        CommandParameter="{Binding .}"
+                                        HeightRequest="20"
+                                        WidthRequest="20"
+                                        Padding="0"
+                                        BackgroundColor="Transparent"
+                                        BorderWidth="0"
+                                        CornerRadius="10"
+                                        Grid.Column="1"
+                                        HorizontalOptions="End"
+                                        VerticalOptions="Center">
                                         <ImageButton.Triggers>
                                             <DataTrigger TargetType="ImageButton"
                                         Binding="{Binding favorito}"
@@ -121,8 +117,7 @@
                                         </ImageButton.Triggers>
                                     </ImageButton>
                                 </Grid>
-
-                               
+                              
                                
 
                                 <!-- Imagen de la publicación -->
@@ -148,7 +143,6 @@
                                      VerticalOptions="Center"/>
                                 </StackLayout>
                             </StackLayout>
-
 
                             <HorizontalStackLayout Spacing="10">
                                 <Label TextColor="DarkRed" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"

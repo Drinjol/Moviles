@@ -246,7 +246,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                         string successMessage = publication.favorito
                             ? $"La publicación se ha agregado a su lista de deseos."
                             : $"La publicación se ha eliminado de su lista de deseos.";
-                        await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
+                       // await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
                     }
                     else
                     {
