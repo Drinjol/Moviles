@@ -375,7 +375,7 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
 
     private void btnMensajes_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ChatsList());
+       // Navigation.PushAsync(new ChatsList());
 
     }
 

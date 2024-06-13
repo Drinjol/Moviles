@@ -7,14 +7,14 @@
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\jordan mora\\documents\\github\\moviles\\backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\jordan mora\\documents\\github\\moviles\\communystoreapi\\controllers\\chatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\jordan mora\\documents\\github\\moviles\\backend\\dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\Backend\\dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -57,8 +57,7 @@
               "RelativeToolTip": "Logica\\LogPublicacion.cs",
               "ViewState": "AQIAAOMAAAAAAAAAAAAawO8AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:17:07.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T22:17:07.123Z"
             },
             {
               "$type": "Document",
@@ -70,8 +69,7 @@
               "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\ChatsController.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAawDIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:17:01.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T22:17:01.409Z"
             },
             {
               "$type": "Document",
@@ -83,8 +81,7 @@
               "RelativeToolTip": "Entidades\\Entidad\\Usuario.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAYwBUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T02:51:09.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T02:51:09.426Z"
             },
             {
               "$type": "Document",
@@ -96,8 +93,7 @@
               "RelativeToolTip": "DataAccess\\Connection.designer.cs",
               "ViewState": "AQIAANkCAAAAAAAAAAA6wNkCAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:19:08.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T20:19:08.865Z"
             },
             {
               "$type": "Document",
@@ -109,8 +105,7 @@
               "RelativeToolTip": "Logica\\LogicaAgregarInteraccionUsuario.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAlwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:18:57.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T20:18:57.226Z"
             }
           ]
         }

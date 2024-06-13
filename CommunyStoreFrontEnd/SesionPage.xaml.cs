@@ -50,8 +50,8 @@ namespace CommunyStoreFrontEnd
                             {
 
                                 SesionFrontEnd.usuarioSesion = res.usuario;
-
-                                _ = Navigation.PushAsync(new PublicacionesView());
+                                // Navigation.PushAsync(new PublicacionesView());
+                               Application.Current.MainPage = new MainPage();
 
                             }
                             else
