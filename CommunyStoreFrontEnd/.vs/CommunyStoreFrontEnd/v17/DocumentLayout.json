@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Moviles\\CommunyStoreFrontEnd\\",
+  "WorkspaceRootPath": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\listadeseos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:listadeseos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\entidades\\response\\resobtenerlistapublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resobtenerlistapublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\listadeseos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:listadeseos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\entidades\\request\\reqbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\request\\reqbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\navigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:navigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:navigationbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\entidades\\response\\resobtenerlistapublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resobtenerlistapublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\entidades\\request\\reqbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\request\\reqbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\navigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:navigationbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,67 +50,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ResBuscarPublicaciones.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBuscarPublicaciones.cs",
-              "RelativeDocumentMoniker": "Entidades\\Response\\ResBuscarPublicaciones.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBuscarPublicaciones.cs",
-              "RelativeToolTip": "Entidades\\Response\\ResBuscarPublicaciones.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "ListaDeseos.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml.cs",
+              "RelativeDocumentMoniker": "ListaDeseos.xaml.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml.cs",
+              "RelativeToolTip": "ListaDeseos.xaml.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAlwHsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T20:23:38.89Z",
+              "WhenOpened": "2024-06-13T23:38:18.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "ListaDeseos.xaml",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml",
+              "RelativeDocumentMoniker": "ListaDeseos.xaml",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml",
+              "RelativeToolTip": "ListaDeseos.xaml",
+              "ViewState": "AQIAACwAAAAAAAAAAAAcwDIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-13T23:19:27.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ReqBuscarPublicaciones.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqBuscarPublicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqBuscarPublicaciones.cs",
               "RelativeDocumentMoniker": "Entidades\\Request\\ReqBuscarPublicaciones.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqBuscarPublicaciones.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Request\\ReqBuscarPublicaciones.cs",
               "RelativeToolTip": "Entidades\\Request\\ReqBuscarPublicaciones.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T20:21:04.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:21:04.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PublicacionesView.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
               "RelativeDocumentMoniker": "PublicacionesView.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
               "RelativeToolTip": "PublicacionesView.xaml.cs",
-              "ViewState": "AQIAAP0BAAAAAAAAAAAiwB8CAAAyAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwEUBAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T19:52:36.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "NavigationBar.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml.cs",
               "RelativeDocumentMoniker": "NavigationBar.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml.cs",
               "RelativeToolTip": "NavigationBar.xaml.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAAAFIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T19:20:41.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T19:20:41.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PublicacionesView.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeDocumentMoniker": "PublicacionesView.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeToolTip": "PublicacionesView.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -111,36 +130,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResObtenerListaPublicaciones.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerListaPublicaciones.cs",
-              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerListaPublicaciones.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerListaPublicaciones.cs",
-              "RelativeToolTip": "Entidades\\Response\\ResObtenerListaPublicaciones.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T20:23:49.005Z",
+              "DocumentIndex": 4,
+              "Title": "NavigationBar.xaml",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml",
+              "RelativeDocumentMoniker": "NavigationBar.xaml",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml",
+              "RelativeToolTip": "NavigationBar.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-13T19:20:03.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "NavigationBar.xaml",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml",
-              "RelativeDocumentMoniker": "NavigationBar.xaml",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\NavigationBar.xaml",
-              "RelativeToolTip": "NavigationBar.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-13T19:20:03.803Z"
+              "Title": "ResBuscarPublicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBuscarPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResBuscarPublicaciones.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResBuscarPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResBuscarPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:23:38.89Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "ResObtenerListaPublicaciones.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerListaPublicaciones.cs",
+              "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerListaPublicaciones.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerListaPublicaciones.cs",
+              "RelativeToolTip": "Entidades\\Response\\ResObtenerListaPublicaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T20:23:49.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AgregarPublicacionView.xaml.cs",
-              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
               "RelativeDocumentMoniker": "AgregarPublicacionView.xaml.cs",
-              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
+              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
               "RelativeToolTip": "AgregarPublicacionView.xaml.cs",
               "ViewState": "AQIAAFoAAAAAAAAAAAAqwFsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

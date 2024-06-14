@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Text;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace CommunyStoreFrontEnd;
 
@@ -109,69 +110,92 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
         return retornarPublicacionGuardadasApi;
     }
 
-    private async void Button_Clicked_delete_publicacion_guardadaAsync(object sender, EventArgs e)
+    private async void Button_Clicked_add_lista_deseos(object sender, EventArgs e)
     {
 
-        Button button = (Button)sender; // Cast the sender to Button
-        PublicacionGuardada publication = (PublicacionGuardada)button.CommandParameter;
-        
+        var button = sender as ImageButton;
+        var publication = button?.BindingContext as Publicacion;
+
+        // Animación de escala
+        await button.ScaleTo(2, 100);
+        button.Scale = 1;
+
+        // Alternar el estado de IsFavorito
+        publication.favorito = !publication.favorito;
+
         try
         {
 
-            ReqEliminarPublicacionGuardada req = new ReqEliminarPublicacionGuardada();
+            object req;
 
-            req.usuarioId = SesionFrontEnd.usuarioSesion.Id;
-            req.publicacionGuardadaId = publication.publicacion.idPublicacion;
-
-            var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
-
-            using (HttpClient httpClient = new HttpClient())
+            if (publication.favorito)
             {
-                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/eliminarPublicacionGuardada", jsonContent);
+                var reqAgregar = new ReqAgregarPublicacionGuardada
+                {
+                    idPublicacion = publication.idPublicacion,
+                    idUsuario = SesionFrontEnd.usuarioSesion.Id
+                };
+                req = reqAgregar;
+            }
+            else
+            {
+                var reqEliminar = new ReqEliminarPublicacionGuardada
+                {
+                    publicacionGuardadaId = publication.idPublicacion,
+                    usuarioId = SesionFrontEnd.usuarioSesion.Id
+                };
+                req = reqEliminar;
+            }
+
+
+            string apiEndpoint = publication.favorito
+               ? "CommunyStoreApi/publicacion/agregarPublicacionGuardado"
+               : "CommunyStoreApi/publicacion/eliminarPublicacionGuardada";
+
+            var jsonreq = JsonSerializer.Serialize(req);
+
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(API_LINK.link + apiEndpoint, new StringContent(jsonreq, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {
                     var responseContent = await response.Content.ReadAsStringAsync();
-                    // Imprimir el contenido de la respuesta para verificar
-                    Console.WriteLine(responseContent);
 
-                    // Intenta deserializar el JSON
-                    try
+                    // Convertir la respuesta a un objeto dinámico
+                    dynamic jsonResponse = JObject.Parse(responseContent);
+
+                    bool resultado = jsonResponse.resultado;
+                    int tipoRegistro = jsonResponse.tipoRegistro;
+                    string mensaje = jsonResponse.descripcion;
+
+                    if (resultado)
                     {
-
-                        ResEliminarPublicacionGuardada res = JsonConvert.DeserializeObject<ResEliminarPublicacionGuardada>(responseContent);
-                        if (res.resultado)
-                        {
-
-
-                            res.resultado = true;
-                            await DisplayAlert("¡Publicación eliminada de la lista!", $"La publicación con ID {publication.publicacion.idPublicacion} se ha eliminado.", "Aceptar");
-                            CargarPublicaciones();
-                        }
-                        else
-                        {
-                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
-                        }
+                        CargarPublicaciones();
+                        //string successMessage = publication.favorito
+                        //   ? $"La publicación se ha agregado a su lista de deseos."
+                        //    : $"La publicación se ha eliminado de su lista de deseos.";
+                        //await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        // Manejar excepciones al deserializar el JSON
-                        Console.WriteLine("Error al deserializar JSON: " + ex.Message);
+                        await DisplayAlert("Error", $"{mensaje}", "Aceptar");
                     }
                 }
                 else
                 {
-                    // Manejar código de estado de respuesta incorrecto
-                    Console.WriteLine("Código de estado de respuesta incorrecto: " + response.StatusCode);
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
                 }
             }
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error interno", "ERROR CON BACKEND", "ACEPTAR");
+            await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
         }
 
     }
+
 
     private void Button_Clicked_contactar_usuario(object sender, EventArgs e)
     {
@@ -378,6 +402,28 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
        // Navigation.PushAsync(new ChatsList());
 
     }
+
+
+    private async void OnFrameTapped(object sender, EventArgs e)
+    {
+        var frame = sender as Frame;
+        var publicacion = frame.BindingContext as Publicacion; // Reemplaza con tu modelo de publicación
+        if (publicacion != null)
+        {
+            int idPub = publicacion.idPublicacion;
+            //await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api "+publicacion.idPublicacion, "Aceptar");
+            //int idPub = publicacion.idPublicacion;
+            //agregarInteraccionUsuario(idPub);
+            await Navigation.PushAsync(new PublicacionDetalles(publicacion));
+        }
+    }
+
+    private void btnViewPerfil(object sender, TappedEventArgs e)
+    {
+
+    }
+
+
 
 
 }
