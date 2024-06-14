@@ -59,12 +59,23 @@
                                 <Image x:Name="UploadedImage" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="100" />
 
                                 <!-- Activity Indicator -->
-                                <ActivityIndicator x:Name="activityIndicator" IsRunning="False" IsVisible="False" Color="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                                <ActivityIndicator x:Name="activityIndicator" IsRunning="False" IsVisible="False" Color="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
 
-                                <!-- Upload Button -->
-                                <ImageButton Source="up_icon.png" Clicked="OnUploadImageClicked" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="50" HeightRequest="50" />
+                                <!-- Botones de carga y cámara -->
+                                <Grid HorizontalOptions="Center" VerticalOptions="Center" ColumnSpacing="20">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <ImageButton Source="up_icon.png" Clicked="OnUploadImageClicked" WidthRequest="30" HeightRequest="30" Grid.Column="0" />
+                                    <ImageButton Source="camera_icon.png" Clicked="OnCameraImageClicked" WidthRequest="30" HeightRequest="30" Grid.Column="1" />
+                                </Grid>
                             </StackLayout>
                         </Frame>
+
+
+
 
                         <Button x:Name="btnRegistrarPublicacion" Text="Registrar Publicacion" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" Clicked="btnRegistrarPublicacion_Clicked" />
 
