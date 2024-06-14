@@ -40,6 +40,9 @@
     <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\Resources\Raw\credentials.json">
+      <PackagePath>credentials.json</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\iconpSplashScreen.scale-100.jpg">
       <PackagePath>iconpSplashScreen.scale-100.jpg</PackagePath>
     </AppxPackagedFile>
@@ -60,6 +63,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\address.scale-100.png">
       <PackagePath>address.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-100.png">
+      <PackagePath>camera_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-125.png">
+      <PackagePath>camera_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-150.png">
+      <PackagePath>camera_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-200.png">
+      <PackagePath>camera_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-400.png">
+      <PackagePath>camera_icon.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>

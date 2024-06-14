@@ -4,6 +4,8 @@ using Backend.Entidades.Response;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -266,6 +268,49 @@ namespace Backend.Logica
             return res;
         }
 
+        public ResEliminarPublicacion eliminarPublicacion(ReqEliminarPublicacion req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            ResEliminarPublicacion res = new ResEliminarPublicacion();
+            res.listaDeErrores = new List<string>();
+            try
+            {
+                using (ConnectionDataContext linq = new ConnectionDataContext())
+                {
+                    
+                    var idReturn = new SqlParameter("@IDRETURN", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    var errorId = new SqlParameter("@ERRORID", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    var errorDescripcion = new SqlParameter("@ERRORDESCRIPCION", SqlDbType.NVarChar, -1) { Direction = ParameterDirection.Output };
+                    var filasActualizadas = new SqlParameter("@FILASACTUALIZADAS", SqlDbType.Int) { Direction = ParameterDirection.Output };
+
+                   
+                    linq.SP_ELIMINAR_PUBLICACION(req.IdPublicacion, ref idReturn, errorId, errorDescripcion, filasActualizadas);
+                  
+
+                    if ((int)idReturn.Value == -1)
+                    {
+                        res.resultado = false;
+                        res.listaDeErrores.Add((string)errorDescripcion.Value);
+                    }
+                    else
+                    {
+                        res.resultado = true;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("error bd");
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+            return res;
+        }
+
 
     }
-    }
+}

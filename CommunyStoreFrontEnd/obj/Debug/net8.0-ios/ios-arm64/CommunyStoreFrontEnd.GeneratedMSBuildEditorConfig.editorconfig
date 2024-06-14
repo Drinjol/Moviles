@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.AppSh
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[C:/Users/dg986/OneDrive/Documentos/Moviles 2/Moviles/CommunyStoreFrontEnd/ChatsList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ChatsList.xaml
+build_metadata.AdditionalFiles.TargetPath = ChatsList.xaml
+build_metadata.AdditionalFiles.RelativePath = ChatsList.xaml
+
 [C:/Users/dg986/OneDrive/Documentos/Moviles 2/Moviles/CommunyStoreFrontEnd/EditarPerfil.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.EditarPerfil.xaml
@@ -51,6 +57,24 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ListaDeseos.xaml
 build_metadata.AdditionalFiles.TargetPath = ListaDeseos.xaml
 build_metadata.AdditionalFiles.RelativePath = ListaDeseos.xaml
+
+[C:/Users/dg986/OneDrive/Documentos/Moviles 2/Moviles/CommunyStoreFrontEnd/ListaMensajes.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ListaMensajes.xaml
+build_metadata.AdditionalFiles.TargetPath = ListaMensajes.xaml
+build_metadata.AdditionalFiles.RelativePath = ListaMensajes.xaml
+
+[C:/Users/dg986/OneDrive/Documentos/Moviles 2/Moviles/CommunyStoreFrontEnd/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/dg986/OneDrive/Documentos/Moviles 2/Moviles/CommunyStoreFrontEnd/NavigationBar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.NavigationBar.xaml
+build_metadata.AdditionalFiles.TargetPath = NavigationBar.xaml
+build_metadata.AdditionalFiles.RelativePath = NavigationBar.xaml
 
 [C:/Users/dg986/OneDrive/Documentos/Moviles 2/Moviles/CommunyStoreFrontEnd/PerfilDeUsuario.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

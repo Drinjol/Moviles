@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\backend\\dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogPublicacion.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
+              "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
+              "RelativeToolTip": "Logica\\LogPublicacion.cs",
+              "ViewState": "AQIAAA0BAAAAAAAAAAAqwBwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T06:15:17.593Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -33,31 +42,7 @@
               "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.dbml",
               "RelativeToolTip": "DataAccess\\Connection.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-06-09T17:35:42.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Connection.designer.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.designer.cs",
-              "RelativeDocumentMoniker": "DataAccess\\Connection.designer.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.designer.cs",
-              "RelativeToolTip": "DataAccess\\Connection.designer.cs",
-              "ViewState": "AQIAAPcCAAAAAAAAAAAuwAwDAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T16:59:49.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LogPublicacion.cs",
-              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
-              "RelativeDocumentMoniker": "Logica\\LogPublicacion.cs",
-              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogPublicacion.cs",
-              "RelativeToolTip": "Logica\\LogPublicacion.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAAAPcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T16:58:40.515Z",
+              "WhenOpened": "2024-06-14T05:55:17.38Z",
               "EditorCaption": ""
             }
           ]

@@ -79,8 +79,6 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 
     }
 
-
-
     private List<Publicacion> _listaDepublicacionPorUsuario = new List<Publicacion>();
 
     ReqObtenerPublicacionPorUsuarioId req = new ReqObtenerPublicacionPorUsuarioId();
@@ -116,14 +114,14 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 
     private void CargarDatosUsuario()
     {
-        // Asumiendo que la sesión ya tiene los datos del usuario
+       
         NombreUsuario = SesionFrontEnd.usuarioSesion.NombreCompleto;
         EmailUsuario = SesionFrontEnd.usuarioSesion.email; 
         Direccion =SesionFrontEnd.usuarioSesion.direccion;
         Telefono = SesionFrontEnd.usuarioSesion.telefono;
         Descripcion = SesionFrontEnd.usuarioSesion.descripcion;
 
-        BindingContext = this; // Asegúrate de establecer el BindingContext aquí o en el método CargarPublicaciones
+        BindingContext = this; 
     }
 
     public async void CargarPublicaciones()
@@ -217,11 +215,19 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
         await DisplayAlert("Título", "Eliminar", "Aceptar");
 
     }
-    private async void Actualizar_Clicked(object sender, EventArgs e)
+    private void Actualizar_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ActualizarPublicacionUsuarioPerfil(BindingContext));
-
+        var button = sender as Button;
+        if (button != null)
+        {
+            var publicacion = button.BindingContext as Publicacion;
+            if (publicacion != null)
+            {
+                Navigation.PushAsync(new ActualizarPublicacionUsuarioPerfil(publicacion));
+            }
+        }
     }
+
     private void Button_Clicked_view_home(object sender, EventArgs e)
     {
 

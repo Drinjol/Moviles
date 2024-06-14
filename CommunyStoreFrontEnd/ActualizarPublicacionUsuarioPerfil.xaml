@@ -3,29 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunyStoreFrontEnd.ActualizarPublicacionUsuarioPerfil"
              Title="ActualizarPublicacionUsuarioPerfil">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Nombre Completo" FontSize="Large"/>
+            <Label Text="{Binding usuario.NombreCompleto}" FontSize="Medium" />
 
-    <StackLayout Padding="20">
+            <Label Text="Descripción" FontSize="Large"/>
+            <Entry Text="{Binding descripcionPublicacion}" FontSize="Medium" />
 
-        <!-- Descripción de la publicación -->
-        <Entry Placeholder="Descripción de la publicación" Text="{Binding DescripcionPublicacion}" />
+            <Label Text="Categoría" FontSize="Large"/>
+            <Entry Text="{Binding categoriaPublicacion}" FontSize="Medium" />
 
-        <!-- Nombre completo del usuario -->
-        <Entry Placeholder="Nombre completo del usuario" Text="{Binding NombreCompletoUsuario}" />
+            <Label Text="Precio" FontSize="Large"/>
+            <Entry Text="{Binding precioPublicacion}" FontSize="Medium" />
 
-        <!-- Fecha de publicación -->
-        <DatePicker Date="{Binding FechaPublicacion}" />
+            <Label Text="Imagen" FontSize="Large"/>
+            <Image Source="{Binding NombresArchivos}" 
+               x:Name="UploadedImage"
+               Aspect="AspectFit" 
+               HeightRequest="200"
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand" />
+            <Button Text="Cargar Imagen" Clicked="CargarImagen_Clicked" />
 
-        <!-- Imagen de la publicación -->
-      
+            <Label Text="Fecha de Publicación" FontSize="Large"/>
+            <Label Text="{Binding fechaPublicacion, StringFormat='{0:d}'}" FontSize="Medium" />
 
-        <!-- Categoría de la publicación -->
-        <Entry Placeholder="Categoría de la publicación" Text="{Binding CategoriaPublicacion}" />
+            <Button Text="Guardar" Clicked="GuardarInformacion_Clicked" />
+        </StackLayout>
 
-        <!-- Precio de la publicación -->
-        <Entry Placeholder="Precio de la publicación" Text="{Binding PrecioPublicacion}" />
-
-        <!-- Botón para guardar información -->
-        <Button Text="Guardar" Clicked="GuardarInformacion_Clicked" />
-    </StackLayout>
-
+    </ScrollView>
+   
 </ContentPage>
