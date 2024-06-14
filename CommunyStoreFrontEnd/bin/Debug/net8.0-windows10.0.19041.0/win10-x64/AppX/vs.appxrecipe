@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-13T20:31:19.056</Modified>
+      <Modified>2024-06-14T01:30:09.857</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-13T19:23:08.365</Modified>
+      <Modified>2024-06-14T01:06:15.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.runtimeconfig.json">
       <PackagePath>CommunyStoreFrontEnd.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-13T19:23:07.999</Modified>
+      <Modified>2024-06-13T20:42:25.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.dll">
       <PackagePath>CommunyStoreFrontEnd.dll</PackagePath>
-      <Modified>2024-06-13T20:31:18.003</Modified>
+      <Modified>2024-06-14T01:30:07.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CommunyStoreFrontEnd.exe</PackagePath>
-      <Modified>2024-06-13T20:31:18.017</Modified>
+      <Modified>2024-06-14T01:30:07.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -85,25 +85,45 @@
       <PackagePath>address.scale-100.png</PackagePath>
       <Modified>2024-06-10T22:54:17.817</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-100.png">
+      <PackagePath>camera_icon.scale-100.png</PackagePath>
+      <Modified>2024-06-14T01:05:39.813</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-125.png">
+      <PackagePath>camera_icon.scale-125.png</PackagePath>
+      <Modified>2024-06-14T01:05:39.816</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-150.png">
+      <PackagePath>camera_icon.scale-150.png</PackagePath>
+      <Modified>2024-06-14T01:05:39.820</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-200.png">
+      <PackagePath>camera_icon.scale-200.png</PackagePath>
+      <Modified>2024-06-14T01:05:39.824</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\camera_icon.scale-400.png">
+      <PackagePath>camera_icon.scale-400.png</PackagePath>
+      <Modified>2024-06-14T01:05:39.835</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:21.780</Modified>
+      <Modified>2024-06-14T01:05:39.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.176</Modified>
+      <Modified>2024-06-14T01:05:39.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.333</Modified>
+      <Modified>2024-06-14T01:05:39.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.771</Modified>
+      <Modified>2024-06-14T01:05:39.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.448</Modified>
+      <Modified>2024-06-14T01:05:40.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email.scale-100.png">
       <PackagePath>email.scale-100.png</PackagePath>
@@ -111,103 +131,103 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-100.png">
       <PackagePath>favorite_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.420</Modified>
+      <Modified>2024-06-14T01:05:39.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-125.png">
       <PackagePath>favorite_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.480</Modified>
+      <Modified>2024-06-14T01:05:39.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-150.png">
       <PackagePath>favorite_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.585</Modified>
+      <Modified>2024-06-14T01:05:39.806</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-200.png">
       <PackagePath>favorite_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.625</Modified>
+      <Modified>2024-06-14T01:05:39.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favorite_icon.scale-400.png">
       <PackagePath>favorite_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.671</Modified>
+      <Modified>2024-06-14T01:05:39.814</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-100.png">
       <PackagePath>heart_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.919</Modified>
+      <Modified>2024-06-14T01:05:39.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-125.png">
       <PackagePath>heart_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.928</Modified>
+      <Modified>2024-06-14T01:05:39.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-150.png">
       <PackagePath>heart_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.965</Modified>
+      <Modified>2024-06-14T01:05:39.807</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-200.png">
       <PackagePath>heart_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.971</Modified>
+      <Modified>2024-06-14T01:05:39.810</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_icon.scale-400.png">
       <PackagePath>heart_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.975</Modified>
+      <Modified>2024-06-14T01:05:39.816</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-100.png">
       <PackagePath>heart_regular.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.069</Modified>
+      <Modified>2024-06-14T01:05:39.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-125.png">
       <PackagePath>heart_regular.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.543</Modified>
+      <Modified>2024-06-14T01:05:39.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-150.png">
       <PackagePath>heart_regular.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.916</Modified>
+      <Modified>2024-06-14T01:05:39.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-200.png">
       <PackagePath>heart_regular.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.379</Modified>
+      <Modified>2024-06-14T01:05:40.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_regular.scale-400.png">
       <PackagePath>heart_regular.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.867</Modified>
+      <Modified>2024-06-14T01:05:40.480</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-100.png">
       <PackagePath>heart_solid.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:22.964</Modified>
+      <Modified>2024-06-14T01:05:39.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-125.png">
       <PackagePath>heart_solid.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.054</Modified>
+      <Modified>2024-06-14T01:05:39.887</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-150.png">
       <PackagePath>heart_solid.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.177</Modified>
+      <Modified>2024-06-14T01:05:39.957</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-200.png">
       <PackagePath>heart_solid.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.376</Modified>
+      <Modified>2024-06-14T01:05:40.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\heart_solid.scale-400.png">
       <PackagePath>heart_solid.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:23.964</Modified>
+      <Modified>2024-06-14T01:05:40.464</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-100.png">
       <PackagePath>home_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.393</Modified>
+      <Modified>2024-06-14T01:05:39.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-125.png">
       <PackagePath>home_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.510</Modified>
+      <Modified>2024-06-14T01:05:39.809</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-150.png">
       <PackagePath>home_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.628</Modified>
+      <Modified>2024-06-14T01:05:39.812</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-200.png">
       <PackagePath>home_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.662</Modified>
+      <Modified>2024-06-14T01:05:39.818</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home_icon.scale-400.png">
       <PackagePath>home_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.724</Modified>
+      <Modified>2024-06-14T01:05:39.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\iconp.ico">
       <PackagePath>iconp.ico</PackagePath>
@@ -399,103 +419,103 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-100.png">
       <PackagePath>market_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.414</Modified>
+      <Modified>2024-06-14T01:05:39.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-125.png">
       <PackagePath>market_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.510</Modified>
+      <Modified>2024-06-14T01:05:39.825</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-150.png">
       <PackagePath>market_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.519</Modified>
+      <Modified>2024-06-14T01:05:39.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-200.png">
       <PackagePath>market_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.585</Modified>
+      <Modified>2024-06-14T01:05:39.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\market_icon.scale-400.png">
       <PackagePath>market_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.665</Modified>
+      <Modified>2024-06-14T01:05:39.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-100.png">
       <PackagePath>mascota_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.362</Modified>
+      <Modified>2024-06-14T01:05:39.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-125.png">
       <PackagePath>mascota_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.473</Modified>
+      <Modified>2024-06-14T01:05:39.855</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-150.png">
       <PackagePath>mascota_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.554</Modified>
+      <Modified>2024-06-14T01:05:39.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-200.png">
       <PackagePath>mascota_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.703</Modified>
+      <Modified>2024-06-14T01:05:39.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mascota_icon.scale-400.png">
       <PackagePath>mascota_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.081</Modified>
+      <Modified>2024-06-14T01:05:40.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-100.png">
       <PackagePath>message_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.602</Modified>
+      <Modified>2024-06-14T01:05:40.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-125.png">
       <PackagePath>message_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.402</Modified>
+      <Modified>2024-06-14T01:05:40.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-150.png">
       <PackagePath>message_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:26.539</Modified>
+      <Modified>2024-06-14T01:05:40.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-200.png">
       <PackagePath>message_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:27.897</Modified>
+      <Modified>2024-06-14T01:05:41.246</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon.scale-400.png">
       <PackagePath>message_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:31.819</Modified>
+      <Modified>2024-06-14T01:05:42.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-100.png">
       <PackagePath>message_icon2.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.396</Modified>
+      <Modified>2024-06-14T01:05:39.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-125.png">
       <PackagePath>message_icon2.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.510</Modified>
+      <Modified>2024-06-14T01:05:39.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-150.png">
       <PackagePath>message_icon2.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.527</Modified>
+      <Modified>2024-06-14T01:05:39.863</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-200.png">
       <PackagePath>message_icon2.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.625</Modified>
+      <Modified>2024-06-14T01:05:39.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_icon2.scale-400.png">
       <PackagePath>message_icon2.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.661</Modified>
+      <Modified>2024-06-14T01:05:39.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-100.png">
       <PackagePath>new_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.393</Modified>
+      <Modified>2024-06-14T01:05:39.851</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-125.png">
       <PackagePath>new_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.422</Modified>
+      <Modified>2024-06-14T01:05:39.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-150.png">
       <PackagePath>new_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.473</Modified>
+      <Modified>2024-06-14T01:05:39.856</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-200.png">
       <PackagePath>new_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.526</Modified>
+      <Modified>2024-06-14T01:05:39.860</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\new_icon.scale-400.png">
       <PackagePath>new_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.585</Modified>
+      <Modified>2024-06-14T01:05:39.870</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\phone.scale-100.png">
       <PackagePath>phone.scale-100.png</PackagePath>
@@ -503,87 +523,87 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-100.png">
       <PackagePath>tecnologia_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.711</Modified>
+      <Modified>2024-06-14T01:05:39.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-125.png">
       <PackagePath>tecnologia_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.711</Modified>
+      <Modified>2024-06-14T01:05:39.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-150.png">
       <PackagePath>tecnologia_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.716</Modified>
+      <Modified>2024-06-14T01:05:39.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-200.png">
       <PackagePath>tecnologia_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.718</Modified>
+      <Modified>2024-06-14T01:05:39.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tecnologia_icon.scale-400.png">
       <PackagePath>tecnologia_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.728</Modified>
+      <Modified>2024-06-14T01:05:39.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-100.png">
       <PackagePath>up_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.275</Modified>
+      <Modified>2024-06-14T01:05:39.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-125.png">
       <PackagePath>up_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.420</Modified>
+      <Modified>2024-06-14T01:05:40.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-150.png">
       <PackagePath>up_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.664</Modified>
+      <Modified>2024-06-14T01:05:40.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-200.png">
       <PackagePath>up_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:26.091</Modified>
+      <Modified>2024-06-14T01:05:40.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\up_icon.scale-400.png">
       <PackagePath>up_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:27.461</Modified>
+      <Modified>2024-06-14T01:05:40.865</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-100.png">
       <PackagePath>user_icon.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.719</Modified>
+      <Modified>2024-06-14T01:05:39.882</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-125.png">
       <PackagePath>user_icon.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.734</Modified>
+      <Modified>2024-06-14T01:05:39.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-150.png">
       <PackagePath>user_icon.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.935</Modified>
+      <Modified>2024-06-14T01:05:39.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-200.png">
       <PackagePath>user_icon.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.215</Modified>
+      <Modified>2024-06-14T01:05:39.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon.scale-400.png">
       <PackagePath>user_icon.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.695</Modified>
+      <Modified>2024-06-14T01:05:40.094</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-100.png">
       <PackagePath>user_icon2.scale-100.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.724</Modified>
+      <Modified>2024-06-14T01:05:40.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-125.png">
       <PackagePath>user_icon2.scale-125.png</PackagePath>
-      <Modified>2024-06-10T22:56:24.763</Modified>
+      <Modified>2024-06-14T01:05:40.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-150.png">
       <PackagePath>user_icon2.scale-150.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.007</Modified>
+      <Modified>2024-06-14T01:05:40.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-200.png">
       <PackagePath>user_icon2.scale-200.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.113</Modified>
+      <Modified>2024-06-14T01:05:40.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_icon2.scale-400.png">
       <PackagePath>user_icon2.scale-400.png</PackagePath>
-      <Modified>2024-06-10T22:56:25.742</Modified>
+      <Modified>2024-06-14T01:05:40.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.deps.json">
       <PackagePath>CommunyStoreFrontEnd.deps.json</PackagePath>
-      <Modified>2024-06-13T19:23:07.833</Modified>
+      <Modified>2024-06-14T01:06:15.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

@@ -7,22 +7,22 @@
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqobtenerpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\response\\resbuscarpublicaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logpublicacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\moviles\\communystoreapi\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\moviles\\backend\\dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|C:\\Moviles\\Backend\\dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
       "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
     },
     {
@@ -60,8 +60,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResBuscarPublicaciones.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T20:21:49.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:21:49.26Z"
             },
             {
               "$type": "Document",
@@ -73,8 +72,7 @@
               "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAcwE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T20:16:42.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:16:42.299Z"
             },
             {
               "$type": "Document",
@@ -86,8 +84,7 @@
               "RelativeToolTip": "Entidades\\Request\\ReqObtenerPublicaciones.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T20:14:37.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:14:37.973Z"
             },
             {
               "$type": "Document",
@@ -111,8 +108,7 @@
               "ToolTip": "C:\\Moviles\\Backend\\DataAccess\\Connection.dbml",
               "RelativeToolTip": "DataAccess\\Connection.dbml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2024-06-13T20:09:45.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T20:09:45.765Z"
             },
             {
               "$type": "Document",
@@ -124,8 +120,7 @@
               "RelativeToolTip": "Logica\\LogPublicacion.cs",
               "ViewState": "AQIAAE0AAAAAAAAAAAAqwFwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:17:07.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T22:17:07.123Z"
             },
             {
               "$type": "Document",
@@ -137,8 +132,7 @@
               "RelativeToolTip": "..\\..\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\CommunyStoreApi\\Controllers\\ChatsController.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAawDIAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-10T22:17:01.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-10T22:17:01.409Z"
             },
             {
               "$type": "Document",
@@ -162,8 +156,7 @@
               "RelativeToolTip": "DataAccess\\Connection.designer.cs",
               "ViewState": "AQIAANkCAAAAAAAAAAA6wNkCAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T20:19:08.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-09T20:19:08.865Z"
             },
             {
               "$type": "Document",
