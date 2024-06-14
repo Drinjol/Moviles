@@ -8,6 +8,10 @@ using Google.Apis.Drive.v3;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
 using System.Diagnostics;
+using Microsoft.Maui.Media;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Storage;
+using System;
 
 
 namespace CommunyStoreFrontEnd;
@@ -22,7 +26,7 @@ public partial class AgregarPublicacionView : ContentPage
 
     // ID de la carpeta "ImagenesSarapiquiEmprende"
     static string FolderId = "1r7A7hITGX4WjarcooONMt4qPHKjxRhLU";
-    private StackLayout _lastSelectedStack;
+  //  private StackLayout _lastSelectedStack;
     private ImageButton _lastSelectedButton;
 
     public AgregarPublicacionView()
@@ -128,7 +132,72 @@ public partial class AgregarPublicacionView : ContentPage
 
     }
 
-   
+    private async void OnCameraImageClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            var status = await Permissions.RequestAsync<Permissions.Camera>();
+            if (status != PermissionStatus.Granted)
+            {
+                await DisplayAlert("Permiso denegado", "No se puede acceder a la cámara.", "OK");
+                return;
+            }
+
+            activityIndicator.IsRunning = true;
+            activityIndicator.IsVisible = true;
+
+            var photo = await MediaPicker.CapturePhotoAsync();
+
+            if (photo != null)
+            {
+                var stream = await photo.OpenReadAsync();
+                UploadedImage.Source = ImageSource.FromStream(() => stream);
+
+                var service = await GetDriveService();
+                if (service != null)
+                {
+                    var fileId = await UploadFile(service, photo.FileName, photo.FullPath, FolderId);
+                    if (fileId != null)
+                    {
+                        var fileUrl = await GetFileUrl(service, fileId);
+                        if (!string.IsNullOrEmpty(fileUrl))
+                        {
+                            _selectedFile = fileUrl;
+                        }
+                        else
+                        {
+                            await DisplayAlert("Error", "No se pudo obtener la URL del archivo.", "OK");
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "No se pudo subir el archivo.", "OK");
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Error", "No se pudo obtener el servicio de Google Drive.", "OK");
+                }
+            }
+        }
+        catch (FeatureNotSupportedException fnsEx)
+        {
+            await DisplayAlert("Error", "La captura de fotos no es compatible en este dispositivo.", "OK");
+        }
+        catch (PermissionException pEx)
+        {
+            await DisplayAlert("Error", "Permiso de cámara denegado.", "OK");
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Hubo un error al capturar la foto: {ex.Message}", "OK");
+        }
+        finally
+        {
+            activityIndicator.IsRunning = false;
+            activityIndicator.IsVisible = false;
+        }
+    }
 
 
     private async void OnUploadImageClicked(object sender, EventArgs e)
@@ -371,7 +440,5 @@ public partial class AgregarPublicacionView : ContentPage
         }
     }
 
-
-
-
+  
 }
