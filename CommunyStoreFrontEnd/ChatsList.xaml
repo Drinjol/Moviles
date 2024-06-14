@@ -1,0 +1,69 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CommunyStoreFrontEnd"
+             x:Class="CommunyStoreFrontEnd.ChatsList"
+             Title="ChatsList">
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0">
+            <Frame x:Name="ContentFrame" VerticalOptions="FillAndExpand" Margin="10" BackgroundColor="Transparent">
+                <CollectionView x:Name="collectionView"
+                                SelectionMode="Single"
+                                ItemsSource="{Binding listaDeChats}"
+                                SelectionChanged="OnSelectionChanged">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <!-- Definición de cada elemento del CollectionView -->
+                            <Frame Margin="5"
+                                   Padding="10"
+                                   BorderColor="LightGray"
+                                   CornerRadius="10"
+                                   HasShadow="False"
+                                   BackgroundColor="White">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Nombre del usuario -->
+                                    <Label Grid.Row="0" Grid.Column="0"
+                                           TextColor="Black" 
+                                           Text="{Binding idUsuario2.NombreCompleto}"
+                                           FontSize="16"
+                                           FontAttributes="Bold"/>
+
+                                    <!-- Fecha del último mensaje -->
+                                    <Label Grid.Row="0" Grid.Column="1"
+                                           TextColor="Gray"
+                                           Text="fecha"
+                                           FontSize="12"
+                                           HorizontalOptions="End"/>
+
+                                    <!-- Contenido del último mensaje -->
+                                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"
+                                           TextColor="Black"
+                                           Text="contenido ultimo mensaje"
+                                           FontSize="14"
+                                           MaxLines="1"
+                                           LineBreakMode="TailTruncation"/>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Frame>
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>
