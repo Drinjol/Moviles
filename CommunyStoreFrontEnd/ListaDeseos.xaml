@@ -34,59 +34,141 @@
         </Grid>
 
 
-
+        <Label Text="No tienes publicaciones favoritas"
+               Grid.Row="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               TextColor="Gray"
+               FontSize="20">
+            <Label.Triggers>
+                <DataTrigger TargetType="Label" Binding="{Binding IsListaDePublicacionesVacia}" Value="False">
+                    <Setter Property="IsVisible" Value="False" />
+                </DataTrigger>
+                <DataTrigger TargetType="Label" Binding="{Binding IsListaDePublicacionesVacia}" Value="True">
+                    <Setter Property="IsVisible" Value="True" />
+                </DataTrigger>
+            </Label.Triggers>
+        </Label>
 
 
         <!-- Contenido de las pestañas -->
-        <ScrollView Grid.Row="2">
-            <Frame x:Name="ContentFrame" VerticalOptions="FillAndExpand">
-                <CollectionView x:Name="collectionView"
-                    SelectionMode="None"
-                    ItemsSource="{Binding listaDePublicacionesGuardadas}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <!-- Definición de cada elemento del CollectionView -->
-                            <Frame Margin="20"
-                                BorderColor="Azure"
-                                CornerRadius="5"
-                                HasShadow="True">
+        <CollectionView Grid.Row="2" ItemsSource="{Binding listaDePublicacionesGuardadas}" HorizontalOptions="Fill">
+            <CollectionView.ItemsLayout >
+                <GridItemsLayout VerticalItemSpacing="5" HorizontalItemSpacing="10" Orientation="Vertical" Span="1"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
 
-                                <Frame.Background>
-                                    <LinearGradientBrush EndPoint="1,0">
-                                        <GradientStop  Color="White"/>
-                                    </LinearGradientBrush>
-                                </Frame.Background>
-                                <StackLayout Padding="10">
+                <DataTemplate>
+                    <Frame BorderColor="LightGray" CornerRadius="10" Padding="6" Margin="8" BackgroundColor="White" HasShadow="True" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+                        <StackLayout Spacing="10">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
 
-                                    <Label TextColor="Black" Text="{Binding precioPublicacion, StringFormat='Precio: {0:C}'}"
-                                        FontSize="14"
-                                        HorizontalOptions="CenterAndExpand"
-                                        VerticalOptions="Center"/>
+                                <!-- Nombre completo del usuario -->
+                                <Label Text="{Binding publicacion.usuario.NombreCompleto}"
+                                    TextColor="Blue"
+                                    FontSize="14"
+                                    HorizontalOptions="Start"
+                                    HeightRequest="20"
+                                    Grid.Column="0">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="btnViewPerfil" />
+                                    </Label.GestureRecognizers>
+                                </Label>
 
-                                    <Label TextColor="Black" Text="{Binding publicacion.descripcionPublicacion}"
-                                        FontSize="16"
-                                        HorizontalOptions="CenterAndExpand"
-                                        VerticalOptions="Center"/>
+                                <!-- StackLayout para la fecha -->
+                                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                                    <!-- Fecha de publicación -->
+                                    <Label Text="{Binding publicacion.fechaPublicacion, StringFormat='{0:d}'}" 
+                                     TextColor="Gray" 
+                                      FontSize="10" 
+                                 HorizontalOptions="Start"/>
+                                </StackLayout>
 
-                                    <Button Text="Eliminar publicación"
-                                        Clicked="Button_Clicked_delete_publicacion_guardadaAsync"
-                                        CommandParameter="{Binding publicacion}"  HorizontalOptions="FillAndExpand"
-                                        Style="{StaticResource WishlistButtonStyle}" />
-                                    <Button Text="Contactar al usuario"
+                                <!-- Botón de agregar a lista de deseos -->
+                                <ImageButton Clicked="Button_Clicked_add_lista_deseos"
+                                    CommandParameter="{Binding .}"
+                                    HeightRequest="20"
+                                    WidthRequest="50"
+                                    Padding="0"
+                                    BackgroundColor="Transparent"
+                                    BorderWidth="0"
+                                    CornerRadius="9"
+                                    Grid.Column="1"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center">
+                                    <ImageButton.Triggers>
+                                        <DataTrigger TargetType="ImageButton"
+                                            Binding="{Binding publicacion.favorito}"
+                                            Value="True">
+                                            <Setter Property="Source" Value="heart_icon.png" />
+                                        </DataTrigger>
+                                        <DataTrigger TargetType="ImageButton"
+                                            Binding="{Binding publicacion.favorito}"
+                                            Value="False">
+                                            <Setter Property="Source" Value="favorite_icon.png" />
+                                        </DataTrigger>
+                                    </ImageButton.Triggers>
+                                </ImageButton>
+                            </Grid>
+
+
+
+
+                            <!-- Imagen de la publicación -->
+                            <Image Source="{Binding publicacion.nombresArchivos}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="180"
+                                    HorizontalOptions="CenterAndExpand"
+                                    VerticalOptions="CenterAndExpand"/>
+                            <!-- Otros detalles de la publicación -->
+
+                            <StackLayout Spacing="2">
+                                <!-- Descripción de la publicación -->
+                                <Label TextColor="Black" FontFamily="Open Sans"  Text="{Binding publicacion.descripcionPublicacion}"
+                            FontSize="16"
+                             HorizontalOptions="FillAndExpand"
+                          VerticalOptions="Center"/>
+
+                                <!-- Categoría de la publicación -->
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                                    <Label TextColor="Gray" Text="{Binding publicacion.categoriaPublicacion}"
+                            FontSize="14"
+                             HorizontalOptions="Start"
+                             VerticalOptions="Center"/>
+                                </StackLayout>
+                            </StackLayout>
+
+
+                            <HorizontalStackLayout Spacing="10">
+                                <Label TextColor="DarkRed" Text="{Binding publicacion.precioPublicacion, StringFormat='{0:C}'}"
+                          FontSize="16"
+                            FontAttributes="Italic"
+                           HorizontalOptions="Fill"
+                      VerticalOptions="Start"/>
+                            </HorizontalStackLayout>
+
+                            <VerticalStackLayout Spacing="10">
+                                <Button Text="Contactar al usuario"
                                         Clicked="Button_Clicked_contactar_usuario"
                                         CommandParameter="{Binding .}"  HorizontalOptions="FillAndExpand"
-                                        Style="{StaticResource WishlistButtonStyle}" />
+                                        BackgroundColor="Green"
+                                        Style="{StaticResource WishlistButtonStyle}"/>
+                                </VerticalStackLayout>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
 
-                                </StackLayout>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-                <!-- El contenido de las pestañas se cargará dinámicamente aquí -->
-            </Frame>
-        </ScrollView>
 
-       
 
     </Grid>
 

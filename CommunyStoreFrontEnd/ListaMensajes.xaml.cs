@@ -49,7 +49,7 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
     private async Task<List<Mensaje>> MensajesDelAPI(int Idchat)
     {
         List<Mensaje> retornarMensajesApi = new List<Mensaje>();
-        String laURL = "https://localhost:44308/CommunyStoreApi/chats/obtenerMensajesConIdChat";
+        
 
         try
         {
@@ -59,7 +59,7 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
             using (HttpClient httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(laURL, jsonContent);
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/chats/obtenerMensajesConIdChat", jsonContent);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -110,7 +110,7 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
     public async Task IngresarMensajeBd(ReqIngresarMensaje req)
     {
-        String laURL = "https://localhost:44308/CommunyStoreApi/chats/ingresarMensaje";
+        
 
         try
         {
@@ -124,7 +124,7 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(laURL, jsonMensaje);
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/chats/ingresarMensaje", jsonMensaje);
 
                 if (response.IsSuccessStatusCode)
                 {

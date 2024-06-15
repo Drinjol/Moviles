@@ -52,11 +52,11 @@
         <!-- Lista de publicaciones -->
         <CollectionView Grid.Row="2" ItemsSource="{Binding listaDePublicaciones}" HorizontalOptions="Fill">
             <CollectionView.ItemsLayout>
-                <GridItemsLayout VerticalItemSpacing="15" HorizontalItemSpacing="15" Orientation="Vertical" Span="2"/>
+                <GridItemsLayout VerticalItemSpacing="5" HorizontalItemSpacing="10" Orientation="Vertical" Span="2"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame BorderColor="LightGray" CornerRadius="10" Padding="15" Margin="30" BackgroundColor="White" HasShadow="True">
+                    <Frame BorderColor="LightGray" CornerRadius="5" Padding="5" Margin="2" BackgroundColor="White" HasShadow="True">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="{Binding .}" />
                         </Frame.GestureRecognizers>
@@ -119,7 +119,7 @@
                             <!-- Imagen de la publicación -->
                             <Image Source="{Binding nombresArchivos}"
                                    Aspect="AspectFit"
-                                   HeightRequest="200"
+                                   HeightRequest="100"
                                    HorizontalOptions="CenterAndExpand"
                                    VerticalOptions="CenterAndExpand"/>
                             <!-- Otros detalles de la publicación -->

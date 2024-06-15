@@ -38,6 +38,8 @@ namespace Backend.Logica
                     publicacionGuardada.idPublicacionGuardada = (int)resultado.tb_lista_deseos_id;
                     publicacionGuardada.publicacion.idPublicacion = (int)resultado.tb_publicacion_id;
                     publicacionGuardada.publicacion.usuario.Id = (int)resultado.tb_usuario_id;
+                    publicacionGuardada.publicacion.usuario.nombre = resultado.tb_usuario_nombre;
+                    publicacionGuardada.publicacion.usuario.apellidos = resultado.tb_usuario_apellidos;
                     publicacionGuardada.fechaGuardado = (DateTime)resultado.tb_lista_deseos_creacion;
                     publicacionGuardada.estadoGuardado = (int)resultado.tb_lista_deseos_estado;
                     
@@ -46,7 +48,10 @@ namespace Backend.Logica
                     publicacionGuardada.publicacion.fechaPublicacion = (DateTime)resultado.tb_publicacion_fecha;
                     publicacionGuardada.publicacion.precioPublicacion = (decimal)resultado.tb_publicacion_precio;
                     publicacionGuardada.publicacion.estadoPublicacion = (int)resultado.tb_publicacion_estado;
-                    
+                    publicacionGuardada.publicacion.favorito = (bool)resultado.IsFavorito;
+
+                    // Convertir la cadena hexadecimal a una representación legible
+                    publicacionGuardada.publicacion.nombresArchivos = HexStringToString(resultado.IMAGEN_BINARIO);
 
                     publicacionesGuardadas.Add(publicacionGuardada);
                 }
@@ -70,6 +75,22 @@ namespace Backend.Logica
             return res;
 
 
+        }
+
+        private static string HexStringToString(string hex)
+        {
+            if (hex.StartsWith("0x"))
+            {
+                hex = hex.Substring(2);
+            }
+
+            byte[] bytes = new byte[hex.Length / 2];
+            for (int i = 0; i < hex.Length; i += 2)
+            {
+                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
+            }
+
+            return Encoding.ASCII.GetString(bytes);
         }
 
 

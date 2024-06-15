@@ -52,7 +52,7 @@ public partial class ChatsList : ContentPage
     private async Task<List<Chats>> ChatsDelAPI()
     {
         List<Chats> retornarChatsApi = new List<Chats>();
-        String laURL = "https://localhost:44308/CommunyStoreApi/chats/obtenerchats";
+        
 
         try
         {
@@ -63,7 +63,7 @@ public partial class ChatsList : ContentPage
 
             using (HttpClient httpClient = new HttpClient())
             {
-                 var response = await httpClient.PostAsync(laURL, jsonContent);
+                 var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/chats/obtenerchats", jsonContent);
                
                 if (response.IsSuccessStatusCode)
                 {

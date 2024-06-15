@@ -57,7 +57,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     private async Task<List<Publicacion>> publicacionesDelApi()
     {
         List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
-        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/obtenerPublicacion";
+        
 
         try
         {
@@ -68,7 +68,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
             using (HttpClient httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(laURL, jsonContent);
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/obtenerPublicacion", jsonContent);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -243,10 +243,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                     if (resultado)
                     {
                         CargarPublicaciones();
-                        string successMessage = publication.favorito
-                            ? $"La publicación se ha agregado a su lista de deseos."
-                            : $"La publicación se ha eliminado de su lista de deseos.";
-                        await DisplayAlert("Operación exitosa", successMessage, "Aceptar");
+                       
                     }
                     else
                     {
@@ -476,7 +473,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync("https://localhost:44308/CommunyStoreApi/usuario/agregarInteraccionUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/usuario/agregarInteraccionUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -545,7 +542,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
     {
         List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
         ReqBuscarPublicaciones req = new ReqBuscarPublicaciones();
-        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/buscarPublicaciones";
+        
 
         try
         {
@@ -558,7 +555,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
             using (HttpClient httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(laURL, jsonContent);
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/buscarPublicaciones", jsonContent);
 
                 if (response.IsSuccessStatusCode)
                 {

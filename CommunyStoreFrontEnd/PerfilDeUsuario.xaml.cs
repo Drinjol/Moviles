@@ -135,7 +135,7 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
     private async Task<List<Publicacion>> publicacionesDelApi()
     {
         List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
-        String laURL = "https://localhost:44308/CommunyStoreApi/publicacion/obtenerPublicacionPorIdUsuario";
+        
 
         try
         {
@@ -146,7 +146,7 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 
             using (HttpClient httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(laURL, jsonContent);
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/obtenerPublicacionPorIdUsuario", jsonContent);
 
                 if (response.IsSuccessStatusCode)
                 {
