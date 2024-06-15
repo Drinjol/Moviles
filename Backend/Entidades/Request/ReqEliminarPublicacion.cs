@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Backend.Entidades
 {
-    public class ResActualizarUsuario: ResBase
+    public class ReqEliminarPublicacion 
     {
+        public int usuarioid { get; set; }
+        public int Id { get; set; }
     }
 }
