@@ -70,6 +70,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\credentials.json" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\AppIcon\white.svg" />
 	  <None Remove="Resources\Images\camera_icon.svg" />
 	  <None Remove="Resources\Images\favorite_icon.svg" />
@@ -92,6 +96,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Raw\credentials.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiFont Include="Resources\AppIcon\white.svg" />
 	</ItemGroup>
 
@@ -110,12 +120,6 @@
 	  <Compile Update="SesionPage.xaml.cs">
 	    <DependentUpon>SesionPage.xaml</DependentUpon>
 	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiAsset Update="Resources\Raw\credentials.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </MauiAsset>
 	</ItemGroup>
 
 	<ItemGroup>

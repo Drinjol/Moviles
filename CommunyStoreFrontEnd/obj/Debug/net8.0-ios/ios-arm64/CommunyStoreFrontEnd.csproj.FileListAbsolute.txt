@@ -1889,3 +1889,10 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-io
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.pdb
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\ref\CommunyStoreFrontEnd.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\Resources\Raw\credentials.json
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\camera_icon@3x.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\camera_icon@2x.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\camera_icon.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid@3x.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid@2x.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid.png

@@ -6730,3 +6730,14 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-an
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-android\Resources\Raw\credentials.json
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\camera_icon.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\message_solid.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\camera_icon.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\message_solid.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\camera_icon.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\message_solid.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\camera_icon.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\message_solid.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\camera_icon.png
+C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\message_solid.png
