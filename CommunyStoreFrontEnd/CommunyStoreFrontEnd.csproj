@@ -81,6 +81,7 @@
 	  <None Remove="Resources\Images\mascota_icon.svg" />
 	  <None Remove="Resources\Images\message_icon.svg" />
 	  <None Remove="Resources\Images\message_icon2.svg" />
+	  <None Remove="Resources\Images\message_solid.svg" />
 	  <None Remove="Resources\Images\new_icon.svg" />
 	  <None Remove="Resources\Images\tecnologia_icon.svg" />
 	  <None Remove="Resources\Images\up_icon.svg" />
@@ -109,6 +110,12 @@
 	  <Compile Update="SesionPage.xaml.cs">
 	    <DependentUpon>SesionPage.xaml</DependentUpon>
 	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiAsset Update="Resources\Raw\credentials.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </MauiAsset>
 	</ItemGroup>
 
 	<ItemGroup>

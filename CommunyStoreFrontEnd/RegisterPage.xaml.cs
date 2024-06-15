@@ -1,3 +1,4 @@
+using CommunyStoreFrontEnd.Utilitarios;
 using Newtonsoft.Json.Linq;
 using System.Text;
 using System.Text.Json;
@@ -6,7 +7,6 @@ namespace CommunyStoreFrontEnd;
 public partial class RegisterPage : ContentPage
 {
 
-    String apiLink = "https://localhost:44308/";
     public RegisterPage()
 	{
 		InitializeComponent();
@@ -46,7 +46,7 @@ public partial class RegisterPage : ContentPage
 
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(apiLink + "CommunyStoreApi/usuario/agregarUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/usuario/agregarUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
 
                 if (response.IsSuccessStatusCode)
                 {

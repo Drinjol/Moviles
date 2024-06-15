@@ -103,6 +103,11 @@ message_icon2.scale-125.png
 message_icon2.scale-150.png
 message_icon2.scale-200.png
 message_icon2.scale-400.png
+message_solid.scale-100.png
+message_solid.scale-125.png
+message_solid.scale-150.png
+message_solid.scale-200.png
+message_solid.scale-400.png
 new_icon.scale-100.png
 new_icon.scale-125.png
 new_icon.scale-150.png
