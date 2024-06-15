@@ -273,19 +273,16 @@ namespace Backend.Logica
             Int16 tipoDeTransaccion = 0;
             ResEliminarPublicacion res = new ResEliminarPublicacion();
             res.listaDeErrores = new List<string>();
+
             try
             {
                 using (ConnectionDataContext linq = new ConnectionDataContext())
                 {
-                    
-                    var idReturn = new SqlParameter("@IDRETURN", SqlDbType.Int) { Direction = ParameterDirection.Output };
-                    var errorId = new SqlParameter("@ERRORID", SqlDbType.Int) { Direction = ParameterDirection.Output };
-                    var errorDescripcion = new SqlParameter("@ERRORDESCRIPCION", SqlDbType.NVarChar, -1) { Direction = ParameterDirection.Output };
-                    var filasActualizadas = new SqlParameter("@FILASACTUALIZADAS", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    SqlParameter idReturn = new SqlParameter("@IDRETURN", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    SqlParameter errorId = new SqlParameter("@ERRORID", SqlDbType.Int) { Direction = ParameterDirection.Output };
+                    SqlParameter errorDescripcion = new SqlParameter("@ERRORDESCRIPCION", SqlDbType.NVarChar, -1) { Direction = ParameterDirection.Output };
 
-                   
-                    linq.SP_ELIMINAR_PUBLICACION(req.IdPublicacion, ref idReturn, errorId, errorDescripcion, filasActualizadas);
-                  
+                    linq.SP_ELIMINAR_PUBLICACION(req.IdPublicacion, idReturn, errorId, errorDescripcion);
 
                     if ((int)idReturn.Value == -1)
                     {
@@ -302,14 +299,16 @@ namespace Backend.Logica
             {
                 res.resultado = false;
                 tipoDeTransaccion = 2;
-                res.listaDeErrores.Add("error bd");
+                res.listaDeErrores.Add("Error de BD: " + ex.Message);
             }
             finally
             {
                 Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
             }
+
             return res;
         }
+
 
 
     }
