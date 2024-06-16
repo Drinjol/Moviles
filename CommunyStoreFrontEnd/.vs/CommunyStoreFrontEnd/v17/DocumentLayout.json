@@ -70,8 +70,7 @@
               "RelativeToolTip": "UsuarioView.xaml.cs",
               "ViewState": "AQIAAKAAAAAAAAAAAADwv7IAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T18:05:12.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T18:05:12.6Z"
             },
             {
               "$type": "Document",
@@ -81,7 +80,7 @@
               "RelativeDocumentMoniker": "UsuarioView.xaml",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml",
               "RelativeToolTip": "UsuarioView.xaml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACcAAAAYAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-06-16T18:01:51.084Z",
               "EditorCaption": ""
@@ -96,8 +95,7 @@
               "RelativeToolTip": "PublicacionesView.xaml.cs",
               "ViewState": "AQIAALcBAAAAAAAAAAAIwMkBAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:53:34.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T15:53:34.817Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "PublicacionDetalles.xaml.cs",
               "ViewState": "AQIAAPIAAAAAAAAAAAAUwAQBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:53:14.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T15:53:14.428Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "PublicacionDetalles.xaml",
               "ViewState": "AQIAAFoAAAAAAAAAAAAAAF8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-15T01:11:01.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-15T01:11:01.259Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "PublicacionesView.xaml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAACKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T15:54:09.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T15:54:09.449Z"
             },
             {
               "$type": "Document",
@@ -148,8 +143,7 @@
               "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T18:06:29.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T18:06:29.057Z"
             },
             {
               "$type": "Document",
@@ -161,8 +155,7 @@
               "RelativeToolTip": "PerfilDeUsuario.xaml.cs",
               "ViewState": "AQIAAIoAAAAAAAAAAAAowJ8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T18:07:53.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T18:07:53.617Z"
             },
             {
               "$type": "Document",
@@ -174,8 +167,7 @@
               "RelativeToolTip": "ListaDeseos.xaml.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAUwGsBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T16:33:36.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T16:33:36.882Z"
             },
             {
               "$type": "Document",
@@ -187,8 +179,7 @@
               "RelativeToolTip": "PerfilDeUsuario.xaml",
               "ViewState": "AQIAAGYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T18:07:14.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T18:07:14.157Z"
             },
             {
               "$type": "Document",
@@ -200,21 +191,19 @@
               "RelativeToolTip": "ListaDeseos.xaml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAADYAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T17:20:41.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T17:20:41.444Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CommunyStoreFrontEnd",
+              "Title": "CommunyStoreFrontEnd.csproj",
               "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
               "RelativeDocumentMoniker": "CommunyStoreFrontEnd.csproj",
               "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
               "RelativeToolTip": "CommunyStoreFrontEnd.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-06-16T18:01:19.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T18:01:19.272Z"
             }
           ]
         }
