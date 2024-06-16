@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emprende_admin;Encrypt=True" SettingsObjectName="Backend.Properties.Settings" SettingsPropertyName="DataSourceConnectionString19" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_aa995b_emprende" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sql8010.site4now.net;Initial Catalog=db_aa995b_emprende;Persist Security Info=True;User ID=db_aa995b_emprende_admin;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="Backend.Properties.Settings" SettingsPropertyName="db_aa995b_emprendeConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tb_imagen_binario" Member="tb_imagen_binario">
     <Type Name="tb_imagen_binario">
       <Column Name="tb_imagen_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -138,22 +138,6 @@
       <Column Name="tb_chat_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sp_obtener_publicacion_por_id_usuario" Method="sp_obtener_publicacion_por_id_usuario">
-    <Parameter Name="id" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sp_obtener_publicacion_por_id_usuarioResult">
-      <Column Name="publicacion_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="usuario_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="publicacion_fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="publicacion_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="publicacion_precio" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
-      <Column Name="publicacion_categoria" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="publicacion_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
-      <Column Name="IsFavorito" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="nombre_usuario" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="apellidos_usuario" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="imagen_binario" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.SP_BUSCAR_PUBLICACIONES" Method="SP_BUSCAR_PUBLICACIONES">
     <Parameter Name="Palabra" Parameter="palabra" Type="System.String" DbType="VarChar(255)" />
     <ElementType Name="SP_BUSCAR_PUBLICACIONESResult">
@@ -178,25 +162,6 @@
     <ElementType Name="SP_GUARDAR_PUBLICACION_DESEOResult">
       <Column Name="MENSAJE" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
       <Column Name="RESULTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.SP_MOSTRAR_PUBLICACIONES_GUARDADAS" Method="SP_MOSTRAR_PUBLICACIONES_GUARDADAS">
-    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
-    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
-    <ElementType Name="SP_MOSTRAR_PUBLICACIONES_GUARDADASResult">
-      <Column Name="tb_lista_deseos_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="tb_usuario_nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="tb_usuario_apellidos" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="tb_usuario_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="tb_publicacion_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="tb_publicacion_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
-      <Column Name="tb_publicacion_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
-      <Column Name="tb_publicacion_fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="tb_publicacion_precio" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="IMAGEN_BINARIO" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="IsFavorito" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="tb_lista_deseos_creacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="tb_lista_deseos_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.SP_ELIMINAR_PUBLICACION" Method="SP_ELIMINAR_PUBLICACION">
@@ -225,5 +190,45 @@
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="password" Type="System.String" DbType="NVarChar(100)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_MOSTRAR_PUBLICACIONES_GUARDADAS" Method="SP_MOSTRAR_PUBLICACIONES_GUARDADAS">
+    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RESULTADO" Parameter="rESULTADO" Type="System.String" DbType="NVarChar(200)" Direction="InOut" />
+    <ElementType Name="SP_MOSTRAR_PUBLICACIONES_GUARDADASResult">
+      <Column Name="tb_lista_deseos_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="tb_usuario_nombre" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_apellidos" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="tb_publicacion_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="tb_publicacion_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_publicacion_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="tb_publicacion_fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tb_publicacion_precio" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="tb_publicacion_categoria" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="IMAGEN_BINARIO" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsFavorito" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="tb_lista_deseos_creacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tb_lista_deseos_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_obtener_publicacion_por_id_usuario" Method="sp_obtener_publicacion_por_id_usuario">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sp_obtener_publicacion_por_id_usuarioResult">
+      <Column Name="publicacion_id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="usuario_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="publicacion_fecha" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="publicacion_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="publicacion_precio" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="publicacion_categoria" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="publicacion_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="IsFavorito" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="nombre_usuario" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="apellidos_usuario" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_direccion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_email" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="tb_usuario_telefono" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="imagen_binario" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
   </Function>
 </Database>

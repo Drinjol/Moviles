@@ -11,6 +11,11 @@ dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
 email.scale-100.png
+envelope_solid.scale-100.png
+envelope_solid.scale-125.png
+envelope_solid.scale-150.png
+envelope_solid.scale-200.png
+envelope_solid.scale-400.png
 favorite_icon.scale-100.png
 favorite_icon.scale-125.png
 favorite_icon.scale-150.png
@@ -93,11 +98,6 @@ mascota_icon.scale-125.png
 mascota_icon.scale-150.png
 mascota_icon.scale-200.png
 mascota_icon.scale-400.png
-message_icon.scale-100.png
-message_icon.scale-125.png
-message_icon.scale-150.png
-message_icon.scale-200.png
-message_icon.scale-400.png
 message_icon2.scale-100.png
 message_icon2.scale-125.png
 message_icon2.scale-150.png

@@ -156,11 +156,15 @@
                             </HorizontalStackLayout>
 
                             <VerticalStackLayout Spacing="10">
-                                <Button Text="Contactar al usuario"
-                                        Clicked="Button_Clicked_contactar_usuario"
-                                        CommandParameter="{Binding .}"  HorizontalOptions="FillAndExpand"
-                                        BackgroundColor="Green"
-                                        Style="{StaticResource WishlistButtonStyle}"/>
+                                <Button Text="CONTACTAR"
+                                    Clicked="Button_Clicked_contactar_usuario"
+                                    CommandParameter="{Binding .}"
+                                    HorizontalOptions="FillAndExpand"
+                                    BackgroundColor="Green"
+                                    TextColor="White"                                    
+                                    BorderWidth="30"
+                                    ImageSource="envelope_solid.png"
+                                    ContentLayout="Left, 20"/>
                                 </VerticalStackLayout>
                         </StackLayout>
                     </Frame>

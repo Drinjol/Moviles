@@ -475,7 +475,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
                 if (response.IsSuccessStatusCode)
                 {
-                    await DisplayAlert("Correcto", "Correcto", "Aceptar");
+                    //await DisplayAlert("Correcto", "Correcto", "Aceptar");
 
                 }
                 else

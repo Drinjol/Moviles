@@ -49,6 +49,7 @@ namespace Backend.Logica
                     publicacionGuardada.publicacion.precioPublicacion = (decimal)resultado.tb_publicacion_precio;
                     publicacionGuardada.publicacion.estadoPublicacion = (int)resultado.tb_publicacion_estado;
                     publicacionGuardada.publicacion.favorito = (bool)resultado.IsFavorito;
+                    publicacionGuardada.publicacion.categoriaPublicacion = resultado.tb_publicacion_categoria;
 
                     // Convertir la cadena hexadecimal a una representación legible
                     publicacionGuardada.publicacion.nombresArchivos = HexStringToString(resultado.IMAGEN_BINARIO);
