@@ -25,7 +25,6 @@ namespace CommunyStoreApi.Controllers
         [System.Web.Http.Route("CommunyStoreApi/publicacion/obtenerPublicacion")]
         public ResObtenerPublicaciones ObtenerPublicaciones(ReqObtenerPublicaciones req)
         {
-          
             return new LogPublicacion().obtenerPublicaciones(req);
 
         }
@@ -34,7 +33,6 @@ namespace CommunyStoreApi.Controllers
         [System.Web.Http.Route("CommunyStoreApi/publicacion/obtenerPublicacionPorIdUsuario")]
         public ResObtenerPublicacionIdUsuario ObtenerPublicacionesPorIdUsuario(ReqObtenerPublicacionPorIdUsuario req)
         {
-            //int id usuario
             return new LogPublicacion().obteneListaDePublicacionesPorIdUsuario(req);
 
         }

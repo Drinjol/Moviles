@@ -19,9 +19,6 @@ namespace Backend.Entidades
         public string descripcion { get; set; }
         public string password { get; set; }
      
-
-
-
   
     }
 }
