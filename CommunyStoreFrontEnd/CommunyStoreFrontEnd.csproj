@@ -115,6 +115,7 @@
 		<PackageReference Include="FFImageLoadingCompat.Svg.Maui" Version="0.1.1" />
 		<PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
 		<PackageReference Include="Google.Apis.Drive.v3" Version="1.68.0.3416" />
+		<PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.2.3" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.21" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.21" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />

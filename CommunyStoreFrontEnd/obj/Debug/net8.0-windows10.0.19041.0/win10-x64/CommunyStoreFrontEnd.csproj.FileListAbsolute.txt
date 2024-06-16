@@ -1761,3 +1761,6 @@ C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\De
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_solid.scale-200.png
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\message_solid.scale-400.png
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\phone.scale-100.png
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Azure.KeyVault.Core.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Azure.Storage.Blob.dll
+C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Azure.Storage.Common.dll

@@ -1,2 +1,2 @@
-AdbTarget=-s R58N35T8RXX
+AdbTarget=-s 192.168.1.4:5555
 AdbOptions=
