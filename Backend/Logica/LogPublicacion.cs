@@ -22,14 +22,8 @@ namespace Backend.Logica
         public ResObtenerPublicaciones obtenerPublicaciones(ReqObtenerPublicaciones req)
         {
             Int16 tipoDeTransaccion = 0;
-            string descripcionError = "";
-            int? errorId = 0;
             ResObtenerPublicaciones res = new ResObtenerPublicaciones();
             res.listaDeErrores = new List<string>();
-            //  ReqIngresarPublicacion req = new ReqIngresarPublicacion();
-
-            var categoria = req.categoria;
-
             try
             {
 

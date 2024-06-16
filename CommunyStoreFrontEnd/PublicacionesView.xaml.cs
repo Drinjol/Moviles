@@ -315,7 +315,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     private void btn_tecnologia_Clicked(object sender, EventArgs e)
     {
-        categoriaSeleccionada = "Tecnologia";
+        categoriaSeleccionada = "Tecnología";
         CargarPublicaciones();
     if (_lastSelectedStack != null)
     {

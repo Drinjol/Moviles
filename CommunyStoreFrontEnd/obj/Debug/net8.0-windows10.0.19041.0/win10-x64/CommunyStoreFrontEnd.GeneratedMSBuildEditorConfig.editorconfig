@@ -8,113 +8,113 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CommunyStoreFrontEnd
-build_property.ProjectDir = C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\
+build_property.ProjectDir = C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/ActualizarPublicacionUsuarioPerfil.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/ActualizarPublicacionUsuarioPerfil.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ActualizarPublicacionUsuarioPerfil.xaml
 build_metadata.AdditionalFiles.TargetPath = ActualizarPublicacionUsuarioPerfil.xaml
 build_metadata.AdditionalFiles.RelativePath = ActualizarPublicacionUsuarioPerfil.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/AgregarPublicacionView.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/AgregarPublicacionView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.AgregarPublicacionView.xaml
 build_metadata.AdditionalFiles.TargetPath = AgregarPublicacionView.xaml
 build_metadata.AdditionalFiles.RelativePath = AgregarPublicacionView.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/App.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/AppShell.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/ChatsList.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/ChatsList.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ChatsList.xaml
 build_metadata.AdditionalFiles.TargetPath = ChatsList.xaml
 build_metadata.AdditionalFiles.RelativePath = ChatsList.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/EditarPerfil.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/EditarPerfil.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.EditarPerfil.xaml
 build_metadata.AdditionalFiles.TargetPath = EditarPerfil.xaml
 build_metadata.AdditionalFiles.RelativePath = EditarPerfil.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/ListaDeseos.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/ListaDeseos.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ListaDeseos.xaml
 build_metadata.AdditionalFiles.TargetPath = ListaDeseos.xaml
 build_metadata.AdditionalFiles.RelativePath = ListaDeseos.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/ListaMensajes.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/ListaMensajes.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.ListaMensajes.xaml
 build_metadata.AdditionalFiles.TargetPath = ListaMensajes.xaml
 build_metadata.AdditionalFiles.RelativePath = ListaMensajes.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/MainPage.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/NavigationBar.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/NavigationBar.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.NavigationBar.xaml
 build_metadata.AdditionalFiles.TargetPath = NavigationBar.xaml
 build_metadata.AdditionalFiles.RelativePath = NavigationBar.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/PerfilDeUsuario.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/PerfilDeUsuario.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.PerfilDeUsuario.xaml
 build_metadata.AdditionalFiles.TargetPath = PerfilDeUsuario.xaml
 build_metadata.AdditionalFiles.RelativePath = PerfilDeUsuario.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/PublicacionDetalles.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/PublicacionDetalles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.PublicacionDetalles.xaml
 build_metadata.AdditionalFiles.TargetPath = PublicacionDetalles.xaml
 build_metadata.AdditionalFiles.RelativePath = PublicacionDetalles.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/PublicacionesView.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/PublicacionesView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.PublicacionesView.xaml
 build_metadata.AdditionalFiles.TargetPath = PublicacionesView.xaml
 build_metadata.AdditionalFiles.RelativePath = PublicacionesView.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/RegisterPage.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.RegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/Resources/Styles/Colors.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/Resources/Styles/Styles.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/SesionPage.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/SesionPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.SesionPage.xaml
 build_metadata.AdditionalFiles.TargetPath = SesionPage.xaml
 build_metadata.AdditionalFiles.RelativePath = SesionPage.xaml
 
-[C:/Users/eliez/Documents/GitHud/Moviles/CommunyStoreFrontEnd/UsuarioView.xaml]
+[C:/Users/Dilan GC/Desktop/Móviles/CommunyStore/Moviles/CommunyStoreFrontEnd/UsuarioView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CommunyStoreFrontEnd.UsuarioView.xaml
 build_metadata.AdditionalFiles.TargetPath = UsuarioView.xaml
