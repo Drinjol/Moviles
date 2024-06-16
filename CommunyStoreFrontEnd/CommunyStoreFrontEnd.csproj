@@ -82,14 +82,15 @@
 	  <None Remove="Resources\AppIcon\iconp.jpg" />
 	  <None Remove="Resources\AppIcon\white.svg" />
 	  <None Remove="Resources\Images\camera_icon.svg" />
+	  <None Remove="Resources\Images\envelope_solid.svg" />
 	  <None Remove="Resources\Images\favorite_icon.svg" />
 	  <None Remove="Resources\Images\heart_icon.svg" />
 	  <None Remove="Resources\Images\heart_regular.svg" />
 	  <None Remove="Resources\Images\heart_solid.svg" />
 	  <None Remove="Resources\Images\home_icon.svg" />
+	  <None Remove="Resources\Images\location_dot_solid.svg" />
 	  <None Remove="Resources\Images\market_icon.svg" />
 	  <None Remove="Resources\Images\mascota_icon.svg" />
-	  <None Remove="Resources\Images\message_icon.svg" />
 	  <None Remove="Resources\Images\message_icon2.svg" />
 	  <None Remove="Resources\Images\message_solid.svg" />
 	  <None Remove="Resources\Images\new_icon.svg" />
@@ -164,6 +165,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="RegisterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="UsuarioView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

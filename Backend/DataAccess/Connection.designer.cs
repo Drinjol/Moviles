@@ -22,7 +22,7 @@ namespace Backend.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DataSource")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="db_aa995b_emprende")]
 	public partial class ConnectionDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -36,7 +36,7 @@ namespace Backend.DataAccess
     #endregion
 		
 		public ConnectionDataContext() : 
-				base(global::Backend.Properties.Settings.Default.DataSourceConnectionString19, mappingSource)
+				base(global::Backend.Properties.Settings.Default.db_aa995b_emprendeConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -174,13 +174,6 @@ namespace Backend.DataAccess
 			return ((ISingleResult<sp_crear_chat_nuevoResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_obtener_publicacion_por_id_usuario")]
-		public ISingleResult<sp_obtener_publicacion_por_id_usuarioResult> sp_obtener_publicacion_por_id_usuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
-			return ((ISingleResult<sp_obtener_publicacion_por_id_usuarioResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_BUSCAR_PUBLICACIONES")]
 		public ISingleResult<SP_BUSCAR_PUBLICACIONESResult> SP_BUSCAR_PUBLICACIONES([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Palabra", DbType="VarChar(255)")] string palabra)
 		{
@@ -195,14 +188,6 @@ namespace Backend.DataAccess
 			rESULTADO = ((System.Nullable<int>)(result.GetParameterValue(2)));
 			mENSAJE_SALIDA = ((string)(result.GetParameterValue(3)));
 			return ((ISingleResult<SP_GUARDAR_PUBLICACION_DESEOResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MOSTRAR_PUBLICACIONES_GUARDADAS")]
-		public ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult> SP_MOSTRAR_PUBLICACIONES_GUARDADAS([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RESULTADO", DbType="NVarChar(200)")] ref string rESULTADO)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, rESULTADO);
-			rESULTADO = ((string)(result.GetParameterValue(1)));
-			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION")]
@@ -227,6 +212,21 @@ namespace Backend.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, nombre, apellidos, email, direccion, telefono, descripcion, password);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_MOSTRAR_PUBLICACIONES_GUARDADAS")]
+		public ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult> SP_MOSTRAR_PUBLICACIONES_GUARDADAS([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="RESULTADO", DbType="NVarChar(200)")] ref string rESULTADO)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, rESULTADO);
+			rESULTADO = ((string)(result.GetParameterValue(1)));
+			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_obtener_publicacion_por_id_usuario")]
+		public ISingleResult<sp_obtener_publicacion_por_id_usuarioResult> sp_obtener_publicacion_por_id_usuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
+			return ((ISingleResult<sp_obtener_publicacion_por_id_usuarioResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -1266,212 +1266,6 @@ namespace Backend.DataAccess
 		}
 	}
 	
-	public partial class sp_obtener_publicacion_por_id_usuarioResult
-	{
-		
-		private long _publicacion_id;
-		
-		private System.Nullable<long> _usuario_id;
-		
-		private System.Nullable<System.DateTime> _publicacion_fecha;
-		
-		private string _publicacion_descripcion;
-		
-		private System.Nullable<decimal> _publicacion_precio;
-		
-		private string _publicacion_categoria;
-		
-		private System.Nullable<byte> _publicacion_estado;
-		
-		private System.Nullable<bool> _IsFavorito;
-		
-		private string _nombre_usuario;
-		
-		private string _apellidos_usuario;
-		
-		private string _imagen_binario;
-		
-		public sp_obtener_publicacion_por_id_usuarioResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_id", DbType="BigInt NOT NULL")]
-		public long publicacion_id
-		{
-			get
-			{
-				return this._publicacion_id;
-			}
-			set
-			{
-				if ((this._publicacion_id != value))
-				{
-					this._publicacion_id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="BigInt")]
-		public System.Nullable<long> usuario_id
-		{
-			get
-			{
-				return this._usuario_id;
-			}
-			set
-			{
-				if ((this._usuario_id != value))
-				{
-					this._usuario_id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_fecha", DbType="DateTime")]
-		public System.Nullable<System.DateTime> publicacion_fecha
-		{
-			get
-			{
-				return this._publicacion_fecha;
-			}
-			set
-			{
-				if ((this._publicacion_fecha != value))
-				{
-					this._publicacion_fecha = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_descripcion", DbType="VarChar(255)")]
-		public string publicacion_descripcion
-		{
-			get
-			{
-				return this._publicacion_descripcion;
-			}
-			set
-			{
-				if ((this._publicacion_descripcion != value))
-				{
-					this._publicacion_descripcion = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_precio", DbType="Decimal(8,2)")]
-		public System.Nullable<decimal> publicacion_precio
-		{
-			get
-			{
-				return this._publicacion_precio;
-			}
-			set
-			{
-				if ((this._publicacion_precio != value))
-				{
-					this._publicacion_precio = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_categoria", DbType="VarChar(255)")]
-		public string publicacion_categoria
-		{
-			get
-			{
-				return this._publicacion_categoria;
-			}
-			set
-			{
-				if ((this._publicacion_categoria != value))
-				{
-					this._publicacion_categoria = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_estado", DbType="TinyInt")]
-		public System.Nullable<byte> publicacion_estado
-		{
-			get
-			{
-				return this._publicacion_estado;
-			}
-			set
-			{
-				if ((this._publicacion_estado != value))
-				{
-					this._publicacion_estado = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsFavorito", DbType="Bit")]
-		public System.Nullable<bool> IsFavorito
-		{
-			get
-			{
-				return this._IsFavorito;
-			}
-			set
-			{
-				if ((this._IsFavorito != value))
-				{
-					this._IsFavorito = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre_usuario", DbType="VarChar(255)")]
-		public string nombre_usuario
-		{
-			get
-			{
-				return this._nombre_usuario;
-			}
-			set
-			{
-				if ((this._nombre_usuario != value))
-				{
-					this._nombre_usuario = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidos_usuario", DbType="VarChar(255)")]
-		public string apellidos_usuario
-		{
-			get
-			{
-				return this._apellidos_usuario;
-			}
-			set
-			{
-				if ((this._apellidos_usuario != value))
-				{
-					this._apellidos_usuario = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_imagen_binario", DbType="VarChar(MAX)")]
-		public string imagen_binario
-		{
-			get
-			{
-				return this._imagen_binario;
-			}
-			set
-			{
-				if ((this._imagen_binario != value))
-				{
-					this._imagen_binario = value;
-				}
-			}
-		}
-	}
-	
 	public partial class SP_BUSCAR_PUBLICACIONESResult
 	{
 		
@@ -1743,6 +1537,8 @@ namespace Backend.DataAccess
 		
 		private System.Nullable<decimal> _tb_publicacion_precio;
 		
+		private string _tb_publicacion_categoria;
+		
 		private string _IMAGEN_BINARIO;
 		
 		private System.Nullable<bool> _IsFavorito;
@@ -1899,6 +1695,22 @@ namespace Backend.DataAccess
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_publicacion_categoria", DbType="VarChar(255)")]
+		public string tb_publicacion_categoria
+		{
+			get
+			{
+				return this._tb_publicacion_categoria;
+			}
+			set
+			{
+				if ((this._tb_publicacion_categoria != value))
+				{
+					this._tb_publicacion_categoria = value;
+				}
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IMAGEN_BINARIO", DbType="VarChar(MAX)")]
 		public string IMAGEN_BINARIO
 		{
@@ -1959,6 +1771,284 @@ namespace Backend.DataAccess
 				if ((this._tb_lista_deseos_estado != value))
 				{
 					this._tb_lista_deseos_estado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_obtener_publicacion_por_id_usuarioResult
+	{
+		
+		private long _publicacion_id;
+		
+		private System.Nullable<long> _usuario_id;
+		
+		private System.Nullable<System.DateTime> _publicacion_fecha;
+		
+		private string _publicacion_descripcion;
+		
+		private System.Nullable<decimal> _publicacion_precio;
+		
+		private string _publicacion_categoria;
+		
+		private System.Nullable<byte> _publicacion_estado;
+		
+		private System.Nullable<bool> _IsFavorito;
+		
+		private string _nombre_usuario;
+		
+		private string _apellidos_usuario;
+		
+		private string _tb_usuario_descripcion;
+		
+		private string _tb_usuario_direccion;
+		
+		private string _tb_usuario_email;
+		
+		private string _tb_usuario_telefono;
+		
+		private string _imagen_binario;
+		
+		public sp_obtener_publicacion_por_id_usuarioResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_id", DbType="BigInt NOT NULL")]
+		public long publicacion_id
+		{
+			get
+			{
+				return this._publicacion_id;
+			}
+			set
+			{
+				if ((this._publicacion_id != value))
+				{
+					this._publicacion_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_usuario_id", DbType="BigInt")]
+		public System.Nullable<long> usuario_id
+		{
+			get
+			{
+				return this._usuario_id;
+			}
+			set
+			{
+				if ((this._usuario_id != value))
+				{
+					this._usuario_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_fecha", DbType="DateTime")]
+		public System.Nullable<System.DateTime> publicacion_fecha
+		{
+			get
+			{
+				return this._publicacion_fecha;
+			}
+			set
+			{
+				if ((this._publicacion_fecha != value))
+				{
+					this._publicacion_fecha = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_descripcion", DbType="VarChar(255)")]
+		public string publicacion_descripcion
+		{
+			get
+			{
+				return this._publicacion_descripcion;
+			}
+			set
+			{
+				if ((this._publicacion_descripcion != value))
+				{
+					this._publicacion_descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_precio", DbType="Decimal(18,2)")]
+		public System.Nullable<decimal> publicacion_precio
+		{
+			get
+			{
+				return this._publicacion_precio;
+			}
+			set
+			{
+				if ((this._publicacion_precio != value))
+				{
+					this._publicacion_precio = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_categoria", DbType="VarChar(255)")]
+		public string publicacion_categoria
+		{
+			get
+			{
+				return this._publicacion_categoria;
+			}
+			set
+			{
+				if ((this._publicacion_categoria != value))
+				{
+					this._publicacion_categoria = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_publicacion_estado", DbType="TinyInt")]
+		public System.Nullable<byte> publicacion_estado
+		{
+			get
+			{
+				return this._publicacion_estado;
+			}
+			set
+			{
+				if ((this._publicacion_estado != value))
+				{
+					this._publicacion_estado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IsFavorito", DbType="Bit")]
+		public System.Nullable<bool> IsFavorito
+		{
+			get
+			{
+				return this._IsFavorito;
+			}
+			set
+			{
+				if ((this._IsFavorito != value))
+				{
+					this._IsFavorito = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nombre_usuario", DbType="VarChar(255)")]
+		public string nombre_usuario
+		{
+			get
+			{
+				return this._nombre_usuario;
+			}
+			set
+			{
+				if ((this._nombre_usuario != value))
+				{
+					this._nombre_usuario = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_apellidos_usuario", DbType="VarChar(255)")]
+		public string apellidos_usuario
+		{
+			get
+			{
+				return this._apellidos_usuario;
+			}
+			set
+			{
+				if ((this._apellidos_usuario != value))
+				{
+					this._apellidos_usuario = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_descripcion", DbType="VarChar(255)")]
+		public string tb_usuario_descripcion
+		{
+			get
+			{
+				return this._tb_usuario_descripcion;
+			}
+			set
+			{
+				if ((this._tb_usuario_descripcion != value))
+				{
+					this._tb_usuario_descripcion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_direccion", DbType="VarChar(255)")]
+		public string tb_usuario_direccion
+		{
+			get
+			{
+				return this._tb_usuario_direccion;
+			}
+			set
+			{
+				if ((this._tb_usuario_direccion != value))
+				{
+					this._tb_usuario_direccion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_email", DbType="VarChar(255)")]
+		public string tb_usuario_email
+		{
+			get
+			{
+				return this._tb_usuario_email;
+			}
+			set
+			{
+				if ((this._tb_usuario_email != value))
+				{
+					this._tb_usuario_email = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_telefono", DbType="VarChar(255)")]
+		public string tb_usuario_telefono
+		{
+			get
+			{
+				return this._tb_usuario_telefono;
+			}
+			set
+			{
+				if ((this._tb_usuario_telefono != value))
+				{
+					this._tb_usuario_telefono = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_imagen_binario", DbType="VarChar(MAX)")]
+		public string imagen_binario
+		{
+			get
+			{
+				return this._imagen_binario;
+			}
+			set
+			{
+				if ((this._imagen_binario != value))
+				{
+					this._imagen_binario = value;
 				}
 			}
 		}

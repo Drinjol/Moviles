@@ -2,78 +2,130 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunyStoreFrontEnd.PublicacionDetalles"
-             Title="PublicacionDetalles">
-    
+             Title="PublicacionDetalles"
+             BackgroundColor="White">
+
+
+    <ScrollView>
+        
     
     <StackLayout>
-        <!-- Tu diseño XAML aquí -->
-        <Label Text="{Binding descripcionPublicacion}" FontSize="24" />
+        <!-- Tu diseño XAML aquí -->      
 
+        <Grid
+            HeightRequest="300"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
         <Image Source="{Binding nombresArchivos}"
             Aspect="AspectFit"
             HeightRequest="200"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand"/>
+            
+        </Grid>
 
-        <HorizontalStackLayout Spacing="10">
+        <Grid Margin="30">
             <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
-                 FontSize="16"
+                 FontSize="30"
                  FontAttributes="Italic"
                  HorizontalOptions="Fill"
-                 VerticalOptions="Start"/>
+                 
+                   />
 
-            <Button Clicked="Button_Clicked_add_lista_deseos"
-                 CommandParameter="{Binding .}"
-                 HorizontalOptions="EndAndExpand"
-                 HeightRequest="50"
-                 WidthRequest="50"
-                 Padding="0"
-                 BackgroundColor="Transparent">
-
-                <Button.Triggers>
-                    <DataTrigger TargetType="Button" 
-                         Binding="{Binding favorito}"
-                         Value="True">
-                        <Setter Property="ImageSource" Value="heart_solid.png" />
+            <!-- Botón de agregar a lista de deseos -->
+            <ImageButton Clicked="Button_Clicked_add_lista_deseos"
+             CommandParameter="{Binding .}"
+             HeightRequest="0"
+             WidthRequest="0"
+             Padding="5"
+             BackgroundColor="Transparent"
+             BorderWidth="0"
+             CornerRadius="0"
+             HorizontalOptions="End">
+                <ImageButton.Triggers>
+                    <DataTrigger TargetType="ImageButton"
+                     Binding="{Binding favorito}"
+                     Value="True">
+                        <Setter Property="Source" Value="heart_icon.png" />
                     </DataTrigger>
-                    <DataTrigger TargetType="Button" 
-                          Binding="{Binding favorito}"
-                          Value="False">
-                        <Setter Property="ImageSource" Value="heart_regular.png" />
+                    <DataTrigger TargetType="ImageButton"
+                     Binding="{Binding favorito}"
+                     Value="False">
+                        <Setter Property="Source" Value="favorite_icon.png" />
                     </DataTrigger>
-                </Button.Triggers>
-            </Button>
+                </ImageButton.Triggers>
+            </ImageButton>
 
-        </HorizontalStackLayout>
+        </Grid>
 
         <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
-            FontSize="16"
-            HorizontalOptions="Fill"
+            FontSize="40"
+            HorizontalOptions="Center"
             VerticalOptions="Center"/>
 
+        <Label TextColor="Black" Text="{Binding categoriaPublicacion}"
+            FontSize="18"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
 
-        <Label TextColor="Black" Text="{Binding fechaPublicacion}"
-             FontSize="16"
-             HorizontalOptions="Fill"
-             VerticalOptions="Center"/>
+        <!-- Línea horizontal -->
+        <BoxView HeightRequest="1" Margin="30"
+                 WidthRequest="450"
+                 Color="Gray"
+                 HorizontalOptions="FillAndExpand"
+                 VerticalOptions="Center" 
+                 />
+
         
-        <Label TextColor="Black" Text="Anunciante"
-     FontSize="16"
-     HorizontalOptions="Fill"
-     VerticalOptions="Center"/>
-        <Label TextColor="Black" Text="{Binding usuario.nombre}"
-     FontSize="16"
-     HorizontalOptions="Fill"
-     VerticalOptions="Center"/>
+            <VerticalStackLayout Spacing="30">
+                
+            <Label TextColor="Black" 
+               Text="{Binding fechaPublicacion, StringFormat='Fecha publicación: {0:dd/MM/yyyy}'}"
+               FontSize="16"
+               HorizontalOptions="Fill"
+               VerticalOptions="Center"  
+               Margin="5"/>
 
+                <Button Text="CONTACTAR"
+                Clicked="Button_Clicked_contactar_usuario"
+                CommandParameter="{Binding .}"
+                HorizontalOptions="FillAndExpand"
+                BackgroundColor="Green"
+                TextColor="White"
+                BorderWidth="30"
+                ImageSource="envelope_solid.png"
+                ContentLayout="Left, 20"/>
 
+            </VerticalStackLayout>
 
+            <Grid Margin="50">
+                
+                <VerticalStackLayout Spacing="10">
+                                        
+                    <Label TextColor="Black" Text="Anunciante" 
+                     FontSize="25"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"/>
+                    
 
+                    <Label TextColor="Black" Text="{Binding usuario.NombreCompleto}"
+                     FontSize="16"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"/>
+                    <Button Text="VER MÁS DEL ANUNCIANTE"
+                        Clicked="Button_informacion_anunciante"
+                        CommandParameter="{Binding .}"
+                        HorizontalOptions="FillAndExpand"
+                        BackgroundColor="Transparent"
+                        TextColor="Black"/>
+
+                </VerticalStackLayout>
+            </Grid>
 
     </StackLayout>
 
+    </ScrollView>
 
-    
 
 
 </ContentPage>

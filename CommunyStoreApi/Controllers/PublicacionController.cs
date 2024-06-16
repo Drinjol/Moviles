@@ -39,6 +39,15 @@ namespace CommunyStoreApi.Controllers
 
         }
 
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/publicaciones_por_usuarioID")]
+        public ResObtenerPublicacionIdUsuario publicaciones_por_usuarioID(ReqObtenerPublicacionPorIdUsuario req)
+        {            
+            return new LogPublicacion().publicaciones_por_usuarioID(req);
+        }
+
+
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("CommunyStoreApi/publicacion/obtenerPublicacionGuardadas")]
         public ResObtenerPublicacionesGuardadas ObtenerPublicacionesGuardadas(ReqObtenerPublicacionesGuardadas req)

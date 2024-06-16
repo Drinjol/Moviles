@@ -360,16 +360,50 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
     private async void OnFrameTapped(object sender, EventArgs e)
     {
         var frame = sender as Frame;
-        var publicacion = frame.BindingContext as Publicacion; // Reemplaza con tu modelo de publicación
-        if (publicacion != null)
+        var publicacionGuardada = frame.BindingContext as PublicacionGuardada; // Reemplaza con tu modelo de publicación
+        if (publicacionGuardada != null)
         {
-            int idPub = publicacion.idPublicacion;
+            int idPub = publicacionGuardada.publicacion.idPublicacion;
             //await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api "+publicacion.idPublicacion, "Aceptar");
             //int idPub = publicacion.idPublicacion;
-            //agregarInteraccionUsuario(idPub);
-            await Navigation.PushAsync(new PublicacionDetalles(publicacion));
+            agregarInteraccionUsuario(idPub);
+           await Navigation.PushAsync(new PublicacionDetalles(publicacionGuardada.publicacion));
         }
     }
+
+    private async void agregarInteraccionUsuario(int id_publicacion)
+    {
+        try
+        {
+            ReqAgregarInteraccionUsuario req = new ReqAgregarInteraccionUsuario();
+            req.id_publicacion = id_publicacion;
+            req.id_usuario = SesionFrontEnd.usuarioSesion.Id;
+
+            var jsonUsuario = JsonSerializer.Serialize(req);
+
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/usuario/agregarInteraccionUsuario", new StringContent(jsonUsuario, Encoding.UTF8, "application/json"));
+
+                if (response.IsSuccessStatusCode)
+                {
+                    //await DisplayAlert("Correcto", "Correcto", "Aceptar");
+
+                }
+                else
+                {
+                    await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api", "Aceptar");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error interno", "Error en la aplicaci?n: " + ex.StackTrace.ToString(), "Aceptar");
+        }
+    }
+
+
+
 
     private void btnViewPerfil(object sender, TappedEventArgs e)
     {

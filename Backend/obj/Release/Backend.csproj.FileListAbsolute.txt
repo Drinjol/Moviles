@@ -1,0 +1,13 @@
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Backend.dll.config
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Backend.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Backend.pdb
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Antlr3.Runtime.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Newtonsoft.Json.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\WebGrease.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Antlr3.Runtime.pdb
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\bin\Release\Newtonsoft.Json.xml
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Release\Backend.csproj.AssemblyReference.cache
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Release\Backend.csproj.CoreCompileInputs.cache
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Release\Backend.csproj.Up2Date
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Release\Backend.dll
+C:\Users\eliez\Documents\GitHud\Moviles\Backend\obj\Release\Backend.pdb

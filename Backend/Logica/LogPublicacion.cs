@@ -407,5 +407,77 @@ namespace Backend.Logica
         }
 
 
+        public ResObtenerPublicacionIdUsuario publicaciones_por_usuarioID(ReqObtenerPublicacionPorIdUsuario req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            string descripcionError = "";
+            int? errorId = 0;
+            ResObtenerPublicacionIdUsuario res = new ResObtenerPublicacionIdUsuario();
+            res.listaDeErrores = new List<string>();
+
+            try
+            {
+
+                ConnectionDataContext linq = new ConnectionDataContext();
+                List<sp_obtener_publicacion_por_id_usuarioResult> listaDeLinq = new List<sp_obtener_publicacion_por_id_usuarioResult>();
+                listaDeLinq = linq.sp_obtener_publicacion_por_id_usuario(req.Id).ToList();
+                res.listaDepublicacionPorUsuario = this.crearListaDePublicacionesPorIdUsuario(listaDeLinq);
+                res.resultado = true;
+
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("error bd");
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+            return res;
+
+        }
+
+        private List<Publicacion> crearListaDePublicacionesPorIdUsuario(List<sp_obtener_publicacion_por_id_usuarioResult> listaDeLinq)
+        {
+            List<Publicacion> listaArmada = new List<Publicacion>();
+            foreach (sp_obtener_publicacion_por_id_usuarioResult publicaciones in listaDeLinq)
+            {
+                listaArmada.Add(this.crear_publicacion_usuario_id(publicaciones));
+            }
+            return listaArmada;
+        }
+
+
+        private Publicacion crear_publicacion_usuario_id(sp_obtener_publicacion_por_id_usuarioResult publicaciones)
+        {
+
+            ConnectionDataContext linq = new ConnectionDataContext();
+            ReqObtenerPublicacionPorIdUsuario req = new ReqObtenerPublicacionPorIdUsuario();
+            Publicacion pub = new Publicacion();
+            pub.usuario = new Usuario();
+
+            pub.idPublicacion = (int)publicaciones.publicacion_id;
+            pub.fechaPublicacion = (DateTime)publicaciones.publicacion_fecha;
+            pub.descripcionPublicacion = publicaciones.publicacion_descripcion;
+            pub.precioPublicacion = (decimal)publicaciones.publicacion_precio;
+            pub.nombresArchivos = HexStringToString(publicaciones.imagen_binario);
+            pub.estadoPublicacion = (int)publicaciones.publicacion_estado;
+
+            pub.usuario.Id = (int)publicaciones.usuario_id;
+            pub.usuario.nombre = publicaciones.nombre_usuario;
+            pub.usuario.apellidos = publicaciones.apellidos_usuario;
+            pub.usuario.descripcion = publicaciones.publicacion_descripcion;
+            pub.usuario.direccion = publicaciones.tb_usuario_direccion;
+            pub.usuario.email = publicaciones.tb_usuario_email;
+            pub.usuario.telefono = publicaciones.tb_usuario_telefono;
+            pub.favorito = (bool)publicaciones.IsFavorito;
+
+            return pub;
+        }
+
+
+
     }
     }
