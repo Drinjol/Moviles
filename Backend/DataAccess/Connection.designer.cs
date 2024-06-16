@@ -73,13 +73,6 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ActualizarUsuario")]
-		public int sp_ActualizarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string descripcion)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, nombre, apellidos, email, direccion, telefono, descripcion);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_CrearUsuario")]
 		public int sp_CrearUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string password, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string descripcion)
 		{
@@ -226,6 +219,13 @@ namespace Backend.DataAccess
 			iDRETURN = ((System.Nullable<int>)(result.GetParameterValue(5)));
 			eRRORID = ((System.Nullable<int>)(result.GetParameterValue(6)));
 			eRRORDESCRIPCION = ((string)(result.GetParameterValue(7)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ActualizarUsuario")]
+		public int sp_ActualizarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string password)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, nombre, apellidos, email, direccion, telefono, descripcion, password);
 			return ((int)(result.ReturnValue));
 		}
 	}

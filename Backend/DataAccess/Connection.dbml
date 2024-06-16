@@ -8,16 +8,6 @@
       <Column Name="tb_imagen_extension" Type="System.String" DbType="Char(4)" CanBeNull="true" />
     </Type>
   </Table>
-  <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
-    <Parameter Name="id" Type="System.Int32" DbType="Int" />
-    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
-    <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
-    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
-    <Parameter Name="direccion" Type="System.String" DbType="NVarChar(255)" />
-    <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.sp_CrearUsuario" Method="sp_CrearUsuario">
     <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
@@ -223,6 +213,17 @@
     <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
     <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="direccion" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(100)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

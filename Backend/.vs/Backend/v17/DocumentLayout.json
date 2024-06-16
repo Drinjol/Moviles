@@ -4,6 +4,18 @@
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{5A318B49-0EBF-4FEA-BF90-904D8748A277}|..\\CommunyStoreApi\\CommunyStoreApi.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\communystoreapi\\controllers\\publicacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\backend\\logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:logica\\logicausuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\backend\\dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:dataaccess\\connection.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|c:\\users\\dg986\\onedrive\\documentos\\moviles 2\\moviles\\backend\\entidades\\request\\reqactualizarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F2247FE-923D-4FB6-8E3C-6442891400E4}|Backend.csproj|solutionrelative:entidades\\request\\reqactualizarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,9 +35,47 @@
               "RelativeDocumentMoniker": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
               "RelativeToolTip": "..\\CommunyStoreApi\\Controllers\\PublicacionController.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAiwF4AAAA9AAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAtwFQAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T09:35:41.364Z",
+              "WhenOpened": "2024-06-16T01:09:54.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Connection.dbml",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.dbml",
+              "RelativeDocumentMoniker": "DataAccess\\Connection.dbml",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\DataAccess\\Connection.dbml",
+              "RelativeToolTip": "DataAccess\\Connection.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2024-06-16T00:45:35.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReqActualizarUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Entidades\\Request\\ReqActualizarUsuario.cs",
+              "RelativeDocumentMoniker": "Entidades\\Request\\ReqActualizarUsuario.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Entidades\\Request\\ReqActualizarUsuario.cs",
+              "RelativeToolTip": "Entidades\\Request\\ReqActualizarUsuario.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T00:36:03.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogicaUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeDocumentMoniker": "Logica\\LogicaUsuario.cs",
+              "ToolTip": "C:\\Users\\dg986\\OneDrive\\Documentos\\Moviles 2\\Moviles\\Backend\\Logica\\LogicaUsuario.cs",
+              "RelativeToolTip": "Logica\\LogicaUsuario.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAawFAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T00:03:17.934Z",
               "EditorCaption": ""
             }
           ]

@@ -8,19 +8,19 @@
             <Label Text="Editar Perfil" FontSize="Large" HorizontalOptions="Center" />
 
             <Label Text="Nombre de Usuario" />
-            <Entry Text="{Binding NombreUsuario}" Placeholder="Nombre de Usuario" />
+            <Entry x:Name="txtname" Text="{Binding NombreUsuario}" Placeholder="Nombre de Usuario" />
 
             <Label Text="Descripción" />
-            <Entry Text="{Binding Descripcion}" Placeholder="Descripción" />
+            <Entry x:Name="txtdescripcion"  Text="{Binding Descripcion}" Placeholder="Descripción" />
 
             <Label Text="Dirección" />
-            <Entry Text="{Binding Direccion}" Placeholder="Dirección" />
+            <Entry x:Name="txtdireccion" Text="{Binding Direccion}" Placeholder="Dirección" />
 
             <Label Text="Teléfono" />
-            <Entry Text="{Binding Telefono}" Placeholder="Teléfono" />
+            <Entry x:Name="txttelefono" Text="{Binding Telefono}" Placeholder="Teléfono" />
 
             <Label Text="Email" />
-            <Entry Text="{Binding EmailUsuario}" Placeholder="Email" />
+            <Entry x:Name="txtemail"  Text="{Binding EmailUsuario}" Placeholder="Email" />
 
             <Button Text="Guardar Información" Clicked="GuardarInformacion_Clicked" />
         </VerticalStackLayout>

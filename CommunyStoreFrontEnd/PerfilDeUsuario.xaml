@@ -8,200 +8,218 @@
         <x:String x:Key="corazon_con_fondo">&#xf004;</x:String>
     </ContentPage.Resources>
 
-    <Grid BackgroundColor="White">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
 
-        <!-- Encabezado -->
-        <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
-            <Frame Grid.Column="1" Padding="5" CornerRadius="15" BorderColor="#DDDDDD" BackgroundColor="White" HasShadow="true">
-                <Entry Placeholder="Buscar" PlaceholderColor="Gray" FontSize="14" TextColor="Black"/>
+    <ScrollView>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Encabezado -->
+            <Grid Grid.Row="0" HorizontalOptions="FillAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Image Source="log_session.png" HeightRequest="80" WidthRequest="80" Margin="10,0" HorizontalOptions="Start" Grid.Column="0"/>
+                <Frame Grid.Column="1" Padding="5" CornerRadius="15" BorderColor="#DDDDDD" BackgroundColor="White" HasShadow="true">
+                    <Entry Placeholder="Buscar" PlaceholderColor="Gray" FontSize="14" TextColor="Black"/>
+                </Frame>
+            </Grid>
+
+            <Frame>
+                <!-- Botones de categorías -->
+                <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
+                    <!-- Botón y etiqueta de recomendaciones -->
+                    <StackLayout x:Name="btn_todo_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <ImageButton x:Name="btn_todo" Source="market_icon.png" Clicked="btn_todo_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
+                        <Label x:Name="lbl_todo" Text="Recomendaciones" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+                    </StackLayout>
+                    <!-- Botón y etiqueta de tecnología -->
+                    <StackLayout x:Name="btn_tecnologia_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <ImageButton x:Name="btn_tecnologia" Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
+                        <Label x:Name="lbl_tecnologia" Text="Tecnología" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+                    </StackLayout>
+                    <!-- Botón y etiqueta de hogar -->
+                    <StackLayout x:Name="btn_hogar_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <ImageButton x:Name="btn_hogar" Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
+                        <Label x:Name="lbl_hogar" Text="Hogar" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+                    </StackLayout>
+                    <!-- Botón y etiqueta de mascotas -->
+                    <StackLayout x:Name="btn_mascotas_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <ImageButton x:Name="btn_mascotas" Source="mascota_icon.png" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
+                        <Label x:Name="lbl_mascotas" Text="Mascotas" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
+                    </StackLayout>
+                </StackLayout>
             </Frame>
-        </Grid>
 
-        <Frame>
-            <!-- Botones de categorías -->
-            <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10,40,10,0">
-                <!-- Botón y etiqueta de recomendaciones -->
-                <StackLayout x:Name="btn_todo_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <ImageButton x:Name="btn_todo" Source="market_icon.png" Clicked="btn_todo_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
-                    <Label x:Name="lbl_todo" Text="Recomendaciones" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
-                </StackLayout>
-                <!-- Botón y etiqueta de tecnología -->
-                <StackLayout x:Name="btn_tecnologia_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <ImageButton x:Name="btn_tecnologia" Source="tecnologia_icon.png" Clicked="btn_tecnologia_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
-                    <Label x:Name="lbl_tecnologia" Text="Tecnología" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
-                </StackLayout>
-                <!-- Botón y etiqueta de hogar -->
-                <StackLayout x:Name="btn_hogar_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <ImageButton x:Name="btn_hogar" Source="home_icon.png" Clicked="btn_hogar_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
-                    <Label x:Name="lbl_hogar" Text="Hogar" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
-                </StackLayout>
-                <!-- Botón y etiqueta de mascotas -->
-                <StackLayout x:Name="btn_mascotas_stack" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <ImageButton x:Name="btn_mascotas" Source="mascota_icon.png" Clicked="btn_mascotas_Clicked" HorizontalOptions="FillAndExpand" HeightRequest="50"/>
-                    <Label x:Name="lbl_mascotas" Text="Mascotas" TextColor="Black" HorizontalOptions="Center" FontSize="12" Margin="0,5,0,0"/>
-                </StackLayout>
-            </StackLayout>
-        </Frame>
+            <Frame BackgroundColor="Aqua">
 
-        <Frame BackgroundColor="Aqua">
+                <StackLayout Padding="20">
 
-            <StackLayout Padding="20">
+                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
 
-                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
-
-                    <!-- Muestra el nombre del usuario -->
-                    <Label Text="{Binding NombreUsuario}" 
+                        <!-- Muestra el nombre del usuario -->
+                        <Label Text="{Binding NombreUsuario}" 
 FontSize="Large" 
 HorizontalOptions="Center" />
 
-                </StackLayout>
+                    </StackLayout>
 
-                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
 
-                    <!-- Muestra el email del Descripcion -->
-                    <Label Text="{Binding Descripcion}" 
+                        <!-- Muestra el email del Descripcion -->
+                        <Label Text="{Binding Descripcion}" 
 FontSize="Medium" 
 HorizontalOptions="Center" />
 
-                </StackLayout>
+                    </StackLayout>
 
-                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
-                    <!-- Muestra el email del Descripcion -->
-                    <Image Source="address.png" HeightRequest="20" WidthRequest="20" />
-                    <Label Text="{Binding Direccion }" 
+                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                        <!-- Muestra el email del Descripcion -->
+                        <Image Source="address.png" HeightRequest="20" WidthRequest="20" />
+                        <Label Text="{Binding Direccion }" 
 FontSize="Medium" 
 HorizontalOptions="Center" />
 
 
-                </StackLayout>
+                    </StackLayout>
 
-                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
-                    <!-- Muestra el Phone del usuario -->
-                    <Image Source="Phone.png" HeightRequest="20" WidthRequest="20" />
-                    <Label Text="{Binding Telefono}" 
+                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                        <!-- Muestra el Phone del usuario -->
+                        <Image Source="Phone.png" HeightRequest="20" WidthRequest="20" />
+                        <Label Text="{Binding Telefono}" 
      FontSize="Medium" 
      HorizontalOptions="Center" />
 
-                </StackLayout>
+                    </StackLayout>
 
-                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
-                    <!-- Muestra el email del usuario -->
-                    <Image Source="email.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="StartAndExpand"/>
-                    <Label Text="{Binding EmailUsuario}" 
+                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                        <!-- Muestra el email del usuario -->
+                        <Image Source="email.png" HeightRequest="70" WidthRequest="70" HorizontalOptions="StartAndExpand"/>
+                        <Label Text="{Binding EmailUsuario}" 
                   FontSize="Medium" 
                 HorizontalOptions="Center" />
 
+                    </StackLayout>
+
+
+
+                    <Button Text="Editar Perfil" Clicked="EditarPerfil_Clicked" />
                 </StackLayout>
 
-
-
-                <Button Text="Editar Perfil" Clicked="EditarPerfil_Clicked" />
-            </StackLayout>
-
-        </Frame>
+            </Frame>
 
 
 
 
-        <CollectionView Grid.Row="2" ItemsSource="{Binding listaDepublicacionPorUsuario}" HorizontalOptions="Fill">
-            <!-- Lista de publicaciones -->
+            <CollectionView Grid.Row="2" ItemsSource="{Binding listaDepublicacionPorUsuario}" HorizontalOptions="Fill">
+                <!-- Lista de publicaciones -->
 
-            <CollectionView.ItemsLayout >
-                <GridItemsLayout VerticalItemSpacing="15" HorizontalItemSpacing="15" Orientation="Vertical" Span="2"/>
-            </CollectionView.ItemsLayout>
+                <CollectionView.ItemsLayout >
+                    <GridItemsLayout VerticalItemSpacing="15" HorizontalItemSpacing="15" Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
 
 
-            <CollectionView.ItemTemplate>
+                <CollectionView.ItemTemplate>
 
-                <DataTemplate>
-                    <Frame BorderColor="LightGray" CornerRadius="10" Padding="15" Margin="30" BackgroundColor="White" HasShadow="True" >
+                    <DataTemplate>
+                        <Frame BorderColor="LightGray" CornerRadius="10" Padding="15" Margin="30" BackgroundColor="White" HasShadow="True" >
 
-                        <StackLayout Spacing="15">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
-                                </Grid.ColumnDefinitions>
+                            <StackLayout Spacing="15">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
 
-                                <!-- Nombre completo del usuario -->
-                                <Label Text="{Binding usuario.NombreCompleto}"
+                                    <!-- Nombre completo del usuario -->
+                                    <Label Text="{Binding usuario.NombreCompleto}"
                                 TextColor="Blue"
                                 FontSize="14"
                                 HorizontalOptions="Start"
                                 HeightRequest="20"
                                 Grid.Column="0">
 
-                                </Label>
+                                    </Label>
 
-                                <!-- StackLayout para la fecha -->
-                                <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
-                                    <!-- Fecha de publicación -->
-                                    <Label Text="{Binding fechaPublicacion, StringFormat='{0:d}'}" 
+                                    <!-- StackLayout para la fecha -->
+                                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
+                                        <!-- Fecha de publicación -->
+                                        <Label Text="{Binding fechaPublicacion, StringFormat='{0:d}'}" 
                                              TextColor="Gray" 
                                               FontSize="10" 
                                          HorizontalOptions="Start"/>
-                                </StackLayout>
+                                    </StackLayout>
 
-                                <!-- Botón de agregar a lista de deseos -->
+                                    <!-- Botón de agregar a lista de deseos -->
 
-                            </Grid>
+                                </Grid>
 
-                            <!-- Imagen de la publicación -->
-                            <Image Source="{Binding nombresArchivos}"
+                                <!-- Imagen de la publicación -->
+                                <Image Source="{Binding nombresArchivos}"
                             Aspect="AspectFit"
                             HeightRequest="200"
                             HorizontalOptions="CenterAndExpand"
                             VerticalOptions="CenterAndExpand"/>
-                            <!-- Otros detalles de la publicación -->
+                                <!-- Otros detalles de la publicación -->
 
-                            <StackLayout Spacing="2">
-                                <!-- Descripción de la publicación -->
-                                <Label TextColor="Black" FontFamily="Open Sans"  Text="{Binding descripcionPublicacion}"
+                                <StackLayout Spacing="2">
+                                    <!-- Descripción de la publicación -->
+                                    <Label TextColor="Black" FontFamily="Open Sans"  Text="{Binding descripcionPublicacion}"
                                     FontSize="16"
                                      HorizontalOptions="FillAndExpand"
                                   VerticalOptions="Center"/>
 
-                                <!-- Categoría de la publicación -->
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
-                                    <Label TextColor="Gray" Text="{Binding categoriaPublicacion}"
+                                    <!-- Categoría de la publicación -->
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="Start" VerticalOptions="Center">
+                                        <Label TextColor="Gray" Text="{Binding categoriaPublicacion}"
                                     FontSize="14"
                                      HorizontalOptions="Start"
                                      VerticalOptions="Center"/>
+                                    </StackLayout>
                                 </StackLayout>
-                            </StackLayout>
 
 
-                            <HorizontalStackLayout Spacing="10">
-                                <Label TextColor="DarkRed" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
+                                <HorizontalStackLayout Spacing="10">
+                                    <Label TextColor="DarkRed" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
                                   FontSize="16"
                                     FontAttributes="Italic"
                                    HorizontalOptions="Fill"
                               VerticalOptions="Start"/>
 
 
-                            </HorizontalStackLayout>
-                            <Button x:Name="btnEliminar" Text="Eliminar" Clicked="Eliminar_Clicked" />
-                            <Button x:Name="btnActualizar" Text="Editar" Clicked="Actualizar_Clicked" />
-                        </StackLayout>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                                </HorizontalStackLayout>
+                                <Button x:Name="btnEliminar" Text="Eliminar" Clicked="Eliminar_Clicked"  CommandParameter="{Binding idPublicacion}"  />
+                                <Button x:Name="btnActualizar" Text="Editar" Clicked="Actualizar_Clicked" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
 
-    </Grid>
+
+            <!-- Barra de navegación inferior -->
+            <Grid Grid.Row="3" ColumnSpacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <ImageButton x:Name="btnHome" Clicked="Button_Clicked_view_home" VerticalOptions="Center" HorizontalOptions="Center" Source="home_icon.png" Grid.Column="0" WidthRequest="50" HeightRequest="50" />
+                <ImageButton x:Name="btnNuevaPublicacion" Clicked="Button_Clicked_view_new_publicacion" VerticalOptions="Center" HorizontalOptions="Center" Source="new_icon.png" Grid.Column="2" WidthRequest="50" HeightRequest="50" />
+            </Grid>
+        </Grid>
+    </ScrollView>
+
+
 </ContentPage>
 

@@ -49,60 +49,54 @@ namespace Backend.Logica
 
         public ResActualizarUsuario ActualizarUsuario(ReqActualizarUsuario req)
         {
-            //identar lo que se retorna
             ResActualizarUsuario res = new ResActualizarUsuario();
-            //validamos la sesión haciendo un reqBase con el reqAgregarUsuario
             ReqBase reqBase = new ReqBase();
             reqBase.sesion = req.sesion;
 
             ResBase resBase = new ResBase();
-            resBase = logicaSesionValida.validarSesion(reqBase);
+            // resBase = logicaSesionValida.validarSesion(reqBase);
 
-            if (resBase.tipoRegistro != 1 || !resBase.resultado)
+            // if (resBase.tipoRegistro != 1 || !resBase.resultado)
+            // {
+            res.listaDeErrores = resBase.listaDeErrores;
+            res.tipoRegistro = resBase.tipoRegistro;
+            res.resultado = resBase.resultado;
+            // }
+            // else
+            // {
+            if (String.IsNullOrEmpty(req.nombre) || String.IsNullOrEmpty(req.apellidos) ||
+                String.IsNullOrEmpty(req.email) || String.IsNullOrEmpty(req.password) ||
+                String.IsNullOrEmpty(req.direccion) || String.IsNullOrEmpty(req.telefono))
             {
-                //algo salió mal en la sesión
-                res.listaDeErrores = resBase.listaDeErrores;
-                res.tipoRegistro = resBase.tipoRegistro;
-                res.resultado = resBase.resultado;
+                res.listaDeErrores.Add("Datos Inconsistentes");
+                res.tipoRegistro = 3;
+                res.resultado = false;
             }
             else
             {
-                //validar el registro a ingresar
-                if (String.IsNullOrEmpty(req.usuario.nombre) || String.IsNullOrEmpty(req.usuario.apellidos) ||
-                     String.IsNullOrEmpty(req.usuario.email) || String.IsNullOrEmpty(req.usuario.password) ||
-                    String.IsNullOrEmpty(req.usuario.email) || String.IsNullOrEmpty(req.usuario.password) ||
-                    String.IsNullOrEmpty(req.usuario.direccion) || String.IsNullOrEmpty(req.usuario.telefono)
-                    )
+                try
                 {
-                    res.listaDeErrores.Add("Datos Inconsistentes");
-                    res.tipoRegistro = 3;
-                    res.resultado = false;
-                }
-                else
-                {
-                    // si llega hasta acá es porque todo salió bien hasta el momento
-                    try
+                    using (ConnectionDataContext linq = new ConnectionDataContext())
                     {
-                        ConnectionDataContext linq = new ConnectionDataContext();
-                        string descripcion = string.IsNullOrEmpty(req.usuario.direccion) ? "" : req.usuario.direccion;
-                        linq.sp_ActualizarUsuario(req.usuario.Id, req.usuario.nombre, req.usuario.apellidos
-                            , req.usuario.email, req.usuario.direccion,
-                            req.usuario.telefono, descripcion);
+                        linq.sp_ActualizarUsuario(req.Id, req.nombre, req.apellidos,
+                            req.email, req.direccion, req.telefono, req.descripcion, req.password);
 
                         res.resultado = true;
-                        res.listaDeErrores.Add("success") ;
+                        res.listaDeErrores.Add("success");
                         res.tipoRegistro = 1;
                     }
-                    catch (Exception ex)
-                    {
-                        res.listaDeErrores.Add("Error de BD");
-                        res.tipoRegistro = 4;
-                        res.resultado = false;
-                    }
                 }
+                catch (Exception ex)
+                {
+                    res.listaDeErrores.Add("Error de BD: " + ex.Message); // Registrar el mensaje de excepción
+                    res.tipoRegistro = 4;
+                    res.resultado = false;
+                }
+                // }
             }
             return res;
-        }  
-    }             
+        }
+
+    }
 
 }
