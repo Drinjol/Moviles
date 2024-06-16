@@ -1177,14 +1177,6 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\CommunyS.64FDAA87.Up2Date
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.genruntimeconfig.cache
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\ref\CommunyStoreFrontEnd.dll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\build-signature\signature
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\iconp_2010CF5F839217EDE58FE2300D05088BE5201B526ABE6B9F911044C6EE133504.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\iconp_2010CF5F839217EDE58FE2300D05088BE5201B526ABE6B9F911044C6EE133504@2x.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\iconp_2010CF5F839217EDE58FE2300D05088BE5201B526ABE6B9F911044C6EE133504@3x.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\MauiInfo.plist
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\MauiSplash.storyboard
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\f\MauiInfo.plist
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\f\white.svg
 C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.runtimeconfig.json
 C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.dll
 C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\CommunyStoreFrontEnd.pdb
@@ -1896,3 +1888,17 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\cam
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid@3x.png
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid@2x.png
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-ios\ios-arm64\Resources\Raw\credentials.json
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\camera_icon@3x.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\camera_icon@2x.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\camera_icon.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid@3x.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid@2x.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\r\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\iconp_F12C98EED47691C58CE24913F21F178F2ADEF5A021AE9DFC227F5A1697B61CD6.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\iconp_F12C98EED47691C58CE24913F21F178F2ADEF5A021AE9DFC227F5A1697B61CD6@2x.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\iconp_F12C98EED47691C58CE24913F21F178F2ADEF5A021AE9DFC227F5A1697B61CD6@3x.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\MauiInfo.plist
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\sp\MauiSplash.storyboard
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\f\MauiInfo.plist
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-ios\ios-arm64\resizetizer\f\white.svg

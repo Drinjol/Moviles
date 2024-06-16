@@ -2,12 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:selectors="clr-namespace:CommunyStoreFrontEnd.Selectors"
+             xmlns:local="clr-namespace:CommunyStoreFrontEnd.Converters"
              x:Class="CommunyStoreFrontEnd.ListaMensajes"
              Title="ListaMensajes"
              BackgroundColor="Black">
 
     <ContentPage.Resources>
         <ResourceDictionary>
+            <local:InverseBoolConverter x:Key="InverseBoolConverter" />
             <!-- DataTemplate para mensajes del emisor -->
             <DataTemplate x:Key="SenderTemplate">
                 <Grid Padding="10">
@@ -61,17 +63,25 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <!-- Indicador de carga -->
+        <ActivityIndicator x:Name="activityIndicator"
+                           IsRunning="{Binding IsLoading}"
+                           IsVisible="{Binding IsLoading}"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Color="White"/>
+
         <!-- Lista de mensajes -->
-        <ScrollView Grid.Row="0">
-            <CollectionView x:Name="collectionView"
-                            SelectionMode="None"
-                            ItemsSource="{Binding listaDeMensajes}"
-                            ItemTemplate="{StaticResource MessageTemplateSelector}"
-                            VerticalScrollBarVisibility="Always"/>
-        </ScrollView>
+        <CollectionView x:Name="collectionView"
+                        SelectionMode="None"
+                        ItemsSource="{Binding listaDeMensajes}"
+                        ItemTemplate="{StaticResource MessageTemplateSelector}"
+                        VerticalScrollBarVisibility="Always"
+                        Grid.Row="0"
+                        IsVisible="{Binding IsLoading, Converter={StaticResource InverseBoolConverter}}"/>
 
         <!-- Campo de texto y botón de enviar -->
-        <Grid Grid.Row="1" Padding="10" BackgroundColor="White">
+        <Grid Grid.Row="1" Padding="10" BackgroundColor="White" IsVisible="{Binding IsLoading, Converter={StaticResource InverseBoolConverter}}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />

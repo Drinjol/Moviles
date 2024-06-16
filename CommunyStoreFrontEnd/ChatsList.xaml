@@ -9,23 +9,28 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+       
 
-        <ScrollView Grid.Row="0">
+       
             <Frame x:Name="ContentFrame" VerticalOptions="FillAndExpand" Margin="10" BackgroundColor="Transparent">
-                <CollectionView x:Name="collectionView"
-                                SelectionMode="Single"
-                                ItemsSource="{Binding listaDeChats}"
-                                SelectionChanged="OnSelectionChanged">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <!-- Definición de cada elemento del CollectionView -->
-                            <Frame Margin="5"
-                                   Padding="10"
-                                   BorderColor="LightGray"
-                                   CornerRadius="10"
-                                   HasShadow="False"
-                                   BackgroundColor="White">
-                                <Grid>
+
+
+            <CollectionView x:Name="collectionView"
+                SelectionMode="Single"
+                ItemsSource="{Binding listaDeChats}"
+                SelectionChanged="OnSelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="10"
+                   Padding="10"
+                   BorderColor="LightGray"
+                   CornerRadius="10"
+                   HasShadow="False"
+                   BackgroundColor="White">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnChatItemTapped" />
+                            </Frame.GestureRecognizers>
+                            <Grid>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
@@ -40,7 +45,7 @@
                                            TextColor="Black" 
                                            Text="{Binding idUsuario2.NombreCompleto}"
                                            FontSize="16"
-                                           FontAttributes="Bold"/>
+                                           FontAttributes="Bold" />
 
                                     <!-- Fecha del último mensaje -->
                                     <Label Grid.Row="0" Grid.Column="1"
@@ -62,7 +67,7 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </Frame>
-        </ScrollView>
+       
 
     </Grid>
 

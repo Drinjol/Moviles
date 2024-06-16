@@ -89,45 +89,35 @@ public partial class ChatsList : ContentPage
         return retornarChatsApi;
     }
 
-
-    private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
+    private void OnChatItemTapped(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new AgregarPublicacionView());
+        var tappedFrame = sender as Frame;
+        var chat = tappedFrame?.BindingContext as Chats;
+
+        if (chat != null)
+        {
+            metodo_VerMensajes_Clicked(chat.idChat);
+
+            // Deselecciona el elemento después de manejar el tap
+            collectionView.SelectedItem = null;
+        }
     }
 
-    private void Button_Clicked_view_home(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new PublicacionesView());
-    }
-
-    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new ListaDeseos());
-    }
-
-    private void Button_Clicked_Mensajes(object sender, EventArgs e)
-    {
-      //  Navigation.PushAsync(new ChatsList());
-    }
     private void OnSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         if (e.CurrentSelection != null && e.CurrentSelection.Count > 0)
         {
-            var selectedChat = e.CurrentSelection[0] as Chats; // Asegúrate de que el tipo sea correcto
+            var selectedChat = e.CurrentSelection[0] as Chats;
             if (selectedChat != null)
             {
-                // Llama a tu método y pasa el IdChat
                 metodo_VerMensajes_Clicked(selectedChat.idChat);
 
-                // Deselecciona el elemento
-                var collectionView = sender as CollectionView;
-                if (collectionView != null)
-                {
-                    collectionView.SelectedItem = null;
-                }
+                // Deselecciona el elemento después de manejar la selección
+                collectionView.SelectedItem = null;
             }
         }
     }
+
 
     private void metodo_VerMensajes_Clicked(int idChat)
     {

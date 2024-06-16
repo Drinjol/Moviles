@@ -2024,38 +2024,7 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\mipmap-xhdpi\iconp_background.png
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\mipmap-hdpi\iconp_background.png
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\mipmap-mdpi\iconp_background.png
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\arm64-v8a\System.Private.CoreLib.dll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\armeabi-v7a\System.Private.CoreLib.dll
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Newtonsoft.Json.dll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\x86\System.Private.CoreLib.dll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\x86_64\System.Private.CoreLib.dll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.armeabi-v7a.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.x86.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.x86_64.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.armeabi-v7a.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.x86.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.x86_64.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.armeabi-v7a.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.x86.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.ll
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.armeabi-v7a.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.x86.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\typemaps.x86_64.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.armeabi-v7a.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.x86.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\environment.x86_64.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.armeabi-v7a.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.x86.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\compressed_assemblies.x86_64.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\marshal_methods.armeabi-v7a.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\marshal_methods.x86.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\marshal_methods.x86_64.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\jni_remap.armeabi-v7a.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\jni_remap.x86.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\jni_remap.x86_64.o
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\armeabi-v7a\libxamarin-app.so
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\x86\libxamarin-app.so
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\app_shared_libraries\x86_64\libxamarin-app.so
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\build.props
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\adb.props
@@ -4506,16 +4475,6 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiMaterialButton_MauiResizableDrawable.java
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\crc647ad1e5ccf2228e96\LRUCache.java
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\_CompileJava.FileList.txt
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\iconp.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\iconp.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\iconp.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\iconp.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\iconp.jpg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\f\white.svg
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\A52E68AE06E1868A-files.cache
 C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-android\CommunyStoreFrontEnd.runtimeconfig.json
 C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-android\CommunyStoreFrontEnd.dll
 C:\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-android\CommunyStoreFrontEnd.pdb
@@ -6741,3 +6700,26 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\message_solid.png
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\camera_icon.png
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-android\Resources\Raw\credentials.json
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\camera_icon.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\camera_icon.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\camera_icon.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\camera_icon.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\camera_icon.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\message_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-hdpi\iconp.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-mdpi\iconp.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-v31\maui_splash_image.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-xhdpi\iconp.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxhdpi\iconp.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable-xxxhdpi\iconp.jpg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\drawable\maui_splash_image.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\sp\values\maui_colors.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\f\white.svg
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\A52E68AE06E1868A-files.cache
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\res\drawable\iconp.png

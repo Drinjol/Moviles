@@ -12,8 +12,6 @@
 *.class
 
 # Ignorar archivos de construcción y configuración de MAUI
-/bin/
-/obj/
 *.apk
 *.ipa
 *.pdb
