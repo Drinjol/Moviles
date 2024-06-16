@@ -10,11 +10,21 @@ namespace CommunyStoreFrontEnd;
 
 public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 {
+    private bool isFirstLoad = true;
     private int iDChatGlobal = 0;
     private List<Mensaje> _listaDeMensajes = new List<Mensaje>();
+    private bool _isLoading = false;
 
-    // Refresca los componentes una vez se pintan en la vista
-    #region refrezcarCompomentes
+    public bool IsLoading
+    {
+        get { return _isLoading; }
+        set
+        {
+            _isLoading = value;
+            OnPropertyChanged(nameof(IsLoading));
+        }
+    }
+
     public List<Mensaje> listaDeMensajes
     {
         get { return _listaDeMensajes; }
@@ -31,7 +41,6 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
-    #endregion
 
     public ListaMensajes(int Idchat)
     {
@@ -43,13 +52,21 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
     private async void CargarMensajes(int Idchat)
     {
+        IsLoading = true;
         listaDeMensajes = await MensajesDelAPI(Idchat);
+        IsLoading = false;
+
+        // Realizar el scroll al final solo la primera vez que se carga la vista
+        if (isFirstLoad)
+        {
+            ScrollToEnd(false);
+            isFirstLoad = false;
+        }
     }
 
     private async Task<List<Mensaje>> MensajesDelAPI(int Idchat)
     {
         List<Mensaje> retornarMensajesApi = new List<Mensaje>();
-        
 
         try
         {
@@ -89,29 +106,33 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
     {
         if (!string.IsNullOrEmpty(entryMensaje.Text))
         {
-            ReqIngresarMensaje req = new ReqIngresarMensaje
+            var nuevoMensaje = new Mensaje
             {
-                mensaje = new Mensaje
-                {
-                    contenido = entryMensaje.Text,
-                    idUsuario = SesionFrontEnd.usuarioSesion.Id,
-                    idchat = iDChatGlobal
-                }
+                contenido = entryMensaje.Text,
+                idUsuario = SesionFrontEnd.usuarioSesion.Id,
+                idchat = iDChatGlobal
             };
 
             entryMensaje.Text = string.Empty;
 
+            var req = new ReqIngresarMensaje { mensaje = nuevoMensaje };
+
             await IngresarMensajeBd(req);
 
-            // Recargar los mensajes después de enviar uno nuevo
-            CargarMensajes(iDChatGlobal);
+            // Recargar mensajes después de enviar uno nuevo
+            await RecargarMensajesDespuesDeEnviar();
         }
+    }
+
+    private async Task RecargarMensajesDespuesDeEnviar()
+    {
+        listaDeMensajes = await MensajesDelAPI(iDChatGlobal);
+        OnPropertyChanged(nameof(listaDeMensajes));
+        ScrollToNewMessage(false); // Sin animación visible
     }
 
     public async Task IngresarMensajeBd(ReqIngresarMensaje req)
     {
-        
-
         try
         {
             if (string.IsNullOrWhiteSpace(req.mensaje.contenido))
@@ -129,8 +150,6 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
                 if (response.IsSuccessStatusCode)
                 {
                     var responseContent = await response.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Response Content: {responseContent}"); // Debugging: Print the response content
-
                     dynamic jsonResponse = JObject.Parse(responseContent);
 
                     ResIngresarMensaje res = new ResIngresarMensaje
@@ -141,8 +160,7 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
                     if (res.resultado && res.tipoRegistro == 1)
                     {
-                        // Mensaje enviado con éxito
-                        Console.WriteLine("Mensaje enviado con éxito."); // Debugging: Success message
+                        Console.WriteLine("Mensaje enviado con éxito.");
                     }
                     else
                     {
@@ -153,7 +171,6 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
                             4 => "Error no controlado!",
                             _ => "Error desconocido"
                         };
-                        // await DisplayAlert("Envio fallido!", errorMessage, "Aceptar");
                     }
                 }
                 else
@@ -168,6 +185,29 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
         }
     }
 
+    private void ScrollToEnd(bool animate)
+    {
+        if (listaDeMensajes != null && listaDeMensajes.Count > 0)
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                await Task.Delay(100); // Pequeño retraso para asegurar que los mensajes se carguen completamente
+                collectionView.ScrollTo(listaDeMensajes[^1], position: ScrollToPosition.End, animate: animate);
+            });
+        }
+    }
+
+    private void ScrollToNewMessage(bool animate)
+    {
+        if (listaDeMensajes != null && listaDeMensajes.Count > 0)
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                await Task.Delay(100); // Pequeño retraso para asegurar que los mensajes se carguen completamente
+                collectionView.ScrollTo(listaDeMensajes[^1], position: ScrollToPosition.MakeVisible, animate: animate);
+            });
+        }
+    }
 
     protected override void OnAppearing()
     {
