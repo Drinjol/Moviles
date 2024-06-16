@@ -12,6 +12,7 @@ using Microsoft.Maui.Media;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Storage;
 using System;
+using System.Reflection;
 
 
 namespace CommunyStoreFrontEnd;
@@ -263,30 +264,27 @@ public partial class AgregarPublicacionView : ContentPage
         {
             UserCredential credential;
 
-            // Obtener la ruta al archivo de credenciales dentro del directorio de datos de la aplicación
-            string credPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "credentials.json");
+            // Obtener el ensamblado actual
+            var assembly = Assembly.GetExecutingAssembly();
 
-            // Obtener la ruta al directorio donde se encuentra el ejecutable de la aplicación
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            // Definir el nombre completo del recurso incrustado
+            var resourceName = "CommunyStoreFrontEnd.Resources.Raw.credentials.json"; // Reemplaza 'TuNamespace' con el namespace correcto
 
-            // Construir la ruta completa al archivo credentials.json dentro del proyecto
-            string filePath = Path.Combine(baseDirectory, "Resources", "Raw", "credentials.json");
-
-            // Copiar el archivo de recursos al directorio de datos de la aplicación, si aún no existe
-            if (!File.Exists(credPath))
+            // Leer el archivo incrustado como un stream
+            using (var stream = assembly.GetManifestResourceStream(resourceName))
             {
-                File.Copy(filePath, credPath);
-            }
+                if (stream == null)
+                {
+                    await DisplayAlert("Error","No se encontró el archivo de credenciales incrustado.","Aceptar");
+                }
 
-            // Autorizar al usuario
-            using (var stream = new FileStream(credPath, FileMode.Open, FileAccess.Read))
-            {
+                // Autorizar al usuario
                 string tokenPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "token.json");
                 credential = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
                     Scopes,
                     "user",
-                    System.Threading.CancellationToken.None,
+                    CancellationToken.None,
                     new FileDataStore(tokenPath, true));
             }
 

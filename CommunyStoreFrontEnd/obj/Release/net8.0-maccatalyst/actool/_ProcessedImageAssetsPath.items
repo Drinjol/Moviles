@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\Contents.json" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp20x20@2x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp20x20@3x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp29x29@2x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp29x29@3x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp40x40@2x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp40x40@3x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp60x60@2x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp60x60@3x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp76x76@2x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconp83.5x83.5@2x.jpg" />
+    <ImageAsset Include="C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Release\net8.0-maccatalyst\resizetizer\r\Assets.xcassets\iconp.appiconset\iconpItunesArtwork.jpg" />
+  </ItemGroup>
+</Project>
