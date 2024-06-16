@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-06-15T20:48:40.024</Modified>
+      <Modified>2024-06-16T03:26:59.102</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-06-15T20:48:39.642</Modified>
+      <Modified>2024-06-16T03:26:58.835</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.runtimeconfig.json">
       <PackagePath>CommunyStoreFrontEnd.runtimeconfig.json</PackagePath>
-      <Modified>2024-06-15T20:48:39.199</Modified>
+      <Modified>2024-06-16T03:26:58.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.dll">
       <PackagePath>CommunyStoreFrontEnd.dll</PackagePath>
-      <Modified>2024-06-15T20:48:37.174</Modified>
+      <Modified>2024-06-16T03:26:56.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CommunyStoreFrontEnd.exe</PackagePath>
-      <Modified>2024-06-15T20:48:37.235</Modified>
+      <Modified>2024-06-16T03:26:56.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -624,7 +624,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CommunyStoreFrontEnd.deps.json">
       <PackagePath>CommunyStoreFrontEnd.deps.json</PackagePath>
-      <Modified>2024-06-15T20:48:39.047</Modified>
+      <Modified>2024-06-16T03:26:58.342</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\eliez\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
