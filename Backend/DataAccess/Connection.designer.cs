@@ -22,7 +22,7 @@ namespace Backend.DataAccess
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="db_aa995b_emprende")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DataSource")]
 	public partial class ConnectionDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -36,7 +36,7 @@ namespace Backend.DataAccess
     #endregion
 		
 		public ConnectionDataContext() : 
-				base(global::Backend.Properties.Settings.Default.db_aa995b_emprendeConnectionString1, mappingSource)
+				base(global::Backend.Properties.Settings.Default.DataSourceConnectionString19, mappingSource)
 		{
 			OnCreated();
 		}
@@ -73,13 +73,6 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ActualizarUsuario")]
-		public int sp_ActualizarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string descripcion)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, nombre, apellidos, email, direccion, telefono, descripcion);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_CrearUsuario")]
 		public int sp_CrearUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string password, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string descripcion)
 		{
@@ -106,17 +99,6 @@ namespace Backend.DataAccess
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
 			return ((ISingleResult<sp_obtener_usuario_por_idResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION")]
-		public int SP_ELIMINAR_PUBLICACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDRETURN", DbType="Int")] ref System.Nullable<int> iDRETURN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORID", DbType="Int")] ref System.Nullable<int> eRRORID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORDESCRIPCION", DbType="NVarChar(MAX)")] ref string eRRORDESCRIPCION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="FILASACTUALIZADAS", DbType="Int")] ref System.Nullable<int> fILASACTUALIZADAS)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_PUBLICACION, iDRETURN, eRRORID, eRRORDESCRIPCION, fILASACTUALIZADAS);
-			iDRETURN = ((System.Nullable<int>)(result.GetParameterValue(1)));
-			eRRORID = ((System.Nullable<int>)(result.GetParameterValue(2)));
-			eRRORDESCRIPCION = ((string)(result.GetParameterValue(3)));
-			fILASACTUALIZADAS = ((System.Nullable<int>)(result.GetParameterValue(4)));
-			return ((int)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_INGRESAR_PUBLICACION")]
@@ -222,6 +204,30 @@ namespace Backend.DataAccess
 			rESULTADO = ((string)(result.GetParameterValue(1)));
 			return ((ISingleResult<SP_MOSTRAR_PUBLICACIONES_GUARDADASResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ELIMINAR_PUBLICACION")]
+		public int SP_ELIMINAR_PUBLICACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_USUARIO", DbType="Int")] System.Nullable<int> iD_USUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID_PUBLICACION", DbType="Int")] System.Nullable<int> iD_PUBLICACION)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD_USUARIO, iD_PUBLICACION);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ACTUALIZAR_PUBLICACION")]
+		public int SP_ACTUALIZAR_PUBLICACION([global::System.Data.Linq.Mapping.ParameterAttribute(Name="PUBLICACION_ID", DbType="Int")] System.Nullable<int> pUBLICACION_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="DESCRIPCION", DbType="VarChar(MAX)")] string dESCRIPCION, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="PRECIO", DbType="Decimal(18,2)")] System.Nullable<decimal> pRECIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="CATEGORIA", DbType="VarChar(MAX)")] string cATEGORIA, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IMAGENES", DbType="VarChar(MAX)")] string iMAGENES, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDRETURN", DbType="Int")] ref System.Nullable<int> iDRETURN, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORID", DbType="Int")] ref System.Nullable<int> eRRORID, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="ERRORDESCRIPCION", DbType="NVarChar(MAX)")] ref string eRRORDESCRIPCION)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), pUBLICACION_ID, dESCRIPCION, pRECIO, cATEGORIA, iMAGENES, iDRETURN, eRRORID, eRRORDESCRIPCION);
+			iDRETURN = ((System.Nullable<int>)(result.GetParameterValue(5)));
+			eRRORID = ((System.Nullable<int>)(result.GetParameterValue(6)));
+			eRRORDESCRIPCION = ((string)(result.GetParameterValue(7)));
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ActualizarUsuario")]
+		public int sp_ActualizarUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string apellidos, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string email, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(255)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(20)")] string telefono, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(500)")] string descripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(100)")] string password)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id, nombre, apellidos, email, direccion, telefono, descripcion, password);
+			return ((int)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.tb_imagen_binario")]
@@ -297,7 +303,7 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary tb_imagen_binario1
 		{
 			get

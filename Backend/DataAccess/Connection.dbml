@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_aa995b_emprende" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=sql8010.site4now.net;Initial Catalog=db_aa995b_emprende;Persist Security Info=True;User ID=db_aa995b_emprende_admin;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="Backend.Properties.Settings" SettingsPropertyName="db_aa995b_emprendeConnectionString1" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ConnectionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sql8010.site4now.net;Persist Security Info=True;User ID=db_aa995b_emprende_admin;Encrypt=True" SettingsObjectName="Backend.Properties.Settings" SettingsPropertyName="DataSourceConnectionString19" Provider="System.Data.SqlClient" />
   <Table Name="dbo.tb_imagen_binario" Member="tb_imagen_binario">
     <Type Name="tb_imagen_binario">
       <Column Name="tb_imagen_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -8,16 +8,6 @@
       <Column Name="tb_imagen_extension" Type="System.String" DbType="Char(4)" CanBeNull="true" />
     </Type>
   </Table>
-  <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
-    <Parameter Name="id" Type="System.Int32" DbType="Int" />
-    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
-    <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
-    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
-    <Parameter Name="direccion" Type="System.String" DbType="NVarChar(255)" />
-    <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
-    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.sp_CrearUsuario" Method="sp_CrearUsuario">
     <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
     <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
@@ -51,14 +41,6 @@
       <Column Name="tb_usuario_descripcion" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
       <Column Name="tb_usuario_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
-  </Function>
-  <Function Name="dbo.SP_ELIMINAR_PUBLICACION" Method="SP_ELIMINAR_PUBLICACION">
-    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
-    <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
-    <Parameter Name="FILASACTUALIZADAS" Parameter="fILASACTUALIZADAS" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.SP_INGRESAR_PUBLICACION" Method="SP_INGRESAR_PUBLICACION">
     <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int64" DbType="BigInt" />
@@ -216,5 +198,32 @@
       <Column Name="tb_lista_deseos_creacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="tb_lista_deseos_estado" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ELIMINAR_PUBLICACION" Method="SP_ELIMINAR_PUBLICACION">
+    <Parameter Name="ID_USUARIO" Parameter="iD_USUARIO" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ACTUALIZAR_PUBLICACION" Method="SP_ACTUALIZAR_PUBLICACION">
+    <Parameter Name="PUBLICACION_ID" Parameter="pUBLICACION_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PRECIO" Parameter="pRECIO" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="CATEGORIA" Parameter="cATEGORIA" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="IMAGENES" Parameter="iMAGENES" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="apellidos" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="direccion" Type="System.String" DbType="NVarChar(255)" />
+    <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>
