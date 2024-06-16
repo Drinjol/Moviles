@@ -2,49 +2,58 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunyStoreFrontEnd.PublicacionDetalles"
-             Title="PublicacionDetalles">
-    
-    
+             Title="PublicacionDetalles"
+             BackgroundColor="White">
+
+
     <StackLayout>
         <!-- Tu diseño XAML aquí -->
         <Label Text="{Binding descripcionPublicacion}" FontSize="24" />
 
+        <Grid
+            HeightRequest="100"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand">
         <Image Source="{Binding nombresArchivos}"
             Aspect="AspectFit"
             HeightRequest="200"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand"/>
+            
+        </Grid>
 
-        <HorizontalStackLayout Spacing="10">
+        <Grid BackgroundColor="Yellow">
             <Label TextColor="Red" Text="{Binding precioPublicacion, StringFormat='{0:C}'}"
-                 FontSize="16"
+                 FontSize="30"
                  FontAttributes="Italic"
                  HorizontalOptions="Fill"
-                 VerticalOptions="Start"/>
+                   />
 
-            <Button Clicked="Button_Clicked_add_lista_deseos"
-                 CommandParameter="{Binding .}"
-                 HorizontalOptions="EndAndExpand"
-                 HeightRequest="50"
-                 WidthRequest="50"
-                 Padding="0"
-                 BackgroundColor="Transparent">
-
-                <Button.Triggers>
-                    <DataTrigger TargetType="Button" 
-                         Binding="{Binding favorito}"
-                         Value="True">
-                        <Setter Property="ImageSource" Value="heart_solid.png" />
+            <!-- Botón de agregar a lista de deseos -->
+            <ImageButton Clicked="Button_Clicked_add_lista_deseos"
+             CommandParameter="{Binding .}"
+             HeightRequest="0"
+             WidthRequest="0"
+             Padding="5"
+             BackgroundColor="Transparent"
+             BorderWidth="0"
+             CornerRadius="0"
+             HorizontalOptions="End">
+                <ImageButton.Triggers>
+                    <DataTrigger TargetType="ImageButton"
+                     Binding="{Binding favorito}"
+                     Value="True">
+                        <Setter Property="Source" Value="heart_icon.png" />
                     </DataTrigger>
-                    <DataTrigger TargetType="Button" 
-                          Binding="{Binding favorito}"
-                          Value="False">
-                        <Setter Property="ImageSource" Value="heart_regular.png" />
+                    <DataTrigger TargetType="ImageButton"
+                     Binding="{Binding favorito}"
+                     Value="False">
+                        <Setter Property="Source" Value="favorite_icon.png" />
                     </DataTrigger>
-                </Button.Triggers>
-            </Button>
+                </ImageButton.Triggers>
+            </ImageButton>
 
-        </HorizontalStackLayout>
+        </Grid>
 
         <Label TextColor="Black" Text="{Binding descripcionPublicacion}"
             FontSize="16"
@@ -56,7 +65,7 @@
              FontSize="16"
              HorizontalOptions="Fill"
              VerticalOptions="Center"/>
-        
+
         <Label TextColor="Black" Text="Anunciante"
      FontSize="16"
      HorizontalOptions="Fill"
@@ -73,7 +82,7 @@
     </StackLayout>
 
 
-    
+
 
 
 </ContentPage>

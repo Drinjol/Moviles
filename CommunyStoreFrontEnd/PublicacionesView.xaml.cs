@@ -454,8 +454,6 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         if (publicacion != null)
         {
             int idPub = publicacion.idPublicacion;
-            //await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api "+publicacion.idPublicacion, "Aceptar");
-            //int idPub = publicacion.idPublicacion;
             agregarInteraccionUsuario(idPub);
             await Navigation.PushAsync(new PublicacionDetalles(publicacion));
         }
