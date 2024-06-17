@@ -6,6 +6,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Microsoft.Owin;
+using Owin;
+using CommunyStoreApi;
+
+[assembly: OwinStartup(typeof(Startup))]
 
 namespace CommunyStoreApi
 {
@@ -18,6 +23,14 @@ namespace CommunyStoreApi
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+    }
+
+    public class Startup
+    {
+        public void Configuration(IAppBuilder app)
+        {
+            app.MapSignalR();
         }
     }
 }
