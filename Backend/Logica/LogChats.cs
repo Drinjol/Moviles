@@ -102,8 +102,9 @@ namespace Backend.Logica
 
                     contenido = item.tb_mensaje_contenido,
                     idUsuario = (int)item.tb_usuario_id,
-                    idchat = (int)item.tb_chats_id
-                  
+                    idchat = (int)item.tb_chats_id,
+                    URLimg = item.imgUrl
+
                 }).ToList();
 
                 res.resultado = true;
@@ -194,7 +195,7 @@ namespace Backend.Logica
 
                         
 
-                        linq.sp_ingresar_mensajes(req.mensaje.contenido,req.mensaje.idUsuario, req.mensaje.idchat);
+                        linq.sp_ingresar_mensajes(req.mensaje.contenido,req.mensaje.idUsuario, req.mensaje.idchat,req.mensaje.URLimg);
                     
                         if (idError == null || idError == 0)
                         {

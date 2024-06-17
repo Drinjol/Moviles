@@ -146,13 +146,6 @@ namespace Backend.DataAccess
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_obtenerMensajesConIdChat")]
-		public ISingleResult<sp_obtenerMensajesConIdChatResult> sp_obtenerMensajesConIdChat([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idChat)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idChat);
-			return ((ISingleResult<sp_obtenerMensajesConIdChatResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_crear_chat_nuevo")]
 		public ISingleResult<sp_crear_chat_nuevoResult> sp_crear_chat_nuevo([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id1, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="BigInt")] System.Nullable<long> id2)
 		{
@@ -215,18 +208,25 @@ namespace Backend.DataAccess
 			return ((ISingleResult<sp_obtener_publicacion_por_id_usuarioResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ingresar_mensajes")]
-		public int sp_ingresar_mensajes([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CONTENIDO", DbType="VarChar(MAX)")] string cONTENIDO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDUSUARIO", DbType="BigInt")] System.Nullable<long> iDUSUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCHAT", DbType="BigInt")] System.Nullable<long> iDCHAT)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cONTENIDO, iDUSUARIO, iDCHAT);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_obtener_chat_por_idUsuario")]
 		public ISingleResult<sp_obtener_chat_por_idUsuarioResult> sp_obtener_chat_por_idUsuario([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> id)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), id);
 			return ((ISingleResult<sp_obtener_chat_por_idUsuarioResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_ingresar_mensajes")]
+		public int sp_ingresar_mensajes([global::System.Data.Linq.Mapping.ParameterAttribute(Name="CONTENIDO", DbType="VarChar(MAX)")] string cONTENIDO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDUSUARIO", DbType="BigInt")] System.Nullable<long> iDUSUARIO, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IDCHAT", DbType="BigInt")] System.Nullable<long> iDCHAT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(MAX)")] string imagen)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), cONTENIDO, iDUSUARIO, iDCHAT, imagen);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sp_obtenerMensajesConIdChat")]
+		public ISingleResult<sp_obtenerMensajesConIdChatResult> sp_obtenerMensajesConIdChat([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idChat)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idChat);
+			return ((ISingleResult<sp_obtenerMensajesConIdChatResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -303,7 +303,7 @@ namespace Backend.DataAccess
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", CanBeNull=true, UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Name="tb_imagen_binario", Storage="_tb_imagen_binario1", DbType="VarBinary(MAX)", UpdateCheck=UpdateCheck.Never)]
 		public System.Data.Linq.Binary tb_imagen_binario1
 		{
 			get
@@ -1021,86 +1021,6 @@ namespace Backend.DataAccess
 				if ((this._fecha_busqueda != value))
 				{
 					this._fecha_busqueda = value;
-				}
-			}
-		}
-	}
-	
-	public partial class sp_obtenerMensajesConIdChatResult
-	{
-		
-		private string _tb_mensaje_contenido;
-		
-		private long _tb_usuario_id;
-		
-		private long _tb_chats_id;
-		
-		private System.DateTime _tb_mensaje_fechaEnvio;
-		
-		public sp_obtenerMensajesConIdChatResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_mensaje_contenido", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
-		public string tb_mensaje_contenido
-		{
-			get
-			{
-				return this._tb_mensaje_contenido;
-			}
-			set
-			{
-				if ((this._tb_mensaje_contenido != value))
-				{
-					this._tb_mensaje_contenido = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_id", DbType="BigInt NOT NULL")]
-		public long tb_usuario_id
-		{
-			get
-			{
-				return this._tb_usuario_id;
-			}
-			set
-			{
-				if ((this._tb_usuario_id != value))
-				{
-					this._tb_usuario_id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_chats_id", DbType="BigInt NOT NULL")]
-		public long tb_chats_id
-		{
-			get
-			{
-				return this._tb_chats_id;
-			}
-			set
-			{
-				if ((this._tb_chats_id != value))
-				{
-					this._tb_chats_id = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_mensaje_fechaEnvio", DbType="DateTime NOT NULL")]
-		public System.DateTime tb_mensaje_fechaEnvio
-		{
-			get
-			{
-				return this._tb_mensaje_fechaEnvio;
-			}
-			set
-			{
-				if ((this._tb_mensaje_fechaEnvio != value))
-				{
-					this._tb_mensaje_fechaEnvio = value;
 				}
 			}
 		}
@@ -2103,6 +2023,104 @@ namespace Backend.DataAccess
 				if ((this._tb_chat_estado != value))
 				{
 					this._tb_chat_estado = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sp_obtenerMensajesConIdChatResult
+	{
+		
+		private string _tb_mensaje_contenido;
+		
+		private long _tb_usuario_id;
+		
+		private long _tb_chats_id;
+		
+		private System.DateTime _tb_mensaje_fechaEnvio;
+		
+		private string _imgUrl;
+		
+		public sp_obtenerMensajesConIdChatResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_mensaje_contenido", DbType="VarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string tb_mensaje_contenido
+		{
+			get
+			{
+				return this._tb_mensaje_contenido;
+			}
+			set
+			{
+				if ((this._tb_mensaje_contenido != value))
+				{
+					this._tb_mensaje_contenido = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_usuario_id", DbType="BigInt NOT NULL")]
+		public long tb_usuario_id
+		{
+			get
+			{
+				return this._tb_usuario_id;
+			}
+			set
+			{
+				if ((this._tb_usuario_id != value))
+				{
+					this._tb_usuario_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_chats_id", DbType="BigInt NOT NULL")]
+		public long tb_chats_id
+		{
+			get
+			{
+				return this._tb_chats_id;
+			}
+			set
+			{
+				if ((this._tb_chats_id != value))
+				{
+					this._tb_chats_id = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_tb_mensaje_fechaEnvio", DbType="DateTime NOT NULL")]
+		public System.DateTime tb_mensaje_fechaEnvio
+		{
+			get
+			{
+				return this._tb_mensaje_fechaEnvio;
+			}
+			set
+			{
+				if ((this._tb_mensaje_fechaEnvio != value))
+				{
+					this._tb_mensaje_fechaEnvio = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_imgUrl", DbType="VarChar(MAX)")]
+		public string imgUrl
+		{
+			get
+			{
+				return this._imgUrl;
+			}
+			set
+			{
+				if ((this._imgUrl != value))
+				{
+					this._imgUrl = value;
 				}
 			}
 		}

@@ -247,14 +247,15 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
                             {
                                 ReqIngresarMensaje req2 = new ReqIngresarMensaje();
                                 string desc = publicacion.descripcionPublicacion;
-
+                                string urlImg = publicacion.nombresArchivos;
                                 string price = publicacion.precioPublicacion.ToString() ?? "0.00"; // Manejar el null para precioPublicacion
 
                                 req2.mensaje = new Mensaje
                                 {
                                     contenido = desc + Environment.NewLine + price,
                                     idchat = res.idChat,
-                                    idUsuario = SesionFrontEnd.usuarioSesion.Id
+                                    idUsuario = SesionFrontEnd.usuarioSesion.Id,
+                                    URLimg = urlImg
                                 };
                                 var jsonMensaje = new StringContent(JsonConvert.SerializeObject(req2), Encoding.UTF8, "application/json");
 
@@ -332,29 +333,6 @@ public partial class ListaDeseos : ContentPage, INotifyPropertyChanged
 
 
         // Ejemplo: Navigation.PushAsync(new ChatPage(publicacion));
-    }
-
-
-    private void Button_Clicked_view_new_publicacion(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new AgregarPublicacionView());
-    }
-
-    private void Button_Clicked_view_home(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new PublicacionesView());
-    }
-
-    private void Button_Clicked_view_lista_guardados(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new ListaDeseos());
-    }
-
-
-    private void btnMensajes_Clicked(object sender, EventArgs e)
-    {
-       // Navigation.PushAsync(new ChatsList());
-
     }
 
     private async void OnFrameTapped(object sender, EventArgs e)

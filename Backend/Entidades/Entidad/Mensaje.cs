@@ -21,6 +21,8 @@ namespace Backend.Entidades
 
         public bool estado { get; set; }
 
+        public string URLimg { get; set; }
+
 
 
     }
