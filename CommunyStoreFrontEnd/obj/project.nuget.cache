@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E/xu3ucNGzQ=",
+  "dgSpecHash": "mU414fdUKvw=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\harfbuzzsharp.nativeassets.maccatalyst\\2.8.2.3\\harfbuzzsharp.nativeassets.maccatalyst.2.8.2.3.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\2.8.2.3\\harfbuzzsharp.nativeassets.macos.2.8.2.3.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\2.8.2.3\\harfbuzzsharp.nativeassets.win32.2.8.2.3.nupkg.sha512",
+    "C:\\Users\\Jordan Mora\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.3\\microsoft.aspnet.signalr.client.2.4.3.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\8.0.6\\microsoft.aspnetcore.connections.abstractions.8.0.6.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\8.0.6\\microsoft.aspnetcore.http.connections.client.8.0.6.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\8.0.6\\microsoft.aspnetcore.http.connections.common.8.0.6.nupkg.sha512",

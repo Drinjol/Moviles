@@ -3182,11 +3182,6 @@ C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEndIconChangedListenerImplementor.java
 C:\Users\Dilan GC\Desktop\Móviles\CommunyStore\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\src\mono\MonoPackageManager_Resources.java
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\_CompileBindingJava.FileList.txt
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\message_icon.png
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\message_icon.png
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\message_icon.png
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\message_icon.png
-C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\message_icon.png
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\heart_regular.png
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\heart_regular.png
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\heart_regular.png
@@ -6712,3 +6707,27 @@ C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\location_dot_solid.png
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\envelope_solid.png
 C:\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\location_dot_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\envelope_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\location_dot_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\envelope_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\location_dot_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\envelope_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\location_dot_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\envelope_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\location_dot_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\envelope_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\location_dot_solid.png
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.Azure.Storage.Blob.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.Azure.Storage.Common.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.Extensions.Features.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\System.IO.Pipelines.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNet.SignalR.Client.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNet.SignalR.Client.pdb

@@ -33,14 +33,12 @@
                 </Grid>
             </Frame>
 
-
-
             <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
                 <Entry x:Name="txtdireccion" Placeholder="Dirección" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
             </Frame>
 
             <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
-                <Entry x:Name="txttelefono" Placeholder="Numero de telefono" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+                <Entry x:Name="txttelefono" Placeholder="Número de teléfono" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
             </Frame>
 
             <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="True" BackgroundColor="White">
@@ -48,6 +46,12 @@
             </Frame>
 
             <Button x:Name="btn_Register" Text="Registrarse" Clicked="btn_Register_Clicked" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" />
+
+            <!-- Indicador de carga -->
+            <StackLayout x:Name="loadingIndicatorLayout" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False">
+                <ActivityIndicator x:Name="loadingIndicator" IsRunning="False" Color="Green"/>
+                <Label Text="Registrando usuario..." TextColor="Green" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
 
             <!-- Enlace para iniciar sesión -->
             <Label Text="¿Ya tienes una cuenta? Inicia sesión aquí" TextColor="DodgerBlue" FontSize="16" HorizontalOptions="Center">

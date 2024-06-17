@@ -46,7 +46,7 @@
                                 <!-- Fecha del último mensaje -->
                                 <Label Grid.Row="0" Grid.Column="1"
                                        TextColor="Gray"
-                                       Text="{Binding tempFecha, StringFormat='yyyy-MM-dd HH:mm:ss'}"
+                                       Text="{Binding tempFecha}"
                                        FontSize="12"
                                        HorizontalOptions="End"/>
 

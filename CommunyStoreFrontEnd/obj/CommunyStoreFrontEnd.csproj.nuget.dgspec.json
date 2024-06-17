@@ -78,6 +78,10 @@
               "target": "Package",
               "version": "[1.68.0.3416, )"
             },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -148,6 +152,10 @@
             "Google.Apis.Drive.v3": {
               "target": "Package",
               "version": "[1.68.0.3416, )"
+            },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
@@ -220,6 +228,10 @@
               "target": "Package",
               "version": "[1.68.0.3416, )"
             },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
               "version": "[8.0.6, )"
@@ -291,6 +303,10 @@
             "Google.Apis.Drive.v3": {
               "target": "Package",
               "version": "[1.68.0.3416, )"
+            },
+            "Microsoft.AspNet.SignalR.Client": {
+              "target": "Package",
+              "version": "[2.4.3, )"
             },
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",

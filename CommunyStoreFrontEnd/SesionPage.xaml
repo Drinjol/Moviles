@@ -24,9 +24,13 @@
                 </Grid>
             </Frame>
 
-
-
             <Button x:Name="btn_StartSession" Text="Ingresar" Clicked="btn_StartSession_Clicked" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" />
+
+            <!-- Indicador de carga -->
+            <StackLayout x:Name="loadingIndicatorLayout" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False">
+                <ActivityIndicator x:Name="loadingIndicator" IsRunning="False" Color="Green"/>
+                <Label Text="Iniciando sesión..." TextColor="Green" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
 
             <!-- Enlace para registrarse -->
             <Label Text="¿No tienes una cuenta? Regístrate aquí" TextColor="DodgerBlue" FontSize="16" HorizontalOptions="Center">
