@@ -574,7 +574,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                         }
                         else
                         {
-                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                            Console.WriteLine("No se encontró el backend");
                         }
                     }
                     catch (Exception ex)

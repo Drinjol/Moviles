@@ -194,12 +194,7 @@ namespace Backend.Logica
                         res.resultado = false;
                         tipoRegistro = 2;
                     }
-                    if (String.IsNullOrEmpty(req.publicacion.nombresArchivos))
-                    {
-                        res.listaDeErrores.Add("Imágenes faltantes");
-                        res.resultado = false;
-                        tipoRegistro = 2;
-                    }
+                    
 
                     if (!res.listaDeErrores.Any())
                     {
