@@ -4,9 +4,6 @@
 # Ignorar archivos de Visual Studio
 .vsidx
 .suo
-*.dll
-*.config
-*.XML
 *.a
 *.cache
 *.class
