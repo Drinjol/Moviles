@@ -1,19 +1,34 @@
-using System;
+ï»¿using System;
 using System.ComponentModel;
 using System.IO;
+using System.Net.Http.Headers;
 using System.Runtime.CompilerServices;
+using System.Text;
+using System.Xml.Linq;
 using CommunyStoreFrontEnd.Entidades;
+using CommunyStoreFrontEnd.Utilitarios;
 using Google.Apis.Drive.v3;
 using Microsoft.Maui.Controls;
+using Newtonsoft.Json;
 
 namespace CommunyStoreFrontEnd
 {
     public partial class ActualizarPublicacionUsuarioPerfil : ContentPage, INotifyPropertyChanged
     {
-        private string _selectedFile;
-        static string[] Scopes = { DriveService.Scope.DriveFile };
-        static string ApplicationName = "Google Drive API .NET MAUI";
-        static string FolderId = "1r7A7hITGX4WjarcooONMt4qPHKjxRhLU";
+
+        private int idPublicacion;
+        public int IdPublicacion
+        {
+            get => idPublicacion;
+            set
+            {
+                if (idPublicacion != value)
+                {
+                    idPublicacion = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         private string descripcionPublicacion;
         public string DescripcionPublicacion
@@ -43,33 +58,7 @@ namespace CommunyStoreFrontEnd
             }
         }
 
-        private DateTime fechaPublicacion;
-        public DateTime FechaPublicacion
-        {
-            get => fechaPublicacion;
-            set
-            {
-                if (fechaPublicacion != value)
-                {
-                    fechaPublicacion = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
 
-        private string nombresArchivos;
-        public string NombresArchivos
-        {
-            get => nombresArchivos;
-            set
-            {
-                if (nombresArchivos != value)
-                {
-                    nombresArchivos = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
 
         private string categoriaPublicacion;
         public string CategoriaPublicacion
@@ -99,53 +88,65 @@ namespace CommunyStoreFrontEnd
             }
         }
 
-        public ActualizarPublicacionUsuarioPerfil(Publicacion publicacion)
+        public ActualizarPublicacionUsuarioPerfil(int idPublicacion, string descripcionPublicacion, string categoriaPublicacion, decimal precioPublicacion)
         {
             InitializeComponent();
-            BindingContext = publicacion;
+            IdPublicacion = idPublicacion;
+            DescripcionPublicacion = descripcionPublicacion;
+            NombreCompletoUsuario = SesionFrontEnd.usuarioSesion.NombreCompleto;
+            CategoriaPublicacion = categoriaPublicacion;
+            PrecioPublicacion = precioPublicacion;
+            BindingContext = this;
         }
 
+        // Mï¿½todo para guardar la informaciï¿½n
         private async void GuardarInformacion_Clicked(object sender, EventArgs e)
         {
-            var publicacion = BindingContext as Publicacion;
-            if (publicacion != null)
+            try
             {
-                publicacion.descripcionPublicacion = DescripcionPublicacion;
-                publicacion.precioPublicacion = PrecioPublicacion;
-                publicacion.fechaPublicacion = FechaPublicacion;
-                publicacion.categoriaPublicacion = CategoriaPublicacion;
-                publicacion.nombresArchivos = NombresArchivos;
-            }
-            await DisplayAlert("Información", "Publicación actualizada con éxito", "OK");
-            await Navigation.PopAsync();
-        }
-
-        private async void CargarImagen_Clicked(object sender, EventArgs e)
-        {
-            var result = await MediaPicker.PickPhotoAsync();
-            if (result != null)
-            {
-                var stream = await result.OpenReadAsync();
-                var memoryStream = new MemoryStream();
-                await stream.CopyToAsync(memoryStream);
-                byte[] imageBytes = memoryStream.ToArray();
-
-                // Convertir la imagen a una cadena base64
-                var base64Image = Convert.ToBase64String(imageBytes);
-
-                // Asignar la cadena base64 a nombresArchivos
-                NombresArchivos = base64Image;
-
-                // Actualizar la imagen en la propiedad de la publicación
-                var publicacion = BindingContext as Publicacion;
-                if (publicacion != null)
+                var publicacion = new ReqActualizarPublicacion
                 {
-                    publicacion.imagen = ImageSource.FromStream(() => new MemoryStream(imageBytes));
-                }
+                    IdPublicacion = IdPublicacion,
+                    DescripcionPublicacion = DescripcionPublicacion,
+                    CategoriaPublicacion = CategoriaPublicacion,
+                    PrecioPublicacion = PrecioPublicacion
+                };
 
-                OnPropertyChanged(nameof(NombresArchivos));
+                var jsonContent = new StringContent(JsonConvert.SerializeObject(publicacion), Encoding.UTF8, "application/json");
+                await DisplayAlert("Datos capturados, serializados", JsonConvert.SerializeObject(publicacion), "Aceptar");
+
+                using (var httpClient = new HttpClient())
+                {
+                    httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                    var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/actualizarPublicacion", jsonContent);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var responseContent = await response.Content.ReadAsStringAsync();
+                        var resActualizarPublicacion = JsonConvert.DeserializeObject<ResActualizarPublicacion>(responseContent);
+
+                        if (resActualizarPublicacion != null && resActualizarPublicacion.resultado)
+                        {
+                            await DisplayAlert("ï¿½xito", "Publicaciï¿½n actualizada con ï¿½xito", "OK");
+                            await Navigation.PopAsync();
+                        }
+                        else
+                        {
+                            await DisplayAlert("Error", "Hubo un problema al actualizar la publicaciï¿½n: " + string.Join(", ", resActualizarPublicacion?.listaDeErrores), "OK");
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Error", "Hubo un problema al actualizar la publicaciï¿½n", "OK");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", "Ocurriï¿½ un error: " + ex.Message, "OK");
             }
         }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

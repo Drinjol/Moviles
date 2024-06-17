@@ -5,33 +5,29 @@
              Title="ActualizarPublicacionUsuarioPerfil">
     <ScrollView>
         <StackLayout Padding="20">
-            <Label Text="Nombre Completo" FontSize="Large"/>
-            <Label Text="{Binding usuario.NombreCompleto}" FontSize="Medium" />
+            <Label Text="Nombre Completo Usuario" />
+            <Entry Text="{Binding NombreCompletoUsuario}" />
 
             <Label Text="Descripción" FontSize="Large"/>
-            <Entry Text="{Binding descripcionPublicacion}" FontSize="Medium" />
+            <Entry x:Name="txtdescripcion" Text="{Binding DescripcionPublicacion}" FontSize="Medium" />
 
-            <Label Text="Categoría" FontSize="Large"/>
-            <Entry Text="{Binding categoriaPublicacion}" FontSize="Medium" />
+            <Label Text="Seleccione una categoría:" FontSize="16" TextColor="Black" />
+            <Picker x:Name="txtcategoria"
+        FontSize="16"
+        TextColor="Black"
+        BackgroundColor="Gray"
+        SelectedItem="{Binding CategoriaPublicacion, Mode=TwoWay}">
+                <Picker.Items>
+                    <x:String>Hogar</x:String>
+                    <x:String>Tecnología</x:String>
+                    <x:String>Mascotas</x:String>
+                </Picker.Items>
+            </Picker>
 
             <Label Text="Precio" FontSize="Large"/>
-            <Entry Text="{Binding precioPublicacion}" FontSize="Medium" />
-
-            <Label Text="Imagen" FontSize="Large"/>
-            <Image Source="{Binding NombresArchivos}" 
-               x:Name="UploadedImage"
-               Aspect="AspectFit" 
-               HeightRequest="200"
-               HorizontalOptions="CenterAndExpand" 
-               VerticalOptions="CenterAndExpand" />
-            <Button Text="Cargar Imagen" Clicked="CargarImagen_Clicked" />
-
-            <Label Text="Fecha de Publicación" FontSize="Large"/>
-            <Label Text="{Binding fechaPublicacion, StringFormat='{0:d}'}" FontSize="Medium" />
+            <Entry x:Name="txtprecio" Text="{Binding PrecioPublicacion}" FontSize="Medium" />
 
             <Button Text="Guardar" Clicked="GuardarInformacion_Clicked" />
         </StackLayout>
-
     </ScrollView>
-
 </ContentPage>

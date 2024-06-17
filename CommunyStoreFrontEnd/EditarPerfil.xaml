@@ -3,26 +3,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CommunyStoreFrontEnd.EditarPerfil"
              Title="EditarPerfil">
+
     <ScrollView>
+        <NavigationPage.TitleView>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="Aqua">
+                <Button Text="Volver" Clicked="Volver_Clicked" />
+            </StackLayout>
+        </NavigationPage.TitleView>
         <VerticalStackLayout Padding="20" Spacing="10">
             <Label Text="Editar Perfil" FontSize="Large" HorizontalOptions="Center" />
 
-            <Label Text="Nombre de Usuario" />
-            <Entry x:Name="txtname" Text="{Binding NombreUsuario}" Placeholder="Nombre de Usuario" />
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
 
-            <Label Text="Descripción" />
-            <Entry x:Name="txtdescripcion"  Text="{Binding Descripcion}" Placeholder="Descripción" />
+                <Entry x:Name="txtname" Text="{Binding Nombre}" Placeholder="Nombre" PlaceholderColor="Gray" FontSize="16" TextColor="Black" />
+            </Frame>
 
-            <Label Text="Dirección" />
-            <Entry x:Name="txtdireccion" Text="{Binding Direccion}" Placeholder="Dirección" />
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="txtapellidos" Text="{Binding Apellidos}" Placeholder="Apellidos" PlaceholderColor="Gray" FontSize="16" TextColor="Black" />
 
-            <Label Text="Teléfono" />
-            <Entry x:Name="txttelefono" Text="{Binding Telefono}" Placeholder="Teléfono" />
+            </Frame>
 
-            <Label Text="Email" />
-            <Entry x:Name="txtemail"  Text="{Binding EmailUsuario}" Placeholder="Email" />
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="txtdescripcion"  Text="{Binding Descripcion}" Placeholder="Descripción" PlaceholderColor="Gray" FontSize="16" TextColor="Black" />
 
-            <Button Text="Guardar Información" Clicked="GuardarInformacion_Clicked" />
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="txtdireccion" Text="{Binding Direccion}" Placeholder="Dirección"  PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="txttelefono" Text="{Binding Telefono}" Placeholder="Teléfono" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+
+            </Frame>
+
+            <Frame Padding="10" BorderColor="Green" CornerRadius="30" HasShadow="False" BackgroundColor="White">
+                <Entry x:Name="txtemail"  Text="{Binding EmailUsuario}" Placeholder="Email" PlaceholderColor="Gray" FontSize="16" TextColor="Black"/>
+
+            </Frame>
+
+            <Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="txtpassword"  Text="{Binding Password}" Placeholder="contraseña" />
+                    <Button Text="Ver" Clicked="TogglePasswordVisibility" FontSize="16" BackgroundColor="Transparent" TextColor="Green" CornerRadius="0" Grid.Column="1" />
+
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Entry x:Name="txtpassword2"  Text="{Binding Password}" Placeholder="Password2" />
+
+                    <Button Text="Ver" Clicked="TogglePasswordVisibility2" FontSize="16" BackgroundColor="Transparent" TextColor="Green" CornerRadius="0" Grid.Column="1" />
+
+                </Grid>
+            </Frame>
+
+            <Button Text="Guardar Información" Clicked="GuardarInformacion_Clicked" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20" />
+            <Button Text="Volver" Clicked="Volver_Clicked" BackgroundColor="Green" TextColor="White" FontSize="18" CornerRadius="20"/>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

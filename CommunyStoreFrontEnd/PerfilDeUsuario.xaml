@@ -9,7 +9,7 @@
     </ContentPage.Resources>
 
 
-    <ScrollView>
+    <ScrollView >
         <Grid BackgroundColor="White">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
@@ -57,16 +57,17 @@
                 </StackLayout>
             </Frame>
 
-            <Frame BackgroundColor="Aqua">
+            <Frame BackgroundColor="Gray" CornerRadius="5"  Margin="10" >
 
-                <StackLayout Padding="20">
+                <StackLayout   Grid.Row="2" Padding="20" >
 
-                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start">
-
-                        <!-- Muestra el nombre del usuario -->
-                        <Label Text="{Binding NombreUsuario}" 
+                    <StackLayout Margin="0,35,0,0" Orientation="Horizontal" HorizontalOptions="Start" >
+                        <Label   Text="{Binding Nombre} " 
 FontSize="Large" 
 HorizontalOptions="Center" />
+
+
+
 
                     </StackLayout>
 
@@ -106,6 +107,9 @@ HorizontalOptions="Center" />
                 HorizontalOptions="Center" />
 
                     </StackLayout>
+
+
+
 
 
 
@@ -196,7 +200,8 @@ HorizontalOptions="Center" />
 
                                 </HorizontalStackLayout>
                                 <Button x:Name="btnEliminar" Text="Eliminar" Clicked="Eliminar_Clicked"  CommandParameter="{Binding idPublicacion}"  />
-                                <Button x:Name="btnActualizar" Text="Editar" Clicked="Actualizar_Clicked" />
+                                <!--   <Button x:Name="btnActualizar" Text="Editar" Clicked="Actualizar_Clicked" />
+ -->
                             </StackLayout>
                         </Frame>
                     </DataTemplate>
