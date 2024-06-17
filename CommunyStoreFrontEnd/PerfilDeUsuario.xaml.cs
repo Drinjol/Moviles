@@ -12,15 +12,15 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 {
     // Propiedades del usuario
-    private string _nombreUsuario;
-    public string NombreUsuario
+    private string _nombre;
+    public string Nombre
 
     {
-        get { return _nombreUsuario; }
+        get { return _nombre; }
         set
         {
-            _nombreUsuario = value;
-            OnPropertyChanged(nameof(NombreUsuario));
+            _nombre = value;
+            OnPropertyChanged(nameof(Nombre));
         }
     }
 
@@ -80,6 +80,32 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
         }
 
     }
+    private string password;
+    public string Password
+    {
+        get => password;
+        set
+        {
+            if (password != value)
+            {
+                password = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    private string apellidos;
+    public string Apellidos
+    {
+        get => apellidos;
+        set
+        {
+            if (apellidos != value)
+            {
+                apellidos = value;
+                OnPropertyChanged();
+            }
+        }
+    }
 
     private List<Publicacion> _listaDepublicacionPorUsuario = new List<Publicacion>();
 
@@ -117,11 +143,13 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
     private void CargarDatosUsuario()
     {
 
-        NombreUsuario = SesionFrontEnd.usuarioSesion.NombreCompleto;
+        Nombre = SesionFrontEnd.usuarioSesion.nombre;
         EmailUsuario = SesionFrontEnd.usuarioSesion.email;
         Direccion = SesionFrontEnd.usuarioSesion.direccion;
         Telefono = SesionFrontEnd.usuarioSesion.telefono;
         Descripcion = SesionFrontEnd.usuarioSesion.descripcion;
+        password = SesionFrontEnd.usuarioSesion.password;
+        Apellidos =SesionFrontEnd.usuarioSesion.apellidos;
 
         BindingContext = this;
     }
@@ -270,6 +298,7 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
         {
             await DisplayAlert("Error", "No se pudo obtener el ID de la publicación.", "OK");
         }
+        
     }
 
     private void Actualizar_Clicked(object sender, EventArgs e)
@@ -280,10 +309,17 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
             var publicacion = button.BindingContext as Publicacion;
             if (publicacion != null)
             {
-                Navigation.PushAsync(new ActualizarPublicacionUsuarioPerfil(publicacion));
+                Navigation.PushAsync(new ActualizarPublicacionUsuarioPerfil(
+                    publicacion.idPublicacion,
+                    publicacion.descripcionPublicacion,
+                  
+                    publicacion.categoriaPublicacion,
+                    publicacion.precioPublicacion
+                ));
             }
         }
     }
+
 
     private void Button_Clicked_view_home(object sender, EventArgs e)
     {

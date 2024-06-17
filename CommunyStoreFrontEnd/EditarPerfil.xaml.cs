@@ -13,15 +13,15 @@ namespace CommunyStoreFrontEnd;
 
 public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
 {
-    private string nombreUsuario;
-    public string NombreUsuario
+    private string nombre;
+    public string Nombre
     {
-        get => nombreUsuario;
+        get => nombre;
         set
         {
-            if (nombreUsuario != value)
+            if (nombre != value)
             {
-                nombreUsuario = value;
+                nombre = value;
                 OnPropertyChanged();
             }
         }
@@ -82,6 +82,45 @@ public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
             }
         }
     }
+    private string password;
+    public string Password
+    {
+        get => password;
+        set
+        {
+            if (password != value)
+            {
+                password = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    private string password2;
+    public string Password2
+    {
+        get => password2;
+        set
+        {
+            if (password2 != value)
+            {
+                password2 = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    private string apellidos;
+    public string Apellidos
+    {
+        get => apellidos;
+        set
+        {
+            if (apellidos != value)
+            {
+                apellidos = value;
+                OnPropertyChanged();
+            }
+        }
+    }
 
     public EditarPerfil(object bindingContext)
     {
@@ -90,14 +129,19 @@ public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
         var perfil = bindingContext as PerfilDeUsuario;
         if (perfil != null)
         {
-            NombreUsuario = perfil.NombreUsuario;
+            Nombre = perfil.Nombre;
             Descripcion = perfil.Descripcion;
             Direccion = perfil.Direccion;
             Telefono = perfil.Telefono;
             EmailUsuario = perfil.EmailUsuario;
+            Password = perfil.Password;
+            Apellidos = perfil.Apellidos;
         }
     }
-
+    private async void Volver_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
     private async void GuardarInformacion_Clicked(object sender, EventArgs e)
     {
 
@@ -105,41 +149,51 @@ public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
             string.IsNullOrWhiteSpace(txtdireccion.Text) ||
             string.IsNullOrWhiteSpace(txtdescripcion.Text) ||
             string.IsNullOrWhiteSpace(txttelefono.Text) ||
-            string.IsNullOrWhiteSpace(txtemail.Text))
+            string.IsNullOrWhiteSpace(txtemail.Text) || 
+            string.IsNullOrWhiteSpace(txtpassword.Text)||
+            string.IsNullOrWhiteSpace(txtpassword2.Text)||
+            string.IsNullOrWhiteSpace(txtapellidos.Text))
             
             {
                 await DisplayAlert("Campos vacíos", "Por favor, complete todos los campos.", "Aceptar");
                 return;
-        }
-        else
+        }else if (txtpassword.Text  == txtpassword2.Text)
         {
             try
             {
 
-                var usuario = new
+                var usuario = new ReqActualizarUsuario
                 {
+                    Id = SesionFrontEnd.usuarioSesion.Id,
                     nombre = txtname.Text,
 
                     descripcion = txtdescripcion.Text,
 
                     direccion = txtdireccion.Text,
                     telefono = txttelefono.Text,
-                    email = txtemail.Text
+                    email = txtemail.Text,
+                    password =txtpassword.Text,
+                    apellidos = txtapellidos.Text
                 };
 
-                await DisplayAlert("Datos capturados",
+             /* await DisplayAlert("Datos capturados",
+                  $"Id: {usuario.Id}\n"+
                     $"Nombre: {usuario.nombre}\n" +
                     $"Descripción: {usuario.descripcion}\n" +
                     $"Dirección: {usuario.direccion}\n" +
                     $"Teléfono: {usuario.telefono}\n" +
-                    $"Email: {usuario.email}",
-                    "Aceptar");
+                    
+                    $"Password: {usuario.password}\n" +
+                    $"Email: {usuario.email}"
+                    ,
+                    "Aceptar");*/
 
-                ReqActualizarUsuario req = new ReqActualizarUsuario();
 
-                    var jsonContent = new StringContent(JsonConvert.SerializeObject(req), Encoding.UTF8, "application/json");
+                var jsonContent = new StringContent(JsonConvert.SerializeObject(usuario), Encoding.UTF8, "application/json");
+               // await DisplayAlert("Datos capturados, serializados", JsonConvert.SerializeObject(usuario), "Aceptar");
 
-                // await DisplayAlert("Datos capturados", usuarioJson, "Aceptar");
+
+                //await DisplayAlert("Datos capturados", usuarioJson, "Aceptar");
 
                 using (var httpClient = new HttpClient())
                 {
@@ -148,12 +202,12 @@ public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
                     {
                         var responseContent = await response.Content.ReadAsStringAsync();
 
-                        // Convertir la respuesta a un objeto dinámico
+              
                         dynamic jsonResponse = JObject.Parse(responseContent);
 
                         bool resultado = jsonResponse.resultado;
                         int tipoRegistro = jsonResponse.tipoRegistro;
-                        // JArray listaDeErrores = jsonResponse.listaDeErrores;
+                     
 
                         if (tipoRegistro == 1)
                         {
@@ -177,7 +231,7 @@ public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
 
                         if (resultado)
                         {
-                            await DisplayAlert("Registro exitoso!", "Has sido registrado exitosamente, ahora puedes iniciar sesion!", "Aceptar");
+                            await DisplayAlert("correcto!","registro correcto","ok");
                             // Manejar el resultado exitoso
                             await Navigation.PopAsync();
                         }
@@ -199,12 +253,43 @@ public partial class EditarPerfil : ContentPage, INotifyPropertyChanged
                 await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace.ToString(), "Aceptar");
             }
 
+
+        }
+        else
+        {
+            await DisplayAlert("Error", "Las contraseñas no coinciden", "OK");
         }
 
-        await DisplayAlert("Información", "Información guardada con éxito", "OK");
         await Navigation.PopAsync();
     }
+    private void TogglePasswordVisibility(object sender, EventArgs e)
+    {
+        txtpassword.IsPassword = !txtpassword.IsPassword;
 
+        // Cambiar el texto del botón
+        if (txtpassword.IsPassword)
+        {
+            ((Button)sender).Text = "Ver";
+        }
+        else
+        {
+            ((Button)sender).Text = "Ocultar";
+        }
+    }
+    private void TogglePasswordVisibility2(object sender, EventArgs e)
+    {
+        txtpassword2.IsPassword = !txtpassword2.IsPassword;
+
+        // Cambiar el texto del botón
+        if (txtpassword2.IsPassword)
+        {
+            ((Button)sender).Text = "Ver";
+        }
+        else
+        {
+            ((Button)sender).Text = "Ocultar";
+        }
+    }
     public event PropertyChangedEventHandler PropertyChanged;
 
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

@@ -246,10 +246,6 @@ namespace Backend.Logica
             return res;
         }
 
-
-
-
-
         public ResObtenerPublicacionIdUsuario obteneListaDePublicacionesPorIdUsuario(ReqObtenerPublicacionPorIdUsuario req)
         {
             ResObtenerPublicacionIdUsuario res = new ResObtenerPublicacionIdUsuario();
@@ -366,6 +362,7 @@ namespace Backend.Logica
                             res.resultado = false;
                             tipoRegistro = 2;
                         }
+                      
 
                         if (!res.listaDeErrores.Any())
                         {
@@ -374,7 +371,7 @@ namespace Backend.Logica
                             int? idReturn = 0;
                             string errorBd = "";
 
-                            linq.SP_ACTUALIZAR_PUBLICACION(req.IdPublicacion, req.DescripcionPublicacion, req.PrecioPublicacion, req.CategoriaPublicacion, req.NombresArchivos, ref idReturn, ref idError, ref errorBd);
+                            linq.SP_ACTUALIZAR_PUBLICACION(req.IdPublicacion, req.DescripcionPublicacion, req.PrecioPublicacion, req.CategoriaPublicacion, ref idReturn, ref idError, ref errorBd);
 
                             if (idError == null || idError != 0)
                             {
@@ -395,7 +392,8 @@ namespace Backend.Logica
             catch (Exception ex)
             {
                 res.resultado = false;
-                res.listaDeErrores.Add("Error interno");
+                res.listaDeErrores.Add(ex.Message);
+                res.descripcion =ex.Message;
                 tipoRegistro = 3;
             }
             finally

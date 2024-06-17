@@ -8,6 +8,6 @@ namespace CommunyStoreFrontEnd.Utilitarios
 {
     public static class API_LINK
     {
-        public static String link = "https://communystoreapi20240614184128.azurewebsites.net";
+        public static String link = "https://communystoreapi20240614184128.azurewebsites.net/";
     }
 }

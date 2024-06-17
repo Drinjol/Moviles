@@ -204,17 +204,6 @@
     <Parameter Name="ID_PUBLICACION" Parameter="iD_PUBLICACION" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.SP_ACTUALIZAR_PUBLICACION" Method="SP_ACTUALIZAR_PUBLICACION">
-    <Parameter Name="PUBLICACION_ID" Parameter="pUBLICACION_ID" Type="System.Int32" DbType="Int" />
-    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="PRECIO" Parameter="pRECIO" Type="System.Decimal" DbType="Decimal(18,2)" />
-    <Parameter Name="CATEGORIA" Parameter="cATEGORIA" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="IMAGENES" Parameter="iMAGENES" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.sp_ActualizarUsuario" Method="sp_ActualizarUsuario">
     <Parameter Name="id" Type="System.Int32" DbType="Int" />
     <Parameter Name="nombre" Type="System.String" DbType="NVarChar(100)" />
@@ -224,6 +213,16 @@
     <Parameter Name="telefono" Type="System.String" DbType="NVarChar(20)" />
     <Parameter Name="descripcion" Type="System.String" DbType="NVarChar(500)" />
     <Parameter Name="password" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ACTUALIZAR_PUBLICACION" Method="SP_ACTUALIZAR_PUBLICACION">
+    <Parameter Name="PUBLICACION_ID" Parameter="pUBLICACION_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DESCRIPCION" Parameter="dESCRIPCION" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="PRECIO" Parameter="pRECIO" Type="System.Decimal" DbType="Decimal(18,2)" />
+    <Parameter Name="CATEGORIA" Parameter="cATEGORIA" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="IDRETURN" Parameter="iDRETURN" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORID" Parameter="eRRORID" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ERRORDESCRIPCION" Parameter="eRRORDESCRIPCION" Type="System.String" DbType="NVarChar(MAX)" Direction="InOut" />
     <Return Type="System.Int32" />
   </Function>
 </Database>
