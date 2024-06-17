@@ -96,3 +96,14 @@ C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\obj\Release\CommunyStore
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\obj\Release\CommunyS.6B035A22.Up2Date
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\obj\Release\CommunyStoreApi.dll
 C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\obj\Release\CommunyStoreApi.pdb
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Owin.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.xml

@@ -6,8 +6,7 @@
     the contents are regenerated.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" package="com.companyname.communystorefrontend" android:versionCode="1" android:versionName="1.0">
-  <!-- suppress UsesMinSdkAttributes -->
-  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31" />
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -15,7 +14,8 @@
   <uses-permission android:name="android.permission.CAMERA" />
   <permission android:name="com.companyname.communystorefrontend.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
   <uses-permission android:name="com.companyname.communystorefrontend.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-  <application android:name="crc642969af812c63ab4c.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/iconp" android:label="Emprendimiento" android:supportsRtl="true" android:theme="@android:style/Theme.DeviceDefault">
+  <application android:name="crc642969af812c63ab4c.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@drawable/iconp" android:label="Emprendimiento" android:supportsRtl="true" android:theme="@android:style/Theme.DeviceDefault">
+    <!-- Actividades y otros componentes -->
     <activity android:name="crc642969af812c63ab4c.MainActivity" android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:theme="@style/Maui.SplashTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

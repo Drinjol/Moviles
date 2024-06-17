@@ -697,3 +697,14 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspN
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.xml
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Owin.dll
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.xml

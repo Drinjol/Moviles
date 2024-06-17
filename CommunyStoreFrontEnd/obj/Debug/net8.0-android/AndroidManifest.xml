@@ -6,12 +6,14 @@
     the contents are regenerated.
     -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" package="com.companyname.communystorefrontend" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.CAMERA" />
-  <application android:allowBackup="true" android:icon="@mipmap/iconp" android:supportsRtl="true" android:label="Emprendimiento" android:theme="@android:style/Theme.DeviceDefault" android:name="crc642969af812c63ab4c.MainApplication" android:debuggable="true" android:extractNativeLibs="true">
+  <application android:allowBackup="true" android:icon="@drawable/iconp" android:supportsRtl="true" android:label="Emprendimiento" android:theme="@android:style/Theme.DeviceDefault" android:name="crc642969af812c63ab4c.MainApplication" android:debuggable="true" android:extractNativeLibs="true">
+    <!-- Actividades y otros componentes -->
     <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/Maui.SplashTheme" android:name="crc642969af812c63ab4c.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -31,6 +33,4 @@
     <provider android:name="mono.android.MultiDexLoader" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.communystorefrontend.mono.android.MultiDexLoader.__mono_init__" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999998" android:authorities="com.companyname.communystorefrontend.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
-  <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="21" />
 </manifest>
