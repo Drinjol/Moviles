@@ -1,3 +1,4 @@
+
 using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Entidades.Request;
 using CommunyStoreFrontEnd.Utilitarios;
@@ -5,7 +6,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Text;
-
+using Microsoft.AspNetCore.SignalR.Client;
 namespace CommunyStoreFrontEnd;
 
 public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
@@ -41,13 +42,39 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
-
+    private HubConnection _hubConnection;
     public ListaMensajes(int Idchat)
     {
         InitializeComponent();
         BindingContext = this;
         iDChatGlobal = Idchat;
+        InitializeSignalR();
         CargarMensajes(Idchat);
+    }
+
+
+    private async void InitializeSignalR()
+    {
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl("https://communystoreapi20240614184128.azurewebsites.net/signalr")
+            .Build();
+
+        _hubConnection.On<string, string>("ReceiveMessage", (user, message) =>
+        {
+            // Aquí puedes agregar lógica para actualizar la lista de mensajes
+            var nuevoMensaje = new Mensaje
+            {
+                contenido = message,
+                idUsuario = user == SesionFrontEnd.usuarioSesion.Id.ToString() ? SesionFrontEnd.usuarioSesion.Id : SesionFrontEnd.usuarioSesion.Id, // ajusta esto según tu lógica
+                idchat = iDChatGlobal
+            };
+
+            listaDeMensajes.Add(nuevoMensaje);
+            OnPropertyChanged(nameof(listaDeMensajes));
+            ScrollToNewMessage(true);
+        });
+
+        await _hubConnection.StartAsync();
     }
 
     private async void CargarMensajes(int Idchat)
@@ -120,7 +147,11 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
             await IngresarMensajeBd(req);
 
             // Recargar mensajes después de enviar uno nuevo
-            await RecargarMensajesDespuesDeEnviar();
+            // await RecargarMensajesDespuesDeEnviar();
+
+            // Enviar mensaje a través de SignalR
+            await _hubConnection.SendAsync("SendMessage", SesionFrontEnd.usuarioSesion.Id.ToString(), nuevoMensaje.contenido);
+
         }
     }
 
