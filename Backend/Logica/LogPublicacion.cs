@@ -4,6 +4,8 @@ using Backend.Entidades.Response;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -20,14 +22,8 @@ namespace Backend.Logica
         public ResObtenerPublicaciones obtenerPublicaciones(ReqObtenerPublicaciones req)
         {
             Int16 tipoDeTransaccion = 0;
-            string descripcionError = "";
-            int? errorId = 0;
             ResObtenerPublicaciones res = new ResObtenerPublicaciones();
             res.listaDeErrores = new List<string>();
-          //  ReqIngresarPublicacion req = new ReqIngresarPublicacion();
-
-            var categoria = req.categoria;
-
             try
             {
 
@@ -93,9 +89,9 @@ namespace Backend.Logica
             int? errorId = 0;
             ResBuscarPublicaciones res = new ResBuscarPublicaciones();
             res.listaDeErrores = new List<string>();
-          
 
-          
+
+
 
             try
             {
@@ -134,7 +130,7 @@ namespace Backend.Logica
         {
 
             ConnectionDataContext linq = new ConnectionDataContext();
-           
+
             Publicacion pub = new Publicacion();
             pub.usuario = new Usuario();
 
@@ -198,12 +194,7 @@ namespace Backend.Logica
                         res.resultado = false;
                         tipoRegistro = 2;
                     }
-                    if (String.IsNullOrEmpty(req.publicacion.nombresArchivos))
-                    {
-                        res.listaDeErrores.Add("Imágenes faltantes");
-                        res.resultado = false;
-                        tipoRegistro = 2;
-                    }
+                    
 
                     if (!res.listaDeErrores.Any())
                     {
@@ -246,7 +237,7 @@ namespace Backend.Logica
 
 
 
-       
+
 
         public ResObtenerPublicacionIdUsuario obteneListaDePublicacionesPorIdUsuario(ReqObtenerPublicacionPorIdUsuario req)
         {
@@ -298,7 +289,184 @@ namespace Backend.Logica
 
             return res;
         }
-    }
-    
+        public ResEliminarPublicacion eliminarPublicacion(ReqEliminarPublicacion req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            ResEliminarPublicacion res = new ResEliminarPublicacion();
+            res.listaDeErrores = new List<string>();
 
-}
+            try
+            {
+                using (ConnectionDataContext linq = new ConnectionDataContext())
+                {
+
+                    linq.SP_ELIMINAR_PUBLICACION(req.usuarioid, req.Id);
+                    res.resultado = true;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("Error de BD: " + ex.Message);
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+
+            return res;
+        }
+
+
+        public ResActualizarPublicacion actualizarPublicacion(ReqActualizarPublicacion req)
+        {
+            short tipoRegistro = 0; // 1 Exitoso - 2 Error en Lógica - 3 Error No Controlado
+            ResActualizarPublicacion res = new ResActualizarPublicacion();
+
+            try
+            {
+                if (req == null)
+                {
+                    res.listaDeErrores.Add("Request null");
+                    res.resultado = false;
+                    tipoRegistro = 2;
+                }
+                else
+                {
+                    if (req.IdPublicacion <= 0)
+                    {
+                        res.listaDeErrores.Add("ID de publicación no válido");
+                        res.resultado = false;
+                        tipoRegistro = 2;
+                    }
+                    else
+                    {
+                        if (String.IsNullOrEmpty(req.DescripcionPublicacion))
+                        {
+                            res.listaDeErrores.Add("Descripción faltante");
+                            res.resultado = false;
+                            tipoRegistro = 2;
+                        }
+                        if (String.IsNullOrEmpty(req.CategoriaPublicacion))
+                        {
+                            res.listaDeErrores.Add("Categoría faltante");
+                            res.resultado = false;
+                            tipoRegistro = 2;
+                        }
+
+                        if (!res.listaDeErrores.Any())
+                        {
+                            ConnectionDataContext linq = new ConnectionDataContext();
+                            int? idError = 0;
+                            int? idReturn = 0;
+                            string errorBd = "";
+
+                            linq.SP_ACTUALIZAR_PUBLICACION(req.IdPublicacion, req.DescripcionPublicacion, req.PrecioPublicacion, req.CategoriaPublicacion, req.NombresArchivos, ref idReturn, ref idError, ref errorBd);
+
+                            if (idError == null || idError != 0)
+                            {
+                                res.resultado = false;
+                                res.listaDeErrores.Add("Error BD");
+                                tipoRegistro = 2;
+                            }
+                            else
+                            {
+                                res.resultado = true;
+                                res.listaDeErrores.Add("Publicación actualizada correctamente");
+                                res.tipoRegistro = 1;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                res.listaDeErrores.Add("Error interno");
+                tipoRegistro = 3;
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoRegistro, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+
+            return res;
+        }
+
+
+        public ResObtenerPublicacionIdUsuario publicaciones_por_usuarioID(ReqObtenerPublicacionPorIdUsuario req)
+        {
+            Int16 tipoDeTransaccion = 0;
+            string descripcionError = "";
+            int? errorId = 0;
+            ResObtenerPublicacionIdUsuario res = new ResObtenerPublicacionIdUsuario();
+            res.listaDeErrores = new List<string>();
+
+            try
+            {
+
+                ConnectionDataContext linq = new ConnectionDataContext();
+                List<sp_obtener_publicacion_por_id_usuarioResult> listaDeLinq = new List<sp_obtener_publicacion_por_id_usuarioResult>();
+                listaDeLinq = linq.sp_obtener_publicacion_por_id_usuario(req.Id).ToList();
+                res.listaDepublicacionPorUsuario = this.crearListaDePublicacionesPorIdUsuario(listaDeLinq);
+                res.resultado = true;
+
+            }
+            catch (Exception ex)
+            {
+                res.resultado = false;
+                tipoDeTransaccion = 2;
+                res.listaDeErrores.Add("error bd");
+            }
+            finally
+            {
+                Utilitarios.Utilitarios.crearBitacora(res.listaDeErrores, tipoDeTransaccion, System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Name, MethodBase.GetCurrentMethod().Name, JsonConvert.SerializeObject(req), JsonConvert.SerializeObject(res));
+            }
+            return res;
+
+        }
+
+        private List<Publicacion> crearListaDePublicacionesPorIdUsuario(List<sp_obtener_publicacion_por_id_usuarioResult> listaDeLinq)
+        {
+            List<Publicacion> listaArmada = new List<Publicacion>();
+            foreach (sp_obtener_publicacion_por_id_usuarioResult publicaciones in listaDeLinq)
+            {
+                listaArmada.Add(this.crear_publicacion_usuario_id(publicaciones));
+            }
+            return listaArmada;
+        }
+
+
+        private Publicacion crear_publicacion_usuario_id(sp_obtener_publicacion_por_id_usuarioResult publicaciones)
+        {
+
+            ConnectionDataContext linq = new ConnectionDataContext();
+            ReqObtenerPublicacionPorIdUsuario req = new ReqObtenerPublicacionPorIdUsuario();
+            Publicacion pub = new Publicacion();
+            pub.usuario = new Usuario();
+
+            pub.idPublicacion = (int)publicaciones.publicacion_id;
+            pub.fechaPublicacion = (DateTime)publicaciones.publicacion_fecha;
+            pub.descripcionPublicacion = publicaciones.publicacion_descripcion;
+            pub.precioPublicacion = (decimal)publicaciones.publicacion_precio;
+            pub.nombresArchivos = HexStringToString(publicaciones.imagen_binario);
+            pub.estadoPublicacion = (int)publicaciones.publicacion_estado;
+
+            pub.usuario.Id = (int)publicaciones.usuario_id;
+            pub.usuario.nombre = publicaciones.nombre_usuario;
+            pub.usuario.apellidos = publicaciones.apellidos_usuario;
+            pub.usuario.descripcion = publicaciones.publicacion_descripcion;
+            pub.usuario.direccion = publicaciones.tb_usuario_direccion;
+            pub.usuario.email = publicaciones.tb_usuario_email;
+            pub.usuario.telefono = publicaciones.tb_usuario_telefono;
+            pub.favorito = (bool)publicaciones.IsFavorito;
+
+            return pub;
+        }
+
+
+
+    }
+    }

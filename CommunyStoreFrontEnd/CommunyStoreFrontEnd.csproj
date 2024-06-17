@@ -48,38 +48,49 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\iconp.jpg" ForegroundFile="Resources\AppIcon\white.svg" Color="White">
+		<MauiIcon Include="Resources\AppIcon\iconp.jpg">
+		  <Color>White</Color>
+		  <ForegroundFile>Resources\AppIcon\white.svg</ForegroundFile>
 		  <BaseSize>128,128</BaseSize>
 		</MauiIcon>
-	
+
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\iconp.jpg" Color="White" BaseSize="128,128" />
-		
+		<MauiSplashScreen Include="Resources/Splash/iconp.jpg" Color="White" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Include="Resources/Images/*" />
+		<MauiImage Update="Resources/Images/dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
-		<!-- <MauiFont Include="Resources\Fonts\*" /> -->
-		<MauiFont Include="Resources\AppIcon\white.svg" />
+		<MauiFont Include="Resources/AppIcon/white.svg" />
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
-		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiAsset Include="Resources/Raw/**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<AndroidResource Include="Platforms/Android/Resources/drawable/iconp.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiAsset Remove="Resources/Raw/credentials.json" />
+	</ItemGroup>
+	
+	
+	<ItemGroup>
+	  <None Remove="Resources\AppIcon\iconp.jpg" />
 	  <None Remove="Resources\AppIcon\white.svg" />
 	  <None Remove="Resources\Images\camera_icon.svg" />
+	  <None Remove="Resources\Images\envelope_solid.svg" />
 	  <None Remove="Resources\Images\favorite_icon.svg" />
 	  <None Remove="Resources\Images\heart_icon.svg" />
 	  <None Remove="Resources\Images\heart_regular.svg" />
 	  <None Remove="Resources\Images\heart_solid.svg" />
 	  <None Remove="Resources\Images\home_icon.svg" />
+	  <None Remove="Resources\Images\location_dot_solid.svg" />
 	  <None Remove="Resources\Images\market_icon.svg" />
 	  <None Remove="Resources\Images\mascota_icon.svg" />
-	  <None Remove="Resources\Images\message_icon.svg" />
 	  <None Remove="Resources\Images\message_icon2.svg" />
 	  <None Remove="Resources\Images\message_solid.svg" />
 	  <None Remove="Resources\Images\new_icon.svg" />
@@ -92,6 +103,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Raw\credentials.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiFont Include="Resources\AppIcon\white.svg" />
 	</ItemGroup>
 
@@ -99,6 +116,8 @@
 		<PackageReference Include="FFImageLoadingCompat.Svg.Maui" Version="0.1.1" />
 		<PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
 		<PackageReference Include="Google.Apis.Drive.v3" Version="1.68.0.3416" />
+		<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="8.0.6" />
+		<PackageReference Include="Microsoft.Azure.Storage.Blob" Version="11.2.3" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.21" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.21" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -110,12 +129,6 @@
 	  <Compile Update="SesionPage.xaml.cs">
 	    <DependentUpon>SesionPage.xaml</DependentUpon>
 	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiAsset Update="Resources\Raw\credentials.json">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </MauiAsset>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -153,6 +166,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="RegisterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="UsuarioView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

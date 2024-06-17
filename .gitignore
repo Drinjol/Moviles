@@ -4,18 +4,11 @@
 # Ignorar archivos de Visual Studio
 .vsidx
 .suo
-bin/
-obj/
-*.dll
-*.config
-*.XML
 *.a
 *.cache
 *.class
 
 # Ignorar archivos de construcción y configuración de MAUI
-/bin/
-/obj/
 *.apk
 *.ipa
 *.pdb

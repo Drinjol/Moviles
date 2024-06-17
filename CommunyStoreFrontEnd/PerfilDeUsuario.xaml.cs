@@ -2,10 +2,12 @@ using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Utilitarios;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json;
+
 using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Text;
 namespace CommunyStoreFrontEnd;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 {
@@ -79,8 +81,6 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 
     }
 
-
-
     private List<Publicacion> _listaDepublicacionPorUsuario = new List<Publicacion>();
 
     ReqObtenerPublicacionPorUsuarioId req = new ReqObtenerPublicacionPorUsuarioId();
@@ -116,14 +116,14 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 
     private void CargarDatosUsuario()
     {
-        // Asumiendo que la sesión ya tiene los datos del usuario
+
         NombreUsuario = SesionFrontEnd.usuarioSesion.NombreCompleto;
         EmailUsuario = SesionFrontEnd.usuarioSesion.email;
         Direccion = SesionFrontEnd.usuarioSesion.direccion;
         Telefono = SesionFrontEnd.usuarioSesion.telefono;
         Descripcion = SesionFrontEnd.usuarioSesion.descripcion;
 
-        BindingContext = this; // Asegúrate de establecer el BindingContext aquí o en el método CargarPublicaciones
+        BindingContext = this;
     }
 
     public async void CargarPublicaciones()
@@ -135,7 +135,7 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
     private async Task<List<Publicacion>> publicacionesDelApi()
     {
         List<Publicacion> retornarPublicacionApi = new List<Publicacion>();
-        
+        String laURL = "CommunyStoreApi/publicacion/obtenerPublicacionPorIdUsuario";
 
         try
         {
@@ -146,7 +146,7 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
 
             using (HttpClient httpClient = new HttpClient())
             {
-                var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/obtenerPublicacionPorIdUsuario", jsonContent);
+                var response = await httpClient.PostAsync(API_LINK.link+laURL, jsonContent);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -208,20 +208,83 @@ public partial class PerfilDeUsuario : ContentPage, INotifyPropertyChanged
     }
     private void EditarPerfil_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new EditarPerfil(BindingContext));
+        Navigation.PushAsync(new EditarPerfil(this));
     }
 
 
     private async void Eliminar_Clicked(object sender, EventArgs e)
     {
-        await DisplayAlert("Título", "Eliminar", "Aceptar");
+        var button = sender as Button;
+        var publicationId = button?.CommandParameter as int?;
 
+        if (publicationId.HasValue)
+        {
+            bool confirmed = await DisplayAlert("Confirmación", "¿Está seguro de que desea eliminar esta publicación?", "Sí", "No");
+            if (confirmed)
+            {
+                try
+                {
+                    var reqEliminar = new ReqEliminarPublicacion
+                    {
+                        Id = publicationId.Value,
+                        usuarioid = SesionFrontEnd.usuarioSesion.Id
+                    };
+                    var jsonreq = JsonSerializer.Serialize(reqEliminar);
+
+                    using (var httpClient = new HttpClient())
+                    {
+                        var response = await httpClient.PostAsync(API_LINK.link + "CommunyStoreApi/publicacion/eliminarPublicacion", new StringContent(jsonreq, Encoding.UTF8, "application/json"));
+
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var responseContent = await response.Content.ReadAsStringAsync();
+
+                            // Convertir la respuesta a un objeto dinámico
+                            dynamic jsonResponse = JObject.Parse(responseContent);
+
+                            bool resultado = jsonResponse.resultado;
+                            string mensaje = jsonResponse.descripcion;
+
+                            if (resultado)
+                            {
+                                CargarPublicaciones();
+                            }
+                            else
+                            {
+                                await DisplayAlert("Error", $"{mensaje}", "Aceptar");
+                            }
+                        }
+                        else
+                        {
+                            await DisplayAlert("Problemas con la API", "Hubo un error en la comunicación con la API", "Aceptar");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    await DisplayAlert("Error interno", "Error en la aplicación: " + ex.StackTrace, "Aceptar");
+                }
+            }
+        }
+        else
+        {
+            await DisplayAlert("Error", "No se pudo obtener el ID de la publicación.", "OK");
+        }
     }
-    private async void Actualizar_Clicked(object sender, EventArgs e)
+
+    private void Actualizar_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new ActualizarPublicacionUsuarioPerfil(BindingContext));
-
+        var button = sender as Button;
+        if (button != null)
+        {
+            var publicacion = button.BindingContext as Publicacion;
+            if (publicacion != null)
+            {
+                Navigation.PushAsync(new ActualizarPublicacionUsuarioPerfil(publicacion));
+            }
+        }
     }
+
     private void Button_Clicked_view_home(object sender, EventArgs e)
     {
 

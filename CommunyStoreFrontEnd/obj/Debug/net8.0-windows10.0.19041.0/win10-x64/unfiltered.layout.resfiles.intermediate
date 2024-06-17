@@ -11,6 +11,11 @@ dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
 email.scale-100.png
+envelope_solid.scale-100.png
+envelope_solid.scale-125.png
+envelope_solid.scale-150.png
+envelope_solid.scale-200.png
+envelope_solid.scale-400.png
 favorite_icon.scale-100.png
 favorite_icon.scale-125.png
 favorite_icon.scale-150.png
@@ -82,6 +87,11 @@ iconpWideTile.scale-125.jpg
 iconpWideTile.scale-150.jpg
 iconpWideTile.scale-200.jpg
 iconpWideTile.scale-400.jpg
+location_dot_solid.scale-100.png
+location_dot_solid.scale-125.png
+location_dot_solid.scale-150.png
+location_dot_solid.scale-200.png
+location_dot_solid.scale-400.png
 log_session.scale-100.png
 market_icon.scale-100.png
 market_icon.scale-125.png
@@ -93,11 +103,6 @@ mascota_icon.scale-125.png
 mascota_icon.scale-150.png
 mascota_icon.scale-200.png
 mascota_icon.scale-400.png
-message_icon.scale-100.png
-message_icon.scale-125.png
-message_icon.scale-150.png
-message_icon.scale-200.png
-message_icon.scale-400.png
 message_icon2.scale-100.png
 message_icon2.scale-125.png
 message_icon2.scale-150.png
@@ -140,4 +145,3 @@ iconpSplashScreen.scale-150.jpg
 iconpSplashScreen.scale-200.jpg
 iconpSplashScreen.scale-400.jpg
 AboutAssets.txt
-credentials.json

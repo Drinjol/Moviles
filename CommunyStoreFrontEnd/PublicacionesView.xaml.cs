@@ -315,7 +315,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     private void btn_tecnologia_Clicked(object sender, EventArgs e)
     {
-        categoriaSeleccionada = "Tecnologia";
+        categoriaSeleccionada = "Tecnología";
         CargarPublicaciones();
     if (_lastSelectedStack != null)
     {
@@ -454,8 +454,6 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
         if (publicacion != null)
         {
             int idPub = publicacion.idPublicacion;
-            //await DisplayAlert("Problemas con la api", "Hubo un error en la comunicacion con la api "+publicacion.idPublicacion, "Aceptar");
-            //int idPub = publicacion.idPublicacion;
             agregarInteraccionUsuario(idPub);
             await Navigation.PushAsync(new PublicacionDetalles(publicacion));
         }
@@ -477,7 +475,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
                 if (response.IsSuccessStatusCode)
                 {
-                    await DisplayAlert("Correcto", "Correcto", "Aceptar");
+                    //await DisplayAlert("Correcto", "Correcto", "Aceptar");
 
                 }
                 else
@@ -576,7 +574,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                         }
                         else
                         {
-                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                            Console.WriteLine("No se encontró el backend");
                         }
                     }
                     catch (Exception ex)

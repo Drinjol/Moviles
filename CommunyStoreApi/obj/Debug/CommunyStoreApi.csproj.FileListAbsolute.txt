@@ -684,3 +684,16 @@ C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreApi\obj\Debug\C
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreApi\obj\Debug\CommunyS.6B035A22.Up2Date
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreApi\obj\Debug\CommunyStoreApi.dll
 C:\Users\dg986\OneDrive\Documentos\Moviles 2\Moviles\CommunyStoreApi\obj\Debug\CommunyStoreApi.pdb
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Owin.dll
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreApi\bin\Microsoft.Owin.Security.xml

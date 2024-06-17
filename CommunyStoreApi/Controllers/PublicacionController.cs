@@ -39,6 +39,15 @@ namespace CommunyStoreApi.Controllers
 
         }
 
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/publicaciones_por_usuarioID")]
+        public ResObtenerPublicacionIdUsuario publicaciones_por_usuarioID(ReqObtenerPublicacionPorIdUsuario req)
+        {            
+            return new LogPublicacion().publicaciones_por_usuarioID(req);
+        }
+
+
         [System.Web.Http.HttpPost]
         [System.Web.Http.Route("CommunyStoreApi/publicacion/obtenerPublicacionGuardadas")]
         public ResObtenerPublicacionesGuardadas ObtenerPublicacionesGuardadas(ReqObtenerPublicacionesGuardadas req)
@@ -77,7 +86,24 @@ namespace CommunyStoreApi.Controllers
         }
 
 
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/eliminarPublicacion")]
+        public ResEliminarPublicacion eliminarPublicacion(ReqEliminarPublicacion req)
+        {
 
+            return new LogPublicacion().eliminarPublicacion(req);
+
+        }
+
+
+        [System.Web.Http.HttpPost]
+        [System.Web.Http.Route("CommunyStoreApi/publicacion/actualizarPublicacion")]
+        public ResActualizarPublicacion actualizarPublicacion(ReqActualizarPublicacion req)
+        {
+
+            return new LogPublicacion().actualizarPublicacion(req);
+
+        }
 
     }
 }

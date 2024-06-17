@@ -72,7 +72,10 @@ namespace Backend.Logica
             chat.idUsuario2.nombre = unTipoComplejo.tb_usuario_nombre;
             chat.idUsuario2.apellidos = unTipoComplejo.tb_usuario_apellidos;
             chat.estado = unTipoComplejo.tb_chat_estado;
-            
+            chat.tempId = (int)unTipoComplejo.idusertemp;
+            chat.tempContenido = unTipoComplejo.contenidotemp;
+            chat.tempFecha = (DateTime)unTipoComplejo.fechattemp;
+
             return chat;
         }
 
