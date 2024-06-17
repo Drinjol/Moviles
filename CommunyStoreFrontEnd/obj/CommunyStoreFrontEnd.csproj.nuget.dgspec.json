@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[0.1.1, )"
             },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Google.Apis.Auth": {
               "target": "Package",
               "version": "[1.68.0, )"
@@ -136,6 +140,10 @@
             "FFImageLoadingCompat.Svg.Maui": {
               "target": "Package",
               "version": "[0.1.1, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
             },
             "Google.Apis.Auth": {
               "target": "Package",
@@ -204,6 +212,10 @@
               "target": "Package",
               "version": "[0.1.1, )"
             },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
             "Google.Apis.Auth": {
               "target": "Package",
               "version": "[1.68.0, )"
@@ -271,6 +283,10 @@
             "FFImageLoadingCompat.Svg.Maui": {
               "target": "Package",
               "version": "[0.1.1, )"
+            },
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
             },
             "Google.Apis.Auth": {
               "target": "Package",

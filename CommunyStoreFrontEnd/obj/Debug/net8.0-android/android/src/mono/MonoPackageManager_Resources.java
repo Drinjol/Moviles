@@ -9,6 +9,7 @@ public class MonoPackageManager_Resources {
 		"FFImageLoading.Compat.Svg.dll",
 		"FFImageLoading.Compat.Svg.Maui.dll",
 		"FFImageLoading.Compat.Transformations.dll",
+		"Firebase.Storage.dll",
 		"Fizzler.dll",
 		"Google.Apis.dll",
 		"Google.Apis.Auth.dll",

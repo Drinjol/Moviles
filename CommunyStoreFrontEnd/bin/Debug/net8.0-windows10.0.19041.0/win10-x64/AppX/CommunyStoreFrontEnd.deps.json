@@ -10,6 +10,7 @@
       "CommunyStoreFrontEnd/1.0": {
         "dependencies": {
           "FFImageLoadingCompat.Svg.Maui": "0.1.1",
+          "FirebaseStorage.net": "1.0.3",
           "Google.Apis.Auth": "1.68.0",
           "Google.Apis.Drive.v3": "1.68.0.3416",
           "Microsoft.Azure.Storage.Blob": "11.2.3",
@@ -98,6 +99,18 @@
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {
             "assemblyVersion": "3.0.0.0",
             "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.1",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -924,6 +937,13 @@
       "sha512": "sha512-d3MFJrgL4LdFMl50yJjwDKEtejC8GBNbUSKdm67Qc2d3yDTSpfoK8RGh2l4cxXBfq13efKOyLqdIZ4HMTmQfJA==",
       "path": "ffimageloadingcompat.transformations/0.1.1",
       "hashPath": "ffimageloadingcompat.transformations.0.1.1.nupkg.sha512"
+    },
+    "FirebaseStorage.net/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SupDHNUwNqcVwEo/HdFEWAXveQe3fU16q4wrrCxUVwP0a77zaddKp7vo2sHIW56DAsJn/gUfjDK3w0MuBhvzjQ==",
+      "path": "firebasestorage.net/1.0.3",
+      "hashPath": "firebasestorage.net.1.0.3.nupkg.sha512"
     },
     "Fizzler/1.2.1": {
       "type": "package",

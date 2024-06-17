@@ -1,53 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\",
+  "WorkspaceRootPath": "C:\\Moviles\\CommunyStoreFrontEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\usuarioview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\moviles\\communystorefrontend\\agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:agregarpublicacionview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\usuarioview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:usuarioview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\publicaciondetalles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicaciondetalles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicaciondetalles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\publicaciondetalles.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicaciondetalles.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicaciondetalles.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\usuarioview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\usuarioview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:usuarioview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\entidades\\response\\resobtenerpublicacionporidusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\entidades\\response\\resobtenerpublicacionporidusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:entidades\\response\\resobtenerpublicacionporidusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\perfildeusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\perfildeusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:perfildeusuario.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:publicacionesview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\perfildeusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\perfildeusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:perfildeusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\communystorefrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\communystorefrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:communystorefrontend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\listadeseos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\listadeseos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:listadeseos.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|c:\\users\\eliez\\documents\\githud\\moviles\\communystorefrontend\\listadeseos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|C:\\Moviles\\CommunyStoreFrontEnd\\listadeseos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D6383176-0DE5-47DC-BA25-8FFD6C26732F}|CommunyStoreFrontEnd.csproj|solutionrelative:listadeseos.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -58,15 +62,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "AgregarPublicacionView.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
+              "RelativeDocumentMoniker": "AgregarPublicacionView.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\AgregarPublicacionView.xaml.cs",
+              "RelativeToolTip": "AgregarPublicacionView.xaml.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAxwDEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T04:38:06.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "UsuarioView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml.cs",
               "RelativeDocumentMoniker": "UsuarioView.xaml.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml.cs",
               "RelativeToolTip": "UsuarioView.xaml.cs",
               "ViewState": "AQIAAKAAAAAAAAAAAADwv7IAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -74,24 +91,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UsuarioView.xaml",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml",
               "RelativeDocumentMoniker": "UsuarioView.xaml",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\UsuarioView.xaml",
               "RelativeToolTip": "UsuarioView.xaml",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAAACgAAAAAAAAA",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAAAHEAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-16T18:01:51.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T18:01:51.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PublicacionesView.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
               "RelativeDocumentMoniker": "PublicacionesView.xaml.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml.cs",
               "RelativeToolTip": "PublicacionesView.xaml.cs",
               "ViewState": "AQIAALcBAAAAAAAAAAAIwMkBAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,11 +115,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PublicacionDetalles.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml.cs",
               "RelativeDocumentMoniker": "PublicacionDetalles.xaml.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml.cs",
               "RelativeToolTip": "PublicacionDetalles.xaml.cs",
               "ViewState": "AQIAAPIAAAAAAAAAAAAUwAQBAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -111,11 +127,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PublicacionDetalles.xaml",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml",
               "RelativeDocumentMoniker": "PublicacionDetalles.xaml",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionDetalles.xaml",
               "RelativeToolTip": "PublicacionDetalles.xaml",
               "ViewState": "AQIAAFoAAAAAAAAAAAAAAF8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -123,11 +139,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PublicacionesView.xaml",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeDocumentMoniker": "PublicacionesView.xaml",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PublicacionesView.xaml",
               "RelativeToolTip": "PublicacionesView.xaml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAACKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -135,11 +151,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ResObtenerPublicacionPorIdUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
               "RelativeDocumentMoniker": "Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
               "RelativeToolTip": "Entidades\\Response\\ResObtenerPublicacionPorIdUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -147,11 +163,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PerfilDeUsuario.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml.cs",
               "RelativeDocumentMoniker": "PerfilDeUsuario.xaml.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml.cs",
               "RelativeToolTip": "PerfilDeUsuario.xaml.cs",
               "ViewState": "AQIAAIoAAAAAAAAAAAAowJ8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -159,11 +175,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ListaDeseos.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml.cs",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml.cs",
               "RelativeDocumentMoniker": "ListaDeseos.xaml.cs",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml.cs",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml.cs",
               "RelativeToolTip": "ListaDeseos.xaml.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAUwGsBAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -171,11 +187,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PerfilDeUsuario.xaml",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml",
               "RelativeDocumentMoniker": "PerfilDeUsuario.xaml",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\PerfilDeUsuario.xaml",
               "RelativeToolTip": "PerfilDeUsuario.xaml",
               "ViewState": "AQIAAGYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -183,11 +199,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ListaDeseos.xaml",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml",
               "RelativeDocumentMoniker": "ListaDeseos.xaml",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\ListaDeseos.xaml",
               "RelativeToolTip": "ListaDeseos.xaml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAADYAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -195,11 +211,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "CommunyStoreFrontEnd.csproj",
-              "DocumentMoniker": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+              "DocumentMoniker": "C:\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
               "RelativeDocumentMoniker": "CommunyStoreFrontEnd.csproj",
-              "ToolTip": "C:\\Users\\eliez\\Documents\\GitHud\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
+              "ToolTip": "C:\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
               "RelativeToolTip": "CommunyStoreFrontEnd.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

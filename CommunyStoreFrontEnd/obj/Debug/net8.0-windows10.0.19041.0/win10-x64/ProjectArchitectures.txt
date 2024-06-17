@@ -1,1 +1,0 @@
-C:\Users\eliez\Documents\GitHud\Moviles\CommunyStoreFrontEnd\CommunyStoreFrontEnd.csproj;x64

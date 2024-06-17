@@ -1,15 +1,10 @@
-using Microsoft.Maui.Controls;
-using Microsoft.Azure.Storage;
-using Microsoft.Azure.Storage.Blob;
-using Newtonsoft.Json.Linq;
-using System;
-using System.IO;
-using System.Net.Http;
-using System.Threading.Tasks;
+
+using Firebase.Storage;
 using CommunyStoreFrontEnd.Entidades;
-using CommunyStoreFrontEnd.Utilitarios;
+using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Text;
+using CommunyStoreFrontEnd.Utilitarios;
 using static SkiaSharp.HarfBuzz.SKShaper;
 
 namespace CommunyStoreFrontEnd
@@ -17,13 +12,64 @@ namespace CommunyStoreFrontEnd
     public partial class AgregarPublicacionView : ContentPage
     {
         private string _selectedFile;
-        private ImageButton _lastSelectedButton;
+
+        // Configuración de Firebase
+        private readonly string _apiKey = "AIzaSyDaxNrlp3WKUNM6bbw9D3inp4zh7JmgS1c";
+        private readonly string _authDomain = "api-imagenes-moviles.firebaseapp.com";
+        private readonly string _projectId = "api-imagenes-moviles";
+        private readonly string _storageBucket = "api-imagenes-moviles.appspot.com";
+        private readonly string _messagingSenderId = "783078696326";
+        private readonly string _appId = "1:783078696326:web:614274ac450f0c83373807";
 
         public AgregarPublicacionView()
         {
             InitializeComponent();
         }
 
+     
+
+        private async void OnUploadImageClicked(object sender, EventArgs e)
+        {
+            activityIndicator.IsRunning = true;
+            activityIndicator.IsVisible = true;
+            try
+            {
+                
+                // Capturar una foto usando MediaPicker
+                var result = await MediaPicker.PickPhotoAsync();
+                
+
+                if (result != null)
+                {
+                    using (var stream = await result.OpenReadAsync())
+                    {
+                        var firebaseUrl = await UploadFileToFirebaseStorage(stream, result.FileName);
+                        if (!string.IsNullOrEmpty(firebaseUrl))
+                        {
+                            
+                        
+                            UploadedImage.Source = firebaseUrl;
+                            _selectedFile = firebaseUrl;
+
+                          //  await DisplayAlert("Éxito", "Archivo subido correctamente a Firebase Storage.", "OK");
+                        }
+                        else
+                        {
+                            await DisplayAlert("Error", "No se pudo subir el archivo a Firebase Storage.", "OK");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Error", $"Hubo un error al seleccionar o subir el archivo: {ex.Message}", "OK");
+            }
+            finally
+            {
+                activityIndicator.IsRunning = false;
+                activityIndicator.IsVisible = false;
+            }
+        }
 
         private async void OnCameraImageClicked(object sender, EventArgs e)
         {
@@ -48,20 +94,16 @@ namespace CommunyStoreFrontEnd
                     // Obtener una referencia al flujo de la imagen capturada
                     var stream = await photo.OpenReadAsync();
 
-                    // Subir archivo a Azure Blob Storage
-                    var blobUrl = await UploadFileToAzureBlob(stream, photo.FileName);
+                  
+                    var firebaseUrl = await UploadFileToFirebaseStorage(stream, photo.FileName);
 
-                    if (!string.IsNullOrEmpty(blobUrl))
+                    if (!string.IsNullOrEmpty(firebaseUrl))
                     {
-                        // Rebobinar el stream
-                        stream.Seek(0, SeekOrigin.Begin);
+                     
+                        UploadedImage.Source = firebaseUrl;
+                        _selectedFile = firebaseUrl;
 
-                        // Mostrar la imagen capturada en la interfaz de usuario
-                        var image = ImageSource.FromStream(() => stream);
-                        UploadedImage.Source = image;
-                        _selectedFile = blobUrl;
-
-                        await DisplayAlert("Éxito", "Archivo subido correctamente a Azure Blob Storage.", "OK");
+                      //  await DisplayAlert("Éxito", "Archivo subido correctamente a Azure Blob Storage.", "OK");
                     }
                     else
                     {
@@ -88,100 +130,32 @@ namespace CommunyStoreFrontEnd
             }
         }
 
-        private async void OnUploadImageClicked(object sender, EventArgs e)
+        private async Task<string> UploadFileToFirebaseStorage(Stream fileStream, string fileName)
         {
             try
             {
-                activityIndicator.IsRunning = true;
-                activityIndicator.IsVisible = true;
+                // Inicializar FirebaseStorage con la configuración
+                var firebaseStorage = new FirebaseStorage(_storageBucket);
 
-                var result = await Microsoft.Maui.Storage.FilePicker.PickAsync(new Microsoft.Maui.Storage.PickOptions
-                {
-                    PickerTitle = "Seleccione un archivo",
-                    FileTypes = Microsoft.Maui.Storage.FilePickerFileType.Images
-                });
+                // Subir archivo a Firebase Storage
+                var imageUrl = await firebaseStorage
+                    .Child("imagenes")
+                    .Child(fileName)
+                    .PutAsync(fileStream);
 
-                if (result != null)
-                {
-                    using (var stream = await result.OpenReadAsync())
-                    {
-                        // Subir archivo a Azure Blob Storage
-                        var blobUrl = await UploadFileToAzureBlob(stream, result.FileName);
-                        if (!string.IsNullOrEmpty(blobUrl))
-                        {
-                            // Rebobinar el stream
-                            stream.Seek(0, SeekOrigin.Begin);
+              
+              
 
-                            var image = ImageSource.FromStream(() => stream);
-                            UploadedImage.Source = image; // Aquí asigna la imagen al control Image
-                            _selectedFile = blobUrl;
-
-                            await DisplayAlert("Éxito", "Archivo subido correctamente a Azure Blob Storage.", "OK");
-                        }
-                        else
-                        {
-                            await DisplayAlert("Error", "No se pudo subir el archivo a Azure Blob Storage.", "OK");
-                        }
-                    }
-                }
+                return imageUrl;
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Error", $"Hubo un error al seleccionar o subir el archivo: {ex.Message}", "OK");
-            }
-            finally
-            {
-                activityIndicator.IsRunning = false;
-                activityIndicator.IsVisible = false;
-            }
-        }
-
-        private async Task<string> UploadFileToAzureBlob(Stream fileStream, string fileName)
-        {
-            try
-            {
-                string storageConnectionString = "DefaultEndpointsProtocol=https;AccountName=sarapiquiemprende1;AccountKey=dg+a7ESJkwz85VWaLZRLJT2PN2osMmLiZjK5TviihQTIGh5hTMvY5m6fGRBa6047SAJc50DnWJy5+ASt8YFB7w==;EndpointSuffix=core.windows.net";
-                string containerName = "imagenes";
-
-                // Crear cliente de almacenamiento de Azure
-                var storageAccount = CloudStorageAccount.Parse(storageConnectionString);
-                var blobClient = storageAccount.CreateCloudBlobClient();
-                var container = blobClient.GetContainerReference(containerName);
-
-                // Verificar si el contenedor existe y crearlo si no existe
-                bool containerExists = await container.ExistsAsync();
-                if (!containerExists)
-                {
-                    await container.CreateAsync();
-                }
-
-                // Generar un nombre único para el blob
-                var uniqueBlobName = $"{Guid.NewGuid().ToString()}-{fileName}";
-
-                // Obtener referencia al blob que se va a crear
-                var blob = container.GetBlockBlobReference(uniqueBlobName);
-
-                blob.Properties.ContentType = "image/jpeg"; // Reemplaza "image/jpeg" con el tipo de contenido correcto según el tipo de archivo que estás subiendo
-                await blob.UploadFromStreamAsync(fileStream);
-
-                // Obtener la URL pública del blob (accesible para público si está configurado)
-                return blob.Uri.AbsoluteUri;
-            }
-            catch (StorageException ex)
-            {
-                // Capturar excepciones específicas de Azure Storage
-                Console.WriteLine($"Error al subir archivo a Azure Blob Storage: {ex.Message}");
-                await DisplayAlert("Error", $"Error al subir archivo a Azure Blob Storage: {ex.Message}", "OK");
-                return null;
-            }
-            catch (Exception ex)
-            {
-                // Capturar excepciones generales
-                Console.WriteLine($"Error general al subir archivo a Azure Blob Storage: {ex.Message}");
-                await DisplayAlert("Error", $"Error general al subir archivo a Azure Blob Storage: {ex.Message}", "OK");
+                Console.WriteLine($"Error al subir archivo a Firebase Storage: {ex.Message}");
+                await DisplayAlert("Error", $"Error al subir archivo a Firebase Storage: {ex.Message}", "OK");
                 return null;
             }
         }
+
 
         private async void btnRegistrarPublicacion_Clicked(object sender, EventArgs e)
         {
