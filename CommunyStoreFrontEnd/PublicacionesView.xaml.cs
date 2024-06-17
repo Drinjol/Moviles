@@ -315,7 +315,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
 
     private void btn_tecnologia_Clicked(object sender, EventArgs e)
     {
-        categoriaSeleccionada = "Tecnologia";
+        categoriaSeleccionada = "Tecnología";
         CargarPublicaciones();
     if (_lastSelectedStack != null)
     {
@@ -574,7 +574,7 @@ public partial class PublicacionesView : ContentPage, INotifyPropertyChanged
                         }
                         else
                         {
-                            DisplayAlert("No se encontró el backend", "Error con la API", "ACEPTAR");
+                            Console.WriteLine("No se encontró el backend");
                         }
                     }
                     catch (Exception ex)

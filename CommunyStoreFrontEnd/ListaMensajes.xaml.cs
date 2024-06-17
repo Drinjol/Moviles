@@ -1,3 +1,4 @@
+
 using CommunyStoreFrontEnd.Entidades;
 using CommunyStoreFrontEnd.Entidades.Request;
 using CommunyStoreFrontEnd.Utilitarios;
@@ -5,11 +6,14 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel;
 using System.Text;
-
+using Microsoft.AspNet.SignalR.Client;
+using System.Diagnostics;
 namespace CommunyStoreFrontEnd;
 
 public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 {
+    private IHubProxy _hubProxy;
+    private HubConnection _hubConnection;
     private bool isFirstLoad = true;
     private int iDChatGlobal = 0;
     private List<Mensaje> _listaDeMensajes = new List<Mensaje>();
@@ -47,8 +51,24 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
         InitializeComponent();
         BindingContext = this;
         iDChatGlobal = Idchat;
+        InitializeSignalR();
         CargarMensajes(Idchat);
     }
+
+
+    private void InitializeSignalR()
+    {
+        _hubConnection = new HubConnection("https://communystoreapi20240614184128.azurewebsites.net/signalr");
+        _hubProxy = _hubConnection.CreateHubProxy("ChatHub");
+
+        _hubProxy.On<string, string>("ReceiveMessage", (user, message) =>
+        {
+            RecargarMensajesDespuesDeEnviar();
+        });
+
+        _hubConnection.Start().Wait(); // Inicia la conexión SignalR
+    }
+
 
     private async void CargarMensajes(int Idchat)
     {
@@ -119,10 +139,18 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
             await IngresarMensajeBd(req);
 
-            // Recargar mensajes después de enviar uno nuevo
-            await RecargarMensajesDespuesDeEnviar();
+            try
+            {
+                // Enviar mensaje a través de SignalR usando el mismo _hubProxy creado durante la inicialización
+                await _hubProxy.Invoke("SendMessage", SesionFrontEnd.usuarioSesion.Id.ToString(), nuevoMensaje.contenido);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al enviar mensaje a través de SignalR: {ex.Message}");
+            }
         }
     }
+
 
     private async Task RecargarMensajesDespuesDeEnviar()
     {
@@ -187,15 +215,29 @@ public partial class ListaMensajes : ContentPage, INotifyPropertyChanged
 
     private void ScrollToEnd(bool animate)
     {
-        if (listaDeMensajes != null && listaDeMensajes.Count > 0)
+        // Asegurarse de que el collectionView y la lista de mensajes no sean nulos
+        if (collectionView == null || listaDeMensajes == null)
+        {
+            return;
+        }
+
+        // Asegurarse de que la lista de mensajes tenga al menos un mensaje
+        if (listaDeMensajes.Count > 0)
         {
             Device.BeginInvokeOnMainThread(async () =>
             {
                 await Task.Delay(100); // Pequeño retraso para asegurar que los mensajes se carguen completamente
-                collectionView.ScrollTo(listaDeMensajes[^1], position: ScrollToPosition.End, animate: animate);
+
+                // Verificar si hay suficientes mensajes para que el scroll tenga sentido
+                if (listaDeMensajes.Count > 8) // Ajusta este valor según sea necesario
+                {
+                    collectionView.ScrollTo(listaDeMensajes[^1], position: ScrollToPosition.End, animate: animate);
+                }
             });
         }
     }
+
+
 
     private void ScrollToNewMessage(bool animate)
     {
