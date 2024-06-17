@@ -16,6 +16,12 @@ namespace Backend.Entidades
         public int estado { get; set; }
 
 
+        public int tempId { get; set; }
+        public string tempContenido { get; set; }
+
+        public DateTime tempFecha { get; set; }
+
+
 
     }
 }
