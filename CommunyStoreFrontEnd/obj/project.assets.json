@@ -93,6 +93,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -3025,6 +3038,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -5919,6 +5945,19 @@
           "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
             "related": ".aar;.xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -8817,6 +8856,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -11711,6 +11763,19 @@
           "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
             "related": ".aar;.xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -14609,6 +14674,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -17497,6 +17575,19 @@
           "lib/net7.0-android33.0/FFImageLoading.Compat.Transformations.dll": {
             "related": ".aar;.xml"
           }
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -20389,6 +20480,19 @@
           }
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -23259,6 +23363,19 @@
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -24511,6 +24628,19 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -25866,6 +25996,19 @@
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -27217,6 +27360,19 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -28572,6 +28728,19 @@
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -29923,6 +30092,19 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -31291,6 +31473,19 @@
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -32657,6 +32852,19 @@
           "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -33991,6 +34199,19 @@
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -35215,6 +35436,19 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -36570,6 +36804,19 @@
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -37921,6 +38168,19 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -39276,6 +39536,19 @@
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -40629,6 +40902,19 @@
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -41980,6 +42266,19 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -43341,6 +43640,19 @@
           "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -44673,6 +44985,19 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -46096,6 +46421,19 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -47580,6 +47918,19 @@
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -49060,6 +49411,19 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -50544,6 +50908,19 @@
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -52024,6 +52401,19 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -53508,6 +53898,19 @@
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
         }
       },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        }
+      },
       "Fizzler/1.2.1": {
         "type": "package",
         "compile": {
@@ -54988,6 +55391,19 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll": {}
+        }
+      },
+      "FirebaseStorage.net/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Firebase.Storage.dll": {}
         }
       },
       "Fizzler/1.2.1": {
@@ -56495,6 +56911,18 @@
         "lib/net7.0-ios16.1/FFImageLoading.Compat.Transformations.dll",
         "lib/net7.0-maccatalyst16.1/FFImageLoading.Compat.Transformations.dll",
         "lib/net7.0-windows10.0.19041/FFImageLoading.Compat.Transformations.dll"
+      ]
+    },
+    "FirebaseStorage.net/1.0.3": {
+      "sha512": "SupDHNUwNqcVwEo/HdFEWAXveQe3fU16q4wrrCxUVwP0a77zaddKp7vo2sHIW56DAsJn/gUfjDK3w0MuBhvzjQ==",
+      "type": "package",
+      "path": "firebasestorage.net/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "firebasestorage.net.1.0.3.nupkg.sha512",
+        "firebasestorage.net.nuspec",
+        "lib/netstandard1.1/Firebase.Storage.dll"
       ]
     },
     "Fizzler/1.2.1": {
@@ -63274,6 +63702,7 @@
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
       "FFImageLoadingCompat.Svg.Maui >= 0.1.1",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Apis.Auth >= 1.68.0",
       "Google.Apis.Drive.v3 >= 1.68.0.3416",
       "Microsoft.AspNet.SignalR.Client >= 2.4.3",
@@ -63288,6 +63717,7 @@
     ],
     "net8.0-ios17.2": [
       "FFImageLoadingCompat.Svg.Maui >= 0.1.1",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Apis.Auth >= 1.68.0",
       "Google.Apis.Drive.v3 >= 1.68.0.3416",
       "Microsoft.AspNet.SignalR.Client >= 2.4.3",
@@ -63302,6 +63732,7 @@
     ],
     "net8.0-maccatalyst17.2": [
       "FFImageLoadingCompat.Svg.Maui >= 0.1.1",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Apis.Auth >= 1.68.0",
       "Google.Apis.Drive.v3 >= 1.68.0.3416",
       "Microsoft.AspNet.SignalR.Client >= 2.4.3",
@@ -63316,6 +63747,7 @@
     ],
     "net8.0-windows10.0.19041": [
       "FFImageLoadingCompat.Svg.Maui >= 0.1.1",
+      "FirebaseStorage.net >= 1.0.3",
       "Google.Apis.Auth >= 1.68.0",
       "Google.Apis.Drive.v3 >= 1.68.0.3416",
       "Microsoft.AspNet.SignalR.Client >= 2.4.3",
@@ -63398,6 +63830,10 @@
             "target": "Package",
             "version": "[0.1.1, )"
           },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
           "Google.Apis.Auth": {
             "target": "Package",
             "version": "[1.68.0, )"
@@ -63472,6 +63908,10 @@
           "FFImageLoadingCompat.Svg.Maui": {
             "target": "Package",
             "version": "[0.1.1, )"
+          },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "Google.Apis.Auth": {
             "target": "Package",
@@ -63548,6 +63988,10 @@
             "target": "Package",
             "version": "[0.1.1, )"
           },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
+          },
           "Google.Apis.Auth": {
             "target": "Package",
             "version": "[1.68.0, )"
@@ -63623,6 +64067,10 @@
           "FFImageLoadingCompat.Svg.Maui": {
             "target": "Package",
             "version": "[0.1.1, )"
+          },
+          "FirebaseStorage.net": {
+            "target": "Package",
+            "version": "[1.0.3, )"
           },
           "Google.Apis.Auth": {
             "target": "Package",

@@ -165,14 +165,15 @@ public partial class PublicacionDetalles : ContentPage
                             {
                                 ReqIngresarMensaje req2 = new ReqIngresarMensaje();
                                 string desc = publicacion.descripcionPublicacion;
-
+                                string urlImg = publicacion.nombresArchivos;
                                 string price = publicacion.precioPublicacion.ToString() ?? "0.00"; // Manejar el null para precioPublicacion
 
                                 req2.mensaje = new Mensaje
                                 {
                                     contenido = desc + Environment.NewLine + price,
                                     idchat = res.idChat,
-                                    idUsuario = SesionFrontEnd.usuarioSesion.Id
+                                    idUsuario = SesionFrontEnd.usuarioSesion.Id,
+                                     URLimg = urlImg
                                 };
                                 var jsonMensaje = new StringContent(JsonConvert.SerializeObject(req2), Encoding.UTF8, "application/json");
 

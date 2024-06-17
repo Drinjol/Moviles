@@ -6731,3 +6731,4 @@ C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\System.IO.Pipelines.dll
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNet.SignalR.Client.dll
 C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Microsoft.AspNet.SignalR.Client.pdb
+C:\Users\Jordan Mora\Documents\GitHub\Moviles\CommunyStoreFrontEnd\obj\Debug\net8.0-android\android\assets\Firebase.Storage.dll

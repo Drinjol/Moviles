@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mU414fdUKvw=",
+  "dgSpecHash": "32lFQFgnE8M=",
   "success": true,
   "projectFilePath": "C:\\Users\\Jordan Mora\\Documents\\GitHub\\Moviles\\CommunyStoreFrontEnd\\CommunyStoreFrontEnd.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\ffimageloadingcompat.svg\\0.1.1\\ffimageloadingcompat.svg.0.1.1.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\ffimageloadingcompat.svg.maui\\0.1.1\\ffimageloadingcompat.svg.maui.0.1.1.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\ffimageloadingcompat.transformations\\0.1.1\\ffimageloadingcompat.transformations.0.1.1.nupkg.sha512",
+    "C:\\Users\\Jordan Mora\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\fizzler\\1.2.1\\fizzler.1.2.1.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\Jordan Mora\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",

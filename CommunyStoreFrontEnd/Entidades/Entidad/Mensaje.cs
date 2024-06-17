@@ -18,6 +18,8 @@ namespace CommunyStoreFrontEnd.Entidades
 
         public int idchat { get; set; }
 
+        public string URLimg { get; set; }
+
         public DateTime fechaEnvio { get; set; }
 
         public bool estado { get; set; }

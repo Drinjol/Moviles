@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:selectors="clr-namespace:CommunyStoreFrontEnd.Selectors"
-             xmlns:local="clr-namespace:CommunyStoreFrontEnd.Converters"
-             x:Class="CommunyStoreFrontEnd.ListaMensajes"
-             Title="ListaMensajes"
-             BackgroundColor="Black">
-
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:selectors="clr-namespace:CommunyStoreFrontEnd.Selectors"
+          xmlns:local="clr-namespace:CommunyStoreFrontEnd.Converters"
+          x:Class="CommunyStoreFrontEnd.ListaMensajes"
+          Title="ListaMensajes"
+          BackgroundColor="Black">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <local:InverseBoolConverter x:Key="InverseBoolConverter" />
+            <local:InverseBoolConverter2 x:Key="InverseBoolConverter2" />
             <!-- DataTemplate para mensajes del emisor -->
             <DataTemplate x:Key="SenderTemplate">
                 <Grid Padding="10">
                     <Frame Margin="5"
-                           Padding="10"
-                           CornerRadius="20"
-                           HasShadow="False"
-                           BackgroundColor="LightBlue"
-                           HorizontalOptions="End"
-                           VerticalOptions="Start"
-                           MinimumWidthRequest="100"
-                           MaximumWidthRequest="250">
-                        <Label TextColor="Black"
+                       Padding="10"
+                       CornerRadius="20"
+                       HasShadow="False"
+                       BackgroundColor="LightBlue"
+                       HorizontalOptions="End"
+                       VerticalOptions="Start"
+                       MinimumWidthRequest="100"
+                       MaximumWidthRequest="250">
+                        <StackLayout>
+                            <Label TextColor="Black"
                                Text="{Binding contenido}"
                                FontSize="16"
                                LineBreakMode="WordWrap"/>
+                            <Image Source="{Binding URLimg}" 
+                               IsVisible="{Binding URLimg, Converter={StaticResource InverseBoolConverter2}}" 
+                               HeightRequest="200" 
+                               WidthRequest="200"/>
+                        </StackLayout>
                     </Frame>
                 </Grid>
             </DataTemplate>
@@ -34,26 +39,32 @@
             <DataTemplate x:Key="ReceiverTemplate">
                 <Grid Padding="10">
                     <Frame Margin="5"
-                           Padding="10"
-                           CornerRadius="20"
-                           HasShadow="False"
-                           BackgroundColor="LightGreen"
-                           HorizontalOptions="Start"
-                           VerticalOptions="Start"
-                           MinimumWidthRequest="100"
-                           MaximumWidthRequest="250">
-                        <Label TextColor="Black"
+                       Padding="10"
+                       CornerRadius="20"
+                       HasShadow="False"
+                       BackgroundColor="LightGreen"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       MinimumWidthRequest="100"
+                       MaximumWidthRequest="250">
+                        <StackLayout>
+                            <Label TextColor="Black"
                                Text="{Binding contenido}"
                                FontSize="16"
                                LineBreakMode="WordWrap"/>
+                            <Image Source="{Binding URLimg}" 
+                               IsVisible="{Binding URLimg, Converter={StaticResource InverseBoolConverter2}}" 
+                               HeightRequest="200" 
+                               WidthRequest="200"/>
+                        </StackLayout>
                     </Frame>
                 </Grid>
             </DataTemplate>
 
             <!-- Agrega el MessageTemplateSelector a los recursos -->
             <selectors:MessageTemplateSelector x:Key="MessageTemplateSelector"
-                                               SenderTemplate="{StaticResource SenderTemplate}"
-                                               ReceiverTemplate="{StaticResource ReceiverTemplate}" />
+                                           SenderTemplate="{StaticResource SenderTemplate}"
+                                           ReceiverTemplate="{StaticResource ReceiverTemplate}" />
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -65,23 +76,23 @@
 
         <!-- Indicador de carga -->
         <ActivityIndicator x:Name="activityIndicator"
-                           IsRunning="{Binding IsLoading}"
-                           IsVisible="{Binding IsLoading}"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Color="White"/>
+                       IsRunning="{Binding IsLoading}"
+                       IsVisible="{Binding IsLoading}"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Color="White"/>
 
         <!-- Lista de mensajes -->
         <CollectionView x:Name="collectionView"
-                        SelectionMode="None"
-                        ItemsSource="{Binding listaDeMensajes}"
-                        ItemTemplate="{StaticResource MessageTemplateSelector}"
-                        VerticalScrollBarVisibility="Always"
-                        Grid.Row="0"
-                        IsVisible="{Binding IsLoading, Converter={StaticResource InverseBoolConverter}}"/>
+                    SelectionMode="None"
+                    ItemsSource="{Binding listaDeMensajes}"
+                    ItemTemplate="{StaticResource MessageTemplateSelector}"
+                    VerticalScrollBarVisibility="Always"
+                    Grid.Row="0"
+                    IsVisible="{Binding IsLoading, Converter={StaticResource InverseBoolConverter2}}"/>
 
         <!-- Campo de texto y botón de enviar -->
-        <Grid Grid.Row="1" Padding="10" BackgroundColor="White" IsVisible="{Binding IsLoading, Converter={StaticResource InverseBoolConverter}}">
+        <Grid Grid.Row="1" Padding="10" BackgroundColor="White" IsVisible="{Binding IsLoading, Converter={StaticResource InverseBoolConverter2}}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
